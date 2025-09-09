@@ -33,8 +33,9 @@ This is the EDP AI Expert Team repository - a specialized consulting practice fo
 - Commit changes together
 
 ## Auto-Import Context Files
-@team-personas/
-@ai-resources/context-documents/
+@team-personas/ai-expert-team-profiles.md
+@ai-resources/context-documents/edp-architecture-baseline.md
+@ai-resources/context-documents/edp-work-plan-breakdown.md
 
 ## Quick References
 When working on this project, consider referencing:
