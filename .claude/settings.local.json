@@ -8,7 +8,8 @@
       "Bash(findstr:*)",
       "Bash(npx http-server:*)",
       "WebFetch(domain:docs.anthropic.com)",
-      "Bash(claude --version)"
+      "Bash(claude --version)",
+      "Bash(tree:*)"
     ],
     "deny": [],
     "ask": []
