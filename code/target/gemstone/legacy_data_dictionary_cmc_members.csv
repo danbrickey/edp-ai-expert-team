@@ -1,0 +1,1618 @@
+﻿source_schema,source_table,source_column,table_description,column_description,column_data_type
+dbo,cmc_emcm_class_map,emcm_channel,Qualified Health Plan Class Mapping,Enrollment Channel,varchar
+dbo,cmc_emcm_class_map,emcm_submitter_id,Qualified Health Plan Class Mapping,Submitter ID,varchar
+dbo,cmc_emcm_class_map,emcm_type,Qualified Health Plan Class Mapping,Type,char
+dbo,cmc_emcm_class_map,emcm_eff_dt,Qualified Health Plan Class Mapping,Effective Date,datetime
+dbo,cmc_emcm_class_map,emcm_term_dt,Qualified Health Plan Class Mapping,Termination Date,datetime
+dbo,cmc_emcm_class_map,grgr_id,Qualified Health Plan Class Mapping,Group ID,char
+dbo,cmc_emcm_class_map,sgsg_id,Qualified Health Plan Class Mapping,Subgroup ID,char
+dbo,cmc_emcm_class_map,cscs_id,Qualified Health Plan Class Mapping,Class Identifier,char
+dbo,cmc_emcm_class_map,blpf_id,Qualified Health Plan Class Mapping,Billing Profile ID,char
+dbo,cmc_emcm_class_map,emcm_lock_token,Qualified Health Plan Class Mapping,Lock Token,smallint
+dbo,cmc_emcm_class_map,atxr_source_id,Qualified Health Plan Class Mapping,Attachment Source Id,datetime
+dbo,cmc_emcm_class_map,sys_last_upd_dtm,Qualified Health Plan Class Mapping,Last Update Datetime,datetime
+dbo,cmc_emcm_class_map,sys_usus_id,Qualified Health Plan Class Mapping,Last Update User ID,varchar
+dbo,cmc_emcm_class_map,sys_dbuser_id,Qualified Health Plan Class Mapping,Last Update DBMS User ID,varchar
+dbo,cmc_emcm_class_map,bgbg_id_nvl,Qualified Health Plan Class Mapping,Billing Group Id,char
+dbo,cmc_empm_plan_map,emcm_channel,Qualified Health Plan Plan Mapping,Enrollment Channel,varchar
+dbo,cmc_empm_plan_map,emcm_submitter_id,Qualified Health Plan Plan Mapping,Submitter ID,varchar
+dbo,cmc_empm_plan_map,emcm_type,Qualified Health Plan Plan Mapping,Type,char
+dbo,cmc_empm_plan_map,emcm_eff_dt,Qualified Health Plan Plan Mapping,Effective Date,datetime
+dbo,cmc_empm_plan_map,empm_qhp_lob,Qualified Health Plan Plan Mapping,Line of Business,char
+dbo,cmc_empm_plan_map,empm_qhp_id,Qualified Health Plan Plan Mapping,Qualified Health Plan Identifier,varchar
+dbo,cmc_empm_plan_map,cspd_cat,Qualified Health Plan Plan Mapping,Class Product Category,char
+dbo,cmc_empm_plan_map,cspi_id,Qualified Health Plan Plan Mapping,Class Plan Identifier,char
+dbo,cmc_empm_plan_map,empm_den_cspi_id,Qualified Health Plan Plan Mapping,Pediatric Denatl Class Plan Identifier,char
+dbo,cmc_empm_plan_map,empm_den_cspd_cat,Qualified Health Plan Plan Mapping,Pediatric Dental Category,char
+dbo,cmc_empm_plan_map,empm_den_max_age,Qualified Health Plan Plan Mapping,Pediatric Dental Max Age,smallint
+dbo,cmc_empm_plan_map,empm_vis_cspi_id,Qualified Health Plan Plan Mapping,Pediatric Vision Class Plan Identifier,char
+dbo,cmc_empm_plan_map,empm_vis_cspd_cat,Qualified Health Plan Plan Mapping,Pediatric Vision Category,char
+dbo,cmc_empm_plan_map,empm_vis_max_age,Qualified Health Plan Plan Mapping,Pediatric Vision Max Age,smallint
+dbo,cmc_empm_plan_map,empm_lock_token,Qualified Health Plan Plan Mapping,Lock Token,smallint
+dbo,cmc_empm_plan_map,atxr_source_id,Qualified Health Plan Plan Mapping,Attachment Source Id,datetime
+dbo,cmc_empm_plan_map,sys_last_upd_dtm,Qualified Health Plan Plan Mapping,Last Update Datetime,datetime
+dbo,cmc_empm_plan_map,sys_usus_id,Qualified Health Plan Plan Mapping,Last Update User ID,varchar
+dbo,cmc_empm_plan_map,sys_dbuser_id,Qualified Health Plan Plan Mapping,Last Update DBMS User ID,varchar
+dbo,cmc_mbdr_ben_dur,mbdr_id,Maximum Benefit Duration,Maximum Benefit Duration ID,char
+dbo,cmc_mbdr_ben_dur,mbdr_age_from,Maximum Benefit Duration,Low Age,smallint
+dbo,cmc_mbdr_ben_dur,mbdr_eff_dt,Maximum Benefit Duration,Effective Date,datetime
+dbo,cmc_mbdr_ben_dur,mbdr_term_dt,Maximum Benefit Duration,Termination Date,datetime
+dbo,cmc_mbdr_ben_dur,mbdr_age_to,Maximum Benefit Duration,High Age,smallint
+dbo,cmc_mbdr_ben_dur,mbdr_nrag_ind,Maximum Benefit Duration,Normal Retirement Age Indicator,char
+dbo,cmc_mbdr_ben_dur,mbdr_months,Maximum Benefit Duration,Months,smallint
+dbo,cmc_mbdr_ben_dur,mbdr_operand,Maximum Benefit Duration,Operand,char
+dbo,cmc_mbdr_ben_dur,mbdr_lock_token,Maximum Benefit Duration,Lock Token,smallint
+dbo,cmc_mbdr_ben_dur,atxr_source_id,Maximum Benefit Duration,Attachment Source Id,datetime
+dbo,cmc_mbdr_ben_dur,sys_last_upd_dtm,Maximum Benefit Duration,Last Update Datetime,datetime
+dbo,cmc_mbdr_ben_dur,sys_usus_id,Maximum Benefit Duration,Last Update User ID,varchar
+dbo,cmc_mbdr_ben_dur,sys_dbuser_id,Maximum Benefit Duration,Last Update DBMS User ID,varchar
+dbo,cmc_mbds_desc,mbdr_id,Maximum Benefit Duration Description Table,Maximum Benefit Duration ID,char
+dbo,cmc_mbds_desc,mbds_desc,Maximum Benefit Duration Description Table,Maximum Benefit Duration ID Description,varchar
+dbo,cmc_mbds_desc,mbds_lock_token,Maximum Benefit Duration Description Table,Lock Token,smallint
+dbo,cmc_mbds_desc,atxr_source_id,Maximum Benefit Duration Description Table,Attachment Source Id,datetime
+dbo,cmc_mbds_desc,sys_last_upd_dtm,Maximum Benefit Duration Description Table,Last Update Datetime,datetime
+dbo,cmc_mbds_desc,sys_usus_id,Maximum Benefit Duration Description Table,Last Update User ID,varchar
+dbo,cmc_mbds_desc,sys_dbuser_id,Maximum Benefit Duration Description Table,Last Update DBMS User ID,varchar
+dbo,cmc_mcan_ansi_rel,mcan_edi_ver_rel,ANSI Industry Standard,ANSI Version,char
+dbo,cmc_mcan_ansi_rel,mcan_ptrl_ansi_cd,ANSI Industry Standard,ANSI X12 EDI Standard Patient Relationship Code,char
+dbo,cmc_mcan_ansi_rel,mcan_ptrl_desc,ANSI Industry Standard,ANSI X12 EDI Standard Patient Relationship Code Description,varchar
+dbo,cmc_mcan_ansi_rel,mcan_edi_i837u_ind,ANSI Industry Standard,Valid for 837 inbound EDI Transaction Type Indicator,char
+dbo,cmc_mcan_ansi_rel,mcan_edi_o837p_ind,ANSI Industry Standard,Valid for 837 Professional outbound EDI Transaction Type Indicator,char
+dbo,cmc_mcan_ansi_rel,mcan_edi_o837i_ind,ANSI Industry Standard,Valid for 837 Institutional outbound EDI Transaction Type Indicator,char
+dbo,cmc_mcan_ansi_rel,mcan_edi_o837d_ind,ANSI Industry Standard,Valid for 837 Dental outbound EDI Transaction Type Indicator,char
+dbo,cmc_mcan_ansi_rel,mcan_edi_i834u_ind,ANSI Industry Standard,Valid for 834 inbound EDI Transaction Type indicator,char
+dbo,cmc_mcan_ansi_rel,mcan_edi_i270u_ind,ANSI Industry Standard,Valid for 270 inbound EDI Transaction Type indicator,char
+dbo,cmc_mcan_ansi_rel,mcan_edi_o271u_ind,ANSI Industry Standard,Valid for 271 outbound EDI transaction Type Indicator,char
+dbo,cmc_mcan_ansi_rel,mcan_edi_i278u_ind,ANSI Industry Standard,Valid for 278 inbound EDI Transaction Type indicator,char
+dbo,cmc_mcan_ansi_rel,mcan_edi_o278u_ind,ANSI Industry Standard,Valid for 278 outbound EDI Transaction Type Indicator,char
+dbo,cmc_mcan_ansi_rel,mcan_lock_token,ANSI Industry Standard,Lock Token,smallint
+dbo,cmc_mcar_area,mcar_area_id,Area ID Geographical Description,Area ID,char
+dbo,cmc_mcar_area,mcar_name,Area ID Geographical Description,Area Name,char
+dbo,cmc_mcar_area,mcar_name_xlow,Area ID Geographical Description,Name XLOW,char
+dbo,cmc_mcar_area,mcar_lock_token,Area ID Geographical Description,Lock Token,smallint
+dbo,cmc_mcar_area,atxr_source_id,Area ID Geographical Description,Attachment Source Id,datetime
+dbo,cmc_mcaz_area_zips,mcar_area_id,Area ID Zip Code Para meters,Area ID,char
+dbo,cmc_mcaz_area_zips,mcaz_zip_from,Area ID Zip Code Para meters,From ZIP Code,char
+dbo,cmc_mcaz_area_zips,mcaz_zip_to,Area ID Zip Code Para meters,To ZIP Code,char
+dbo,cmc_mcaz_area_zips,mcaz_lock_token,Area ID Zip Code Para meters,Lock Token,smallint
+dbo,cmc_mcaz_area_zips,atxr_source_id,Area ID Zip Code Para meters,Attachment Source Id,datetime
+dbo,cmc_mcbd_bank_data,mcbd_id,Managed Care System Bank Data,Bank ID,char
+dbo,cmc_mcbd_bank_data,mcbd_mctr_btyp,Managed Care System Bank Data,Bank Type,char
+dbo,cmc_mcbd_bank_data,mcbd_bank_name,Managed Care System Bank Data,Bank Name,char
+dbo,cmc_mcbd_bank_data,mcbd_addr1,Managed Care System Bank Data,Address,char
+dbo,cmc_mcbd_bank_data,mcbd_addr2,Managed Care System Bank Data,Address line two,char
+dbo,cmc_mcbd_bank_data,mcbd_addr3,Managed Care System Bank Data,Address line three,char
+dbo,cmc_mcbd_bank_data,mcbd_city,Managed Care System Bank Data,City,char
+dbo,cmc_mcbd_bank_data,mcbd_state,Managed Care System Bank Data,State,char
+dbo,cmc_mcbd_bank_data,mcbd_zip,Managed Care System Bank Data,State,char
+dbo,cmc_mcbd_bank_data,mcbd_county,Managed Care System Bank Data,County,char
+dbo,cmc_mcbd_bank_data,mcbd_ctry_cd,Managed Care System Bank Data,Country Code,char
+dbo,cmc_mcbd_bank_data,mcbd_phone,Managed Care System Bank Data,Phone number,char
+dbo,cmc_mcbd_bank_data,mcbd_phone_ext,Managed Care System Bank Data,Phone number extension,char
+dbo,cmc_mcbd_bank_data,mcbd_fax,Managed Care System Bank Data,Fax Number,char
+dbo,cmc_mcbd_bank_data,mcbd_fax_ext,Managed Care System Bank Data,Fax number extension,char
+dbo,cmc_mcbd_bank_data,mcbd_email,Managed Care System Bank Data,Internet or Email address,char
+dbo,cmc_mcbd_bank_data,mcbd_routing,Managed Care System Bank Data,Routing Number,char
+dbo,cmc_mcbd_bank_data,mcbd_transit,Managed Care System Bank Data,Transit Number,char
+dbo,cmc_mcbd_bank_data,mcbd_control,Managed Care System Bank Data,Control number,char
+dbo,cmc_mcbd_bank_data,mcbd_edi_dest_id,Managed Care System Bank Data,Electronic Destination ID,char
+dbo,cmc_mcbd_bank_data,mcbd_edi_dest_qual,Managed Care System Bank Data,Electronic Destination Qualifier,char
+dbo,cmc_mcbd_bank_data,mcbd_dfi_id_qual,Managed Care System Bank Data,DFI ID Qualifier,char
+dbo,cmc_mcbd_bank_data,mcbd_lock_token,Managed Care System Bank Data,Lock Token,smallint
+dbo,cmc_mcbd_bank_data,atxr_source_id,Managed Care System Bank Data,Attachment Source Id,datetime
+dbo,cmc_mcbr_bank_rel,mcbr_ck,Bank Relationship table,Bank relationship contrived key,int
+dbo,cmc_mcbr_bank_rel,mcbr_rel_type,Bank Relationship table,Bank relationship type,char
+dbo,cmc_mcbr_bank_rel,mcbr_rel_ck,Bank Relationship table,Related tables contrived key,int
+dbo,cmc_mcbr_bank_rel,mcbr_rel_id,Bank Relationship table,Related  ID,char
+dbo,cmc_mcbr_bank_rel,mcbd_id,Bank Relationship table,Bank ID,char
+dbo,cmc_mcbr_bank_rel,mcbr_acct_no,Bank Relationship table,Account Number,char
+dbo,cmc_mcbr_bank_rel,mcbr_acct_name,Bank Relationship table,Account Name,char
+dbo,cmc_mcbr_bank_rel,mcbr_mctr_atyp,Bank Relationship table,Account Type,char
+dbo,cmc_mcbr_bank_rel,mcbr_acct_no_qual,Bank Relationship table,Type,char
+dbo,cmc_mcbr_bank_rel,mcbr_lock_token,Bank Relationship table,Lock Token,smallint
+dbo,cmc_mcbr_bank_rel,atxr_source_id,Bank Relationship table,Attachment Source Id,datetime
+dbo,cmc_mccl_cnty_lang,mccl_state,County Language Definition,State,char
+dbo,cmc_mccl_cnty_lang,mccl_county_cd,County Language Definition,County Code,char
+dbo,cmc_mccl_cnty_lang,mccl_mctr_lang,County Language Definition,Language,char
+dbo,cmc_mccl_cnty_lang,mccl_county,County Language Definition, County,varchar
+dbo,cmc_mccl_cnty_lang,mccl_lock_token,County Language Definition,Lock Token,smallint
+dbo,cmc_mccl_cnty_lang,atxr_source_id,County Language Definition,Attachment Source Id,datetime
+dbo,cmc_mccl_cnty_lang,sys_last_upd_dtm,County Language Definition,Last Update Datetime,datetime
+dbo,cmc_mccl_cnty_lang,sys_usus_id,County Language Definition,Last Update User ID,varchar
+dbo,cmc_mccl_cnty_lang,sys_dbuser_id,County Language Definition,Last Update DBMS User ID,varchar
+dbo,cmc_mccr_mrl_conv,mcrl_meme_crel_cd,Member Relationship Conversion,Comprehensive Relationship Code,char
+dbo,cmc_mccr_mrl_conv,meme_sex,Member Relationship Conversion, Gender,char
+dbo,cmc_mccr_mrl_conv,meme_rel,Member Relationship Conversion,Basic Relationship Code,char
+dbo,cmc_mccr_mrl_conv,mccr_sys_ind,Member Relationship Conversion,N/A,char
+dbo,cmc_mccr_mrl_conv,mccr_lock_token,Member Relationship Conversion,Lock Token,smallint
+dbo,cmc_mcdb_debt_bank,mcdb_id,Debit Card Bank Record,Member ID,char
+dbo,cmc_mcdb_debt_bank,mcdb_eff_dt,Debit Card Bank Record,Effective Date,datetime
+dbo,cmc_mcdb_debt_bank,mcdb_term_dt,Debit Card Bank Record,Termination,datetime
+dbo,cmc_mcdb_debt_bank,mcdb_name,Debit Card Bank Record,Name,varchar
+dbo,cmc_mcdb_debt_bank,mcdb_addr1,Debit Card Bank Record,Address,varchar
+dbo,cmc_mcdb_debt_bank,mcdb_addr2,Debit Card Bank Record,Address,varchar
+dbo,cmc_mcdb_debt_bank,mcdb_addr3,Debit Card Bank Record,Address,varchar
+dbo,cmc_mcdb_debt_bank,mcdb_city,Debit Card Bank Record,City,varchar
+dbo,cmc_mcdb_debt_bank,mcdb_state,Debit Card Bank Record,State,char
+dbo,cmc_mcdb_debt_bank,mcdb_zip,Debit Card Bank Record,Zip Code,char
+dbo,cmc_mcdb_debt_bank,mcdb_county,Debit Card Bank Record,County,varchar
+dbo,cmc_mcdb_debt_bank,mcdb_ctry_cd,Debit Card Bank Record,Country Code,char
+dbo,cmc_mcdb_debt_bank,mcdb_phone,Debit Card Bank Record,Phone,varchar
+dbo,cmc_mcdb_debt_bank,mcdb_phone_ext,Debit Card Bank Record,Ext,char
+dbo,cmc_mcdb_debt_bank,mcdb_fax,Debit Card Bank Record,Fax,varchar
+dbo,cmc_mcdb_debt_bank,mcdb_fax_ext,Debit Card Bank Record,Ext,char
+dbo,cmc_mcdb_debt_bank,mcdb_email,Debit Card Bank Record,Internet/Email,varchar
+dbo,cmc_mcdb_debt_bank,mcdb_sts,Debit Card Bank Record,Status,char
+dbo,cmc_mcdb_debt_bank,mcdb_extnl_id1,Debit Card Bank Record,External ID,varchar
+dbo,cmc_mcdb_debt_bank,mcdb_extnl_id2,Debit Card Bank Record,External ID 2,varchar
+dbo,cmc_mcdb_debt_bank,mcdb_fsa_ind,Debit Card Bank Record,FSA,char
+dbo,cmc_mcdb_debt_bank,mcdb_hra_ind,Debit Card Bank Record,HRA,char
+dbo,cmc_mcdb_debt_bank,mcdb_hsa_ind,Debit Card Bank Record,H S A,char
+dbo,cmc_mcdb_debt_bank,mcdb_last_upd_dtm,Debit Card Bank Record, Last Update Date and Time,datetime
+dbo,cmc_mcdb_debt_bank,mcdb_lst_usus_id,Debit Card Bank Record,Last Update User ID,char
+dbo,cmc_mcdb_debt_bank,mcdb_addl_data,Debit Card Bank Record,Additional Data,varchar
+dbo,cmc_mcdb_debt_bank,mcdb_lock_token,Debit Card Bank Record,Lock Token,smallint
+dbo,cmc_mcdb_debt_bank,atxr_source_id,Debit Card Bank Record,Attachment Source Id,datetime
+dbo,cmc_mcdd_dem_desc,mcdd_type,Demographic Detail Description,Demographic Type,varchar
+dbo,cmc_mcdd_dem_desc,mcdd_ctrl_type,Demographic Detail Description,Control Type,char
+dbo,cmc_mcdd_dem_desc,mcdd_desc,Demographic Detail Description,Demographic Type Description,varchar
+dbo,cmc_mcdd_dem_desc,mcdd_lock_token,Demographic Detail Description,Lock Token,smallint
+dbo,cmc_mcdd_dem_desc,atxr_source_id,Demographic Detail Description,Attachment Source Id,datetime
+dbo,cmc_mcdi_debt_intm,mcdi_id,Debit Card Intermediary Data,Intermediary ID,char
+dbo,cmc_mcdi_debt_intm,mcdi_eff_dt,Debit Card Intermediary Data,Effective Date,datetime
+dbo,cmc_mcdi_debt_intm,mcdi_term_dt,Debit Card Intermediary Data,Termination,datetime
+dbo,cmc_mcdi_debt_intm,mcdi_name,Debit Card Intermediary Data,Name,varchar
+dbo,cmc_mcdi_debt_intm,mcdi_addr1,Debit Card Intermediary Data,Address,varchar
+dbo,cmc_mcdi_debt_intm,mcdi_addr2,Debit Card Intermediary Data,Address,varchar
+dbo,cmc_mcdi_debt_intm,mcdi_addr3,Debit Card Intermediary Data,Address,varchar
+dbo,cmc_mcdi_debt_intm,mcdi_city,Debit Card Intermediary Data,City,varchar
+dbo,cmc_mcdi_debt_intm,mcdi_state,Debit Card Intermediary Data,State,char
+dbo,cmc_mcdi_debt_intm,mcdi_zip,Debit Card Intermediary Data,Zip Code,char
+dbo,cmc_mcdi_debt_intm,mcdi_county,Debit Card Intermediary Data,County,varchar
+dbo,cmc_mcdi_debt_intm,mcdi_ctry_cd,Debit Card Intermediary Data,Country Code,char
+dbo,cmc_mcdi_debt_intm,mcdi_phone,Debit Card Intermediary Data,Phone,varchar
+dbo,cmc_mcdi_debt_intm,mcdi_phone_ext,Debit Card Intermediary Data,Extension,char
+dbo,cmc_mcdi_debt_intm,mcdi_fax,Debit Card Intermediary Data,Fax,varchar
+dbo,cmc_mcdi_debt_intm,mcdi_fax_ext,Debit Card Intermediary Data,Extension,char
+dbo,cmc_mcdi_debt_intm,mcdi_email,Debit Card Intermediary Data,Internet/Email,varchar
+dbo,cmc_mcdi_debt_intm,mcdi_sts,Debit Card Intermediary Data,Status,char
+dbo,cmc_mcdi_debt_intm,mcdi_extnl_id1,Debit Card Intermediary Data,External ID,varchar
+dbo,cmc_mcdi_debt_intm,mcdi_extnl_id2,Debit Card Intermediary Data,External ID 2,varchar
+dbo,cmc_mcdi_debt_intm,mcdi_fsa_ind,Debit Card Intermediary Data,FSA,char
+dbo,cmc_mcdi_debt_intm,mcdi_hra_ind,Debit Card Intermediary Data,HRA,char
+dbo,cmc_mcdi_debt_intm,mcdi_hsa_ind,Debit Card Intermediary Data,H S A,char
+dbo,cmc_mcdi_debt_intm,mcdi_mlti_pl_cd,Debit Card Intermediary Data,Multiple Plan Code,char
+dbo,cmc_mcdi_debt_intm,mcdi_last_upd_dtm,Debit Card Intermediary Data,Last Update Date and Time,datetime
+dbo,cmc_mcdi_debt_intm,mcdi_lst_usus_id,Debit Card Intermediary Data,Last Update User ID,char
+dbo,cmc_mcdi_debt_intm,mcdi_addl_data,Debit Card Intermediary Data,Additional Data,varchar
+dbo,cmc_mcdi_debt_intm,mcdi_lock_token,Debit Card Intermediary Data,Lock Token,smallint
+dbo,cmc_mcdi_debt_intm,atxr_source_id,Debit Card Intermediary Data,Attachment Source Id,datetime
+dbo,cmc_mcdv_dem_val,mcdd_type,Demographic Detail Value,Demographic Type,varchar
+dbo,cmc_mcdv_dem_val,mcdv_value,Demographic Detail Value,Demographic Value,varchar
+dbo,cmc_mcdv_dem_val,mcdv_desc,Demographic Detail Value,Demographic Value Description,varchar
+dbo,cmc_mcdv_dem_val,mcdv_sort,Demographic Detail Value,Sort Order,smallint
+dbo,cmc_mcdv_dem_val,mcdv_lock_token,Demographic Detail Value,Lock Token,smallint
+dbo,cmc_mcdv_dem_val,atxr_source_id,Demographic Detail Value,Attachment Source Id,datetime
+dbo,cmc_mceq_work_que,mceq_row_id,Elements Extract work table, Queue Row Identifier,numeric
+dbo,cmc_mceq_work_que,bgbg_id,Elements Extract work table,Billing Group ID,char
+dbo,cmc_mceq_work_que,bgbg_ck,Elements Extract work table, Billing Group Contrived Key,int
+dbo,cmc_mceq_work_que,meme_ck,Elements Extract work table,Member Contrived Key,int
+dbo,cmc_mceq_work_que,clcl_id,Elements Extract work table, Claim Identifier,char
+dbo,cmc_mceq_work_que,mceq_cdml_line_ctr,Elements Extract work table, Claim Work Queue Table CDML Line Item Counter,int
+dbo,cmc_mcin_edi_inbd,mcin_edi_ver_rel,Inbound ANSI Mapping,ANSI Version,char
+dbo,cmc_mcin_edi_inbd,mcin_edi_trns_type,Inbound ANSI Mapping,EDI Transaction Type,char
+dbo,cmc_mcin_edi_inbd,mcan_ptrl_ansi_cd,Inbound ANSI Mapping,ANSI X12 EDI Standard Patient Relationship Code Values,char
+dbo,cmc_mcin_edi_inbd,meme_sex,Inbound ANSI Mapping,Gender,char
+dbo,cmc_mcin_edi_inbd,mcrl_meme_crel_cd,Inbound ANSI Mapping,Comprehensive Member Relationship Code,char
+dbo,cmc_mcin_edi_inbd,meme_rel,Inbound ANSI Mapping,Member Relationship Code,char
+dbo,cmc_mcin_edi_inbd,mcin_lock_token,Inbound ANSI Mapping,Lock Token,smallint
+dbo,cmc_mcod_oper_dtl,mcop_oper_id,Medicare Transaction Reply Code Operations Details,Operation ID,varchar
+dbo,cmc_mcod_oper_dtl,mcod_seq_no,Medicare Transaction Reply Code Operations Details,Sequence Number,smallint
+dbo,cmc_mcod_oper_dtl,mcod_field,Medicare Transaction Reply Code Operations Details,Field,varchar
+dbo,cmc_mcod_oper_dtl,mcod_field_type,Medicare Transaction Reply Code Operations Details,Field Type,char
+dbo,cmc_mcod_oper_dtl,mcod_field_len,Medicare Transaction Reply Code Operations Details,Field Length,smallint
+dbo,cmc_mcod_oper_dtl,mcod_lock_token,Medicare Transaction Reply Code Operations Details,Lock Token,smallint
+dbo,cmc_mcod_oper_dtl,atxr_source_id,Medicare Transaction Reply Code Operations Details,Attachment Source Id,datetime
+dbo,cmc_mcop_oper,mcop_oper_id,Medicare Transaction Reply Code Operations,Operation ID,varchar
+dbo,cmc_mcop_oper,mcop_oper_desc,Medicare Transaction Reply Code Operations,Description,varchar
+dbo,cmc_mcop_oper,mcop_lock_token,Medicare Transaction Reply Code Operations,Lock Token,smallint
+dbo,cmc_mcop_oper,atxr_source_id,Medicare Transaction Reply Code Operations,Attachment Source Id,datetime
+dbo,cmc_mcot_edi_outb,mcot_edi_ver_rel,Outbound ANSI Mapping, ANSI Version,char
+dbo,cmc_mcot_edi_outb,mcot_edi_trns_type,Outbound ANSI Mapping,EDI Transaction Type,char
+dbo,cmc_mcot_edi_outb,mcrl_meme_crel_cd,Outbound ANSI Mapping,Comprehensive Member Relationship Code,char
+dbo,cmc_mcot_edi_outb,meme_sex,Outbound ANSI Mapping,Gender,char
+dbo,cmc_mcot_edi_outb,mcan_ptrl_ansi_cd,Outbound ANSI Mapping,ANSI  X12 EDI Standard Patient Relationship Code Values,char
+dbo,cmc_mcot_edi_outb,mcot_lock_token,Outbound ANSI Mapping,Lock Token,smallint
+dbo,cmc_mcpa_auto_pcp,pdbc_pfx,Auto PCP Assignment Criteria,Prefix,char
+dbo,cmc_mcpa_auto_pcp,mcpa_zip_ind,Auto PCP Assignment Criteria,Zip Code,char
+dbo,cmc_mcpa_auto_pcp,mcpa_city_ind,Auto PCP Assignment Criteria,City/State,char
+dbo,cmc_mcpa_auto_pcp,mcpa_county_ind,Auto PCP Assignment Criteria,County/State,char
+dbo,cmc_mcpa_auto_pcp,mcpa_state_ind,Auto PCP Assignment Criteria,State,char
+dbo,cmc_mcpa_auto_pcp,mcpa_lang_ind,Auto PCP Assignment Criteria,Language,char
+dbo,cmc_mcpa_auto_pcp,mcpa_re_value_ind,Auto PCP Assignment Criteria,Related Entity Hierarchy Applies,char
+dbo,cmc_mcpa_auto_pcp,mcpa_family_pcp_ind,Auto PCP Assignment Criteria,Assign Family to the same PCP,char
+dbo,cmc_mcpa_auto_pcp,mcpa_pcp_radius,Auto PCP Assignment Criteria,Specified Distance Miles,smallint
+dbo,cmc_mcpa_auto_pcp,mcpa_rad_rest_ind,Auto PCP Assignment Criteria,Match Not Restrictive,char
+dbo,cmc_mcpa_auto_pcp,mcpa_service_area,Auto PCP Assignment Criteria, Validate PCP Service Area,char
+dbo,cmc_mcpa_auto_pcp,mcpa_lock_token,Auto PCP Assignment Criteria,Lock Token,smallint
+dbo,cmc_mcpa_auto_pcp,atxr_source_id,Auto PCP Assignment Criteria,Attachment Source Id,datetime
+dbo,cmc_mcpa_auto_pcp,sys_last_upd_dtm,Auto PCP Assignment Criteria,Last Update Datetime,datetime
+dbo,cmc_mcpa_auto_pcp,sys_usus_id,Auto PCP Assignment Criteria,Last Update User ID,varchar
+dbo,cmc_mcpa_auto_pcp,sys_dbuser_id,Auto PCP Assignment Criteria,Last Update DBMS User ID,varchar
+dbo,cmc_mcpc_pcp_chg,mcpc_ref_id,Mass PCP Change,Reference ID,char
+dbo,cmc_mcpc_pcp_chg,syin_inst,Mass PCP Change,N/A,bigint
+dbo,cmc_mcpc_pcp_chg,mcpc_create_dtm,Mass PCP Change,Mass PCP Change Request Create Date,datetime
+dbo,cmc_mcpc_pcp_chg,mcpc_type,Mass PCP Change,Mass PCP Change Request Type,char
+dbo,cmc_mcpc_pcp_chg,mcpc_sts,Mass PCP Change,Status,char
+dbo,cmc_mcpc_pcp_chg,mcpc_err_sts,Mass PCP Change,Error Status,char
+dbo,cmc_mcpc_pcp_chg,usus_id,Mass PCP Change,User Identifier,char
+dbo,cmc_mcpc_pcp_chg,mcpc_prpr_id_from,Mass PCP Change,Provider ID,char
+dbo,cmc_mcpc_pcp_chg,mcpc_pcp_type_from,Mass PCP Change,PCP Type,char
+dbo,cmc_mcpc_pcp_chg,mcpc_mepr_term_dt,Mass PCP Change,Termination Date,datetime
+dbo,cmc_mcpc_pcp_chg,mepr_mctr_trsn,Mass PCP Change,Termination Reason,char
+dbo,cmc_mcpc_pcp_chg,nwst_pfx,Mass PCP Change,Network Set Prefix,char
+dbo,cmc_mcpc_pcp_chg,nwpr_pfx,Mass PCP Change,Network/Provider Relationship Prefix,char
+dbo,cmc_mcpc_pcp_chg,nwnw_id,Mass PCP Change,Network ID,char
+dbo,cmc_mcpc_pcp_chg,mcpc_prpr_id_to,Mass PCP Change,Provider ID,char
+dbo,cmc_mcpc_pcp_chg,mcpc_pcp_type_to,Mass PCP Change,PCP Type,char
+dbo,cmc_mcpc_pcp_chg,mcpc_mepr_eff_dt,Mass PCP Change,Effective date,datetime
+dbo,cmc_mcpc_pcp_chg,grgr_ck,Mass PCP Change,Group Contrived Key,int
+dbo,cmc_mcpc_pcp_chg,sgsg_ck,Mass PCP Change,Subgroup Contrived Key,int
+dbo,cmc_mcpc_pcp_chg,cscs_id,Mass PCP Change,Class ID,char
+dbo,cmc_mcpc_pcp_chg,cspi_id,Mass PCP Change,Plan ID,char
+dbo,cmc_mcpc_pcp_chg,pdpd_id,Mass PCP Change,Product ID,char
+dbo,cmc_mcpc_pcp_chg,mcpc_gender,Mass PCP Change,Gender,char
+dbo,cmc_mcpc_pcp_chg,mcpc_min_age,Mass PCP Change,Minimum Age,int
+dbo,cmc_mcpc_pcp_chg,mcpc_max_age,Mass PCP Change,Maximum Age,int
+dbo,cmc_mcpc_pcp_chg,mcpc_city,Mass PCP Change,City,char
+dbo,cmc_mcpc_pcp_chg,mcpc_county,Mass PCP Change,County,char
+dbo,cmc_mcpc_pcp_chg,mcpc_state,Mass PCP Change,State,char
+dbo,cmc_mcpc_pcp_chg,mcpc_zip,Mass PCP Change,ZIP Code,char
+dbo,cmc_mcpc_pcp_chg,mcpc_city_exact,Mass PCP Change,Exact City Match,char
+dbo,cmc_mcpc_pcp_chg,mcpc_county_exact,Mass PCP Change,Exact County Match,char
+dbo,cmc_mcpc_pcp_chg,mcpc_mem_sel_cnt,Mass PCP Change,NA,int
+dbo,cmc_mcpc_pcp_chg,mcpc_mem_disq_cnt,Mass PCP Change,N/A,int
+dbo,cmc_mcpc_pcp_chg,mcpc_mem_proc_cnt,Mass PCP Change,Member Process Count,int
+dbo,cmc_mcpc_pcp_chg,mcpc_mem_err_cnt,Mass PCP Change,Member Error Count,int
+dbo,cmc_mcpc_pcp_chg,mcpc_lock_token,Mass PCP Change,Lock Token,smallint
+dbo,cmc_mcpc_pcp_chg,atxr_source_id,Mass PCP Change,Attachment Source Id,datetime
+dbo,cmc_mcpc_pcp_chg,mcpc_ipa_id_nvl,Mass PCP Change, ,char
+dbo,cmc_mcpd_proc_def,pzap_app_id,Procedure Definition for Facets Columns,Application ID,char
+dbo,cmc_mcpd_proc_def,mcpd_source,Procedure Definition for Facets Columns,Source ID,char
+dbo,cmc_mcpd_proc_def,mcpd_column,Procedure Definition for Facets Columns,Column token,varchar
+dbo,cmc_mcpd_proc_def,mcpd_label,Procedure Definition for Facets Columns,Label token,varchar
+dbo,cmc_mcpd_proc_def,mcpd_type,Procedure Definition for Facets Columns,Type of Data,char
+dbo,cmc_mcpd_proc_def,mcpd_attribute,Procedure Definition for Facets Columns, Attribute,smallint
+dbo,cmc_mcpd_proc_def,mcpd_func_ind,Procedure Definition for Facets Columns,Function value,char
+dbo,cmc_mcpd_proc_def,mcpd_act_filter,Procedure Definition for Facets Columns,Action Filter,char
+dbo,cmc_mcpd_proc_def,mcpd_col_len,Procedure Definition for Facets Columns,Column Length,smallint
+dbo,cmc_mcpd_proc_def,mcpd_disply_order,Procedure Definition for Facets Columns,Display Order,smallint
+dbo,cmc_mcpd_proc_def,mcpd_lock_token,Procedure Definition for Facets Columns,Lock Token,smallint
+dbo,cmc_mcpd_proc_def,atxr_source_id,Procedure Definition for Facets Columns,Attachment Source Id,datetime
+dbo,cmc_mcpd_proc_def,mcpd_auto_clk_ind_nvl,Procedure Definition for Facets Columns, CS Auto Click Notes Indicator,char
+dbo,cmc_mcpf_parm_d,mcpf_source,Parameter Definition,Source of data,char
+dbo,cmc_mcpf_parm_d,mcpf_trans_type,Parameter Definition,Transaction Type,char
+dbo,cmc_mcpf_parm_d,mcpf_direction,Parameter Definition,Inbound or Outbound,char
+dbo,cmc_mcpf_parm_d,mcpf_name,Parameter Definition,Parameter Name,varchar
+dbo,cmc_mcpf_parm_d,mcpf_type,Parameter Definition,Parameter Type,char
+dbo,cmc_mcpf_parm_d,mcpf_desc,Parameter Definition,Parameter Description,varchar
+dbo,cmc_mcpf_parm_d,mcpf_lock_token,Parameter Definition,Lock Token,smallint
+dbo,cmc_mcpf_parm_d,mcpf_last_upd_usid,Parameter Definition,Last update user,varchar
+dbo,cmc_mcpf_parm_d,mcpf_last_upd_dtm,Parameter Definition,Last Update Datetime,datetime
+dbo,cmc_mcpl_list_id,mcpl_id,Parameter Freeform list ID,Parameter list ID,varchar
+dbo,cmc_mcpl_list_id,mcpf_name,Parameter Freeform list ID,Parameter Name,varchar
+dbo,cmc_mcpl_list_id,mcpl_list_detail,Parameter Freeform list ID,Parameter list detail,varchar
+dbo,cmc_mcpl_list_id,mcpl_lock_token,Parameter Freeform list ID,Lock Token,smallint
+dbo,cmc_mcpl_list_id,mcpl_last_upd_usid,Parameter Freeform list ID,Last update user,varchar
+dbo,cmc_mcpl_list_id,mcpl_last_upd_dtm,Parameter Freeform list ID,Last Update Datetime,datetime
+dbo,cmc_mcpm_pbp_map,grgr_id,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Group ID,char
+dbo,cmc_mcpm_pbp_map,metr_pbp_id,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Plan Benefit Package ID,char
+dbo,cmc_mcpm_pbp_map,metr_partd_sbsdy,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Part D Low Income Subsidy,char
+dbo,cmc_mcpm_pbp_map,metr_copay_cat,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Copay Category,char
+dbo,cmc_mcpm_pbp_map,mcpm_eff_dt,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Effective Date,datetime
+dbo,cmc_mcpm_pbp_map,mcpm_term_dt,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Termination Date,datetime
+dbo,cmc_mcpm_pbp_map,sgsg_id,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Subgroup ID,char
+dbo,cmc_mcpm_pbp_map,cscs_id,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Class ID,char
+dbo,cmc_mcpm_pbp_map,cspd_cat,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Category,char
+dbo,cmc_mcpm_pbp_map,cspi_id,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Plan ID,char
+dbo,cmc_mcpm_pbp_map,mcpm_rx_group,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Rx Group,varchar
+dbo,cmc_mcpm_pbp_map,mcpm_rxbin,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Rx Bin,char
+dbo,cmc_mcpm_pbp_map,mcpm_rxpcn,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Rx PCN,char
+dbo,cmc_mcpm_pbp_map,mcpm_lock_token,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Lock Token,smallint
+dbo,cmc_mcpm_pbp_map,atxr_source_id,Medicare Group  Plan Benefit Package  Low Income Subsidy level mapping,Attachment Source Id,datetime
+dbo,cmc_mcpn_pref_net,pdbc_pfx,Preferred Networks,Product Component Prefix,char
+dbo,cmc_mcpn_pref_net,mcpn_level,Preferred Networks,Preferred Network Level,char
+dbo,cmc_mcpn_pref_net,nwnw_id,Preferred Networks,Network ID,char
+dbo,cmc_mcpn_pref_net,nwpr_pfx,Preferred Networks,Network Relationship Prefix,char
+dbo,cmc_mcpn_pref_net,mcpn_last_usus_id,Preferred Networks,Last Update User ID,char
+dbo,cmc_mcpn_pref_net,mcpn_last_updt_dt,Preferred Networks,Last Update Date,datetime
+dbo,cmc_mcpn_pref_net,mcpn_lock_token,Preferred Networks,Lock Token,smallint
+dbo,cmc_mcpn_pref_net,atxr_source_id,Preferred Networks,Attachment Source Id,datetime
+dbo,cmc_mcpn_pref_net,sys_last_upd_dtm,Preferred Networks,Last Update Datetime,datetime
+dbo,cmc_mcpn_pref_net,sys_usus_id,Preferred Networks,Last Update User ID,varchar
+dbo,cmc_mcpn_pref_net,sys_dbuser_id,Preferred Networks,Last Update DBMS User ID,varchar
+dbo,cmc_mcpt_cspi_tfr,mcpt_ref_id,Mass Plan Transfer,Reference ID,char
+dbo,cmc_mcpt_cspi_tfr,syin_inst,Mass Plan Transfer,System Instance ID,bigint
+dbo,cmc_mcpt_cspi_tfr,mcpt_create_dtm,Mass Plan Transfer,Create Date Time,datetime
+dbo,cmc_mcpt_cspi_tfr,mcpt_type,Mass Plan Transfer,Type,char
+dbo,cmc_mcpt_cspi_tfr,mcpt_sts,Mass Plan Transfer,Status,char
+dbo,cmc_mcpt_cspi_tfr,usus_id,Mass Plan Transfer,User Identifier,char
+dbo,cmc_mcpt_cspi_tfr,mcpt_chg_eff_dt,Mass Plan Transfer,Change Effective Date,datetime
+dbo,cmc_mcpt_cspi_tfr,sbel_mctr_rsn,Mass Plan Transfer,Subscriber plan change Reason,char
+dbo,cmc_mcpt_cspi_tfr,meel_mctr_rsn,Mass Plan Transfer,Member plan Change reason,char
+dbo,cmc_mcpt_cspi_tfr,mcpt_cspi_id_from,Mass Plan Transfer,From Plan,char
+dbo,cmc_mcpt_cspi_tfr,mcpt_cspi_id_to,Mass Plan Transfer,To Plan,char
+dbo,cmc_mcpt_cspi_tfr,grgr_ck,Mass Plan Transfer,Group Contrived Key,int
+dbo,cmc_mcpt_cspi_tfr,sgsg_ck,Mass Plan Transfer,Subgroup ID,int
+dbo,cmc_mcpt_cspi_tfr,cscs_id,Mass Plan Transfer,Class ID,char
+dbo,cmc_mcpt_cspi_tfr,mcpt_id_card_ind,Mass Plan Transfer,ID Card Request Indicator,char
+dbo,cmc_mcpt_cspi_tfr,mcpt_mem_sel_cnt,Mass Plan Transfer,Selected Members Count,int
+dbo,cmc_mcpt_cspi_tfr,mcpt_proc_cnt,Mass Plan Transfer,Processed Count,int
+dbo,cmc_mcpt_cspi_tfr,mcpt_err_cnt,Mass Plan Transfer,Error Count,int
+dbo,cmc_mcpt_cspi_tfr,mcpt_sbra_ind,Mass Plan Transfer, Create Subscriber Rate Action,char
+dbo,cmc_mcpt_cspi_tfr,mcpt_cspi_id_new,Mass Plan Transfer,Add New Plan ID,char
+dbo,cmc_mcpt_cspi_tfr,mcpt_lock_token,Mass Plan Transfer,Lock Token,smallint
+dbo,cmc_mcpt_cspi_tfr,atxr_source_id,Mass Plan Transfer,Attachment Source Id,datetime
+dbo,cmc_mcpt_cspi_tfr,mcpt_rate_as_ind_nvl,Mass Plan Transfer, Rate Member as Indicator,char
+dbo,cmc_mcpt_cspi_tfr,mcpt_cscs_id_to_nvl,Mass Plan Transfer, Change to Class,char
+dbo,cmc_mcpt_cspi_tfr,mcpt_comm_upd_ind_nvl,Mass Plan Transfer, Update Commission Item Properties Indicator,char
+dbo,cmc_mcpv_parm_u,mcpf_source,Parameter Selections,Source of data,char
+dbo,cmc_mcpv_parm_u,mcpv_submitter,Parameter Selections,Submitter/FHG Trading Partner,varchar
+dbo,cmc_mcpv_parm_u,mcpf_trans_type,Parameter Selections,Transaction Type,char
+dbo,cmc_mcpv_parm_u,mcpf_direction,Parameter Selections,Inbound or Outbound,char
+dbo,cmc_mcpv_parm_u,mcpf_name,Parameter Selections,Parameter Name,varchar
+dbo,cmc_mcpv_parm_u,mcva_seq_no,Parameter Selections,Sequence Number,smallint
+dbo,cmc_mcpv_parm_u,mcpl_id,Parameter Selections,Parameter list ID,varchar
+dbo,cmc_mcpv_parm_u,mcpv_lock_token,Parameter Selections,Lock Token,smallint
+dbo,cmc_mcpv_parm_u,mcpv_last_upd_usid,Parameter Selections,Last update user,varchar
+dbo,cmc_mcpv_parm_u,mcpv_last_upd_dtm,Parameter Selections,Last Update Datetime,datetime
+dbo,cmc_mcrc_rslt_crit,pdbc_pfx,Results Criteria,Automatic Actions Criteria Benefit Component Prefix,char
+dbo,cmc_mcrc_rslt_crit,mcrd_context,Results Criteria,Automatic Actions Criteria Context,char
+dbo,cmc_mcrc_rslt_crit,mcrd_cat,Results Criteria,Automatic Actions Criteria Category,char
+dbo,cmc_mcrc_rslt_crit,mcrd_result,Results Criteria,Automatic Actions Criteria Business Event (Result),char
+dbo,cmc_mcrc_rslt_crit,mcrd_cause,Results Criteria,Automatic Actions Criteria Method (Cause),char
+dbo,cmc_mcrc_rslt_crit,mcrd_seq_no,Results Criteria,Automatic Actions Criteria Event Sequence Number,smallint
+dbo,cmc_mcrc_rslt_crit,mcrc_seq_no,Results Criteria,Automatic Actions Criteria Sequence Number,smallint
+dbo,cmc_mcrc_rslt_crit,mcrc_inc_exc_cd,Results Criteria,Automatic Actions Criteria  Include/Exclude Indicator,char
+dbo,cmc_mcrc_rslt_crit,mcrc_type,Results Criteria,Automatic Actions Criteria Include/Exclude Type,char
+dbo,cmc_mcrc_rslt_crit,mcrc_val_ck1,Results Criteria,Automatic Actions Criteria Included/Excluded Contrived Key,int
+dbo,cmc_mcrc_rslt_crit,mcrc_val_ck2,Results Criteria,Automatic Actions Criteria Included/Excluded Contrived Key,int
+dbo,cmc_mcrc_rslt_crit,mcrc_value1,Results Criteria,Automatic Actions Criteria Included/Excluded Entity,char
+dbo,cmc_mcrc_rslt_crit,mcrc_value2,Results Criteria,Automatic Actions Criteria Included/Excluded Entity,char
+dbo,cmc_mcrc_rslt_crit,mcrc_to_value1,Results Criteria,Automatic Actions Criteria Included/Excluded Entity High Value 1,char
+dbo,cmc_mcrc_rslt_crit,mcrc_to_value2,Results Criteria,Automatic Actions Criteria Included/Excluded Entity High Value 2,char
+dbo,cmc_mcrc_rslt_crit,mcrc_rule1,Results Criteria,N/A,char
+dbo,cmc_mcrc_rslt_crit,mcrc_rule2,Results Criteria,N/A,char
+dbo,cmc_mcrc_rslt_crit,mcrc_rule3,Results Criteria,N/A,char
+dbo,cmc_mcrc_rslt_crit,mcrc_rule4,Results Criteria,N/A,char
+dbo,cmc_mcrc_rslt_crit,mctr_entity,Results Criteria,Automatic Actions Criteria Entity,char
+dbo,cmc_mcrc_rslt_crit,mctr_type,Results Criteria,Automatic Actions Criteria User Defined Code,char
+dbo,cmc_mcrc_rslt_crit,excd_id,Results Criteria,Automatic Actions Criteria Included/Excluded Explanation Code,char
+dbo,cmc_mcrc_rslt_crit,mcrc_lock_token,Results Criteria,Lock Token,smallint
+dbo,cmc_mcrc_rslt_crit,atxr_source_id,Results Criteria,Attachment Source Id,datetime
+dbo,cmc_mcrd_rslt_def,pdbc_pfx,Results Definition Table,Automatic Actions Benefit Component Prefix,char
+dbo,cmc_mcrd_rslt_def,mcrd_context,Results Definition Table,Automatic Actions Criteria Context,char
+dbo,cmc_mcrd_rslt_def,mcrd_cat,Results Definition Table,Automatic Actions Criteria Category,char
+dbo,cmc_mcrd_rslt_def,mcrd_result,Results Definition Table,Automatic Actions Criteria Business Event (Result),char
+dbo,cmc_mcrd_rslt_def,mcrd_cause,Results Definition Table,Automatic Actions Criteria Method (Cause),char
+dbo,cmc_mcrd_rslt_def,mcrd_seq_no,Results Definition Table,Automatic Actions Criteria Event Sequence Number,smallint
+dbo,cmc_mcrd_rslt_def,mcrd_event_ind,Results Definition Table,Automatic Actions Criteria Event Indicator,char
+dbo,cmc_mcrd_rslt_def,mcrd_sub_mem_cd,Results Definition Table,Automatic Actions Criteria Member/Subscriber Indicator,char
+dbo,cmc_mcrd_rslt_def,mcrd_curr_fut_cd,Results Definition Table,Automatic Actions Criteria Timing Code (Indicator),char
+dbo,cmc_mcrd_rslt_def,mcrd_interval,Results Definition Table,Automatic Actions Criteria Days Before/After Interval,smallint
+dbo,cmc_mcrd_rslt_def,mcrd_int_cd,Results Definition Table,Automatic Actions Criteria Before/After Interval Code,char
+dbo,cmc_mcrd_rslt_def,mcrd_bat_id,Results Definition Table,Automatic Actions Criteria Batch ID,char
+dbo,cmc_mcrd_rslt_def,mcrd_lett_addr_cd,Results Definition Table,Automatic Actions Criteria Letter Attachment Indicator,char
+dbo,cmc_mcrd_rslt_def,atsy_id,Results Definition Table,Automatic Actions Criteria Letter Style ID,char
+dbo,cmc_mcrd_rslt_def,atld_id,Results Definition Table,Automatic Actions Criteria Document ID,varchar
+dbo,cmc_mcrd_rslt_def,mcrd_msg_excd_id,Results Definition Table,Automatic Actions Criteria Explanation Code,char
+dbo,cmc_mcrd_rslt_def,mcrd_act_sts,Results Definition Table,Automatic Actions Criteria Output Status Indicator,char
+dbo,cmc_mcrd_rslt_def,mcrd_mctr_uscd,Results Definition Table,Automatic Actions Criteria Output Code,char
+dbo,cmc_mcrd_rslt_def,mcrd_id_card_ind,Results Definition Table,Automatic Actions Criteria ID Card Indicator,char
+dbo,cmc_mcrd_rslt_def,mcrd_lock_token,Results Definition Table,Lock Token,smallint
+dbo,cmc_mcrd_rslt_def,atxr_source_id,Results Definition Table,Attachment Source Id,datetime
+dbo,cmc_mcre_relat_ent,mcre_id, Related Entity Indicative Data,Related Entity Identifier,char
+dbo,cmc_mcre_relat_ent,mcre_name, Related Entity Indicative Data,Related Entity Name,char
+dbo,cmc_mcre_relat_ent,mcre_type, Related Entity Indicative Data,Related Entity Type,char
+dbo,cmc_mcre_relat_ent,mcre_addr1, Related Entity Indicative Data,Related Entity Address Line 1,char
+dbo,cmc_mcre_relat_ent,mcre_addr2, Related Entity Indicative Data,Related Entity Address Line 2,char
+dbo,cmc_mcre_relat_ent,mcre_addr3, Related Entity Indicative Data,Related Entity Address Line 3,char
+dbo,cmc_mcre_relat_ent,mcre_city, Related Entity Indicative Data,City,char
+dbo,cmc_mcre_relat_ent,mcre_state, Related Entity Indicative Data,State,char
+dbo,cmc_mcre_relat_ent,mcre_zip, Related Entity Indicative Data,Zip Code,char
+dbo,cmc_mcre_relat_ent,mcre_county, Related Entity Indicative Data,County,char
+dbo,cmc_mcre_relat_ent,mcre_ctry_cd, Related Entity Indicative Data,Country,char
+dbo,cmc_mcre_relat_ent,mcre_phone, Related Entity Indicative Data,Related Entity Phone Number,char
+dbo,cmc_mcre_relat_ent,mcre_phone_ext, Related Entity Indicative Data,Phone Extension,char
+dbo,cmc_mcre_relat_ent,mcre_fax, Related Entity Indicative Data,Related Entity Fax Number,char
+dbo,cmc_mcre_relat_ent,mcre_fax_ext, Related Entity Indicative Data,Fax Extension,char
+dbo,cmc_mcre_relat_ent,mcre_email, Related Entity Indicative Data,Email,char
+dbo,cmc_mcre_relat_ent,mcre_name_xlow, Related Entity Indicative Data,Name Case Insensitive Field,char
+dbo,cmc_mcre_relat_ent,mcre_city_xlow, Related Entity Indicative Data,Case Insensitive Field,char
+dbo,cmc_mcre_relat_ent,mcre_mctr_lang, Related Entity Indicative Data,Related Entity Language,char
+dbo,cmc_mcre_relat_ent,mcre_extn_addr_ind, Related Entity Indicative Data,Related Entity external address indicator,char
+dbo,cmc_mcre_relat_ent,mcre_mctr_code, Related Entity Indicative Data,Related Entity Code,char
+dbo,cmc_mcre_relat_ent,mcre_desc, Related Entity Indicative Data,Related Entity Description,char
+dbo,cmc_mcre_relat_ent,mcre_lock_token, Related Entity Indicative Data,Lock Token,smallint
+dbo,cmc_mcre_relat_ent,atxr_source_id, Related Entity Indicative Data,Attachment Source Id,datetime
+dbo,cmc_mcre_relat_ent,sys_last_upd_dtm, Related Entity Indicative Data,Last Update Datetime,datetime
+dbo,cmc_mcre_relat_ent,sys_usus_id, Related Entity Indicative Data,Last Update User ID,varchar
+dbo,cmc_mcre_relat_ent,sys_dbuser_id, Related Entity Indicative Data,Last Update DBMS User ID,varchar
+dbo,cmc_mcrl_meme_crel,mcrl_meme_crel_cd,Member Comprehensive Relationship Code,Comprehensive Relationship Code,char
+dbo,cmc_mcrl_meme_crel,mcrl_crel_desc,Member Comprehensive Relationship Code,Description,varchar
+dbo,cmc_mcrl_meme_crel,mcrl_crel_sel_ind,Member Comprehensive Relationship Code,Selectivity Indicator,char
+dbo,cmc_mcrl_meme_crel,mcrl_sub_dep_cd,Member Comprehensive Relationship Code,Subscriber/Dependent Code,char
+dbo,cmc_mcrl_meme_crel,mcrl_sys_ind,Member Comprehensive Relationship Code,N/A,char
+dbo,cmc_mcrl_meme_crel,mcrl_lock_token,Member Comprehensive Relationship Code,Lock Token,smallint
+dbo,cmc_mcrp_relat_per,mcrp_id,Responsible Person Data,Responsible Person Identifier,char
+dbo,cmc_mcrp_relat_per,mcrp_last_name,Responsible Person Data,Responsible Person Last Name,char
+dbo,cmc_mcrp_relat_per,mcrp_first_name,Responsible Person Data,Responsible Person First Name,char
+dbo,cmc_mcrp_relat_per,mcrp_mid_init,Responsible Person Data,Responsible Person Middle Initial,char
+dbo,cmc_mcrp_relat_per,mcrp_title,Responsible Person Data,Title,char
+dbo,cmc_mcrp_relat_per,mcrp_addr1,Responsible Person Data,Address Line 1,char
+dbo,cmc_mcrp_relat_per,mcrp_addr2,Responsible Person Data,Address Line 2,char
+dbo,cmc_mcrp_relat_per,mcrp_addr3,Responsible Person Data,Address Line 3,char
+dbo,cmc_mcrp_relat_per,mcrp_city,Responsible Person Data,City,char
+dbo,cmc_mcrp_relat_per,mcrp_state,Responsible Person Data,State,char
+dbo,cmc_mcrp_relat_per,mcrp_zip,Responsible Person Data,Zip Code,char
+dbo,cmc_mcrp_relat_per,mcrp_county,Responsible Person Data,County,char
+dbo,cmc_mcrp_relat_per,mcrp_ctry_cd,Responsible Person Data,Country,char
+dbo,cmc_mcrp_relat_per,mcrp_phone,Responsible Person Data,Phone Number,char
+dbo,cmc_mcrp_relat_per,mcrp_phone_ext,Responsible Person Data,Phone Extension,char
+dbo,cmc_mcrp_relat_per,mcrp_fax,Responsible Person Data,Fax Number,char
+dbo,cmc_mcrp_relat_per,mcrp_fax_ext,Responsible Person Data,Fax Extension,char
+dbo,cmc_mcrp_relat_per,mcrp_email,Responsible Person Data,Email,char
+dbo,cmc_mcrp_relat_per,mcrp_pin_no,Responsible Person Data,Personal Identification Number,char
+dbo,cmc_mcrp_relat_per,mcrp_pin_word,Responsible Person Data,Personal Identification Word,char
+dbo,cmc_mcrp_relat_per,mcrp_last_name_xlow,Responsible Person Data,Name search case insensitive,char
+dbo,cmc_mcrp_relat_per,mcrp_city_xlow,Responsible Person Data,City search case insensitive,char
+dbo,cmc_mcrp_relat_per,mcrp_mctr_lang,Responsible Person Data,Language indicator,char
+dbo,cmc_mcrp_relat_per,mcrp_extn_addr_ind,Responsible Person Data,External address indicator,char
+dbo,cmc_mcrp_relat_per,mcrp_lock_token,Responsible Person Data,Lock Token,smallint
+dbo,cmc_mcrp_relat_per,atxr_source_id,Responsible Person Data,Attachment Source Id,datetime
+dbo,cmc_mcrv_rel_value,mcrv_pref_no,Provider Hierarchy Values,Sequence (preference order),smallint
+dbo,cmc_mcrv_rel_value,mcrv_rel_value_cd,Provider Hierarchy Values,Provider Relationship Hierarchy Value code,char
+dbo,cmc_mcrv_rel_value,mcrv_cd_desc,Provider Hierarchy Values,Provider Relationship Hierarchy Value Description,varchar
+dbo,cmc_mcrv_rel_value,mcrv_addl_data,Provider Hierarchy Values,Additional Data,varchar
+dbo,cmc_mcrv_rel_value,mcrv_lock_token,Provider Hierarchy Values,Lock Token,smallint
+dbo,cmc_mcrv_rel_value,atxr_source_id,Provider Hierarchy Values,Attachment Source Id,datetime
+dbo,cmc_mcrv_rel_value,sys_last_upd_dtm,Provider Hierarchy Values,Last Update Datetime,datetime
+dbo,cmc_mcrv_rel_value,sys_usus_id,Provider Hierarchy Values,Last Update User ID,varchar
+dbo,cmc_mcrv_rel_value,sys_dbuser_id,Provider Hierarchy Values,Last Update DBMS User ID,varchar
+dbo,cmc_mcsa_auto_acts,mcsa_ck,Auto Action Results,Automatic Actions Contrived Key,int
+dbo,cmc_mcsa_auto_acts,grgr_ck,Auto Action Results,Automatic Actions Group Contrived Key,int
+dbo,cmc_mcsa_auto_acts,sbsb_ck,Auto Action Results,Automatic Actions Subscriber Contrived Key,int
+dbo,cmc_mcsa_auto_acts,meme_ck,Auto Action Results,Member Contrived Key,int
+dbo,cmc_mcsa_auto_acts,mcrd_bat_id,Auto Action Results,Auto Actions Batch ID,char
+dbo,cmc_mcsa_auto_acts,sgsg_ck,Auto Action Results,Automatic Actions Subgroup Contrived Key,int
+dbo,cmc_mcsa_auto_acts,pagr_ck,Auto Action Results,Automatic Actions Parent Group Contrived Key,int
+dbo,cmc_mcsa_auto_acts,mcrd_context,Auto Action Results,Automatic Actions Context,char
+dbo,cmc_mcsa_auto_acts,mcrd_cat,Auto Action Results,Automatic Actions Category,char
+dbo,cmc_mcsa_auto_acts,mcrd_result,Auto Action Results,Automatic Actions Business Event (Result),char
+dbo,cmc_mcsa_auto_acts,mcrd_cause,Auto Action Results,Automatic Action Method (Cause),char
+dbo,cmc_mcsa_auto_acts,mcsa_rslt_eff_dt,Auto Action Results,Automatic Action Criteria Business Event (Results) Effective Date,datetime
+dbo,cmc_mcsa_auto_acts,pdbc_pfx,Auto Action Results,Automatic Actions Prefix ID,char
+dbo,cmc_mcsa_auto_acts,pdpd_id,Auto Action Results,Automatic Action Product ID,char
+dbo,cmc_mcsa_auto_acts,cspd_cat,Auto Action Results,Automatic Action Product Category,char
+dbo,cmc_mcsa_auto_acts,cspi_id,Auto Action Results,Automatic Action Plan ID,char
+dbo,cmc_mcsa_auto_acts,mcsa_from_app_id,Auto Action Results,Automatic Action Last Plan ID for a Change Event,char
+dbo,cmc_mcsa_auto_acts,mcsa_from_app_type,Auto Action Results,Automatic Action Last Family Coverage Code,char
+dbo,cmc_mcsa_auto_acts,mcsa_to_app_id,Auto Action Results,Automatic Action New Plan ID from the Change Event,char
+dbo,cmc_mcsa_auto_acts,mcsa_to_app_type,Auto Action Results,Automatic Action New Family Coverage Code from the Change Event,char
+dbo,cmc_mcsa_auto_acts,mcsa_rule1,Auto Action Results,N/A,char
+dbo,cmc_mcsa_auto_acts,mcsa_rule2,Auto Action Results,N/A,char
+dbo,cmc_mcsa_auto_acts,mcsa_rule3,Auto Action Results,N/A,char
+dbo,cmc_mcsa_auto_acts,mcsa_rule4,Auto Action Results,N/A,char
+dbo,cmc_mcsa_auto_acts,mctr_entity,Auto Action Results,Automatic Action Reason Entity,char
+dbo,cmc_mcsa_auto_acts,mctr_type,Auto Action Results,Automatic Actions Reason Type,char
+dbo,cmc_mcsa_auto_acts,mctr_value,Auto Action Results,Automatic Action Reason,char
+dbo,cmc_mcsa_auto_acts,excd_id,Auto Action Results,Automatic Action Explanation ID,char
+dbo,cmc_mcsa_auto_acts,mepe_sys_inel_cd,Auto Action Results,Automatic Action Ineligibility Code,char
+dbo,cmc_mcsa_auto_acts,atsy_id,Auto Action Results,Automatic Action Letter Style ID,char
+dbo,cmc_mcsa_auto_acts,atld_id,Auto Action Results,Automatic Action Document ID,varchar
+dbo,cmc_mcsa_auto_acts,mcrd_msg_excd_id,Auto Action Results,Automatic Action Message ID,char
+dbo,cmc_mcsa_auto_acts,mcrd_act_sts,Auto Action Results,Automatic Action Output Status,char
+dbo,cmc_mcsa_auto_acts,mcsa_act_dt,Auto Action Results,Automatic Action Batch Schedule Date,datetime
+dbo,cmc_mcsa_auto_acts,mcrd_mctr_uscd,Auto Action Results,Automatic Action Output Code,char
+dbo,cmc_mcsa_auto_acts,mcsa_sub_sts,Auto Action Results,N/A,char
+dbo,cmc_mcsa_auto_acts,mcsa_mem_sts,Auto Action Results,N/A,char
+dbo,cmc_mcsa_auto_acts,mcsa_state,Auto Action Results,Automatic Action Addressee State of Residence,char
+dbo,cmc_mcsa_auto_acts,mcsa_create_dtm,Auto Action Results,Automatic Action Create Date/Time,datetime
+dbo,cmc_mcsa_auto_acts,usus_id,Auto Action Results,User Identifier,char
+dbo,cmc_mcsa_auto_acts,mcsa_prcs_sts,Auto Action Results,Automatic Action Processing Status,char
+dbo,cmc_mcsa_auto_acts,mcsa_prcs_dtm,Auto Action Results,Automatic Action Scheduled for & Processed On Batch Date,datetime
+dbo,cmc_mcsa_auto_acts,syin_inst,Auto Action Results,Automatic Action Instance ID,bigint
+dbo,cmc_mcsa_auto_acts,mcrd_lock_token,Auto Action Results,Lock Token,smallint
+dbo,cmc_mcsa_auto_acts,atxr_source_id,Auto Action Results,Attachment Source Id,datetime
+dbo,cmc_mcsg_cd_group,mctr_entity,Managed Care Specialty Grouping Table,Entity,char
+dbo,cmc_mcsg_cd_group,mctr_type,Managed Care Specialty Grouping Table,Type,char
+dbo,cmc_mcsg_cd_group,mctr_value,Managed Care Specialty Grouping Table,Code,char
+dbo,cmc_mcsg_cd_group,mcsg_group,Managed Care Specialty Grouping Table,Grouping,char
+dbo,cmc_mcsg_cd_group,mcsg_lock_token,Managed Care Specialty Grouping Table,Lock Token,smallint
+dbo,cmc_mcsg_cd_group,atxr_source_id,Managed Care Specialty Grouping Table,Attachment Source Id,datetime
+dbo,cmc_mctd_trr_dtl,metr_tr_reply,Transaction Reply Report details,Transaction Reply Code,char
+dbo,cmc_mctd_trr_dtl,metr_tr_type,Transaction Reply Report details,Transaction Type,char
+dbo,cmc_mctd_trr_dtl,mcto_proc_order,Transaction Reply Report details,Processing Order,smallint
+dbo,cmc_mctd_trr_dtl,mcod_seq_no,Transaction Reply Report details,Sequence Number,smallint
+dbo,cmc_mctd_trr_dtl,mctd_source_tbl,Transaction Reply Report details,Field Source Table,varchar
+dbo,cmc_mctd_trr_dtl,mctd_source_val,Transaction Reply Report details,Field Source Value,varchar
+dbo,cmc_mctd_trr_dtl,mctd_lock_token,Transaction Reply Report details,Lock Token,smallint
+dbo,cmc_mctd_trr_dtl,atxr_source_id,Transaction Reply Report details,Attachment Source Id,datetime
+dbo,cmc_mcti_tax_info,mcti_enty_id,Tax Information for Providers/Commission Entities,Entity ID,char
+dbo,cmc_mcti_tax_info,mcti_type,Tax Information for Providers/Commission Entities,Type,char
+dbo,cmc_mcti_tax_info,mcti_eff_dt,Tax Information for Providers/Commission Entities,Effective Date,datetime
+dbo,cmc_mcti_tax_info,mcti_term_dt,Tax Information for Providers/Commission Entities,Termination Date,datetime
+dbo,cmc_mcti_tax_info,mcti_mctr_trsn,Tax Information for Providers/Commission Entities,Termination Reason,char
+dbo,cmc_mcti_tax_info,mctn_id,Tax Information for Providers/Commission Entities,Tax ID,char
+dbo,cmc_mcti_tax_info,mctn_type,Tax Information for Providers/Commission Entities,Tax ID Type,char
+dbo,cmc_mcti_tax_info,mcti_lock_token,Tax Information for Providers/Commission Entities,Lock Token,smallint
+dbo,cmc_mcti_tax_info,atxr_source_id,Tax Information for Providers/Commission Entities,Attachment Source Id,datetime
+dbo,cmc_mctn_tax_name,mctn_id,Tax Name,Tax ID,char
+dbo,cmc_mctn_tax_name,mctn_type,Tax Name,Type,char
+dbo,cmc_mctn_tax_name,mctn_name,Tax Name,Corporation Tax Name,char
+dbo,cmc_mctn_tax_name,mctn_lst_name,Tax Name,Last Name,char
+dbo,cmc_mctn_tax_name,mctn_first_name,Tax Name,First Name,char
+dbo,cmc_mctn_tax_name,mctn_mid_init,Tax Name,Middle Initial,char
+dbo,cmc_mctn_tax_name,mctn_title,Tax Name,Title,char
+dbo,cmc_mctn_tax_name,mctn_status,Tax Name,Tax Reporting Status,char
+dbo,cmc_mctn_tax_name,mctn_addr1,Tax Name,Address Line One,char
+dbo,cmc_mctn_tax_name,mctn_addr2,Tax Name,Address Line two,char
+dbo,cmc_mctn_tax_name,mctn_addr3,Tax Name,Address Line three,char
+dbo,cmc_mctn_tax_name,mctn_city,Tax Name,City,char
+dbo,cmc_mctn_tax_name,mctn_state,Tax Name,State,char
+dbo,cmc_mctn_tax_name,mctn_zip,Tax Name,Zip Code,char
+dbo,cmc_mctn_tax_name,mctn_county,Tax Name,County,char
+dbo,cmc_mctn_tax_name,mctn_ctry_cd,Tax Name,Country,char
+dbo,cmc_mctn_tax_name,mctn_phone,Tax Name,Phone Number,char
+dbo,cmc_mctn_tax_name,mctn_phone_ext,Tax Name,Phone number extension,char
+dbo,cmc_mctn_tax_name,mctn_fax,Tax Name,Fax Number,char
+dbo,cmc_mctn_tax_name,mctn_fax_ext,Tax Name,Fax Number Extension,char
+dbo,cmc_mctn_tax_name,mctn_email,Tax Name,Internet/Email,char
+dbo,cmc_mctn_tax_name,mctn_lock_token,Tax Name,Lock Token,smallint
+dbo,cmc_mctn_tax_name,atxr_source_id,Tax Name,Attachment Source Id,datetime
+dbo,cmc_mcto_trr_oper,metr_tr_reply,Transaction Reply Report Operations,Transaction Reply Code,char
+dbo,cmc_mcto_trr_oper,metr_tr_type,Transaction Reply Report Operations,Transaction Type,char
+dbo,cmc_mcto_trr_oper,mcto_proc_order,Transaction Reply Report Operations,Processing Order,smallint
+dbo,cmc_mcto_trr_oper,mcop_oper_id,Transaction Reply Report Operations,Operation ID,varchar
+dbo,cmc_mcto_trr_oper,mcto_lock_token,Transaction Reply Report Operations,Lock Token,smallint
+dbo,cmc_mcto_trr_oper,atxr_source_id,Transaction Reply Report Operations,Attachment Source Id,datetime
+dbo,cmc_mctr_cd_trans,mctr_entity,User Defined Code Trans lations,User Defined Codes Entity,char
+dbo,cmc_mctr_cd_trans,mctr_type,User Defined Code Trans lations,User Defined Code Type,char
+dbo,cmc_mctr_cd_trans,mctr_value,User Defined Code Trans lations,User Defined Code,char
+dbo,cmc_mctr_cd_trans,mctr_desc,User Defined Code Trans lations,User Defined Code Description,varchar
+dbo,cmc_mctr_cd_trans,mctr_filter,User Defined Code Trans lations,User Defined Code Filter,char
+dbo,cmc_mctr_cd_trans,mctr_value_size,User Defined Code Trans lations,User Defined Codes Value Size,smallint
+dbo,cmc_mctr_cd_trans,mctr_sort,User Defined Code Trans lations,Sort,int
+dbo,cmc_mctr_cd_trans,mctr_lock_token,User Defined Code Trans lations,Lock Token,smallint
+dbo,cmc_mctr_cd_trans,atxr_source_id,User Defined Code Trans lations,Attachment Source Id,datetime
+dbo,cmc_mctr_cd_trans,sys_last_upd_dtm,User Defined Code Trans lations,Last Update Datetime,datetime
+dbo,cmc_mctr_cd_trans,sys_usus_id,User Defined Code Trans lations,Last Update User ID,varchar
+dbo,cmc_mctr_cd_trans,sys_dbuser_id,User Defined Code Trans lations,Last Update DBMS User ID,varchar
+dbo,cmc_mcva_value_a,mcpf_source,Parameter  Value  Availability,Source of data,char
+dbo,cmc_mcva_value_a,mcpf_trans_type,Parameter  Value  Availability,Transaction Type,char
+dbo,cmc_mcva_value_a,mcpf_direction,Parameter  Value  Availability,Inbound or Outbound,char
+dbo,cmc_mcva_value_a,mcpf_name,Parameter  Value  Availability,Parameter Name,varchar
+dbo,cmc_mcva_value_a,mcva_seq_no,Parameter  Value  Availability,Sequence Number,smallint
+dbo,cmc_mcva_value_a,mcva_value,Parameter  Value  Availability,Parameter Value,varchar
+dbo,cmc_mcva_value_a,mcva_desc,Parameter  Value  Availability,Parameter Value Description,varchar
+dbo,cmc_mcva_value_a,mcva_lock_token,Parameter  Value  Availability,Lock Token,smallint
+dbo,cmc_mcva_value_a,mcva_last_upd_usid,Parameter  Value  Availability,Last update user,varchar
+dbo,cmc_mcva_value_a,mcva_last_upd_dtm,Parameter  Value  Availability,Last Update Datetime,datetime
+dbo,cmc_meac_accum,meme_ck, ,Member Contrived Key,int
+dbo,cmc_meac_accum,pdpd_acc_sfx, ,Product Accumulator Suffix,char
+dbo,cmc_meac_accum,meac_acc_type, , ,char
+dbo,cmc_meac_accum,acac_acc_no, ,EOB Amount Accumulator Number,smallint
+dbo,cmc_meac_accum,grgr_ck, ,Group Address Line 1,int
+dbo,cmc_meac_accum,meac_cur_year, , ,datetime
+dbo,cmc_meac_accum,meac_yr1_amt1, , ,money
+dbo,cmc_meac_accum,meac_yr1_amt2, , ,money
+dbo,cmc_meac_accum,meac_yr1_amt3, , ,money
+dbo,cmc_meac_accum,meac_yr2_amt1, , ,money
+dbo,cmc_meac_accum,meac_yr2_amt2, , ,money
+dbo,cmc_meac_accum,meac_yr2_amt3, , ,money
+dbo,cmc_meac_accum,meac_yr3_amt1, , ,money
+dbo,cmc_meac_accum,meac_yr3_amt2, , ,money
+dbo,cmc_meac_accum,meac_yr3_amt3, , ,money
+dbo,cmc_meac_accum,meac_lock_token, ,Lock Token,smallint
+dbo,cmc_meac_accum,meac_lst_clcl_id_nvl, , ,char
+dbo,cmc_meac_accum,meac_mctr_rsn_nvl, , ,char
+dbo,cmc_meac_accum,syin_inst, ,System Instance,int
+dbo,cmc_meac_accum_old,meme_ck, Former Accumulator Data at Member Level,Member Contrived Key,int
+dbo,cmc_meac_accum_old,pdpd_acc_sfx, Former Accumulator Data at Member Level,Product Accumulator Suffix,char
+dbo,cmc_meac_accum_old,meac_acc_type, Former Accumulator Data at Member Level, ,char
+dbo,cmc_meac_accum_old,acac_acc_no, Former Accumulator Data at Member Level,EOB Amount Accumulator Number,smallint
+dbo,cmc_meac_accum_old,grgr_ck, Former Accumulator Data at Member Level,Group Address Line 1,int
+dbo,cmc_meac_accum_old,meac_cur_year, Former Accumulator Data at Member Level, ,datetime
+dbo,cmc_meac_accum_old,meac_yr1_amt1, Former Accumulator Data at Member Level, ,money
+dbo,cmc_meac_accum_old,meac_yr1_amt2, Former Accumulator Data at Member Level, ,money
+dbo,cmc_meac_accum_old,meac_yr1_amt3, Former Accumulator Data at Member Level, ,money
+dbo,cmc_meac_accum_old,meac_yr2_amt1, Former Accumulator Data at Member Level, ,money
+dbo,cmc_meac_accum_old,meac_yr2_amt2, Former Accumulator Data at Member Level, ,money
+dbo,cmc_meac_accum_old,meac_yr2_amt3, Former Accumulator Data at Member Level, ,money
+dbo,cmc_meac_accum_old,meac_yr3_amt1, Former Accumulator Data at Member Level, ,money
+dbo,cmc_meac_accum_old,meac_yr3_amt2, Former Accumulator Data at Member Level, ,money
+dbo,cmc_meac_accum_old,meac_yr3_amt3, Former Accumulator Data at Member Level, ,money
+dbo,cmc_meac_accum_old,meac_lock_token, Former Accumulator Data at Member Level,Lock Token,smallint
+dbo,cmc_meac_accum_old,meac_lst_clcl_id_nvl, Former Accumulator Data at Member Level, ,char
+dbo,cmc_meac_accum_old,meac_mctr_rsn_nvl, Former Accumulator Data at Member Level, ,char
+dbo,cmc_meac_accum_old,syin_inst, Former Accumulator Data at Member Level,System Instance,int
+dbo,cmc_mear_addr_res,meme_ck,Medicare Residence Address,Member Contrived Key,int
+dbo,cmc_mear_addr_res,memi_seq_no,Medicare Residence Address,Sequence Number,smallint
+dbo,cmc_mear_addr_res,mear_eff_dt,Medicare Residence Address,Effective Date,datetime
+dbo,cmc_mear_addr_res,mear_action,Medicare Residence Address,Action Code,char
+dbo,cmc_mear_addr_res,mear_term_dt,Medicare Residence Address,Termination Date,datetime
+dbo,cmc_mear_addr_res,mear_addr1,Medicare Residence Address,Residence Address Line 1,varchar
+dbo,cmc_mear_addr_res,mear_addr2,Medicare Residence Address,Residence Address Line 2,varchar
+dbo,cmc_mear_addr_res,mear_city,Medicare Residence Address,City,varchar
+dbo,cmc_mear_addr_res,mear_state,Medicare Residence Address,Residence State,char
+dbo,cmc_mear_addr_res,mear_zip,Medicare Residence Address,Residence Zip,varchar
+dbo,cmc_mear_addr_res,mear_addl_data,Medicare Residence Address,Additional Data,varchar
+dbo,cmc_mear_addr_res,mear_lock_token,Medicare Residence Address,Lock Token,smallint
+dbo,cmc_meas_ss_accum,meme_ck,Individual Specific Stop Loss Accumulation,Member Contrived Key,int
+dbo,cmc_meas_ss_accum,blei_ck,Individual Specific Stop Loss Accumulation,Billing Entity contrived key,int
+dbo,cmc_meas_ss_accum,afcp_per_no,Individual Specific Stop Loss Accumulation,Contract Period Number,int
+dbo,cmc_meas_ss_accum,afai_ck,Individual Specific Stop Loss Accumulation,AFA Contrived Key,int
+dbo,cmc_meas_ss_accum,meas_ssl_amt,Individual Specific Stop Loss Accumulation,Stop Loss Amount,money
+dbo,cmc_meas_ss_accum,meas_exc_amt,Individual Specific Stop Loss Accumulation,Excess of Stop Loss Amount,money
+dbo,cmc_meas_ss_accum,afsl_tier_no,Individual Specific Stop Loss Accumulation, Specific Stop Loss Tier,smallint
+dbo,cmc_meas_ss_accum,meas_lock_token,Individual Specific Stop Loss Accumulation,Lock Token,smallint
+dbo,cmc_meas_ss_accum,atxr_source_id,Individual Specific Stop Loss Accumulation,Attachment Source Id,datetime
+dbo,cmc_meca_cdh_act,meca_row_id,Consumer Directed Activity table-triggers,Row ID Identity,numeric
+dbo,cmc_meca_cdh_act,grgr_ck,Consumer Directed Activity table-triggers,Group Contrived Key,int
+dbo,cmc_meca_cdh_act,grdc_pfx,Consumer Directed Activity table-triggers,Group Debit Card/Bank relationship prefix,char
+dbo,cmc_meca_cdh_act,sbsb_ck,Consumer Directed Activity table-triggers,Subscriber contrived key,int
+dbo,cmc_meca_cdh_act,meca_acct_type,Consumer Directed Activity table-triggers,CDH- Account Type,char
+dbo,cmc_meca_cdh_act,meca_type,Consumer Directed Activity table-triggers,Population level for trigger row,char
+dbo,cmc_meca_cdh_act,meca_sts,Consumer Directed Activity table-triggers,Status of the rows,char
+dbo,cmc_meca_cdh_act,meca_create_dtm,Consumer Directed Activity table-triggers,Create Date and Time for the row,datetime
+dbo,cmc_meca_cdh_act,meca_addl_data,Consumer Directed Activity table-triggers,for future use,varchar
+dbo,cmc_meca_cdh_act,meca_lock_token,Consumer Directed Activity table-triggers,Lock Token,smallint
+dbo,cmc_meca_cdh_act,atxr_source_id,Consumer Directed Activity table-triggers,Attachment Source Id,datetime
+dbo,cmc_mecb_cob,meme_ck,Member COB Information Data,Member Contrived Key,int
+dbo,cmc_mecb_cob,mecb_insur_type,Member COB Information Data,Insurance Type,char
+dbo,cmc_mecb_cob,mecb_insur_order,Member COB Information Data,Insurance Order,char
+dbo,cmc_mecb_cob,mecb_mctr_styp,Member COB Information Data, Supplemental Drug Type,char
+dbo,cmc_mecb_cob,mecb_eff_dt,Member COB Information Data,Coordination of Benefits Effective Date,datetime
+dbo,cmc_mecb_cob,mecb_term_dt,Member COB Information Data,Termination Date,datetime
+dbo,cmc_mecb_cob,mecb_mctr_trsn,Member COB Information Data,Termination Reason,char
+dbo,cmc_mecb_cob,grgr_ck,Member COB Information Data,Group Contrived Key,int
+dbo,cmc_mecb_cob,mcre_id,Member COB Information Data,Coordination of Benefits Carrier Identifier,char
+dbo,cmc_mecb_cob,mecb_policy_id,Member COB Information Data,Policy Identifier,varchar
+dbo,cmc_mecb_cob,mecb_mctr_msp,Member COB Information Data,Medicare Secondary Payer Type,char
+dbo,cmc_mecb_cob,mecb_mctr_ptyp,Member COB Information Data,Prescription Drug Coverage Type,char
+dbo,cmc_mecb_cob,mecb_rxbin,Member COB Information Data,Prescription Drug Bin Number,char
+dbo,cmc_mecb_cob,mecb_rxpcn,Member COB Information Data,Prescription Drug PCN Number,varchar
+dbo,cmc_mecb_cob,mecb_rx_group,Member COB Information Data,Prescription Drug Group Number,varchar
+dbo,cmc_mecb_cob,mecb_rx_id,Member COB Information Data,Prescription Drug ID Number,varchar
+dbo,cmc_mecb_cob,mecb_last_ver_dt,Member COB Information Data,Last Verification Date,datetime
+dbo,cmc_mecb_cob,mecb_last_ver_name,Member COB Information Data,Last Verification Name,varchar
+dbo,cmc_mecb_cob,mecb_mctr_vmth,Member COB Information Data,Last Verification Method,char
+dbo,cmc_mecb_cob,mecb_loi_start_dt,Member COB Information Data,Claim LOI Start Date,datetime
+dbo,cmc_mecb_cob,mecb_prim_last_nm,Member COB Information Data,Last Name of Primary COB holder,varchar
+dbo,cmc_mecb_cob,mecb_prim_first_nm,Member COB Information Data,First Name of Primary COB holder,varchar
+dbo,cmc_mecb_cob,mecb_prim_id,Member COB Information Data,ID of Primary COB holder,varchar
+dbo,cmc_mecb_cob,mecb_lock_token,Member COB Information Data,Lock Token,smallint
+dbo,cmc_mecb_cob,atxr_source_id,Member COB Information Data,Attachment Source Id,datetime
+dbo,cmc_mecb_cob,sys_last_upd_dtm,Member COB Information Data,Last Update Datetime,datetime
+dbo,cmc_mecb_cob,sys_usus_id,Member COB Information Data,Last Update User ID,varchar
+dbo,cmc_mecb_cob,sys_dbuser_id,Member COB Information Data,Last Update DBMS User ID,varchar
+dbo,cmc_mecd_medicaid,meme_ck,Medicaid Information,Member Contrived Key,int
+dbo,cmc_mecd_medicaid,mecd_eff_dt,Medicaid Information,Effective Date,datetime
+dbo,cmc_mecd_medicaid,mecd_term_dt,Medicaid Information,Termination Date,datetime
+dbo,cmc_mecd_medicaid,grgr_ck,Medicaid Information,Group Contrived Key,int
+dbo,cmc_mecd_medicaid,mecd_auto_assn_ind,Medicaid Information,Auto Assign Indicator,char
+dbo,cmc_mecd_medicaid,mecd_auto_assn_dt,Medicaid Information,Auto-Assign Date,datetime
+dbo,cmc_mecd_medicaid,mecd_mctr_mdct,Medicaid Information,Medicaid County Code,char
+dbo,cmc_mecd_medicaid,mecd_pay_mctr_mdct,Medicaid Information,Medicaid Pay County,char
+dbo,cmc_mecd_medicaid,mecd_mctr_mdst,Medicaid Information,Medicaid State Code,char
+dbo,cmc_mecd_medicaid,mecd_lock_ind,Medicaid Information,Lock-In Period Exists,char
+dbo,cmc_mecd_medicaid,mecd_mctr_aidc,Medicaid Information,Aid Category,char
+dbo,cmc_mecd_medicaid,mecd_loc_fund_ind,Medicaid Information,Local Public Funds Used,char
+dbo,cmc_mecd_medicaid,mecd_lock_token,Medicaid Information,Lock Token,smallint
+dbo,cmc_mecd_medicaid,atxr_source_id,Medicaid Information,Attachment Source Id,datetime
+dbo,cmc_mech_clm_hold,meme_ck,Claims Payment Hold Information,Member Contrived Key,int
+dbo,cmc_mech_clm_hold,mech_eff_dt,Claims Payment Hold Information,Effective Date of the Claims Payment Hold,datetime
+dbo,cmc_mech_clm_hold,mech_term_dt,Claims Payment Hold Information,Termination Date of the Claims Payment Hold,datetime
+dbo,cmc_mech_clm_hold,mech_date_ind,Claims Payment Hold Information,Date Type of the Claims Payment Hold,char
+dbo,cmc_mech_clm_hold,clst_mctr_reas,Claims Payment Hold Information,Claim Status Reason Code,char
+dbo,cmc_mech_clm_hold,mech_sts,Claims Payment Hold Information,Status Indicator,char
+dbo,cmc_mech_clm_hold,atsy_id,Claims Payment Hold Information,Letter Style,char
+dbo,cmc_mech_clm_hold,atld_id,Claims Payment Hold Information,Document Identification Number,varchar
+dbo,cmc_mech_clm_hold,mech_lock_token,Claims Payment Hold Information,Lock Token,smallint
+dbo,cmc_mech_clm_hold,atxr_source_id,Claims Payment Hold Information,Attachment Source Id,datetime
+dbo,cmc_mecm_comm,meme_ck,Member Communication Preference,Member Contrived Key,int
+dbo,cmc_mecm_comm,mecm_eff_dt,Member Communication Preference, Effective Date,datetime
+dbo,cmc_mecm_comm,mecm_mctr_ctyp,Member Communication Preference,Communication Type,char
+dbo,cmc_mecm_comm,mecm_mctr_cmth,Member Communication Preference,Member Communication Preference,char
+dbo,cmc_mecm_comm,mecm_term_dt,Member Communication Preference,Termination Date,datetime
+dbo,cmc_mecm_comm,mecm_mctr_trsn,Member Communication Preference,Termination Reason,char
+dbo,cmc_mecm_comm,grgr_ck,Member Communication Preference,Group Contrived Key,int
+dbo,cmc_mecm_comm,mecm_opt_out,Member Communication Preference,Opt Out Indicator,char
+dbo,cmc_mecm_comm,mecm_mctr_lang,Member Communication Preference,Member Language Preference,char
+dbo,cmc_mecm_comm,mecm_email,Member Communication Preference,Member Email,varchar
+dbo,cmc_mecm_comm,mecm_sms_text,Member Communication Preference,Member Text Message Number,varchar
+dbo,cmc_mecm_comm,mecm_sbad_type,Member Communication Preference,Member Address Type,char
+dbo,cmc_mecm_comm,mecm_rcvd_dt,Member Communication Preference,Received Date,datetime
+dbo,cmc_mecm_comm,mecm_lock_token,Member Communication Preference,Lock Token,smallint
+dbo,cmc_mecm_comm,atxr_source_id,Member Communication Preference,Attachment Source Id,datetime
+dbo,cmc_mecm_comm,sys_last_upd_dtm,Member Communication Preference,Last Update Datetime,datetime
+dbo,cmc_mecm_comm,sys_usus_id,Member Communication Preference,Last Update User ID,varchar
+dbo,cmc_mecm_comm,sys_dbuser_id,Member Communication Preference,Last Update DBMS User ID,varchar
+dbo,cmc_mecp_cdh_prepr,grgr_ck,CDH Activity batch,Group contrived key,int
+dbo,cmc_mecp_cdh_prepr,sbsb_ck_low,CDH Activity batch, Low SBSB_CK for the group,int
+dbo,cmc_mecp_cdh_prepr,sbsb_ck_high,CDH Activity batch,  High SBSB_CK for the group,int
+dbo,cmc_mecp_cdh_prepr,mecp_weight,CDH Activity batch,Weight,int
+dbo,cmc_mecp_cdh_prepr,mecp_row_id,CDH Activity batch,Row ID,numeric
+dbo,cmc_mecp_cdh_prepr,mecp_sts,CDH Activity batch,Status of the pre-processor row,char
+dbo,cmc_mecp_cdh_prepr,mecp_addl_data,CDH Activity batch,For future use,varchar
+dbo,cmc_mecp_cdh_prepr,mecp_lock_token,CDH Activity batch,Lock Token,smallint
+dbo,cmc_mecp_cdh_prepr,atxr_source_id,CDH Activity batch,Attachment Source Id,datetime
+dbo,cmc_mecr_no_xref,meme_ck,Medicare Number Cross Reference Table,Member Contrived Key,int
+dbo,cmc_mecr_no_xref,mecr_no_orig,Medicare Number Cross Reference Table, Original Medicare Number,char
+dbo,cmc_mecr_no_xref,mecr_lock_token,Medicare Number Cross Reference Table,Lock Token,smallint
+dbo,cmc_mecr_no_xref,sys_last_upd_dtm,Medicare Number Cross Reference Table,Last Update Datetime,datetime
+dbo,cmc_mecr_no_xref,sys_usus_id,Medicare Number Cross Reference Table,Last Update User ID,varchar
+dbo,cmc_mecr_no_xref,sys_dbuser_id,Medicare Number Cross Reference Table,Last Update DBMS User ID,varchar
+dbo,cmc_mect_card_trsf,meme_ck,Member Debit Card Transition Data,Member Contrived Key,int
+dbo,cmc_mect_card_trsf,mect_plan_ch_dt,Member Debit Card Transition Data,Plan change date,datetime
+dbo,cmc_mect_card_trsf,mect_plan_yr_dt,Member Debit Card Transition Data,Plan year begin date,datetime
+dbo,cmc_mect_card_trsf,cspi_id,Member Debit Card Transition Data,Plan ID,char
+dbo,cmc_mect_card_trsf,mect_card_amt,Member Debit Card Transition Data,Interim card amount,money
+dbo,cmc_mect_card_trsf,mect_lock_token,Member Debit Card Transition Data,Lock Token,smallint
+dbo,cmc_mect_card_trsf,atxr_source_id,Member Debit Card Transition Data,Attachment Source Id,datetime
+dbo,cmc_mect_card_trsf,sys_last_upd_dtm,Member Debit Card Transition Data,Last Update Datetime,datetime
+dbo,cmc_mect_card_trsf,sys_usus_id,Member Debit Card Transition Data,Last Update User ID,varchar
+dbo,cmc_mect_card_trsf,sys_dbuser_id,Member Debit Card Transition Data,Last Update DBMS User ID,varchar
+dbo,cmc_meda_me_data,meme_ck,Member Additional Data,Member Contrived Key,int
+dbo,cmc_meda_me_data,meda_confid_ind,Member Additional Data,Confidential Comm Indicator,char
+dbo,cmc_meda_me_data,meda_addl_data,Member Additional Data,N/A,varchar
+dbo,cmc_meda_me_data,meda_lock_token,Member Additional Data,Lock Token,smallint
+dbo,cmc_meda_me_data,atxr_source_id,Member Additional Data,Attachment Source Id,datetime
+dbo,cmc_medc_debt_card,meme_ck,Member Debit Card,Member Contrived Key,int
+dbo,cmc_medc_debt_card,medc_acct_type,Member Debit Card,Type,char
+dbo,cmc_medc_debt_card,medc_eff_dt,Member Debit Card,Effective,datetime
+dbo,cmc_medc_debt_card,medc_term_dt,Member Debit Card,Termination,datetime
+dbo,cmc_medc_debt_card,medc_mctr_trsn,Member Debit Card,Termination Reason,char
+dbo,cmc_medc_debt_card,grgr_ck,Member Debit Card,Group Contrived Key,int
+dbo,cmc_medc_debt_card,medc_sts,Member Debit Card, Status,char
+dbo,cmc_medc_debt_card,cspi_id,Member Debit Card,Plan ID,char
+dbo,cmc_medc_debt_card,grdc_pfx,Member Debit Card, Debit Card/Bank Prefix,char
+dbo,cmc_medc_debt_card,medc_card_no,Member Debit Card,Card Number,varchar
+dbo,cmc_medc_debt_card,medc_card_alt_no,Member Debit Card, Alternate Debit Card Number,varchar
+dbo,cmc_medc_debt_card,medc_mctr_ersn,Member Debit Card,Exception Code,char
+dbo,cmc_medc_debt_card,medc_addl_data,Member Debit Card,Additional Data,varchar
+dbo,cmc_medc_debt_card,medc_last_upd_dtm,Member Debit Card, Last Update Date and Time,datetime
+dbo,cmc_medc_debt_card,medc_lst_usus_id,Member Debit Card,Last Update User ID,char
+dbo,cmc_medc_debt_card,medc_cdh_elig_dtm,Member Debit Card,CDH Eligibility Date,datetime
+dbo,cmc_medc_debt_card,medc_term_srce_cd,Member Debit Card,Debit Card Termination Source,char
+dbo,cmc_medc_debt_card,medc_lock_token,Member Debit Card,Lock Token,smallint
+dbo,cmc_medc_debt_card,atxr_source_id,Member Debit Card,Attachment Source Id,datetime
+dbo,cmc_medd_dem_data,meme_ck,Member Demographic Data,Member Contrived Key,int
+dbo,cmc_medd_dem_data,mcdd_type,Member Demographic Data,Demographic Type,varchar
+dbo,cmc_medd_dem_data,medd_seq_no,Member Demographic Data,Sequence Number,smallint
+dbo,cmc_medd_dem_data,medd_value,Member Demographic Data,Demographic Value,varchar
+dbo,cmc_medd_dem_data,medd_lock_token,Member Demographic Data,Lock Token,smallint
+dbo,cmc_medd_dem_data,atxr_source_id,Member Demographic Data,Attachment Source Id,datetime
+dbo,cmc_medi_dent_inc,meme_ck,Member Dental Incentive Coinsurance Levels,Member Contrived Key,int
+dbo,cmc_medi_dent_inc,pdpd_acc_sfx,Member Dental Incentive Coinsurance Levels,Accumulator Suffix,char
+dbo,cmc_medi_dent_inc,medi_ben_beg_dt,Member Dental Incentive Coinsurance Levels,Benefit Period Begin Date,datetime
+dbo,cmc_medi_dent_inc,grgr_ck,Member Dental Incentive Coinsurance Levels,Group Contrived Key,int
+dbo,cmc_medi_dent_inc,medi_inc_level,Member Dental Incentive Coinsurance Levels,Incentive Dental Coinsurance Level,money
+dbo,cmc_medi_dent_inc,medi_last_clcl_id,Member Dental Incentive Coinsurance Levels,Last Update Claim ID,char
+dbo,cmc_medi_dent_inc,syin_inst,Member Dental Incentive Coinsurance Levels,Instance ID,bigint
+dbo,cmc_medi_dent_inc,medi_lock_token,Member Dental Incentive Coinsurance Levels,Lock Token,smallint
+dbo,cmc_medi_dent_inc,atxr_source_id,Member Dental Incentive Coinsurance Levels,Attachment Source Id,datetime
+dbo,cmc_medi_dent_inc,sys_last_upd_dtm,Member Dental Incentive Coinsurance Levels,Last Update Datetime,datetime
+dbo,cmc_medi_dent_inc,sys_usus_id,Member Dental Incentive Coinsurance Levels,Last Update User ID,varchar
+dbo,cmc_medi_dent_inc,sys_dbuser_id,Member Dental Incentive Coinsurance Levels,Last Update DBMS User ID,varchar
+dbo,cmc_medv_medcd_ver,meme_ck,Medicaid Verification,Member Contrived Key,int
+dbo,cmc_medv_medcd_ver,mecd_eff_dt,Medicaid Verification,Effective Date,datetime
+dbo,cmc_medv_medcd_ver,medv_seq_no,Medicaid Verification,Sequence Number,smallint
+dbo,cmc_medv_medcd_ver,medv_last_ver_dt,Medicaid Verification,Verification Date,datetime
+dbo,cmc_medv_medcd_ver,medv_last_ver_name,Medicaid Verification,Verification Name,char
+dbo,cmc_medv_medcd_ver,medv_mctr_vmth,Medicaid Verification,Verification Method,char
+dbo,cmc_medv_medcd_ver,medv_mctr_vrsn,Medicaid Verification,Verification Reason,char
+dbo,cmc_medv_medcd_ver,medv_lock_token,Medicaid Verification,Lock Token,smallint
+dbo,cmc_medv_medcd_ver,atxr_source_id,Medicaid Verification,Attachment Source Id,datetime
+dbo,cmc_medx_cond_elig,meme_ck,Member Diag- nosis Link to Conditional Eligibility,Member Contrived Key,int
+dbo,cmc_medx_cond_elig,cspd_cat,Member Diag- nosis Link to Conditional Eligibility,Class Product Category,char
+dbo,cmc_medx_cond_elig,cspi_id,Member Diag- nosis Link to Conditional Eligibility,Class Plan Identifier,char
+dbo,cmc_medx_cond_elig,idcd_id_rel,Member Diag- nosis Link to Conditional Eligibility,Diagnosis Code,varchar
+dbo,cmc_medx_cond_elig,idcd_type,Member Diag- nosis Link to Conditional Eligibility,ICD Version,char
+dbo,cmc_medx_cond_elig,medx_eff_dt,Member Diag- nosis Link to Conditional Eligibility,Conditional Eligibility  Effective Date,datetime
+dbo,cmc_medx_cond_elig,medx_term_dt,Member Diag- nosis Link to Conditional Eligibility,Conditional Eligibility Termination Date,datetime
+dbo,cmc_medx_cond_elig,medx_mctr_trsn,Member Diag- nosis Link to Conditional Eligibility,Conditional Eligibility Termination Reason,char
+dbo,cmc_medx_cond_elig,grgr_ck,Member Diag- nosis Link to Conditional Eligibility,Group Contrived Key,int
+dbo,cmc_medx_cond_elig,medx_proc_ind,Member Diag- nosis Link to Conditional Eligibility,Conditional Eligibility Processing Indicator,char
+dbo,cmc_medx_cond_elig,excd_id,Member Diag- nosis Link to Conditional Eligibility,Explanation Code,char
+dbo,cmc_medx_cond_elig,medx_lock_token,Member Diag- nosis Link to Conditional Eligibility,Lock Token,smallint
+dbo,cmc_medx_cond_elig,atxr_source_id,Member Diag- nosis Link to Conditional Eligibility,Attachment Source Id,datetime
+dbo,cmc_meea_elig_act,meea_row_id,Eligibility Action Table,System Generated Row ID,numeric
+dbo,cmc_meea_elig_act,grgr_ck,Eligibility Action Table,Group Contrived Key,int
+dbo,cmc_meea_elig_act,sgsg_ck,Eligibility Action Table,Subgroup Contrived Key,int
+dbo,cmc_meea_elig_act,sbsb_ck,Eligibility Action Table,Subscriber Contrived Key,int
+dbo,cmc_meea_elig_act,cscs_id,Eligibility Action Table,Class Identifier,char
+dbo,cmc_meea_elig_act,meea_type,Eligibility Action Table,Eligibility Action Type,char
+dbo,cmc_meea_elig_act,meea_sts,Eligibility Action Table,Eligibility Action Row Status,char
+dbo,cmc_meea_elig_act,meea_req_dt,Eligibility Action Table,Eligibility Action Request Date,datetime
+dbo,cmc_meea_elig_act,meea_lock_token,Eligibility Action Table,Lock Token,smallint
+dbo,cmc_meea_elig_act,atxr_source_id,Eligibility Action Table,Attachment Source Id,datetime
+dbo,cmc_meec_ex_crit,meme_ck,Member Exception Criteria,Member Contrived Key,int
+dbo,cmc_meec_ex_crit,meet_excp_type,Member Exception Criteria,Exception Type,char
+dbo,cmc_meec_ex_crit,cspd_cat,Member Exception Criteria,Category,char
+dbo,cmc_meec_ex_crit,meet_eff_dt,Member Exception Criteria,Effective Date,datetime
+dbo,cmc_meec_ex_crit,meec_criteria,Member Exception Criteria,Exception Criteria,char
+dbo,cmc_meec_ex_crit,meec_crit_low,Member Exception Criteria,Criteria Value Low,varchar
+dbo,cmc_meec_ex_crit,meec_crit_high,Member Exception Criteria,Criteria Value High,varchar
+dbo,cmc_meec_ex_crit,atxr_source_id,Member Exception Criteria,Attachment Source Id,datetime
+dbo,cmc_meec_ex_crit,meec_lock_token,Member Exception Criteria,Lock Token,smallint
+dbo,cmc_meec_ex_crit,sys_last_upd_dtm,Member Exception Criteria,Last Update Datetime,datetime
+dbo,cmc_meec_ex_crit,sys_usus_id,Member Exception Criteria,Last Update User ID,varchar
+dbo,cmc_meec_ex_crit,sys_dbuser_id,Member Exception Criteria,Last Update DBMS User ID,varchar
+dbo,cmc_meel_elig_ent,meme_ck,Eligibility Events at Member Level,Member Contrived Key,int
+dbo,cmc_meel_elig_ent,meel_eff_dt,Eligibility Events at Member Level,Member Eligibility Effective Date,datetime
+dbo,cmc_meel_elig_ent,meel_insq_dt,Eligibility Events at Member Level,Member Eligibility Sequence Date,datetime
+dbo,cmc_meel_elig_ent,grgr_ck,Eligibility Events at Member Level,Group Contrived Key,int
+dbo,cmc_meel_elig_ent,meel_elig_type,Eligibility Events at Member Level,Member Eligibility Type,char
+dbo,cmc_meel_elig_ent,cspd_cat,Eligibility Events at Member Level,Class Product Category,char
+dbo,cmc_meel_elig_ent,cspi_id,Eligibility Events at Member Level,Class Plan Identifier,char
+dbo,cmc_meel_elig_ent,excd_id,Eligibility Events at Member Level,Explanation Code,char
+dbo,cmc_meel_elig_ent,meel_mctr_rsn,Eligibility Events at Member Level,Member Eligibility Reason,char
+dbo,cmc_meel_elig_ent,meel_void_ind,Eligibility Events at Member Level,Void Event,char
+dbo,cmc_meel_elig_ent,meel_mctr_orsn,Eligibility Events at Member Level,Reinstatement Selection Override Reason,char
+dbo,cmc_meel_elig_ent,usus_id,Eligibility Events at Member Level,User Identifier,char
+dbo,cmc_meel_elig_ent,meel_update_dtm,Eligibility Events at Member Level,Update date time,datetime
+dbo,cmc_meel_elig_ent,meel_lock_token,Eligibility Events at Member Level,Lock Token,smallint
+dbo,cmc_meel_elig_ent,atxr_source_id,Eligibility Events at Member Level,Attachment Source Id,datetime
+dbo,cmc_meel_elig_ent,meel_rate_as_ind_nvl,Eligibility Events at Member Level, Rate Member As Indicator,char
+dbo,cmc_meel_elig_ent,meel_mctr_vrsn_nvl,Eligibility Events at Member Level, Void Reason Code,char
+dbo,cmc_mees_exchange,meme_ck,Member Enrollment Source,Member Contrived Key,int
+dbo,cmc_mees_exchange,cspd_cat,Member Enrollment Source, Class Product Category,char
+dbo,cmc_mees_exchange,mees_eff_dt,Member Enrollment Source,Effective Date,datetime
+dbo,cmc_mees_exchange,mees_term_dt,Member Enrollment Source,Termination Date,datetime
+dbo,cmc_mees_exchange,grgr_ck,Member Enrollment Source,Group Contrived Key,int
+dbo,cmc_mees_exchange,mees_channel,Member Enrollment Source,Channel ID,varchar
+dbo,cmc_mees_exchange,mees_exchange,Member Enrollment Source,Exchange ID,varchar
+dbo,cmc_mees_exchange,mees_mctr_meth,Member Enrollment Source,Enrollment Method,char
+dbo,cmc_mees_exchange,mees_aptc_ind,Member Enrollment Source,APTC Indicator,char
+dbo,cmc_mees_exchange,mees_lock_token,Member Enrollment Source,Lock Token,smallint
+dbo,cmc_mees_exchange,atxr_source_id,Member Enrollment Source,Attachment Source Id,datetime
+dbo,cmc_mees_exchange,sys_last_upd_dtm,Member Enrollment Source,Last Update Datetime,datetime
+dbo,cmc_mees_exchange,sys_usus_id,Member Enrollment Source,Last Update User ID,varchar
+dbo,cmc_mees_exchange,sys_dbuser_id,Member Enrollment Source,Last Update DBMS User ID,varchar
+dbo,cmc_mees_exchange,mees_qhp_id_nvl,Member Enrollment Source,Qualified Health Plan ID,varchar
+dbo,cmc_mees_exchange,mees_mem_id_nvl,Member Enrollment Source, Exchange Assigned Member Id,varchar
+dbo,cmc_mees_exchange,mees_policy_id_nvl,Member Enrollment Source, Exchange Policy ID,varchar
+dbo,cmc_meet_ex_typ,meme_ck,Member Process Exception Type,Member Contrived Key,int
+dbo,cmc_meet_ex_typ,meet_excp_type,Member Process Exception Type, Exception Type,char
+dbo,cmc_meet_ex_typ,cspd_cat,Member Process Exception Type,Category,char
+dbo,cmc_meet_ex_typ,meet_eff_dt,Member Process Exception Type, Effective Date,datetime
+dbo,cmc_meet_ex_typ,meet_term_dt,Member Process Exception Type,Termination Date,datetime
+dbo,cmc_meet_ex_typ,meet_mctr_mrsn,Member Process Exception Type, Temporary Reimbursement Method Reason,char
+dbo,cmc_meet_ex_typ,meet_mctr_trsn,Member Process Exception Type,Termination Reason,char
+dbo,cmc_meet_ex_typ,meet_prim_ind,Member Process Exception Type,Bypass Primary Capitation Indicator,char
+dbo,cmc_meet_ex_typ,meet_sec_ind,Member Process Exception Type,Bypass Secondary Capitation Indicator,char
+dbo,cmc_meet_ex_typ,meet_glob_ind,Member Process Exception Type,Bypass Global Capitation Indicator,char
+dbo,cmc_meet_ex_typ,meet_lock_token,Member Process Exception Type,Lock Token,smallint
+dbo,cmc_meet_ex_typ,atxr_source_id,Member Process Exception Type,Attachment Source Id,datetime
+dbo,cmc_meet_ex_typ,sys_last_upd_dtm,Member Process Exception Type,Last Update Datetime,datetime
+dbo,cmc_meet_ex_typ,sys_usus_id,Member Process Exception Type,Last Update User ID,varchar
+dbo,cmc_meet_ex_typ,sys_dbuser_id,Member Process Exception Type,Last Update DBMS User ID,varchar
+dbo,cmc_meft_fctr,meme_ck,Member Program Capitation Factors,Member Contrived Key,int
+dbo,cmc_meft_fctr,crfa_attr_id,Member Program Capitation Factors,Attribute ID,varchar
+dbo,cmc_meft_fctr,meft_eff_dt,Member Program Capitation Factors,Effective Date,datetime
+dbo,cmc_meft_fctr,meft_term_dt,Member Program Capitation Factors,Termination Date,datetime
+dbo,cmc_meft_fctr,crav_value,Member Program Capitation Factors,Factor Value,varchar
+dbo,cmc_meft_fctr,meft_lock_token,Member Program Capitation Factors,Lock Token,smallint
+dbo,cmc_meft_fctr,atxr_source_id,Member Program Capitation Factors,Attachment Source Id,datetime
+dbo,cmc_meft_fctr,sys_last_upd_dtm,Member Program Capitation Factors,Last Update Datetime,datetime
+dbo,cmc_meft_fctr,sys_usus_id,Member Program Capitation Factors,Last Update User ID,varchar
+dbo,cmc_meft_fctr,sys_dbuser_id,Member Program Capitation Factors,Last Update DBMS User ID,varchar
+dbo,cmc_mehd_handicap,meme_ck,Member's Disability Data,Member Contrived Key,int
+dbo,cmc_mehd_handicap,mehd_eff_dt,Member's Disability Data,Member Disability Effective Date,datetime
+dbo,cmc_mehd_handicap,mehd_term_dt,Member's Disability Data,Member Disability Termination Date,datetime
+dbo,cmc_mehd_handicap,mehd_mctr_trsn,Member's Disability Data,Member Disability Termination Reason,char
+dbo,cmc_mehd_handicap,grgr_ck,Member's Disability Data,Group Contrived Key,int
+dbo,cmc_mehd_handicap,mehd_desc,Member's Disability Data,Member Disability Description,char
+dbo,cmc_mehd_handicap,mehd_type,Member's Disability Data,Member Disability Type,char
+dbo,cmc_mehd_handicap,mehd_last_ver_dt,Member's Disability Data,Last Verification Date,datetime
+dbo,cmc_mehd_handicap,mehd_last_ver_name,Member's Disability Data,Last Verification Name,char
+dbo,cmc_mehd_handicap,mehd_mctr_vmth,Member's Disability Data,Last Verification Method,char
+dbo,cmc_mehd_handicap,mehd_lock_token,Member's Disability Data,Lock Token,smallint
+dbo,cmc_mehd_handicap,atxr_source_id,Member's Disability Data,Attachment Source Id,datetime
+dbo,cmc_mehe_health_detl,meme_ck,Member Health Detail,Member Contrived Key,int
+dbo,cmc_mehe_health_detl,mehe_ipcd_id,Member Health Detail,Procedure Code,char
+dbo,cmc_mehe_health_detl,mehe_last_dt,Member Health Detail,Last Date,datetime
+dbo,cmc_mehe_health_detl,mehe_pfx,Member Health Detail,Prefix,char
+dbo,cmc_mehe_health_detl,mehe_sfx,Member Health Detail,Suffix,char
+dbo,cmc_mehe_health_detl,mehe_next_dt,Member Health Detail,Next Date,datetime
+dbo,cmc_mehe_health_detl,mehe_comment,Member Health Detail,Comments,char
+dbo,cmc_mehe_health_detl,mehe_lock_token,Member Health Detail,Lock Token,smallint
+dbo,cmc_mehe_health_detl,atxr_source_id,Member Health Detail,Attachment Source Id,datetime
+dbo,cmc_mehr_hra_prepr,grgr_ck,HRA Preprocessor, Group Contrived Key,int
+dbo,cmc_mehr_hra_prepr,grhq_weight,HRA Preprocessor, GRHQ Weight,int
+dbo,cmc_mehr_hra_prepr,grhq_sts,HRA Preprocessor, GRHQ Request Status,char
+dbo,cmc_mehs_hsa_accum,meme_ck,Member HSA Accumulation,Member Contrived Key,int
+dbo,cmc_mehs_hsa_accum,hsai_acc_sfx,Member HSA Accumulation,HRA Administrative Information Accumulator Suffix,char
+dbo,cmc_mehs_hsa_accum,sbhs_plan_yr_dt,Member HSA Accumulation,HRA Plan Year Date,datetime
+dbo,cmc_mehs_hsa_accum,grgr_ck,Member HSA Accumulation,Group Contrived Key,int
+dbo,cmc_mehs_hsa_accum,sbsb_ck,Member HSA Accumulation,Subscriber Contrived Key,int
+dbo,cmc_mehs_hsa_accum,mehs_ded_accum_amt,Member HSA Accumulation,HRA Member Deductible Accumulator,money
+dbo,cmc_mehs_hsa_accum,mehs_co_amt,Member HSA Accumulation,HRA Member Carryover Amount,money
+dbo,cmc_mehs_hsa_accum,mehs_paid_amt,Member HSA Accumulation,HRA Member Plan Year Credits,money
+dbo,cmc_mehs_hsa_accum,mehs_balance_amt,Member HSA Accumulation,HRA Member Plan Year Balance Available,money
+dbo,cmc_mehs_hsa_accum,mehs_hra_card_amt,Member HSA Accumulation,HRA Card Amount,money
+dbo,cmc_mehs_hsa_accum,mehs_ded2_accm_amt,Member HSA Accumulation,Deductible two accum Amount,money
+dbo,cmc_mehs_hsa_accum,mehs_vbb_credit,Member HSA Accumulation, Value Based Benefit HRA Credit,money
+dbo,cmc_mehs_hsa_accum,mehs_lock_token,Member HSA Accumulation,Lock Token,smallint
+dbo,cmc_mehs_hsa_accum,atxr_source_id,Member HSA Accumulation,Attachment Source Id,datetime
+dbo,cmc_meia_id_act,meia_row_id,ID Card Action table,Member ID Card Action Row ID,numeric
+dbo,cmc_meia_id_act,syin_inst,ID Card Action table,SYIN_INST,bigint
+dbo,cmc_meia_id_act,grgr_ck,ID Card Action table,Group Contrived Key,int
+dbo,cmc_meia_id_act,sgsg_ck,ID Card Action table,Subgroup Contrived Key,int
+dbo,cmc_meia_id_act,sbsb_ck,ID Card Action table,Subscriber Contrived Key,int
+dbo,cmc_meia_id_act,meme_ck,ID Card Action table,Member Contrived Key,int
+dbo,cmc_meia_id_act,meia_req_type,ID Card Action table,ID Card Request Type,char
+dbo,cmc_meia_id_act,cspi_id,ID Card Action table,Class Plan Identifier,char
+dbo,cmc_meia_id_act,cspd_cat,ID Card Action table,Class Product Category,char
+dbo,cmc_meia_id_act,cscs_id,ID Card Action table,Class Identifier,char
+dbo,cmc_meia_id_act,meia_sts,ID Card Action table,Status,char
+dbo,cmc_meia_id_act,meia_req_dt,ID Card Action table,ID Card Action Request Date,datetime
+dbo,cmc_meia_id_act,meia_source,ID Card Action table,ID Card Action Request Source,char
+dbo,cmc_meia_id_act,meia_mreq_card_num,ID Card Action table,Number of ID Cards,smallint
+dbo,cmc_meia_id_act,meia_create_dtm,ID Card Action table,Create Date,datetime
+dbo,cmc_meia_id_act,usus_id,ID Card Action table,User Identifier,char
+dbo,cmc_meia_id_act,meia_lock_token,ID Card Action table,Lock Token,smallint
+dbo,cmc_meia_id_act,atxr_source_id,ID Card Action table,Attachment Source Id,datetime
+dbo,cmc_meio_id_ovrd,grgr_ck,ID Card Override,Group Contrived Key,int
+dbo,cmc_meio_id_ovrd,sgsg_ck,ID Card Override,Subgroup Contrived Key,int
+dbo,cmc_meio_id_ovrd,cspd_cat,ID Card Override,Class Product Category,char
+dbo,cmc_meio_id_ovrd,meio_supp_rqst,ID Card Override,Suppress Request,char
+dbo,cmc_meio_id_ovrd,meio_card_stock,ID Card Override,Card Stock,char
+dbo,cmc_meio_id_ovrd,meio_mctr_ctyp,ID Card Override,Card Type,char
+dbo,cmc_meio_id_ovrd,meio_id_card_num,ID Card Override,Card Number,smallint
+dbo,cmc_meio_id_ovrd,meio_lock_token,ID Card Override,Lock Token,smallint
+dbo,cmc_meio_id_ovrd,atxr_source_id,ID Card Override,Attachment Source Id,datetime
+dbo,cmc_meip_its_prog,meme_ck,Member ITS Patient Care Program Identifier,Member Contrived Key,int
+dbo,cmc_meip_its_prog,meip_mctr_home,Member ITS Patient Care Program Identifier,NDW Plan ID,char
+dbo,cmc_meip_its_prog,meip_con_mem_id,Member ITS Patient Care Program Identifier,Consistent Member ID,varchar
+dbo,cmc_meip_its_prog,meip_eff_dt,Member ITS Patient Care Program Identifier,Effective Date,datetime
+dbo,cmc_meip_its_prog,meip_term_dt,Member ITS Patient Care Program Identifier,Termination Date,datetime
+dbo,cmc_meip_its_prog,grgr_ck,Member ITS Patient Care Program Identifier,Group Contrived Key,int
+dbo,cmc_meip_its_prog,meip_mctr_host,Member ITS Patient Care Program Identifier,Host Plan Code,char
+dbo,cmc_meip_its_prog,meip_mem_id,Member ITS Patient Care Program Identifier,Home Plan Member ID,varchar
+dbo,cmc_meip_its_prog,meip_rel_cd,Member ITS Patient Care Program Identifier,Member Relationship,char
+dbo,cmc_meip_its_prog,meip_its_sub_id,Member ITS Patient Care Program Identifier,Home Plan Subscriber ID,varchar
+dbo,cmc_meip_its_prog,meip_void_ind,Member ITS Patient Care Program Identifier,Void Indicator,char
+dbo,cmc_meip_its_prog,meip_lock_token,Member ITS Patient Care Program Identifier,Lock Token,smallint
+dbo,cmc_meip_its_prog,atxr_source_id,Member ITS Patient Care Program Identifier,Attachment Source Id,datetime
+dbo,cmc_meip_its_prog,sys_last_upd_dtm,Member ITS Patient Care Program Identifier,Last Update Datetime,datetime
+dbo,cmc_meip_its_prog,sys_usus_id,Member ITS Patient Care Program Identifier,Last Update User ID,varchar
+dbo,cmc_meip_its_prog,sys_dbuser_id,Member ITS Patient Care Program Identifier,Last Update DBMS User ID,varchar
+dbo,cmc_meit_meme_its,meme_ck,ITS Member Miscellaneous Info.,Member Contrived Key,int
+dbo,cmc_meit_meme_its,grgr_ck,ITS Member Miscellaneous Info.,Group Contrived Key,int
+dbo,cmc_meit_meme_its,meit_its_sbsb_id,ITS Member Miscellaneous Info.,ITS Subscriber ID,char
+dbo,cmc_meit_meme_its,meit_prpr_plan_cd,ITS Member Miscellaneous Info.,Provider Plan Code,char
+dbo,cmc_meit_meme_its,meit_pat_rel,ITS Member Miscellaneous Info.,Patient Relationship to Subscriber,char
+dbo,cmc_meit_meme_its,meit_pcp_crsn,ITS Member Miscellaneous Info.,PCP Change Reason,char
+dbo,cmc_meit_meme_its,meit_exis_pat,ITS Member Miscellaneous Info.,Existing Patient Indicator,char
+dbo,cmc_meit_meme_its,meit_ee_sts,ITS Member Miscellaneous Info.,Employee Status,char
+dbo,cmc_meit_meme_its,meit_contract_type,ITS Member Miscellaneous Info.,Contract Type,char
+dbo,cmc_meit_meme_its,meit_marital_sts,ITS Member Miscellaneous Info.,Marital Status,char
+dbo,cmc_meit_meme_its,meit_mef_load_dt,ITS Member Miscellaneous Info.,N/A,datetime
+dbo,cmc_meit_meme_its,meit_addl_data,ITS Member Miscellaneous Info.,N/A,varchar
+dbo,cmc_meit_meme_its,meit_confid_eff_dt,ITS Member Miscellaneous Info.,Restricted Access Effective Date,datetime
+dbo,cmc_meit_meme_its,meit_confid_tm_dt,ITS Member Miscellaneous Info.,Restricted Access Effective Date,datetime
+dbo,cmc_meit_meme_its,meit_lock_token,ITS Member Miscellaneous Info.,Lock Token,smallint
+dbo,cmc_meit_meme_its,atxr_source_id,ITS Member Miscellaneous Info.,Attachment Source Id,datetime
+dbo,cmc_melc_lsty_cd,meme_ck,Life Style Code,Member Contrived Key,int
+dbo,cmc_melc_lsty_cd,melc_eff_dt,Life Style Code,Effective Date,datetime
+dbo,cmc_melc_lsty_cd,melc_term_dt,Life Style Code,Termination Date,datetime
+dbo,cmc_melc_lsty_cd,crft_mctr_lsty,Life Style Code,LifeStyle Code,char
+dbo,cmc_melc_lsty_cd,melc_lock_token,Life Style Code,Lock Token,smallint
+dbo,cmc_melc_lsty_cd,atxr_source_id,Life Style Code,Attachment Source Id,datetime
+dbo,cmc_mema_mecr_addl,meme_ck,Medicare Event Additional Data,Member Contrived Key,int
+dbo,cmc_mema_mecr_addl,memd_event_cd,Medicare Event Additional Data,Event Code,char
+dbo,cmc_mema_mecr_addl,memd_hcfa_eff_dt,Medicare Event Additional Data,Effective Date,datetime
+dbo,cmc_mema_mecr_addl,grgr_ck,Medicare Event Additional Data,Group Contrived Key,int
+dbo,cmc_mema_mecr_addl,mema_addl_data,Medicare Event Additional Data,N/A,varchar
+dbo,cmc_mema_mecr_addl,mema_lock_token,Medicare Event Additional Data,Lock Token,smallint
+dbo,cmc_mema_mecr_addl,atxr_source_id,Medicare Event Additional Data,Attachment Source Id,datetime
+dbo,cmc_memd_mecr_detl,meme_ck,Medicare Detail Table,Member Contrived Key,int
+dbo,cmc_memd_mecr_detl,memd_event_cd,Medicare Detail Table,Medicare Event Code,char
+dbo,cmc_memd_mecr_detl,memd_hcfa_eff_dt,Medicare Detail Table,Effective Date,datetime
+dbo,cmc_memd_mecr_detl,grgr_ck,Medicare Detail Table,Group Contrived Key,int
+dbo,cmc_memd_mecr_detl,memd_hcfa_term_dt,Medicare Detail Table,Termination date,datetime
+dbo,cmc_memd_mecr_detl,memd_input_dt,Medicare Detail Table,The date the information was input into Facets,datetime
+dbo,cmc_memd_mecr_detl,memd_event_eff_dt,Medicare Detail Table,N/A,datetime
+dbo,cmc_memd_mecr_detl,memd_event_term_dt,Medicare Detail Table,N/A,datetime
+dbo,cmc_memd_mecr_detl,memd_mctr_mcst,Medicare Detail Table,State,char
+dbo,cmc_memd_mecr_detl,memd_mctr_mcct,Medicare Detail Table,County,char
+dbo,cmc_memd_mecr_detl,meme_hicn,Medicare Detail Table,Health Insurance Claim Number (HICN),char
+dbo,cmc_memd_mecr_detl,bgbg_ck,Medicare Detail Table,The HCFA assigned Medicare contract ID,int
+dbo,cmc_memd_mecr_detl,mrac_cat,Medicare Detail Table,PIPDCG Category,char
+dbo,cmc_memd_mecr_detl,memd_ra_prta_fctr,Medicare Detail Table,Risk Adj. Factor Part A,int
+dbo,cmc_memd_mecr_detl,memd_ra_prtb_fctr,Medicare Detail Table,Risk Adj. Factor Part B,int
+dbo,cmc_memd_mecr_detl,memd_sig_dt,Medicare Detail Table,Signature Date,datetime
+dbo,cmc_memd_mecr_detl,memd_elect_type,Medicare Detail Table,Election Type,char
+dbo,cmc_memd_mecr_detl,memd_mctr_pbp,Medicare Detail Table, Plan Benefit Package,char
+dbo,cmc_memd_mecr_detl,memd_segment_id,Medicare Detail Table,Segment ID,char
+dbo,cmc_memd_mecr_detl,memd_ra_prtd_fctr,Medicare Detail Table,Part D RA Factor,int
+dbo,cmc_memd_mecr_detl,memd_ra_fctr_type,Medicare Detail Table,RA Factor Type,char
+dbo,cmc_memd_mecr_detl,memd_prem_wh_opt,Medicare Detail Table,Premium Withhold Option,char
+dbo,cmc_memd_mecr_detl,memd_prtc_prem,Medicare Detail Table,Part C Premium,money
+dbo,cmc_memd_mecr_detl,memd_prtd_prem,Medicare Detail Table,Part D Premium,money
+dbo,cmc_memd_mecr_detl,memd_prior_com_ovr,Medicare Detail Table,Prior Commercial Override,char
+dbo,cmc_memd_mecr_detl,memd_enrl_source,Medicare Detail Table,Enrollment Source,char
+dbo,cmc_memd_mecr_detl,memd_uncov_mos,Medicare Detail Table,Number of uncovered months,smallint
+dbo,cmc_memd_mecr_detl,memd_rx_id,Medicare Detail Table,Part D ID,varchar
+dbo,cmc_memd_mecr_detl,memd_mctr_rx_group,Medicare Detail Table,Part D Group ID,char
+dbo,cmc_memd_mecr_detl,memd_mctr_rxbin,Medicare Detail Table,Part D RX Binary Identification Number,char
+dbo,cmc_memd_mecr_detl,memd_mctr_rxpcn,Medicare Detail Table, Part D RX Processing Control Number,char
+dbo,cmc_memd_mecr_detl,memd_cob_ind,Medicare Detail Table,Secondary Drug Insurance Flag,char
+dbo,cmc_memd_mecr_detl,memd_cob_rx_id,Medicare Detail Table,Secondary Drug Insurance ID,varchar
+dbo,cmc_memd_mecr_detl,memd_cob_rx_group,Medicare Detail Table,Secondary Drug Insurance Group,varchar
+dbo,cmc_memd_mecr_detl,memd_cob_rxbin,Medicare Detail Table,Secondary Drug Insurance Bin,char
+dbo,cmc_memd_mecr_detl,memd_cob_rxpcn,Medicare Detail Table,Secondary Drug Insurance PCN,char
+dbo,cmc_memd_mecr_detl,memd_partd_sbsdy,Medicare Detail Table,Part D Subsidy,char
+dbo,cmc_memd_mecr_detl,memd_copay_cat,Medicare Detail Table,Co-pay Category,char
+dbo,cmc_memd_mecr_detl,memd_lics_sbsdy,Medicare Detail Table,Part D low-income  premium subsidy,money
+dbo,cmc_memd_mecr_detl,memd_late_penalty,Medicare Detail Table,Part D late enrollment penalty,money
+dbo,cmc_memd_mecr_detl,memd_late_waiv_amt,Medicare Detail Table, Part D late enrollment penalty waived,money
+dbo,cmc_memd_mecr_detl,memd_late_sbsdy,Medicare Detail Table, Part D late enrollment penalty low-income subsidy,money
+dbo,cmc_memd_mecr_detl,memd_msp_cd,Medicare Detail Table, Aged/Disabled MSP Status,char
+dbo,cmc_memd_mecr_detl,memd_rad_fctr_type,Medicare Detail Table, Part D RA Factor Type,char
+dbo,cmc_memd_mecr_detl,memd_lock_token,Medicare Detail Table,Lock Token,smallint
+dbo,cmc_memd_mecr_detl,atxr_source_id,Medicare Detail Table,Attachment Source Id,datetime
+dbo,cmc_memd_mecr_detl,memd_ic_flag_nvl,Medicare Detail Table, IC Model Flag,char
+dbo,cmc_memd_mecr_detl,memd_ic_sts_nvl,Medicare Detail Table, IC Model Benefit Status Code,char
+dbo,cmc_memd_mecr_detl,memd_ic_trsn_nvl,Medicare Detail Table, IC Model End Date Reason,char
+dbo,cmc_memd_mecr_detl,memd_pref_lang_nvl,Medicare Detail Table,Preferred Language,char
+dbo,cmc_memd_mecr_detl,memd_access_fmt_nvl,Medicare Detail Table,Accessible Format,char
+dbo,cmc_memd_mecr_detl,memd_mctr_srsn_nvl,Medicare Detail Table,SEP Reason,char
+dbo,cmc_memd_mecr_detl,memd_mctr_erel_nvl,Medicare Detail Table,Relationship to enrollee,char
+dbo,cmc_memd_mecr_detl,memd_npn_nvl,Medicare Detail Table,National Producer Number,varchar
+dbo,cmc_meme_member,meme_ck,Member Specific Indicative Data,Member Contrived Key,int
+dbo,cmc_meme_member,grgr_ck,Member Specific Indicative Data,Group Contrived Key,int
+dbo,cmc_meme_member,sbsb_ck,Member Specific Indicative Data,Subscriber Contrived Key,int
+dbo,cmc_meme_member,meme_sfx,Member Specific Indicative Data,Member Suffix,smallint
+dbo,cmc_meme_member,meme_rel,Member Specific Indicative Data,Relationship,char
+dbo,cmc_meme_member,meme_id_name,Member Specific Indicative Data,Short Name,char
+dbo,cmc_meme_member,meme_last_name,Member Specific Indicative Data,Last Name,char
+dbo,cmc_meme_member,meme_first_name,Member Specific Indicative Data,First Name,char
+dbo,cmc_meme_member,meme_mid_init,Member Specific Indicative Data,Middle Initial,char
+dbo,cmc_meme_member,meme_title,Member Specific Indicative Data,Title,char
+dbo,cmc_meme_member,meme_orig_eff_dt,Member Specific Indicative Data,Original Effective Date,datetime
+dbo,cmc_meme_member,meme_ssn,Member Specific Indicative Data,Social Security Number,char
+dbo,cmc_meme_member,meme_sex,Member Specific Indicative Data,Gender,char
+dbo,cmc_meme_member,meme_birth_dt,Member Specific Indicative Data,Birth Date,datetime
+dbo,cmc_meme_member,meme_wrk_phone,Member Specific Indicative Data,Work Phone Number,char
+dbo,cmc_meme_member,meme_wrk_phone_ext,Member Specific Indicative Data,Work Phone Number,char
+dbo,cmc_meme_member,meme_mctr_sts,Member Specific Indicative Data,Status,char
+dbo,cmc_meme_member,meme_mctr_lang,Member Specific Indicative Data,Language,char
+dbo,cmc_meme_member,meme_record_no,Member Specific Indicative Data,Member Record Number,char
+dbo,cmc_meme_member,meme_late_enr_ind,Member Specific Indicative Data,N/A,char
+dbo,cmc_meme_member,meme_marital_status,Member Specific Indicative Data,Marital Status,char
+dbo,cmc_meme_member,meme_hicn,Member Specific Indicative Data,Medicare Number,char
+dbo,cmc_meme_member,meme_medcd_no,Member Specific Indicative Data,Medicaid Number,char
+dbo,cmc_meme_member,meme_fam_link_id,Member Specific Indicative Data,Family Link ID,char
+dbo,cmc_meme_member,sbad_type_home,Member Specific Indicative Data,Subscriber Home Address,char
+dbo,cmc_meme_member,sbad_type_mail,Member Specific Indicative Data,Subscriber Mailing Address,char
+dbo,cmc_meme_member,sbad_type_work,Member Specific Indicative Data, Member Work Address,char
+dbo,cmc_meme_member,meme_last_name_xlow,Member Specific Indicative Data,Name Search case insensitive,char
+dbo,cmc_meme_member,meme_ccc_start_dt,Member Specific Indicative Data,Certificate of Creditable Coverage Start Date,datetime
+dbo,cmc_meme_member,meme_ccc_end_dt,Member Specific Indicative Data,Certificate of Creditable Coverage End Date,datetime
+dbo,cmc_meme_member,meme_prex_eff_dt,Member Specific Indicative Data,Pre-Existing Effective Date,datetime
+dbo,cmc_meme_member,meme_prx_cred_days,Member Specific Indicative Data,Pre-Existing Credit Days,smallint
+dbo,cmc_meme_member,meme_exc_cred_days,Member Specific Indicative Data,Exclusionary Period Credit Days,smallint
+dbo,cmc_meme_member,meme_mctr_atyp,Member Specific Indicative Data, Applicant Type,char
+dbo,cmc_meme_member,meme_elig_dt,Member Specific Indicative Data, Eligibility Date,datetime
+dbo,cmc_meme_member,meme_qualify_dt,Member Specific Indicative Data, Qualifying Event Date,datetime
+dbo,cmc_meme_member,meme_new_sig_dt,Member Specific Indicative Data,New Signature Date,datetime
+dbo,cmc_meme_member,meme_prbl_ind,Member Specific Indicative Data,Prior Billing Indicator,char
+dbo,cmc_meme_member,meme_prbl_eff_dt,Member Specific Indicative Data, Prior Billing Effective Date,datetime
+dbo,cmc_meme_member,meme_eoi_term_dt,Member Specific Indicative Data, Evidence Of Insurability Termination Date,datetime
+dbo,cmc_meme_member,meme_prex_term_dt,Member Specific Indicative Data, Pre-Existing End Date,datetime
+dbo,cmc_meme_member,meme_prex_limit1,Member Specific Indicative Data,Pre-Existing Limits1,smallint
+dbo,cmc_meme_member,meme_prex_limit2,Member Specific Indicative Data,Pre-existing Limits 2,smallint
+dbo,cmc_meme_member,meme_prex_limit3,Member Specific Indicative Data,Pre-existing Limits 3,smallint
+dbo,cmc_meme_member,mcrl_meme_crel_cd,Member Specific Indicative Data,Relationship,char
+dbo,cmc_meme_member,meme_hist_link_id,Member Specific Indicative Data, History Link ID,char
+dbo,cmc_meme_member,meme_cell_phone,Member Specific Indicative Data,Cell Phone Number,varchar
+dbo,cmc_meme_member,meme_health_id,Member Specific Indicative Data,Standard Unique Health ID,varchar
+dbo,cmc_meme_member,meme_lock_token,Member Specific Indicative Data,Lock Token,smallint
+dbo,cmc_meme_member,atxr_source_id,Member Specific Indicative Data,Attachment Source Id,datetime
+dbo,cmc_meme_member,sys_last_upd_dtm,Member Specific Indicative Data,Last Update Datetime,datetime
+dbo,cmc_meme_member,sys_usus_id,Member Specific Indicative Data,Last Update User ID,varchar
+dbo,cmc_meme_member,sys_dbuser_id,Member Specific Indicative Data,Last Update DBMS User ID,varchar
+dbo,cmc_meme_member,memm_row_id,Member Specific Indicative Data,Master Member Unique ID,numeric
+dbo,cmc_meme_member,meme_mctr_race_nvl,Member Specific Indicative Data, Member Race,char
+dbo,cmc_meme_member,meme_mctr_ethn_nvl,Member Specific Indicative Data, Member Ethnicity,char
+dbo,cmc_meme_member,meme_edi_re_code_nvl,Member Specific Indicative Data, Member EDI Race and Ethnicity Code,varchar
+dbo,cmc_meme_member,meme_edi_re_source_nvl,Member Specific Indicative Data, Member EDI Race and Ethnicity Source,varchar
+dbo,cmc_meme_member,meme_mctr_genp_nvl,Member Specific Indicative Data,Gender Preference,char
+dbo,cmc_meme_member,meme_mctr_ctzn_nvl,Member Specific Indicative Data,Citizenship Code,char
+dbo,cmc_memf_intf_addl,meme_ck,Medicare Interface Additional Data,Member Contrived Key,int
+dbo,cmc_memf_intf_addl,memi_seq_no,Medicare Interface Additional Data,Sequence Number,smallint
+dbo,cmc_memf_intf_addl,grgr_ck,Medicare Interface Additional Data,Group Contrived Key,int
+dbo,cmc_memf_intf_addl,memf_addl_data,Medicare Interface Additional Data,N/A,char
+dbo,cmc_memf_intf_addl,memf_lock_token,Medicare Interface Additional Data,Lock Token,smallint
+dbo,cmc_memf_intf_addl,atxr_source_id,Medicare Interface Additional Data,Attachment Source Id,datetime
+dbo,cmc_memi_mecr_intf,meme_ck,Medicare Interface,Member Contrived Key,int
+dbo,cmc_memi_mecr_intf,memi_seq_no,Medicare Interface,Sequence number,smallint
+dbo,cmc_memi_mecr_intf,grgr_ck,Medicare Interface,Group Contrived Key,int
+dbo,cmc_memi_mecr_intf,memi_intf_sts,Medicare Interface,Interface status,char
+dbo,cmc_memi_mecr_intf,memi_last_upd_dt,Medicare Interface,Last Update,datetime
+dbo,cmc_memi_mecr_intf,memi_source_ind,Medicare Interface,Source Indicator,char
+dbo,cmc_memi_mecr_intf,memi_batch_id,Medicare Interface,Interface-generated batch ID,char
+dbo,cmc_memi_mecr_intf,memi_txn_cd,Medicare Interface,Transaction Code,char
+dbo,cmc_memi_mecr_intf,memi_txn_eff_dt,Medicare Interface,The HCFA effective date for the transaction,datetime
+dbo,cmc_memi_mecr_intf,memi_mctr_mcst,Medicare Interface,Member's state of residence,char
+dbo,cmc_memi_mecr_intf,memi_mctr_mcct,Medicare Interface,Member's county of residence,char
+dbo,cmc_memi_mecr_intf,bgbg_id,Medicare Interface,Medicare contract ID,char
+dbo,cmc_memi_mecr_intf,usus_id,Medicare Interface,User Identifier,char
+dbo,cmc_memi_mecr_intf,memi_mctr_rsn,Medicare Interface,Transaction reason,char
+dbo,cmc_memi_mecr_intf,memi_sig_dt,Medicare Interface,Signature Date,datetime
+dbo,cmc_memi_mecr_intf,memi_elect_type,Medicare Interface,Election Type,char
+dbo,cmc_memi_mecr_intf,memi_mctr_pbp,Medicare Interface,Plan Benefit Package,char
+dbo,cmc_memi_mecr_intf,memi_eghp_ind,Medicare Interface,Existing Group Health Plan Indicator,char
+dbo,cmc_memi_mecr_intf,memi_segment_id,Medicare Interface,Segment ID,char
+dbo,cmc_memi_mecr_intf,memi_prior_com_ovr,Medicare Interface,Prior Commercial Override,char
+dbo,cmc_memi_mecr_intf,memi_prem_wh_opt,Medicare Interface,Premium Withhold Option,char
+dbo,cmc_memi_mecr_intf,memi_prtc_prem,Medicare Interface,Part C Premium,money
+dbo,cmc_memi_mecr_intf,memi_prtd_prem,Medicare Interface,Part D Premium,money
+dbo,cmc_memi_mecr_intf,memi_cred_cov_ind,Medicare Interface,Creditable Coverage Indicator,char
+dbo,cmc_memi_mecr_intf,memi_uncov_mos,Medicare Interface,Number of uncovered Months,smallint
+dbo,cmc_memi_mecr_intf,memi_rx_id,Medicare Interface,Part D ID,varchar
+dbo,cmc_memi_mecr_intf,memi_mctr_rx_group,Medicare Interface,Part D Group ID,char
+dbo,cmc_memi_mecr_intf,memi_mctr_rxbin,Medicare Interface,Part D RX Binary Identification,char
+dbo,cmc_memi_mecr_intf,memi_mctr_rxpcn,Medicare Interface, Part D RX Processing Control Number,char
+dbo,cmc_memi_mecr_intf,memi_enrl_ovrd,Medicare Interface,Employer Subsidy Enrollment Override Indicator,char
+dbo,cmc_memi_mecr_intf,memi_prtd_optout,Medicare Interface,Part D Opt Out Indicator,char
+dbo,cmc_memi_mecr_intf,memi_cob_ind,Medicare Interface,Secondary Drug Insurance Flag,char
+dbo,cmc_memi_mecr_intf,memi_cob_rx_id,Medicare Interface,Secondary Drug Insurance ID,varchar
+dbo,cmc_memi_mecr_intf,memi_cob_rx_group,Medicare Interface,Secondary Drug Insurance Group,varchar
+dbo,cmc_memi_mecr_intf,memi_cob_rxbin,Medicare Interface,Secondary Drug Insurance RXBIN,char
+dbo,cmc_memi_mecr_intf,memi_cob_rxpcn,Medicare Interface,Secondary Drug Insurance RXPCN,char
+dbo,cmc_memi_mecr_intf,memi_enrl_source,Medicare Interface,Enrollment Source,char
+dbo,cmc_memi_mecr_intf,memi_msp_cd,Medicare Interface, Aged/Disabled MSP Status,char
+dbo,cmc_memi_mecr_intf,memi_track_id,Medicare Interface,Transaction Tracking ID,varchar
+dbo,cmc_memi_mecr_intf,memi_lock_token,Medicare Interface,Lock Token,smallint
+dbo,cmc_memi_mecr_intf,atxr_source_id,Medicare Interface,Attachment Source Id,datetime
+dbo,cmc_memi_mecr_intf,memi_from_contract_nvl,Medicare Interface, Rolled From Contract,char
+dbo,cmc_memi_mecr_intf,memi_from_pbp_nvl,Medicare Interface, Rolled From PBP,char
+dbo,cmc_memi_mecr_intf,memi_ic_flag_nvl,Medicare Interface, IC Model Flag,char
+dbo,cmc_memi_mecr_intf,memi_ic_sts_nvl,Medicare Interface, IC Model Benefit Status Code,char
+dbo,cmc_memi_mecr_intf,memi_ic_end_dt_nvl,Medicare Interface, IC Model End Date,datetime
+dbo,cmc_memi_mecr_intf,memi_ic_trsn_nvl,Medicare Interface, IC Model End Date Reason,char
+dbo,cmc_memi_mecr_intf,memi_pref_lang_nvl,Medicare Interface,Preferred Language,char
+dbo,cmc_memi_mecr_intf,memi_access_fmt_nvl,Medicare Interface,Accessible Format,char
+dbo,cmc_memi_mecr_intf,memi_mctr_srsn_nvl,Medicare Interface,SEP Reason,char
+dbo,cmc_memi_mecr_intf,memi_race_nvl,Medicare Interface,Race selection,varchar
+dbo,cmc_memi_mecr_intf,memi_ethnicity_nvl,Medicare Interface,Ethnicity selection,varchar
+dbo,cmc_memi_mecr_intf,memi_gender_identity_nvl,Medicare Interface,Gender Identity,char
+dbo,cmc_memi_mecr_intf,memi_gender_identity_other_nvl,Medicare Interface,Gender Identity Other,varchar
+dbo,cmc_memi_mecr_intf,memi_self_identify_nvl,Medicare Interface,Self Identify,char
+dbo,cmc_memi_mecr_intf,memi_self_identify_other_nvl,Medicare Interface,Self Identify Other,varchar
+dbo,cmc_memi_mecr_intf,memi_mctr_erel_nvl,Medicare Interface,Relationship to enrollee,char
+dbo,cmc_memi_mecr_intf,memi_npn_nvl,Medicare Interface,National Producer Number,varchar
+dbo,cmc_memi_mecr_intf,memi_mppp_term_dt_nvl,Medicare Interface,Medicare Prescription Payment Plan Term Date,datetime
+dbo,cmc_memm_mstr_mbr,memm_row_id,Master Member Table, Master Member Unique ID,numeric
+dbo,cmc_memm_mstr_mbr,memm_create_dtm,Master Member Table, Creation Date,datetime
+dbo,cmc_memm_mstr_mbr,exid_id,Master Member Table,External Identifier,varchar
+dbo,cmc_mepc_plch_act,mepc_row_id,Member CDH plan activity,Row ID,numeric
+dbo,cmc_mepc_plch_act,sbsb_ck,Member CDH plan activity,Subscriber Contrived key,int
+dbo,cmc_mepc_plch_act,meme_ck,Member CDH plan activity,Member Contrived Key,int
+dbo,cmc_mepc_plch_act,mepc_type,Member CDH plan activity,Record type,char
+dbo,cmc_mepc_plch_act,mepc_eff_dt,Member CDH plan activity,Effective date,datetime
+dbo,cmc_mepc_plch_act,mepc_plan_yr_dt,Member CDH plan activity,Plan year begin date,datetime
+dbo,cmc_mepc_plch_act,cspi_id,Member CDH plan activity,Plan ID,char
+dbo,cmc_mepc_plch_act,mepc_sts,Member CDH plan activity,Status,char
+dbo,cmc_mepc_plch_act,mepc_create_dtm,Member CDH plan activity,Create date,datetime
+dbo,cmc_mepc_plch_act,mepc_update_dtm,Member CDH plan activity,Update date and time,datetime
+dbo,cmc_mepc_plch_act,mepc_lock_token,Member CDH plan activity,Lock Token,smallint
+dbo,cmc_mepc_plch_act,atxr_source_id,Member CDH plan activity,Attachment Source Id,datetime
+dbo,cmc_mepc_plch_act,sys_last_upd_dtm,Member CDH plan activity,Last Update Datetime,datetime
+dbo,cmc_mepc_plch_act,sys_usus_id,Member CDH plan activity,Last Update User ID,varchar
+dbo,cmc_mepc_plch_act,sys_dbuser_id,Member CDH plan activity,Last Update DBMS User ID,varchar
+dbo,cmc_mepe_prcs_elig,meme_ck,Comprehensive Member Eligibility Status Table,Member Contrived Key,int
+dbo,cmc_mepe_prcs_elig,cspd_cat,Comprehensive Member Eligibility Status Table,Class Product Category,char
+dbo,cmc_mepe_prcs_elig,mepe_eff_dt,Comprehensive Member Eligibility Status Table,Effective Date,datetime
+dbo,cmc_mepe_prcs_elig,mepe_term_dt,Comprehensive Member Eligibility Status Table,Termination Date,datetime
+dbo,cmc_mepe_prcs_elig,mepe_create_dtm,Comprehensive Member Eligibility Status Table,Process Eligibility Create Date/Time Stamp,datetime
+dbo,cmc_mepe_prcs_elig,cscs_id,Comprehensive Member Eligibility Status Table,Class Identifier,char
+dbo,cmc_mepe_prcs_elig,grgr_ck,Comprehensive Member Eligibility Status Table,Group Contrived Key,int
+dbo,cmc_mepe_prcs_elig,sgsg_ck,Comprehensive Member Eligibility Status Table,Subgroup Contrived Key,int
+dbo,cmc_mepe_prcs_elig,cspi_id,Comprehensive Member Eligibility Status Table,Class Plan Identifier,char
+dbo,cmc_mepe_prcs_elig,pdpd_id,Comprehensive Member Eligibility Status Table,Product Identifier,char
+dbo,cmc_mepe_prcs_elig,mepe_elig_ind,Comprehensive Member Eligibility Status Table,Eligibility Indicator,char
+dbo,cmc_mepe_prcs_elig,excd_id,Comprehensive Member Eligibility Status Table,Explanation Code,char
+dbo,cmc_mepe_prcs_elig,mepe_mctr_rsn,Comprehensive Member Eligibility Status Table,Member Eligibility Reason,char
+dbo,cmc_mepe_prcs_elig,mepe_sys_inel_cd,Comprehensive Member Eligibility Status Table,System Defined Ineligibility Explanation Code,char
+dbo,cmc_mepe_prcs_elig,mepe_fi,Comprehensive Member Eligibility Status Table,Family Indicator,char
+dbo,cmc_mepe_prcs_elig,mepe_elig_ovr_ind,Comprehensive Member Eligibility Status Table,Eligibility Override Indicator,char
+dbo,cmc_mepe_prcs_elig,mepe_has_medx_ind,Comprehensive Member Eligibility Status Table,Pre-Existing Condition Indicator,char
+dbo,cmc_mepe_prcs_elig,mepe_has_warn_cd,Comprehensive Member Eligibility Status Table,Member Level Delinquency of Premium Warning Code,char
+dbo,cmc_mepe_prcs_elig,mepe_prcs_sts,Comprehensive Member Eligibility Status Table,Member Status,char
+dbo,cmc_mepe_prcs_elig,mepe_source,Comprehensive Member Eligibility Status Table,Eligibility Source,char
+dbo,cmc_mepe_prcs_elig,mepe_plan_entry_dt,Comprehensive Member Eligibility Status Table,Plan Entry Date,datetime
+dbo,cmc_mepe_prcs_elig,mepe_lock_token,Comprehensive Member Eligibility Status Table,Lock Token,smallint
+dbo,cmc_mepe_prcs_elig,mepe_bl_elig_ind_nvl,Comprehensive Member Eligibility Status Table, Billing Eligible,char
+dbo,cmc_mepg_relation,meme_ck,Member Program Relationship,Member Contrived Key,int
+dbo,cmc_mepg_relation,pgpi_mctr_ptyp,Member Program Relationship,Program Type,char
+dbo,cmc_mepg_relation,mepg_eff_dt,Member Program Relationship,Effective Date,datetime
+dbo,cmc_mepg_relation,mepg_term_dt,Member Program Relationship,Termination Date,datetime
+dbo,cmc_mepg_relation,mepg_mctr_trsn,Member Program Relationship,Termination Reason,char
+dbo,cmc_mepg_relation,pgpi_id,Member Program Relationship,Program ID,varchar
+dbo,cmc_mepg_relation,prpr_id,Member Program Relationship,Servicing Provider,char
+dbo,cmc_mepg_relation,mepg_risk_score,Member Program Relationship,Program Risk Score,varchar
+dbo,cmc_mepg_relation,mepg_attr_dt,Member Program Relationship,Attribution Date,datetime
+dbo,cmc_mepg_relation,mepg_mctr_asrc,Member Program Relationship,Attribution Source,char
+dbo,cmc_mepg_relation,mepg_asrc_value,Member Program Relationship,Attribution Source Value,varchar
+dbo,cmc_mepg_relation,mepg_pcpm_rel_ent,Member Program Relationship,Provider Entity Relationship Identifier,varchar
+dbo,cmc_mepg_relation,mepg_mctr_cod1,Member Program Relationship,Reporting Code 1,char
+dbo,cmc_mepg_relation,mepg_mctr_cod2,Member Program Relationship,Reporting Code 2,char
+dbo,cmc_mepg_relation,mepg_mctr_cod3,Member Program Relationship,Reporting Code 3,char
+dbo,cmc_mepg_relation,mepg_void_ind,Member Program Relationship,Void Indicator,char
+dbo,cmc_mepg_relation,mepg_lock_token,Member Program Relationship,Lock Token,smallint
+dbo,cmc_mepg_relation,atxr_source_id,Member Program Relationship,Attachment Source Id,datetime
+dbo,cmc_mepg_relation,sys_last_upd_dtm,Member Program Relationship,Last Update Datetime,datetime
+dbo,cmc_mepg_relation,sys_usus_id,Member Program Relationship,Last Update User ID,varchar
+dbo,cmc_mepg_relation,sys_dbuser_id,Member Program Relationship,Last Update DBMS User ID,varchar
+dbo,cmc_mepk_risk,meme_ck,Risk Score Data,Member Contrived Key,int
+dbo,cmc_mepk_risk,mepk_mctr_rtyp,Risk Score Data,Risk Score Type,char
+dbo,cmc_mepk_risk,mepk_eff_dt,Risk Score Data,Effective Date,datetime
+dbo,cmc_mepk_risk,mepk_term_dt,Risk Score Data,Termination Date,datetime
+dbo,cmc_mepk_risk,mepk_mctr_trsn,Risk Score Data,Termination Reason,char
+dbo,cmc_mepk_risk,grgr_ck,Risk Score Data,Group Contrived Key,int
+dbo,cmc_mepk_risk,mepk_risk_score,Risk Score Data,Risk Score,int
+dbo,cmc_mepk_risk,mepk_lock_token,Risk Score Data,Lock Token,smallint
+dbo,cmc_mepk_risk,atxr_source_id,Risk Score Data,Attachment Source Id,datetime
+dbo,cmc_mepk_risk,sys_last_upd_dtm,Risk Score Data,Last Update Datetime,datetime
+dbo,cmc_mepk_risk,sys_usus_id,Risk Score Data,Last Update User ID,varchar
+dbo,cmc_mepk_risk,sys_dbuser_id,Risk Score Data,Last Update DBMS User ID,varchar
+dbo,cmc_mepp_mpp_plan,meme_ck,Member Medicare Prescription Payment Plan,Member Contrived Key,int
+dbo,cmc_mepp_mpp_plan,mepp_eff_dt,Member Medicare Prescription Payment Plan,Effective Date,datetime
+dbo,cmc_mepp_mpp_plan,mepp_term_dt,Member Medicare Prescription Payment Plan,Termination Date,datetime
+dbo,cmc_mepp_mpp_plan,grgr_ck,Member Medicare Prescription Payment Plan,Group Contrived Key,int
+dbo,cmc_mepp_mpp_plan,mepp_mctr_trsn,Member Medicare Prescription Payment Plan,Termination Reason,char
+dbo,cmc_mepp_mpp_plan,mepp_mctr_sts,Member Medicare Prescription Payment Plan,Participation Status,char
+dbo,cmc_mepp_mpp_plan,mepp_mctr_osrc,Member Medicare Prescription Payment Plan,Opt in source,char
+dbo,cmc_mepp_mpp_plan,mepp_mctr_pref,Member Medicare Prescription Payment Plan,Communication Preference,char
+dbo,cmc_mepp_mpp_plan,mepp_create_dtm,Member Medicare Prescription Payment Plan,Create Datetime,datetime
+dbo,cmc_mepp_mpp_plan,mepp_ltb_ind,Member Medicare Prescription Payment Plan,Likely to Benefit Indicator,char
+dbo,cmc_mepp_mpp_plan,mepp_ltb_det_dt,Member Medicare Prescription Payment Plan,Likely to Benefit Determination Date,datetime
+dbo,cmc_mepp_mpp_plan,mepp_lock_token,Member Medicare Prescription Payment Plan,Lock token,smallint
+dbo,cmc_mepp_mpp_plan,atxr_source_id,Member Medicare Prescription Payment Plan,Attachment Source ID,datetime
+dbo,cmc_mepp_mpp_plan,sys_last_upd_dtm,Member Medicare Prescription Payment Plan,Last Update Datetime,datetime
+dbo,cmc_mepp_mpp_plan,sys_usus_id,Member Medicare Prescription Payment Plan,Last Update User ID,varchar
+dbo,cmc_mepp_mpp_plan,sys_dbuser_id,Member Medicare Prescription Payment Plan,Last Update DBMS User ID,varchar
+dbo,cmc_mepr_prim_prov,meme_ck,Member's History of PCP Relationships,Member Contrived Key,int
+dbo,cmc_mepr_prim_prov,mepr_pcp_type,Member's History of PCP Relationships,Primary Care Provider Type,char
+dbo,cmc_mepr_prim_prov,mepr_eff_dt,Member's History of PCP Relationships,Primary Care Provider Effective Date,datetime
+dbo,cmc_mepr_prim_prov,mepr_term_dt,Member's History of PCP Relationships,Primary Care Provider Termination Date,datetime
+dbo,cmc_mepr_prim_prov,mepr_mctr_trsn,Member's History of PCP Relationships,Primary Care Provider Termination Reason,char
+dbo,cmc_mepr_prim_prov,mepr_mctr_orsn,Member's History of PCP Relationships,PCP Selection Override Reason,char
+dbo,cmc_mepr_prim_prov,mepr_mctr_ersn,Member's History of PCP Relationships,Manual Assignment Reason,char
+dbo,cmc_mepr_prim_prov,grgr_ck,Member's History of PCP Relationships,Group Contrived Key,int
+dbo,cmc_mepr_prim_prov,prpr_id,Member's History of PCP Relationships,Provider Identifier,char
+dbo,cmc_mepr_prim_prov,mepr_source,Member's History of PCP Relationships,PCP Assignment Source,char
+dbo,cmc_mepr_prim_prov,mepr_demgrphc_ind,Member's History of PCP Relationships,Demographic Indicator,char
+dbo,cmc_mepr_prim_prov,mepr_cr_eff_dt,Member's History of PCP Relationships,Cap Retro Effective Date,datetime
+dbo,cmc_mepr_prim_prov,mepr_cr_term_dt,Member's History of PCP Relationships,Cap Retro Termination Date,datetime
+dbo,cmc_mepr_prim_prov,mepr_cap_rel_ent,Member's History of PCP Relationships,Related Capitated Entity Provider,char
+dbo,cmc_mepr_prim_prov,pdpd_cap_ret_mos,Member's History of PCP Relationships,Cap Retro Months,smallint
+dbo,cmc_mepr_prim_prov,mepr_lock_token,Member's History of PCP Relationships,Lock Token,smallint
+dbo,cmc_mepr_prim_prov,atxr_source_id,Member's History of PCP Relationships,Attachment Source Id,datetime
+dbo,cmc_mepr_prim_prov,sys_last_upd_dtm,Member's History of PCP Relationships,Last Update Datetime,datetime
+dbo,cmc_mepr_prim_prov,sys_usus_id,Member's History of PCP Relationships,Last Update User ID,varchar
+dbo,cmc_mepr_prim_prov,sys_dbuser_id,Member's History of PCP Relationships,Last Update DBMS User ID,varchar
+dbo,cmc_mepr_prim_prov,mepr_source_dt_nvl,Member's History of PCP Relationships,PCP Assignment Source Date,datetime
+dbo,cmc_mept_cr_calc,meme_ck,Member Capitated Relationship Date,Member Contrived Key,int
+dbo,cmc_mept_cr_calc,mepr_pcp_type,Member Capitated Relationship Date,PCP Type,char
+dbo,cmc_mept_cr_calc,mepr_eff_dt,Member Capitated Relationship Date,Effective Date,datetime
+dbo,cmc_mept_cr_calc,mept_action,Member Capitated Relationship Date,Action,char
+dbo,cmc_mept_cr_calc,mept_image_type,Member Capitated Relationship Date,Image Type,char
+dbo,cmc_mept_cr_calc,mept_seq_no,Member Capitated Relationship Date,Sequence Number,smallint
+dbo,cmc_mept_cr_calc,mept_create_dtm,Member Capitated Relationship Date,Create Date Time,datetime
+dbo,cmc_mept_cr_calc,mepr_term_dt,Member Capitated Relationship Date,Termination Date,datetime
+dbo,cmc_mept_cr_calc,mept_row_id,Member Capitated Relationship Date,Row ID,numeric
+dbo,cmc_mept_cr_calc,grgr_ck,Member Capitated Relationship Date,Group Contrived Key,int
+dbo,cmc_mept_cr_calc,prpr_id,Member Capitated Relationship Date,Provider ID,char
+dbo,cmc_mept_cr_calc,mepr_source,Member Capitated Relationship Date,Source,char
+dbo,cmc_mept_cr_calc,mepr_demgrphc_ind,Member Capitated Relationship Date,Demographic Indicator,char
+dbo,cmc_mept_cr_calc,mepr_cr_eff_dt,Member Capitated Relationship Date,Capitation Effective Date,datetime
+dbo,cmc_mept_cr_calc,mepr_cr_term_dt,Member Capitated Relationship Date,Capitation Termination Date,datetime
+dbo,cmc_mept_cr_calc,mepr_cap_rel_ent,Member Capitated Relationship Date,Capitated Related Entity,char
+dbo,cmc_mept_cr_calc,pdpd_cap_ret_mos,Member Capitated Relationship Date,Retro months,smallint
+dbo,cmc_mept_cr_calc,mept_match_eff_dt,Member Capitated Relationship Date,Match Effective Date,datetime
+dbo,cmc_mept_cr_calc,mept_sts,Member Capitated Relationship Date,Status,char
+dbo,cmc_mept_cr_calc,mept_addl_data,Member Capitated Relationship Date,Additional Data,varchar
+dbo,cmc_mept_cr_calc,sys_last_upd_dtm,Member Capitated Relationship Date,Last Update Datetime,datetime
+dbo,cmc_mept_cr_calc,sys_usus_id,Member Capitated Relationship Date,Last Update User ID,varchar
+dbo,cmc_mept_cr_calc,sys_dbuser_id,Member Capitated Relationship Date,Last Update DBMS User ID,varchar
+dbo,cmc_mepv_prov,meme_ck,Provider Relationship Data,Member Contrived Key,int
+dbo,cmc_mepv_prov,mepv_mctr_ptyp,Provider Relationship Data,Provider Relationship Type,char
+dbo,cmc_mepv_prov,mepv_eff_dt,Provider Relationship Data,Effective Date,datetime
+dbo,cmc_mepv_prov,mepv_term_dt,Provider Relationship Data,Termination Date,datetime
+dbo,cmc_mepv_prov,mepv_mctr_trsn,Provider Relationship Data,Termination Reason,char
+dbo,cmc_mepv_prov,grgr_ck,Provider Relationship Data,Group Contrived Key,int
+dbo,cmc_mepv_prov,prpr_id,Provider Relationship Data,Provider ID,char
+dbo,cmc_mepv_prov,mepv_lock_token,Provider Relationship Data,Lock Token,smallint
+dbo,cmc_mepv_prov,atxr_source_id,Provider Relationship Data,Attachment Source Id,datetime
+dbo,cmc_mepv_prov,sys_last_upd_dtm,Provider Relationship Data,Last Update Datetime,datetime
+dbo,cmc_mepv_prov,sys_usus_id,Provider Relationship Data,Last Update User ID,varchar
+dbo,cmc_mepv_prov,sys_dbuser_id,Provider Relationship Data,Last Update DBMS User ID,varchar
+dbo,cmc_mera_rec_act,mera_row_id,Member Reconciliation Activity,Row ID,numeric
+dbo,cmc_mera_rec_act,blei_ck,Member Reconciliation Activity,Billing Entity contrived key,int
+dbo,cmc_mera_rec_act,sbsb_ck,Member Reconciliation Activity,Subscriber contrived key,int
+dbo,cmc_mera_rec_act,blbl_due_dt,Member Reconciliation Activity,Last outstanding due date,datetime
+dbo,cmc_mera_rec_act,mera_create_dtm,Member Reconciliation Activity,Row create date,datetime
+dbo,cmc_mera_rec_act,mera_sts,Member Reconciliation Activity,Status,char
+dbo,cmc_mera_rec_act,mera_lock_token,Member Reconciliation Activity,Lock Token,smallint
+dbo,cmc_mera_rec_act,atxr_source_id,Member Reconciliation Activity,Attachment Source Id,datetime
+dbo,cmc_merd_rate_data,meme_ck,Member Rate Data,Member Contrived Key,int
+dbo,cmc_merd_rate_data,merd_eff_dt,Member Rate Data,Effective Date,datetime
+dbo,cmc_merd_rate_data,merd_insq_dt,Member Rate Data,Insequence Date,datetime
+dbo,cmc_merd_rate_data,grgr_ck,Member Rate Data,Group Contrived Key,int
+dbo,cmc_merd_rate_data,merd_type,Member Rate Data,Rate Data Type,char
+dbo,cmc_merd_rate_data,cspi_id,Member Rate Data,Class Plan Identifier,char
+dbo,cmc_merd_rate_data,merd_units,Member Rate Data,Elected Units,int
+dbo,cmc_merd_rate_data,merd_mod_fctr,Member Rate Data,Factor,int
+dbo,cmc_merd_rate_data,merd_mod_amt,Member Rate Data,Amount,money
+dbo,cmc_merd_rate_data,merd_lock_token,Member Rate Data,Lock Token,smallint
+dbo,cmc_merd_rate_data,atxr_source_id,Member Rate Data,Attachment Source Id,datetime
+dbo,cmc_mere_relation,meme_ck,Relation table,Member Contrived Key,int
+dbo,cmc_mere_relation,mere_type,Relation table,Relation Type,char
+dbo,cmc_mere_relation,mere_eff_dt,Relation table,Effective Date,datetime
+dbo,cmc_mere_relation,mere_term_dt,Relation table,Termination Date,datetime
+dbo,cmc_mere_relation,mere_mctr_trsn,Relation table,Termination Reason,char
+dbo,cmc_mere_relation,mcre_id,Relation table,ID,char
+dbo,cmc_mere_relation,mere_lock_token,Relation table,Lock Token,smallint
+dbo,cmc_mere_relation,atxr_source_id,Relation table,Attachment Source Id,datetime
+dbo,cmc_merp_relation,meme_ck,Responsible Party Relationship,Member Contrived Key,int
+dbo,cmc_merp_relation,merp_eff_dt,Responsible Party Relationship,Effective Date,datetime
+dbo,cmc_merp_relation,merp_term_dt,Responsible Party Relationship,Termination Date,datetime
+dbo,cmc_merp_relation,merp_mctr_trsn,Responsible Party Relationship,Termination Reason,char
+dbo,cmc_merp_relation,grgr_ck,Responsible Party Relationship,Group Contrived Key,int
+dbo,cmc_merp_relation,merp_mctr_type,Responsible Party Relationship,Responsible Person Type,char
+dbo,cmc_merp_relation,merp_last_ver_dt,Responsible Party Relationship,Last Verification Date,datetime
+dbo,cmc_merp_relation,merp_last_ver_name,Responsible Party Relationship,Last Verification Name,char
+dbo,cmc_merp_relation,merp_mctr_vmth,Responsible Party Relationship,Last Verification Method,char
+dbo,cmc_merp_relation,mcrp_id,Responsible Party Relationship,Responsible Person Identifier,char
+dbo,cmc_merp_relation,merp_lock_token,Responsible Party Relationship,Lock Token,smallint
+dbo,cmc_merp_relation,atxr_source_id,Responsible Party Relationship,Attachment Source Id,datetime
+dbo,cmc_mers_retire,meme_ck,Member CMS Retiree Subsidy Table,Member Contrived Key,int
+dbo,cmc_mers_retire,mers_cov_eff_dt,Member CMS Retiree Subsidy Table, Coverage Effective Date,datetime
+dbo,cmc_mers_retire,mers_cov_term_dt,Member CMS Retiree Subsidy Table,Coverage Termination Date,datetime
+dbo,cmc_mers_retire,grgr_ck,Member CMS Retiree Subsidy Table,Group Contrived Key,int
+dbo,cmc_mers_retire,mers_mctr_app_no,Member CMS Retiree Subsidy Table, Application Number,char
+dbo,cmc_mers_retire,mers_intf_sts,Member CMS Retiree Subsidy Table,Interface Status,char
+dbo,cmc_mers_retire,mers_source_id,Member CMS Retiree Subsidy Table, Source Indicator,char
+dbo,cmc_mers_retire,mers_last_upd_dtm,Member CMS Retiree Subsidy Table, Last Update Date,datetime
+dbo,cmc_mers_retire,mers_batch_id,Member CMS Retiree Subsidy Table,Batch ID,char
+dbo,cmc_mers_retire,mers_mctr_uboi,Member CMS Retiree Subsidy Table, Unique  Benefit Option Identifier,char
+dbo,cmc_mers_retire,mers_rel,Member CMS Retiree Subsidy Table, Relationship to Retiree,char
+dbo,cmc_mers_retire,mers_trans_type,Member CMS Retiree Subsidy Table, Transaction Type,char
+dbo,cmc_mers_retire,mers_det_ind,Member CMS Retiree Subsidy Table, Determination Indicator,char
+dbo,cmc_mers_retire,mers_reason,Member CMS Retiree Subsidy Table,Response Reason Code,char
+dbo,cmc_mers_retire,mers_sbsdy_eff_dt,Member CMS Retiree Subsidy Table,Subsidy Period Effective Date,datetime
+dbo,cmc_mers_retire,mers_sbsdy_term_dt,Member CMS Retiree Subsidy Table,Subsidy Period Termination Date,datetime
+dbo,cmc_mers_retire,usus_id,Member CMS Retiree Subsidy Table,User Identifier,char
+dbo,cmc_mers_retire,mers_mctr_rsn,Member CMS Retiree Subsidy Table,Reason,char
+dbo,cmc_mers_retire,mers_addl_data,Member CMS Retiree Subsidy Table,Additional Data,varchar
+dbo,cmc_mers_retire,mers_lock_token,Member CMS Retiree Subsidy Table,Lock Token,smallint
+dbo,cmc_mers_retire,atxr_source_id,Member CMS Retiree Subsidy Table,Attachment Source Id,datetime
+dbo,cmc_mert_rate_data,meme_ck,Member level rate Data,Member Contrived Key,int
+dbo,cmc_mert_rate_data,mert_eff_dt,Member level rate Data,Member Rate Data Effective Date,datetime
+dbo,cmc_mert_rate_data,mert_term_dt,Member level rate Data,Member Rate Date Termination Date,datetime
+dbo,cmc_mert_rate_data,grgr_ck,Member level rate Data,Group Contrived Key,int
+dbo,cmc_mert_rate_data,mert_smoker_ind,Member level rate Data,Smoker Indicator,char
+dbo,cmc_mert_rate_data,mert_mctr_fct1,Member level rate Data,Underwriting Classification 1,char
+dbo,cmc_mert_rate_data,mert_mctr_fct2,Member level rate Data,Underwriting Classification 2,char
+dbo,cmc_mert_rate_data,mert_mctr_fct3,Member level rate Data,Underwriting Classification 3,char
+dbo,cmc_mert_rate_data,mert_lock_token,Member level rate Data,Lock Token,smallint
+dbo,cmc_mert_rate_data,atxr_source_id,Member level rate Data,Attachment Source Id,datetime
+dbo,cmc_merv_mecr_ver,meme_ck,Medicare Verification Table,Member Contrived Key,int
+dbo,cmc_merv_mecr_ver,memd_event_cd,Medicare Verification Table,Event Code,char
+dbo,cmc_merv_mecr_ver,memd_hcfa_eff_dt,Medicare Verification Table,HCFA Effective Date,datetime
+dbo,cmc_merv_mecr_ver,merv_seq_no,Medicare Verification Table,Sequence number,smallint
+dbo,cmc_merv_mecr_ver,grgr_ck,Medicare Verification Table,Group Contrived Key,int
+dbo,cmc_merv_mecr_ver,merv_ver_dt,Medicare Verification Table,Verification date,datetime
+dbo,cmc_merv_mecr_ver,merv_ver_name,Medicare Verification Table,Verified By,char
+dbo,cmc_merv_mecr_ver,merv_mctr_vmth,Medicare Verification Table,Verification Method,char
+dbo,cmc_merv_mecr_ver,merv_mctr_vrsn,Medicare Verification Table,Verification Reason,char
+dbo,cmc_merv_mecr_ver,mcre_id,Medicare Verification Table,Institution's Name,char
+dbo,cmc_merv_mecr_ver,merv_ver_from_dt,Medicare Verification Table,Verification 'From' date,datetime
+dbo,cmc_merv_mecr_ver,merv_ver_thru_dt,Medicare Verification Table,Verified Thru Date,datetime
+dbo,cmc_merv_mecr_ver,merv_mctr_rslt,Medicare Verification Table,Verification Result,char
+dbo,cmc_merv_mecr_ver,merv_lock_token,Medicare Verification Table,Lock Token,smallint
+dbo,cmc_merv_mecr_ver,atxr_source_id,Medicare Verification Table,Attachment Source Id,datetime
+dbo,cmc_merw_rwd_accum,meme_ck,Dental Rewards Accumulator Table,Member Contrived Key,int
+dbo,cmc_merw_rwd_accum,merw_cur_year,Dental Rewards Accumulator Table,Dental Rewards Accumulators Year,datetime
+dbo,cmc_merw_rwd_accum,merw_yr1_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Current Year Paid Amount,money
+dbo,cmc_merw_rwd_accum,merw_yr1_thres_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Current Year Paid Amount Toward Reward,money
+dbo,cmc_merw_rwd_accum,merw_yr1_rwdco_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Current Year Available Reward Amount,money
+dbo,cmc_merw_rwd_accum,merw_yr1_bonco_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Current Year Available Bonus Amount,money
+dbo,cmc_merw_rwd_accum,merw_yr1_rwd_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Current Year Reward Amount Used,money
+dbo,cmc_merw_rwd_accum,merw_yr1_bonus_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Current Year Bonus Amount Used,money
+dbo,cmc_merw_rwd_accum,merw_yr1_oon_count,Dental Rewards Accumulator Table,Dental Rewards Accumulators Current Year Out of Network Claim Count,money
+dbo,cmc_merw_rwd_accum,merw_yr2_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Prior Year Paid Amount,money
+dbo,cmc_merw_rwd_accum,merw_yr2_thres_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Prior Year Paid Amount Toward Reward,money
+dbo,cmc_merw_rwd_accum,merw_yr2_rwdco_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Prior Year Available Reward Amount,money
+dbo,cmc_merw_rwd_accum,merw_yr2_bonco_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Prior Year Available Bonus Amount,money
+dbo,cmc_merw_rwd_accum,merw_yr2_rwd_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Prior Year Reward Amount Used,money
+dbo,cmc_merw_rwd_accum,merw_yr2_bonus_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Prior Year Bonus Amount Used,money
+dbo,cmc_merw_rwd_accum,merw_yr2_oon_count,Dental Rewards Accumulator Table,Dental Rewards Accumulators Prior Year Out of Network Claim Count,money
+dbo,cmc_merw_rwd_accum,merw_yr3_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Third Year Paid Amount,money
+dbo,cmc_merw_rwd_accum,merw_yr3_thres_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Third Year Paid Amount Toward Reward,money
+dbo,cmc_merw_rwd_accum,merw_yr3_rwdco_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Third Year Available Reward Amount,money
+dbo,cmc_merw_rwd_accum,merw_yr3_bonco_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Third Year Available Bonus Amount,money
+dbo,cmc_merw_rwd_accum,merw_yr3_rwd_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Third Year Reward Amount Used,money
+dbo,cmc_merw_rwd_accum,merw_yr3_bonus_amt,Dental Rewards Accumulator Table,Dental Rewards Accumulators Third Year Bonus Amount Used,money
+dbo,cmc_merw_rwd_accum,merw_yr3_oon_count,Dental Rewards Accumulator Table,Dental Rewards Accumulators Third Year Out of Network Claim Count,money
+dbo,cmc_merw_rwd_accum,merw_lock_token,Dental Rewards Accumulator Table,Lock Token,smallint
+dbo,cmc_merw_rwd_accum,atxr_source_id,Dental Rewards Accumulator Table,Attachment Source Id,datetime
+dbo,cmc_mesa_susp_act,meme_ck,Member Suspend Capitation Action,Member Contrived Key,int
+dbo,cmc_mesa_susp_act,meet_excp_type,Member Suspend Capitation Action, Exception Type,char
+dbo,cmc_mesa_susp_act,cspd_cat,Member Suspend Capitation Action, Category,char
+dbo,cmc_mesa_susp_act,meet_eff_dt,Member Suspend Capitation Action, Effective Date,datetime
+dbo,cmc_mesa_susp_act,mesa_row_id,Member Suspend Capitation Action, Row ID,numeric
+dbo,cmc_mesa_susp_act,mesa_sts,Member Suspend Capitation Action,Status,smallint
+dbo,cmc_mesa_susp_act,mesa_pay_dt,Member Suspend Capitation Action,Capitation Pay Date,datetime
+dbo,cmc_mesa_susp_act,mesa_create_dtm,Member Suspend Capitation Action,Create Date,datetime
+dbo,cmc_mesa_susp_act,mesa_lock_token,Member Suspend Capitation Action,Lock Token,smallint
+dbo,cmc_mesa_susp_act,atxr_source_id,Member Suspend Capitation Action,Attachment Source Id,datetime
+dbo,cmc_mest_student,meme_ck,Student Eligibility Verification Information,Member Contrived Key,int
+dbo,cmc_mest_student,mest_eff_dt,Student Eligibility Verification Information,Student Effective Date,datetime
+dbo,cmc_mest_student,mest_term_dt,Student Eligibility Verification Information,Student Termination Date,datetime
+dbo,cmc_mest_student,mest_mctr_trsn,Student Eligibility Verification Information,Student Termination Reason,char
+dbo,cmc_mest_student,grgr_ck,Student Eligibility Verification Information,Group Contrived Key,int
+dbo,cmc_mest_student,mest_school_name,Student Eligibility Verification Information,School Name,char
+dbo,cmc_mest_student,mest_type,Student Eligibility Verification Information,Student Type,char
+dbo,cmc_mest_student,mest_last_ver_dt,Student Eligibility Verification Information,Last Verification Date,datetime
+dbo,cmc_mest_student,mest_last_ver_name,Student Eligibility Verification Information,Last Verification Name,char
+dbo,cmc_mest_student,mest_mctr_vmth,Student Eligibility Verification Information,Verification Method,char
+dbo,cmc_mest_student,mest_lock_token,Student Eligibility Verification Information,Lock Token,smallint
+dbo,cmc_mest_student,atxr_source_id,Student Eligibility Verification Information,Attachment Source Id,datetime
+dbo,cmc_mest_student,sys_last_upd_dtm,Student Eligibility Verification Information,Last Update Datetime,datetime
+dbo,cmc_mest_student,sys_usus_id,Student Eligibility Verification Information,Last Update User ID,varchar
+dbo,cmc_mest_student,sys_dbuser_id,Student Eligibility Verification Information,Last Update DBMS User ID,varchar
+dbo,cmc_mesu_subsidy,meme_ck,Member Subsidy Billing,Member Contrived Key,int
+dbo,cmc_mesu_subsidy,cspd_cat,Member Subsidy Billing,Class Product Category,char
+dbo,cmc_mesu_subsidy,mesu_mctr_type,Member Subsidy Billing,Subsidy Type,char
+dbo,cmc_mesu_subsidy,mesu_rate_type,Member Subsidy Billing,Premium Rate Type,char
+dbo,cmc_mesu_subsidy,mesu_eff_dt,Member Subsidy Billing,Subsidy Effective Date,datetime
+dbo,cmc_mesu_subsidy,mesu_term_dt,Member Subsidy Billing,Subsidy Termination Date,datetime
+dbo,cmc_mesu_subsidy,grgr_ck,Member Subsidy Billing,Group Contrived Key,int
+dbo,cmc_mesu_subsidy,sbsb_ck,Member Subsidy Billing,Subscriber Contrived Key,int
+dbo,cmc_mesu_subsidy,mesu_subsidy,Member Subsidy Billing,Subsidy Amount,money
+dbo,cmc_mesu_subsidy,bgbg_ck,Member Subsidy Billing,Billing Group Contrived Key,int
+dbo,cmc_mesu_subsidy,mesu_fam_ind,Member Subsidy Billing,Family Indicator,char
+dbo,cmc_mesu_subsidy,mesu_basis,Member Subsidy Billing, Premium Rate Basis,smallint
+dbo,cmc_mesu_subsidy,mesu_lock_token,Member Subsidy Billing,Lock Token,smallint
+dbo,cmc_mesu_subsidy,atxr_source_id,Member Subsidy Billing,Attachment Source Id,datetime
+dbo,cmc_mesu_subsidy,sys_last_upd_dtm,Member Subsidy Billing,Last Update Datetime,datetime
+dbo,cmc_mesu_subsidy,sys_usus_id,Member Subsidy Billing,Last Update User ID,varchar
+dbo,cmc_mesu_subsidy,sys_dbuser_id,Member Subsidy Billing,Last Update DBMS User ID,varchar
+dbo,cmc_meun_unused_meme_ck,row_num,Unused Member Contrived Keys,Row ID,numeric
+dbo,cmc_meun_unused_meme_ck,meme_ck,Unused Member Contrived Keys,Member Contrived Key,int
+dbo,cmc_meun_unused_meme_ck,meun_create_dt,Unused Member Contrived Keys,Create Date,datetime
+dbo,cmc_mevr_val_rwrd,meme_ck,Member Value Based Benefit Reward,Member Contrived Key,int
+dbo,cmc_mevr_val_rwrd,vbbd_rule,Member Value Based Benefit Reward, ID Value Based Benefit Incentive Rule,char
+dbo,cmc_mevr_val_rwrd,mevr_eff_dt,Member Value Based Benefit Reward, Effective Date,datetime
+dbo,cmc_mevr_val_rwrd,mevr_insq_dtm,Member Value Based Benefit Reward, In Sequence Date,datetime
+dbo,cmc_mevr_val_rwrd,vbbd_rule_type,Member Value Based Benefit Reward, VBB Rule Type,char
+dbo,cmc_mevr_val_rwrd,mevr_hra_credit,Member Value Based Benefit Reward, HRA Allocation Credit Amount,money
+dbo,cmc_mevr_val_rwrd,mevr_term_dt,Member Value Based Benefit Reward, Termination Date,datetime
+dbo,cmc_mevr_val_rwrd,mevr_mctr_trsn,Member Value Based Benefit Reward, Termination Reason,char
+dbo,cmc_mevr_val_rwrd,grgr_ck,Member Value Based Benefit Reward, Group Contrived Key,int
+dbo,cmc_mevr_val_rwrd,mevr_void_ind,Member Value Based Benefit Reward, Void Indicator,char
+dbo,cmc_mevr_val_rwrd,mevr_lock_token,Member Value Based Benefit Reward,Lock Token,smallint
+dbo,cmc_mevr_val_rwrd,atxr_source_id,Member Value Based Benefit Reward,Attachment Source Id,datetime
+dbo,cmc_mevr_val_rwrd,sys_last_upd_dtm,Member Value Based Benefit Reward,Last Update Datetime,datetime
+dbo,cmc_mevr_val_rwrd,sys_usus_id,Member Value Based Benefit Reward,Last Update User ID,varchar
+dbo,cmc_mevr_val_rwrd,sys_dbuser_id,Member Value Based Benefit Reward,Last Update DBMS User ID,varchar
+dbo,cmc_mewm_me_msg,meme_ck,Member Level Warning Messages,Member Contrived Key,int
+dbo,cmc_mewm_me_msg,mewm_eff_dt,Member Level Warning Messages,Effective Date,datetime
+dbo,cmc_mewm_me_msg,wmds_seq_no,Member Level Warning Messages,User Message,smallint
+dbo,cmc_mewm_me_msg,mewm_term_dt,Member Level Warning Messages,Termination Date,datetime
+dbo,cmc_mewm_me_msg,mewm_mctr_trsn,Member Level Warning Messages,Termination Reason,char
+dbo,cmc_mewm_me_msg,grgr_ck,Member Level Warning Messages,Group Contrived Key,int
+dbo,cmc_mewm_me_msg,mewm_lock_token,Member Level Warning Messages,Lock Token,smallint
+dbo,cmc_mewm_me_msg,atxr_source_id,Member Level Warning Messages,Attachment Source Id,datetime
+dbo,cmc_mewm_me_msg,sys_last_upd_dtm,Member Level Warning Messages,Last Update Datetime,datetime
+dbo,cmc_mewm_me_msg,sys_usus_id,Member Level Warning Messages,Last Update User ID,varchar
+dbo,cmc_mewm_me_msg,sys_dbuser_id,Member Level Warning Messages,Last Update DBMS User ID,varchar
+dbo,cmc_mmeq_work_que,mmeq_row_id,Elements Extract work table, Queue Row Identifier,numeric
+dbo,cmc_mmeq_work_que,syin_inst,Elements Extract work table, System Instance for this work Row,bigint
+dbo,cmc_mmeq_work_que,meme_hicn,Elements Extract work table, Medicare Number,char
+dbo,cmc_mmeq_work_que,bgbg_id,Elements Extract work table, Billing Group ID,char
+dbo,cmc_mmeq_work_que,bgbg_ck,Elements Extract work table, Billing Group Contrived Key,int
+dbo,cmc_mmeq_work_que,sbsb_id,Elements Extract work table, Subscriber Identifier,char
+dbo,cmc_mmeq_work_que,meme_sfx,Elements Extract work table, Member Suffix,smallint
+dbo,cmc_mmeq_work_que,meme_ck,Elements Extract work table,Member Contrived Key,int
+dbo,cmc_mmpr_mm_prepro,mmpr_row_id,Master Member Pre-process data, Row ID,numeric
+dbo,cmc_mmpr_mm_prepro,meme_ck,Master Member Pre-process data,Member Contrived Key,int
+dbo,cmc_mmpr_mm_prepro,mmpr_sts,Master Member Pre-process data, Status,int
+dbo,cmc_mvaa_accum_act,meme_ck,Member Vision Service Group Accumulator Activity,Member Contrived Key,int
+dbo,cmc_mvaa_accum_act,svgr_id,Member Vision Service Group Accumulator Activity,Service Grouping ID,char
+dbo,cmc_mvaa_accum_act,mvsa_network_ind,Member Vision Service Group Accumulator Activity, Network Indicator,char
+dbo,cmc_mvaa_accum_act,mvsa_eff_dt,Member Vision Service Group Accumulator Activity,Effective Date,datetime
+dbo,cmc_mvaa_accum_act,mvsa_seq_no,Member Vision Service Group Accumulator Activity,  Accumulator Sequence Number,smallint
+dbo,cmc_mvaa_accum_act,mvaa_seq_no,Member Vision Service Group Accumulator Activity, Activity Sequence Number,smallint
+dbo,cmc_mvaa_accum_act,grgr_ck,Member Vision Service Group Accumulator Activity,Group Contrived Key,int
+dbo,cmc_mvaa_accum_act,mvaa_amount_used,Member Vision Service Group Accumulator Activity, Accumulator Used Amount,money
+dbo,cmc_mvaa_accum_act,mvaa_count_used,Member Vision Service Group Accumulator Activity, Accumulator Count Used,smallint
+dbo,cmc_mvaa_accum_act,mvaa_svc_dt,Member Vision Service Group Accumulator Activity, Claim Date of Service,datetime
+dbo,cmc_mvaa_accum_act,mvaa_clcl_id,Member Vision Service Group Accumulator Activity, Claims ID,char
+dbo,cmc_mvaa_accum_act,sese_id,Member Vision Service Group Accumulator Activity, Service ID,char
+dbo,cmc_mvaa_accum_act,mvaa_man_updt_ind,Member Vision Service Group Accumulator Activity, Manual Accumulator Update Indicator,char
+dbo,cmc_mvaa_accum_act,mvaa_mctr_rsn,Member Vision Service Group Accumulator Activity, Reason,char
+dbo,cmc_mvaa_accum_act,mvaa_void_dt,Member Vision Service Group Accumulator Activity, Void Date,datetime
+dbo,cmc_mvaa_accum_act,mvaa_mctr_vrsn,Member Vision Service Group Accumulator Activity, Void Reason,char
+dbo,cmc_mvaa_accum_act,mvaa_updt_dtm,Member Vision Service Group Accumulator Activity, Update Date and Time,datetime
+dbo,cmc_mvaa_accum_act,mvaa_usus_id,Member Vision Service Group Accumulator Activity, Last User ID,char
+dbo,cmc_mvaa_accum_act,mvaa_lock_token,Member Vision Service Group Accumulator Activity,Lock Token,smallint
+dbo,cmc_mvaa_accum_act,atxr_source_id,Member Vision Service Group Accumulator Activity,Attachment Source Id,datetime
+dbo,cmc_mvaa_accum_act,sys_last_upd_dtm,Member Vision Service Group Accumulator Activity,Last Update Datetime,datetime
+dbo,cmc_mvaa_accum_act,sys_usus_id,Member Vision Service Group Accumulator Activity,Last Update User ID,varchar
+dbo,cmc_mvaa_accum_act,sys_dbuser_id,Member Vision Service Group Accumulator Activity,Last Update DBMS User ID,varchar
+dbo,cmc_mvac_accum_act,meme_ck,Member Vision Service Aggregate Accumulator Activity,Member Contrived Key,int
+dbo,cmc_mvac_accum_act,vsal_id,Member Vision Service Aggregate Accumulator Activity,Service Grouping ID,char
+dbo,cmc_mvac_accum_act,mvla_eff_dt,Member Vision Service Aggregate Accumulator Activity,Effective Date,datetime
+dbo,cmc_mvac_accum_act,mvla_seq_no,Member Vision Service Aggregate Accumulator Activity, Accumulator Sequence Number,smallint
+dbo,cmc_mvac_accum_act,mvac_seq_no,Member Vision Service Aggregate Accumulator Activity,Activity Sequence Number,smallint
+dbo,cmc_mvac_accum_act,grgr_ck,Member Vision Service Aggregate Accumulator Activity,Group Contrived Key,int
+dbo,cmc_mvac_accum_act,mvac_amount_used,Member Vision Service Aggregate Accumulator Activity, Accumulator Used Amount,money
+dbo,cmc_mvac_accum_act,mvac_count_used,Member Vision Service Aggregate Accumulator Activity, Accumulator Count Used,smallint
+dbo,cmc_mvac_accum_act,mvac_occur_used,Member Vision Service Aggregate Accumulator Activity, Limit Amount occurrences used,smallint
+dbo,cmc_mvac_accum_act,mvac_clcl_id,Member Vision Service Aggregate Accumulator Activity,Claim Id,char
+dbo,cmc_mvac_accum_act,mvac_svc_dt,Member Vision Service Aggregate Accumulator Activity,Claim Date of Service,datetime
+dbo,cmc_mvac_accum_act,mvac_man_updt_ind,Member Vision Service Aggregate Accumulator Activity,Namual Update Indicator,char
+dbo,cmc_mvac_accum_act,mvac_mctr_rsn,Member Vision Service Aggregate Accumulator Activity,Update Reason,char
+dbo,cmc_mvac_accum_act,mvac_void_dt,Member Vision Service Aggregate Accumulator Activity,Void Date,datetime
+dbo,cmc_mvac_accum_act,mvac_mctr_vrsn,Member Vision Service Aggregate Accumulator Activity,Void Reason,char
+dbo,cmc_mvac_accum_act,mvac_updt_dtm,Member Vision Service Aggregate Accumulator Activity, Update Date and Time,datetime
+dbo,cmc_mvac_accum_act,mvac_usus_id,Member Vision Service Aggregate Accumulator Activity,Last User ID,char
+dbo,cmc_mvac_accum_act,mvac_lock_token,Member Vision Service Aggregate Accumulator Activity,Lock Token,smallint
+dbo,cmc_mvac_accum_act,atxr_source_id,Member Vision Service Aggregate Accumulator Activity,Attachment Source Id,datetime
+dbo,cmc_mvac_accum_act,sys_last_upd_dtm,Member Vision Service Aggregate Accumulator Activity,Last Update Datetime,datetime
+dbo,cmc_mvac_accum_act,sys_usus_id,Member Vision Service Aggregate Accumulator Activity,Last Update User ID,varchar
+dbo,cmc_mvac_accum_act,sys_dbuser_id,Member Vision Service Aggregate Accumulator Activity,Last Update DBMS User ID,varchar
+dbo,cmc_mvla_accum,meme_ck,Member Vision Service Aggregate Accumulator,Member Contrived Key,int
+dbo,cmc_mvla_accum,vsal_id,Member Vision Service Aggregate Accumulator,Service Grouping ID,char
+dbo,cmc_mvla_accum,mvla_eff_dt,Member Vision Service Aggregate Accumulator,Effective Date,datetime
+dbo,cmc_mvla_accum,mvla_seq_no,Member Vision Service Aggregate Accumulator,Accumulator Sequence Number,smallint
+dbo,cmc_mvla_accum,mvla_void_ind,Member Vision Service Aggregate Accumulator,Void Indicator,char
+dbo,cmc_mvla_accum,mvla_term_dt,Member Vision Service Aggregate Accumulator,Termination Date,datetime
+dbo,cmc_mvla_accum,grgr_ck,Member Vision Service Aggregate Accumulator,Group Contrived Key,int
+dbo,cmc_mvla_accum,mvla_amount_used,Member Vision Service Aggregate Accumulator, Accumulator Used Amount,money
+dbo,cmc_mvla_accum,mvla_count_used,Member Vision Service Aggregate Accumulator, Accumulator Count Used,smallint
+dbo,cmc_mvla_accum,mvla_occur_used,Member Vision Service Aggregate Accumulator, Limit Amount occurrences used,smallint
+dbo,cmc_mvla_accum,mvla_lst_updt_dtm,Member Vision Service Aggregate Accumulator, Update Date and Time,datetime
+dbo,cmc_mvla_accum,mvla_lst_usus_id,Member Vision Service Aggregate Accumulator,Last User ID,char
+dbo,cmc_mvla_accum,mvla_lock_token,Member Vision Service Aggregate Accumulator,Lock Token,smallint
+dbo,cmc_mvla_accum,atxr_source_id,Member Vision Service Aggregate Accumulator,Attachment Source Id,datetime
+dbo,cmc_mvla_accum,sys_last_upd_dtm,Member Vision Service Aggregate Accumulator,Last Update Datetime,datetime
+dbo,cmc_mvla_accum,sys_usus_id,Member Vision Service Aggregate Accumulator,Last Update User ID,varchar
+dbo,cmc_mvla_accum,sys_dbuser_id,Member Vision Service Aggregate Accumulator,Last Update DBMS User ID,varchar
+dbo,cmc_mvsa_sg_accum,meme_ck,Member Vision Service Group Accumulator,Member Contrived Key,int
+dbo,cmc_mvsa_sg_accum,svgr_id,Member Vision Service Group Accumulator,Service Grouping ID,char
+dbo,cmc_mvsa_sg_accum,mvsa_network_ind,Member Vision Service Group Accumulator,Network Indicator,char
+dbo,cmc_mvsa_sg_accum,mvsa_eff_dt,Member Vision Service Group Accumulator,Effective Date,datetime
+dbo,cmc_mvsa_sg_accum,mvsa_seq_no,Member Vision Service Group Accumulator, Accumulator Sequence Number,smallint
+dbo,cmc_mvsa_sg_accum,mvsa_void_ind,Member Vision Service Group Accumulator, Void Indicator,char
+dbo,cmc_mvsa_sg_accum,mvsa_term_dt,Member Vision Service Group Accumulator,Termination Date,datetime
+dbo,cmc_mvsa_sg_accum,grgr_ck,Member Vision Service Group Accumulator,Group Contrived Key,int
+dbo,cmc_mvsa_sg_accum,mvsa_amount_used,Member Vision Service Group Accumulator, Accumulator Used Amount,money
+dbo,cmc_mvsa_sg_accum,mvsa_count_used,Member Vision Service Group Accumulator, Accumulator Count Used,smallint
+dbo,cmc_mvsa_sg_accum,mvsa_lst_updt_dtm,Member Vision Service Group Accumulator, Last Update Date and Time,datetime
+dbo,cmc_mvsa_sg_accum,mvsa_lst_usus_id,Member Vision Service Group Accumulator,Last User ID,char
+dbo,cmc_mvsa_sg_accum,pdbc_pfx_vcfl,Member Vision Service Group Accumulator,Frequency Limit Prefix,char
+dbo,cmc_mvsa_sg_accum,vsal_id,Member Vision Service Group Accumulator,Aggregate Limit ID,char
+dbo,cmc_mvsa_sg_accum,mvsa_lock_token,Member Vision Service Group Accumulator,Lock Token,smallint
+dbo,cmc_mvsa_sg_accum,atxr_source_id,Member Vision Service Group Accumulator,Attachment Source Id,datetime
+dbo,cmc_mvsa_sg_accum,sys_last_upd_dtm,Member Vision Service Group Accumulator,Last Update Datetime,datetime
+dbo,cmc_mvsa_sg_accum,sys_usus_id,Member Vision Service Group Accumulator,Last Update User ID,varchar
+dbo,cmc_mvsa_sg_accum,sys_dbuser_id,Member Vision Service Group Accumulator,Last Update DBMS User ID,varchar

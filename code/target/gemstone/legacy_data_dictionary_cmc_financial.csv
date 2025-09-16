@@ -1,0 +1,1357 @@
+﻿source_schema,source_table,source_column,table_description,column_description,column_data_type
+dbo,cmc_acad_acct_desc,acad_gen_ldgr_no,General Ledger Account Descriptions,Account Number,char
+dbo,cmc_acad_acct_desc,acad_acct_desc,General Ledger Account Descriptions,Account Description,char
+dbo,cmc_acad_acct_desc,acad_lock_token,General Ledger Account Descriptions,Lock Token,smallint
+dbo,cmc_acad_acct_desc,atxr_source_id,General Ledger Account Descriptions,Attachment Source Id,datetime
+dbo,cmc_acbr_rec_sts,acpr_ref_id,Accounting Alternate Funding Recovery Status Table,Reference ID,char
+dbo,cmc_acbr_rec_sts,acpr_sub_type,Accounting Alternate Funding Recovery Status Table,ACPR Sub-type,char
+dbo,cmc_acbr_rec_sts,acrh_seq_no,Accounting Alternate Funding Recovery Status Table,Sequence Number,int
+dbo,cmc_acbr_rec_sts,acbr_create_dtm,Accounting Alternate Funding Recovery Status Table,Create date time,datetime
+dbo,cmc_acbr_rec_sts,acrh_event_type,Accounting Alternate Funding Recovery Status Table,Recovery Event Type,char
+dbo,cmc_acbr_rec_sts,acrh_amt,Accounting Alternate Funding Recovery Status Table,Amount,money
+dbo,cmc_acbr_rec_sts,acbr_sts,Accounting Alternate Funding Recovery Status Table,Status,char
+dbo,cmc_acbr_rec_sts,acbr_lock_token,Accounting Alternate Funding Recovery Status Table,Lock Token,smallint
+dbo,cmc_acbr_rec_sts,atxr_source_id,Accounting Alternate Funding Recovery Status Table,Attachment Source Id,datetime
+dbo,cmc_accm_display,pdpd_id,Accumulator Display,Product ID,char
+dbo,cmc_accm_display,accm_type,Accumulator Display,Accumulator Type,char
+dbo,cmc_accm_display,accm_eff_dt,Accumulator Display,Effective Date,datetime
+dbo,cmc_accm_display,accm_seq_no,Accumulator Display,Accumulator Sequence Number,smallint
+dbo,cmc_accm_display,accm_term_dt,Accumulator Display,Termination Date,datetime
+dbo,cmc_accm_display,acac_acc_no,Accumulator Display,Accumulator Number,smallint
+dbo,cmc_accm_display,accm_desc,Accumulator Display,Accumulator Description,varchar
+dbo,cmc_accm_display,accm_pfx,Accumulator Display,Accumulator Prefix,char
+dbo,cmc_accm_display,accm_lock_token,Accumulator Display,Lock Token,smallint
+dbo,cmc_accm_display,atxr_source_id,Accumulator Display,Attachment Source Id,datetime
+dbo,cmc_accv_temp_sbsb,accv_sbsb_row_id,Accumulator Batch Table,Row ID,numeric
+dbo,cmc_accv_temp_sbsb,sbsb_ck,Accumulator Batch Table,Subscriber Contrived Key,int
+dbo,cmc_accv_temp_sbsb,grgr_ck,Accumulator Batch Table,Group Contrived Key,int
+dbo,cmc_accv_temp_sbsb,sbsb_id,Accumulator Batch Table,Subscriber ID,char
+dbo,cmc_acde_accum_desc,acde_acc_type,Accumulator Descriptions Table,Accumulator Description Type,char
+dbo,cmc_acde_accum_desc,acac_acc_no,Accumulator Descriptions Table,Accumulator Description Number,smallint
+dbo,cmc_acde_accum_desc,acde_desc,Accumulator Descriptions Table,Accumulator Description,char
+dbo,cmc_acde_accum_desc,acde_lock_token,Accumulator Descriptions Table,Lock Token,smallint
+dbo,cmc_acde_accum_desc,atxr_source_id,Accumulator Descriptions Table,Attachment Source Id,datetime
+dbo,cmc_acdi_int_det,clcl_id,Accounting Claim Interest Calculation Details,Claim Identifier,char
+dbo,cmc_acdi_int_det,clck_payee_ind,Accounting Claim Interest Calculation Details, Payee,char
+dbo,cmc_acdi_int_det,lobd_id,Accounting Claim Interest Calculation Details,Line of Business ID,char
+dbo,cmc_acdi_int_det,acdi_int_tier_no,Accounting Claim Interest Calculation Details,Interest Tier,smallint
+dbo,cmc_acdi_int_det,acdi_cont_days,Accounting Claim Interest Calculation Details,Contested Days,smallint
+dbo,cmc_acdi_int_det,excd_id,Accounting Claim Interest Calculation Details,Explanation ID,char
+dbo,cmc_acdi_int_det,pdds_mctr_bcat,Accounting Claim Interest Calculation Details,Business Category,char
+dbo,cmc_acdi_int_det,acdi_int_begin_dt,Accounting Claim Interest Calculation Details,Interest Start Date,datetime
+dbo,cmc_acdi_int_det,acdi_int_days_calc,Accounting Claim Interest Calculation Details,Interest Calc Days,smallint
+dbo,cmc_acdi_int_det,acdi_daily_rate,Accounting Claim Interest Calculation Details,Daily interest percentage,int
+dbo,cmc_acdi_int_det,acdi_int_calc_amt,Accounting Claim Interest Calculation Details,Calculated interest payable,money
+dbo,cmc_acdi_int_det,acdi_lock_token,Accounting Claim Interest Calculation Details,Lock Token,smallint
+dbo,cmc_acdi_int_det,atxr_source_id,Accounting Claim Interest Calculation Details,Attachment Source Id,datetime
+dbo,cmc_acdi_int_det,sys_last_upd_dtm,Accounting Claim Interest Calculation Details,Last Update Datetime,datetime
+dbo,cmc_acdi_int_det,sys_usus_id,Accounting Claim Interest Calculation Details,Last Update User ID,varchar
+dbo,cmc_acdi_int_det,sys_dbuser_id,Accounting Claim Interest Calculation Details,Last Update DBMS User ID,varchar
+dbo,cmc_acdp_dis_sum,dicl_id,Disability Claim Summary,Disability Claim ID,char
+dbo,cmc_acdp_dis_sum,didp_seq_no,Disability Claim Summary,Payment Number,smallint
+dbo,cmc_acdp_dis_sum,didp_adj_no,Disability Claim Summary,Adjustment Number,smallint
+dbo,cmc_acdp_dis_sum,lobd_id,Disability Claim Summary,Line of Business ID,char
+dbo,cmc_acdp_dis_sum,acdp_payee_ind,Disability Claim Summary,Payee Indicator,char
+dbo,cmc_acdp_dis_sum,dicl_cl_type,Disability Claim Summary,Claim Type,char
+dbo,cmc_acdp_dis_sum,ckpy_ref_id,Disability Claim Summary,Payment Reference ID,char
+dbo,cmc_acdp_dis_sum,ckpy_pay_dt,Disability Claim Summary,Payment Date,datetime
+dbo,cmc_acdp_dis_sum,acdp_payee_ck,Disability Claim Summary,Payee Contrived Key,int
+dbo,cmc_acdp_dis_sum,acdp_calc_amt,Disability Claim Summary,Calculated Amount,money
+dbo,cmc_acdp_dis_sum,acdp_net_amt,Disability Claim Summary,Net Payable,money
+dbo,cmc_acdp_dis_sum,acdp_pymt_ovr_ind,Disability Claim Summary,Payment Override Indicator,char
+dbo,cmc_acdp_dis_sum,acdp_op_bypass_ind,Disability Claim Summary,Overpayment Bypass Indicator,char
+dbo,cmc_acdp_dis_sum,dimc_seq_no,Disability Claim Summary,Sequence Number,smallint
+dbo,cmc_acdp_dis_sum,acdp_comb_ind,Disability Claim Summary,Combine indicator,char
+dbo,cmc_acdp_dis_sum,acdp_lock_token,Disability Claim Summary,Lock Token,smallint
+dbo,cmc_acdp_dis_sum,atxr_source_id,Disability Claim Summary,Attachment Source Id,datetime
+dbo,cmc_acdp_dis_sum,sys_last_upd_dtm,Disability Claim Summary,Last Update Datetime,datetime
+dbo,cmc_acdp_dis_sum,sys_usus_id,Disability Claim Summary,Last Update User ID,varchar
+dbo,cmc_acdp_dis_sum,sys_dbuser_id,Disability Claim Summary,Last Update DBMS User ID,varchar
+dbo,cmc_acgi_pay_hist,ckpy_ref_id,Accounting Electronic Payment History,Payment Reference Id,char
+dbo,cmc_acgi_pay_hist,ckck_seq_no,Accounting Electronic Payment History,Check sequence number,int
+dbo,cmc_acgi_pay_hist,bpid_type,Accounting Electronic Payment History,Format Type,char
+dbo,cmc_acgi_pay_hist,clcl_id,Accounting Electronic Payment History,Claim Identifier,char
+dbo,cmc_acgi_pay_hist,lobd_id,Accounting Electronic Payment History,Line of Business ID,char
+dbo,cmc_acgi_pay_hist,prpr_cl_eft_ind,Accounting Electronic Payment History,Provider claims EFT check,char
+dbo,cmc_acgi_pay_hist,prpr_ra_dest_ind,Accounting Electronic Payment History,Advice Destination,char
+dbo,cmc_acgi_pay_hist,acgi_lock_token,Accounting Electronic Payment History,Lock Token,smallint
+dbo,cmc_acgi_pay_hist,atxr_source_id,Accounting Electronic Payment History,Attachment Source Id,datetime
+dbo,cmc_acgl_acct_def,acgl_sys_region,General Ledger Definitions,System Region,char
+dbo,cmc_acgl_acct_def,acgl_type,General Ledger Definitions,Account Type,char
+dbo,cmc_acgl_acct_def,acgl_activity,General Ledger Definitions,Activity Type,char
+dbo,cmc_acgl_acct_def,lobd_id,General Ledger Definitions,Line Of Business ID,char
+dbo,cmc_acgl_acct_def,acct_cat,General Ledger Definitions,Accounting Category,char
+dbo,cmc_acgl_acct_def,acgl_var_data_1,General Ledger Definitions,Variable Data One,char
+dbo,cmc_acgl_acct_def,acgl_var_data_2,General Ledger Definitions,Variable Data Two,char
+dbo,cmc_acgl_acct_def,acgl_var_data_3,General Ledger Definitions,Variable data 3,char
+dbo,cmc_acgl_acct_def,acad_gen_ldgr_no,General Ledger Definitions,Account Number,char
+dbo,cmc_acgl_acct_def,acgl_lock_token,General Ledger Definitions,Lock Token,smallint
+dbo,cmc_acgl_acct_def,atxr_source_id,General Ledger Definitions,Attachment Source Id,datetime
+dbo,cmc_acin_int_rates,pdbc_pfx,Accounting / Claim Interest Rates,Claim Interest Rates Benefit Component Prefix,char
+dbo,cmc_acin_int_rates,acin_state,Accounting / Claim Interest Rates,Claim Interest Rates State,char
+dbo,cmc_acin_int_rates,acin_type,Accounting / Claim Interest Rates,Claim Interest Rates Type,char
+dbo,cmc_acin_int_rates,acin_input_meth,Accounting / Claim Interest Rates,Claim Interest Rates Input Method,char
+dbo,cmc_acin_int_rates,acin_int_ntwk_ind,Accounting / Claim Interest Rates,Claim Interest Rates Network Indicator,char
+dbo,cmc_acin_int_rates,acin_optout_ind,Accounting / Claim Interest Rates,Claim Interest Rates Optout Indicator,char
+dbo,cmc_acin_int_rates,acin_eff_dt,Accounting / Claim Interest Rates,Claim Interest Rates Effective Date,datetime
+dbo,cmc_acin_int_rates,acin_term_dt,Accounting / Claim Interest Rates,Claim Interest Rates Termination Date,datetime
+dbo,cmc_acin_int_rates,acin_int_pct,Accounting / Claim Interest Rates,Claim Interest Rates Interest Percentage 1,int
+dbo,cmc_acin_int_rates,acin_int_pct2,Accounting / Claim Interest Rates,Claim Interest Rates Interest Percentage 2,int
+dbo,cmc_acin_int_rates,acin_int_pct3,Accounting / Claim Interest Rates,Claim Interest Rates Interest Percentage 3,int
+dbo,cmc_acin_int_rates,acin_int_pct4,Accounting / Claim Interest Rates,Claim Interest Rates Interest Percentage 4,int
+dbo,cmc_acin_int_rates,acin_calc_ind,Accounting / Claim Interest Rates,Claim Interest Rates Calculation Indicator,char
+dbo,cmc_acin_int_rates,acin_int_adj_ind,Accounting / Claim Interest Rates,Claim Interest Rates Interest Adjustment Indicator,char
+dbo,cmc_acin_int_rates,acin_int_warn_days,Accounting / Claim Interest Rates,Claim Interest Warning Message Days,smallint
+dbo,cmc_acin_int_rates,acin_int_calc_days,Accounting / Claim Interest Rates,Claim Interest Period 1 Calculation Days,smallint
+dbo,cmc_acin_int_rates,acin_int_calc_day2,Accounting / Claim Interest Rates,Claim Interest Period 2 Calculation Days,smallint
+dbo,cmc_acin_int_rates,acin_int_calc_day3,Accounting / Claim Interest Rates,Claim Interest Period 3 Calculation Days,smallint
+dbo,cmc_acin_int_rates,acin_int_calc_day4,Accounting / Claim Interest Rates,Claim Interest Period 4 Calculation Days,smallint
+dbo,cmc_acin_int_rates,acin_min_amt,Accounting / Claim Interest Rates,Claim Interest Rates Minimum Amount,money
+dbo,cmc_acin_int_rates,acin_net_adj_ind,Accounting / Claim Interest Rates,Interest on Net of Adjustments Indicator,char
+dbo,cmc_acin_int_rates,acin_int_payee_ind,Accounting / Claim Interest Rates,Claim Interest Rates Payee Indicator,char
+dbo,cmc_acin_int_rates,acin_er_min_days1,Accounting / Claim Interest Rates,Claim Interest Rates Emergency Period 1 Calculation Days,smallint
+dbo,cmc_acin_int_rates,acin_er_min_days2,Accounting / Claim Interest Rates,Claim Interest Rates Emergency Period 2 Calculation Days,smallint
+dbo,cmc_acin_int_rates,acin_er_min_days3,Accounting / Claim Interest Rates,Claim Interest Rates Emergency Period 3 Calculation Days,smallint
+dbo,cmc_acin_int_rates,acin_er_min_days4,Accounting / Claim Interest Rates,Claim Interest Rates Emergency Period 4 Calculation Days,smallint
+dbo,cmc_acin_int_rates,acin_er_min_days5,Accounting / Claim Interest Rates,Claim Interest Rates Emergency Period 5 Calculation Days,smallint
+dbo,cmc_acin_int_rates,acin_er_min_amt1,Accounting / Claim Interest Rates,Claim Interest Rates Emergency Period 1 Minimum Threshold,money
+dbo,cmc_acin_int_rates,acin_er_min_amt2,Accounting / Claim Interest Rates,Claim Interest Rates Emergency Period 2 Minimum Threshold,money
+dbo,cmc_acin_int_rates,acin_er_min_amt3,Accounting / Claim Interest Rates,Claim Interest Rates Emergency Period 3 Minimum Threshold,money
+dbo,cmc_acin_int_rates,acin_er_min_amt4,Accounting / Claim Interest Rates,Claim Interest Rates Emergency Period 4 Minimum Threshold,money
+dbo,cmc_acin_int_rates,acin_er_min_amt5,Accounting / Claim Interest Rates,Claim Interest Rates Emergency Period 5 Minimum Threshold,money
+dbo,cmc_acin_int_rates,acin_lock_token,Accounting / Claim Interest Rates,Lock Token,smallint
+dbo,cmc_acin_int_rates,atxr_source_id,Accounting / Claim Interest Rates,Attachment Source Id,datetime
+dbo,cmc_acin_int_rates,sys_last_upd_dtm,Accounting / Claim Interest Rates,Last Update Datetime,datetime
+dbo,cmc_acin_int_rates,sys_usus_id,Accounting / Claim Interest Rates,Last Update User ID,varchar
+dbo,cmc_acin_int_rates,sys_dbuser_id,Accounting / Claim Interest Rates,Last Update DBMS User ID,varchar
+dbo,cmc_acin_int_rates,acin_int_cln_warn,Accounting / Claim Interest Rates,Interest Clean Date Warning Period,smallint
+dbo,cmc_acov_overpay,clcl_id,Vision Initial Claim Overpayments,Claim Identifier,char
+dbo,cmc_acov_overpay,acov_payee_ind,Vision Initial Claim Overpayments,Overpayment Payee Indicator,char
+dbo,cmc_acov_overpay,lobd_id,Vision Initial Claim Overpayments, Line of Business,char
+dbo,cmc_acov_overpay,acvp_payee_pr_id,Vision Initial Claim Overpayments,Payee ID,char
+dbo,cmc_acov_overpay,acov_create_dt,Vision Initial Claim Overpayments,Create Date,datetime
+dbo,cmc_acov_overpay,acov_amt,Vision Initial Claim Overpayments,Overpayment Amount,money
+dbo,cmc_acov_overpay,acov_auto_reduc,Vision Initial Claim Overpayments,Auto Recovery Indicator,char
+dbo,cmc_acov_overpay,acpr_ref_id,Vision Initial Claim Overpayments,Overpayment Reference ID,char
+dbo,cmc_acov_overpay,acov_sts,Vision Initial Claim Overpayments,Status,char
+dbo,cmc_acov_overpay,acov_lock_token,Vision Initial Claim Overpayments,Lock Token,smallint
+dbo,cmc_acov_overpay,atxr_source_id,Vision Initial Claim Overpayments,Attachment Source Id,datetime
+dbo,cmc_acov_overpay,sys_last_upd_dtm,Vision Initial Claim Overpayments,Last Update Datetime,datetime
+dbo,cmc_acov_overpay,sys_usus_id,Vision Initial Claim Overpayments,Last Update User ID,varchar
+dbo,cmc_acov_overpay,sys_dbuser_id,Vision Initial Claim Overpayments,Last Update DBMS User ID,varchar
+dbo,cmc_acpe_per_dts,acpe_id,Accounting Begin/End Date Information,Accounting Period Table ID,char
+dbo,cmc_acpe_per_dts,acpe_begin_dt,Accounting Begin/End Date Information,Period Begin Date,datetime
+dbo,cmc_acpe_per_dts,acpe_end_dt,Accounting Begin/End Date Information,Period End Date,datetime
+dbo,cmc_acpe_per_dts,acpe_lock_token,Accounting Begin/End Date Information,Lock Token,smallint
+dbo,cmc_acpe_per_dts,atxr_source_id,Accounting Begin/End Date Information,Attachment Source Id,datetime
+dbo,cmc_acpr_pymt_red,acpr_ref_id,Payment Reduction Table,Payment Reduction Reference ID,char
+dbo,cmc_acpr_pymt_red,acpr_sub_type,Payment Reduction Table,ACPR Sub-type,char
+dbo,cmc_acpr_pymt_red,acpr_tx_yr,Payment Reduction Table,Tax Year,char
+dbo,cmc_acpr_pymt_red,acpr_type,Payment Reduction Table,Reduction Type,char
+dbo,cmc_acpr_pymt_red,acpr_create_dt,Payment Reduction Table,Create Date,datetime
+dbo,cmc_acpr_pymt_red,lobd_id,Payment Reduction Table,Line Of Business,char
+dbo,cmc_acpr_pymt_red,acpr_payee_pr_id,Payment Reduction Table,Payee Provider ID,char
+dbo,cmc_acpr_pymt_red,acpr_payee_ck,Payment Reduction Table,Payee Contrived Key,int
+dbo,cmc_acpr_pymt_red,acpr_payee_type,Payment Reduction Table,Payee Type,char
+dbo,cmc_acpr_pymt_red,acpr_auto_reduc,Payment Reduction Table,Auto Payment Reduction Indicator,char
+dbo,cmc_acpr_pymt_red,acpr_orig_amt,Payment Reduction Table,Reduction Original Amount,money
+dbo,cmc_acpr_pymt_red,acpr_recov_amt,Payment Reduction Table,Recovered Amount,money
+dbo,cmc_acpr_pymt_red,acpr_recd_amt,Payment Reduction Table,Received Amount,money
+dbo,cmc_acpr_pymt_red,acpr_woff_amt,Payment Reduction Table,Written Off Amount,money
+dbo,cmc_acpr_pymt_red,acpr_net_amt,Payment Reduction Table,Net Amount Remaining,money
+dbo,cmc_acpr_pymt_red,acpr_sts,Payment Reduction Table,Status,char
+dbo,cmc_acpr_pymt_red,excd_id,Payment Reduction Table,Explanation,char
+dbo,cmc_acpr_pymt_red,usus_id,Payment Reduction Table,User Identifier,char
+dbo,cmc_acpr_pymt_red,pdds_prem_ind,Payment Reduction Table,Premium type indicator,char
+dbo,cmc_acpr_pymt_red,acpr_varchar_msg,Payment Reduction Table,ACPR Comments,varchar
+dbo,cmc_acpr_pymt_red,acpr_ext_pymt_ind,Payment Reduction Table,External Payment Indicator,char
+dbo,cmc_acpr_pymt_red,sbfs_plan_year_dt,Payment Reduction Table,Plan Year,datetime
+dbo,cmc_acpr_pymt_red,acpr_lock_token,Payment Reduction Table,Lock Token,smallint
+dbo,cmc_acpr_pymt_red,atxr_source_id,Payment Reduction Table,Attachment Source Id,datetime
+dbo,cmc_acpr_pymt_red,acpr_ofst_beg_dt_nvl,Payment Reduction Table,Offset begin date.,datetime
+dbo,cmc_acpr_pymt_red,acpr_ovpl_lag_days_nvl,Payment Reduction Table,Overpayment Offset Lag days.,smallint
+dbo,cmc_acpr_pymt_red,acpr_max_date_nvl,Payment Reduction Table,Maximum Update Date.,datetime
+dbo,cmc_acpr_pymt_red,tpsl_ent_id_nvl,Payment Reduction Table, Reinsurance Code,varchar
+dbo,cmc_acrh_red_hist,acpr_ref_id,Payment Reduction History,Reduction Reference ID,char
+dbo,cmc_acrh_red_hist,acpr_sub_type,Payment Reduction History,ACPR Sub-type,char
+dbo,cmc_acrh_red_hist,acrh_seq_no,Payment Reduction History,Reduction History Sequence Row,int
+dbo,cmc_acrh_red_hist,acrh_create_dt,Payment Reduction History,Create Date,datetime
+dbo,cmc_acrh_red_hist,acrh_event_type,Payment Reduction History,Event Type,char
+dbo,cmc_acrh_red_hist,ckpy_ref_id,Payment Reduction History,Payment Reference ID,char
+dbo,cmc_acrh_red_hist,acrh_recd_dt,Payment Reduction History,Received Date,datetime
+dbo,cmc_acrh_red_hist,acrh_per_end_dt,Payment Reduction History,Accounting Period End Date,datetime
+dbo,cmc_acrh_red_hist,acrh_amt,Payment Reduction History,Reduction History Amount,money
+dbo,cmc_acrh_red_hist,usus_id,Payment Reduction History,User Identifier,char
+dbo,cmc_acrh_red_hist,acrh_mctr_rsn,Payment Reduction History,Reason,char
+dbo,cmc_acrh_red_hist,acrh_rcvd_ckno,Payment Reduction History,Refund Check Number,varchar
+dbo,cmc_acrh_red_hist,acrh_lock_token,Payment Reduction History,Lock Token,smallint
+dbo,cmc_acrh_red_hist,atxr_source_id,Payment Reduction History,Attachment Source Id,datetime
+dbo,cmc_acvp_vis_sum,clcl_id,Vision Claim Payment Summary, Claim Identifier,char
+dbo,cmc_acvp_vis_sum,acvp_payee_ind,Vision Claim Payment Summary, Payee Indicator,char
+dbo,cmc_acvp_vis_sum,lobd_id,Vision Claim Payment Summary,Line of Business Identifier,char
+dbo,cmc_acvp_vis_sum,ckpy_ref_id,Vision Claim Payment Summary, Check Payment Reference Identifier,char
+dbo,cmc_acvp_vis_sum,ckpy_pay_dt,Vision Claim Payment Summary, Pay Date,datetime
+dbo,cmc_acvp_vis_sum,acvp_comb_ind,Vision Claim Payment Summary,Combined Indicator,char
+dbo,cmc_acvp_vis_sum,acvp_payee_pr_id,Vision Claim Payment Summary, Payee Provider Identifier,char
+dbo,cmc_acvp_vis_sum,acvp_svc_prpr_id,Vision Claim Payment Summary, Service Provider Identifier,char
+dbo,cmc_acvp_vis_sum,mctn_id,Vision Claim Payment Summary, Pay Tax Indentifier,char
+dbo,cmc_acvp_vis_sum,meme_ck,Vision Claim Payment Summary,Member Contrived Key,int
+dbo,cmc_acvp_vis_sum,meme_health_id,Vision Claim Payment Summary,Standard Unique Health Identifier,varchar
+dbo,cmc_acvp_vis_sum,sbsb_ck,Vision Claim Payment Summary,Subscriber Contrived Key,int
+dbo,cmc_acvp_vis_sum,meda_confid_ind,Vision Claim Payment Summary,Confidental Communications Indicator,char
+dbo,cmc_acvp_vis_sum,acvp_orig_amt,Vision Claim Payment Summary,Original Payment Amount,money
+dbo,cmc_acvp_vis_sum,acvp_prior_pd_amt,Vision Claim Payment Summary,Prior Paid Amount,money
+dbo,cmc_acvp_vis_sum,acvp_allow_amt,Vision Claim Payment Summary,Allowable Amount,money
+dbo,cmc_acvp_vis_sum,acvp_calc_int,Vision Claim Payment Summary, Calculated Interest,money
+dbo,cmc_acvp_vis_sum,acvp_int_amt,Vision Claim Payment Summary,Claim Interest Paid Amount,money
+dbo,cmc_acvp_vis_sum,acvp_net_amt,Vision Claim Payment Summary,Net Payment Amount,money
+dbo,cmc_acvp_vis_sum,acvp_admin_fee,Vision Claim Payment Summary,Claim Administration Fee (Not subject to interest),money
+dbo,cmc_acvp_vis_sum,acvp_int_admin_fee,Vision Claim Payment Summary,Claim Administration Fee (Subject to interest),money
+dbo,cmc_acvp_vis_sum,clcl_cl_type,Vision Claim Payment Summary,Claim Type,char
+dbo,cmc_acvp_vis_sum,acvp_network_ind,Vision Claim Payment Summary,Network Indicator,char
+dbo,cmc_acvp_vis_sum,acvp_pymt_ovr_ind,Vision Claim Payment Summary,Payment Override Indicator,char
+dbo,cmc_acvp_vis_sum,acvp_eob_ind,Vision Claim Payment Summary,EOB Indicator,char
+dbo,cmc_acvp_vis_sum,acvp_sts,Vision Claim Payment Summary,Claim Payment Status Code,char
+dbo,cmc_acvp_vis_sum,meme_last_name,Vision Claim Payment Summary, Member Last Name,varchar
+dbo,cmc_acvp_vis_sum,meme_first_name,Vision Claim Payment Summary,Member First Name,varchar
+dbo,cmc_acvp_vis_sum,acvp_sgla_id1,Vision Claim Payment Summary,Claim Service Classification 1,char
+dbo,cmc_acvp_vis_sum,acvp_sgla_tag1,Vision Claim Payment Summary,Service Classification Tag 1,varchar
+dbo,cmc_acvp_vis_sum,acvp_sgla_id2,Vision Claim Payment Summary,Claim Service Classification 2,char
+dbo,cmc_acvp_vis_sum,acvp_sgla_tag2,Vision Claim Payment Summary,Service Classification Tag 2,varchar
+dbo,cmc_acvp_vis_sum,acvp_charge_amt,Vision Claim Payment Summary,Claim Charge Amount,money
+dbo,cmc_acvp_vis_sum,acvp_svc_dt,Vision Claim Payment Summary,Claim Service Date,datetime
+dbo,cmc_acvp_vis_sum,acvp_order_id_type,Vision Claim Payment Summary,Order Identifier Type,char
+dbo,cmc_acvp_vis_sum,acvp_order_no,Vision Claim Payment Summary,Order Number,varchar
+dbo,cmc_acvp_vis_sum,prcp_id,Vision Claim Payment Summary,Common Practitioner Identifier,char
+dbo,cmc_acvp_vis_sum,acvp_prcp_name,Vision Claim Payment Summary,Common Practitioner Name,varchar
+dbo,cmc_acvp_vis_sum,clvs_prpr_id_ipa,Vision Claim Payment Summary,Provider IPA Identifier,char
+dbo,cmc_acvp_vis_sum,clvs_prpr_id_prgr,Vision Claim Payment Summary, Provider Group Identifier,char
+dbo,cmc_acvp_vis_sum,acvp_ipa_name,Vision Claim Payment Summary,Provider IPA Name,varchar
+dbo,cmc_acvp_vis_sum,acvp_prgr_name,Vision Claim Payment Summary,Provider Group Name,varchar
+dbo,cmc_acvp_vis_sum,acvp_create_dtm,Vision Claim Payment Summary,Create Date and Time,datetime
+dbo,cmc_acvp_vis_sum,acvp_lock_token,Vision Claim Payment Summary,Lock Token,smallint
+dbo,cmc_acvp_vis_sum,atxr_source_id,Vision Claim Payment Summary,Attachment Source Id,datetime
+dbo,cmc_acvp_vis_sum,sys_last_upd_dtm,Vision Claim Payment Summary,Last Update Datetime,datetime
+dbo,cmc_acvp_vis_sum,sys_usus_id,Vision Claim Payment Summary,Last Update User ID,varchar
+dbo,cmc_acvp_vis_sum,sys_dbuser_id,Vision Claim Payment Summary,Last Update DBMS User ID,varchar
+dbo,cmc_acw0_work_que,acw0_row_id,Initial work table for Accum Archive batch,Identity Column,numeric
+dbo,cmc_acw0_work_que,sbsb_ck,Initial work table for Accum Archive batch, Subscriber Contrived Key,int
+dbo,cmc_acw0_work_que,meme_ck,Initial work table for Accum Archive batch,Member Contrived Key,int
+dbo,cmc_acw0_work_que,pdpd_acc_sfx,Initial work table for Accum Archive batch,Product Accumulator Suffix,char
+dbo,cmc_acw0_work_que,acw0_acc_type,Initial work table for Accum Archive batch,Accumulator Type,char
+dbo,cmc_acw0_work_que,acac_acc_no,Initial work table for Accum Archive batch,Accumulator Number,smallint
+dbo,cmc_acw0_work_que,acw0_ben_beg_dt,Initial work table for Accum Archive batch,Benefit Period Begin Date,datetime
+dbo,cmc_acw0_work_que,acw0_seq_no,Initial work table for Accum Archive batch,Sequence Number,int
+dbo,cmc_acw0_work_que,clcl_id,Initial work table for Accum Archive batch,Claim Identifier,char
+dbo,cmc_acw0_work_que,acw0_rec_ind,Initial work table for Accum Archive batch,Record Identifier,char
+dbo,cmc_acw0_work_que,acw0_sts_ind,Initial work table for Accum Archive batch,Accumulator Archive Status,char
+dbo,cmc_acw0_work_que,acw0_rsn_cd,Initial work table for Accum Archive batch,Archive Bypass Reason Code,numeric
+dbo,cmc_acw1_work_que,acw1_row_id,Final work table for Accum Archive batch,Identify Column,numeric
+dbo,cmc_acw1_work_que,sbsb_ck,Final work table for Accum Archive batch,Subscriber Contrived Key,int
+dbo,cmc_acw1_work_que,acw1_lock_token,Final work table for Accum Archive batch,Lock Token,smallint
+dbo,cmc_afad_addr,afai_ck,Alternate Funding Address,Alternate Funding Agreement Contrived Key,int
+dbo,cmc_afad_addr,afad_addr1,Alternate Funding Address,Address Line 1,char
+dbo,cmc_afad_addr,afad_addr2,Alternate Funding Address,Address Line 2,char
+dbo,cmc_afad_addr,afad_addr3,Alternate Funding Address,Address Line 3,char
+dbo,cmc_afad_addr,afad_city,Alternate Funding Address,City,char
+dbo,cmc_afad_addr,afad_state,Alternate Funding Address,State,char
+dbo,cmc_afad_addr,afad_zip,Alternate Funding Address,ZIP Code,char
+dbo,cmc_afad_addr,afad_county,Alternate Funding Address,County,char
+dbo,cmc_afad_addr,afad_ctry_cd,Alternate Funding Address,Country,char
+dbo,cmc_afad_addr,afad_phone,Alternate Funding Address,Phone,char
+dbo,cmc_afad_addr,afad_phone_ext,Alternate Funding Address,Ext.,char
+dbo,cmc_afad_addr,afad_fax,Alternate Funding Address,Fax,char
+dbo,cmc_afad_addr,afad_fax_ext,Alternate Funding Address,Fax,char
+dbo,cmc_afad_addr,afad_email,Alternate Funding Address,Internet/E-mail,char
+dbo,cmc_afad_addr,afad_lock_token,Alternate Funding Address,Lock Token,smallint
+dbo,cmc_afad_addr,atxr_source_id,Alternate Funding Address,Attachment Source Id,datetime
+dbo,cmc_afai_indic,afai_ck,Alternate Funding Agreement Indicative Information,Alt. Funding Agreement Contrived Key,int
+dbo,cmc_afai_indic,afai_id,Alternate Funding Agreement Indicative Information,Alternate Funding Agreement ID,char
+dbo,cmc_afai_indic,afai_name,Alternate Funding Agreement Indicative Information,Alternate Funding Agreement Name,char
+dbo,cmc_afai_indic,afai_mctr_type,Alternate Funding Agreement Indicative Information,Type,char
+dbo,cmc_afai_indic,afai_eff_dt,Alternate Funding Agreement Indicative Information,Effective Date,datetime
+dbo,cmc_afai_indic,afai_term_dt,Alternate Funding Agreement Indicative Information,Termination Date,datetime
+dbo,cmc_afai_indic,afai_mctr_trsn,Alternate Funding Agreement Indicative Information,Termination Reason,char
+dbo,cmc_afai_indic,afai_rnst_dt,Alternate Funding Agreement Indicative Information,Reinstate Date,datetime
+dbo,cmc_afai_indic,afai_cp_upd_ind,Alternate Funding Agreement Indicative Information,Automatically Create Next Contract Period,char
+dbo,cmc_afai_indic,afai_lock_token,Alternate Funding Agreement Indicative Information,Lock Token,smallint
+dbo,cmc_afai_indic,atxr_source_id,Alternate Funding Agreement Indicative Information,Attachment Source Id,datetime
+dbo,cmc_afai_indic,sys_last_upd_dtm,Alternate Funding Agreement Indicative Information,Last Update Datetime,datetime
+dbo,cmc_afai_indic,sys_usus_id,Alternate Funding Agreement Indicative Information,Last Update User ID,varchar
+dbo,cmc_afai_indic,sys_dbuser_id,Alternate Funding Agreement Indicative Information,Last Update DBMS User ID,varchar
+dbo,cmc_afcp_cont_per,afai_ck,Alternate Funding Contract Period,Alternate Funding Agreement Contrived Key,int
+dbo,cmc_afcp_cont_per,afcp_per_no,Alternate Funding Contract Period,Contract Period Number,int
+dbo,cmc_afcp_cont_per,afcp_paid_beg_dt,Alternate Funding Contract Period,Paid Period Begin Date,datetime
+dbo,cmc_afcp_cont_per,afcp_paid_end_dt,Alternate Funding Contract Period,Paid Period End Date,datetime
+dbo,cmc_afcp_cont_per,afcp_incur_beg_dt,Alternate Funding Contract Period,Incurred Period Begin Date,datetime
+dbo,cmc_afcp_cont_per,afcp_incur_end_dt,Alternate Funding Contract Period,Incurred Period End Date,datetime
+dbo,cmc_afcp_cont_per,afcp_indiv_sl_amt,Alternate Funding Contract Period,Individual Stop Loss Amount,money
+dbo,cmc_afcp_cont_per,afcp_fam_sl_amt,Alternate Funding Contract Period,Family Stop Loss Amount,money
+dbo,cmc_afcp_cont_per,afcp_clm_ind,Alternate Funding Contract Period,Claim Funding,char
+dbo,cmc_afcp_cont_per,afcp_cap_ind,Alternate Funding Contract Period,Capitation Funding,char
+dbo,cmc_afcp_cont_per,afcp_mctr_slcc,Alternate Funding Contract Period,Contract Period Carry Forward,char
+dbo,cmc_afcp_cont_per,afcp_mctr_slmc,Alternate Funding Contract Period,Monthly Carry Forward,char
+dbo,cmc_afcp_cont_per,afcp_out_yr_slr,Alternate Funding Contract Period,Outside Year Expense Rule,char
+dbo,cmc_afcp_cont_per,afcp_mctr_tsla,Alternate Funding Contract Period,Aggregate,char
+dbo,cmc_afcp_cont_per,afcp_tsls_spec,Alternate Funding Contract Period,Specific,char
+dbo,cmc_afcp_cont_per,afcp_hsa_ind,Alternate Funding Contract Period,HRA Funding,char
+dbo,cmc_afcp_cont_per,afcp_lock_token,Alternate Funding Contract Period,Lock Token,smallint
+dbo,cmc_afcp_cont_per,atxr_source_id,Alternate Funding Contract Period,Attachment Source Id,datetime
+dbo,cmc_afcp_cont_per,sys_last_upd_dtm,Alternate Funding Contract Period,Last Update Datetime,datetime
+dbo,cmc_afcp_cont_per,sys_usus_id,Alternate Funding Contract Period,Last Update User ID,varchar
+dbo,cmc_afcp_cont_per,sys_dbuser_id,Alternate Funding Contract Period,Last Update DBMS User ID,varchar
+dbo,cmc_afep_enty_plan,afep_row_id,Alternate Funding Billing Entities and Plans,Row ID,numeric
+dbo,cmc_afep_enty_plan,afai_ck,Alternate Funding Billing Entities and Plans,Alternate Funding Agreement Contrived Key,int
+dbo,cmc_afep_enty_plan,afcp_per_no,Alternate Funding Billing Entities and Plans,AFA Period Number,int
+dbo,cmc_afep_enty_plan,grgr_ck,Alternate Funding Billing Entities and Plans,Group Contrived Key,int
+dbo,cmc_afep_enty_plan,sgsg_ck,Alternate Funding Billing Entities and Plans,Subgroup ID,int
+dbo,cmc_afep_enty_plan,cspd_cat,Alternate Funding Billing Entities and Plans,Category,char
+dbo,cmc_afep_enty_plan,cspi_id,Alternate Funding Billing Entities and Plans,Plan ID,char
+dbo,cmc_afep_enty_plan,afep_ssl_ind,Alternate Funding Billing Entities and Plans,Specific Stop Loss Applies,char
+dbo,cmc_afep_enty_plan,afep_lock_token,Alternate Funding Billing Entities and Plans,Lock Token,smallint
+dbo,cmc_afep_enty_plan,atxr_source_id,Alternate Funding Billing Entities and Plans,Attachment Source Id,datetime
+dbo,cmc_afep_enty_plan,sys_last_upd_dtm,Alternate Funding Billing Entities and Plans,Last Update Datetime,datetime
+dbo,cmc_afep_enty_plan,sys_usus_id,Alternate Funding Billing Entities and Plans,Last Update User ID,varchar
+dbo,cmc_afep_enty_plan,sys_dbuser_id,Alternate Funding Billing Entities and Plans,Last Update DBMS User ID,varchar
+dbo,cmc_afgp_accum_pdpd,grgr_ck,Group and Product Identifier Accumulator Filter, Group contrived key,int
+dbo,cmc_afgp_accum_pdpd,pdpd_id,Group and Product Identifier Accumulator Filter, Product ID,char
+dbo,cmc_afgp_accum_pdpd,afgp_lock_token,Group and Product Identifier Accumulator Filter,Lock Token,smallint
+dbo,cmc_afgp_accum_pdpd,sys_last_upd_dtm,Group and Product Identifier Accumulator Filter,Last Update Datetime,datetime
+dbo,cmc_afgp_accum_pdpd,sys_usus_id,Group and Product Identifier Accumulator Filter,Last Update User ID,varchar
+dbo,cmc_afgp_accum_pdpd,sys_dbuser_id,Group and Product Identifier Accumulator Filter,Last Update DBMS User ID,varchar
+dbo,cmc_afid_diag_ex,pdbc_pfx,Alternate Funding Excluded Diagnosis,Alternate Funding Rules Benefit Component Prefix,char
+dbo,cmc_afid_diag_ex,idcd_id,Alternate Funding Excluded Diagnosis,Alternate Funding Rules Excluded Diagnosis Code,varchar
+dbo,cmc_afid_diag_ex,idcd_type,Alternate Funding Excluded Diagnosis,ICD Version,char
+dbo,cmc_afid_diag_ex,afid_lock_token,Alternate Funding Excluded Diagnosis,Lock Token,smallint
+dbo,cmc_afid_diag_ex,atxr_source_id,Alternate Funding Excluded Diagnosis,Attachment Source Id,datetime
+dbo,cmc_afse_ase_ex,pdbc_pfx,Alternate Funding Excluded Services,Alternate Funding Rules Benefit Component Prefix,char
+dbo,cmc_afse_ase_ex,sese_id,Alternate Funding Excluded Services,Alternate Funding Rules Excluded Service Code,char
+dbo,cmc_afse_ase_ex,afse_lock_token,Alternate Funding Excluded Services,Lock Token,smallint
+dbo,cmc_afse_ase_ex,atxr_source_id,Alternate Funding Excluded Services,Attachment Source Id,datetime
+dbo,cmc_afsl_stoploss,afai_ck,Alternate Funding Laser Specific Stoploss,AFAI Contrived Key,int
+dbo,cmc_afsl_stoploss,afcp_per_no,Alternate Funding Laser Specific Stoploss,Period Number,int
+dbo,cmc_afsl_stoploss,afsl_tier_no,Alternate Funding Laser Specific Stoploss,Tier,int
+dbo,cmc_afsl_stoploss,afsl_ssl_amt,Alternate Funding Laser Specific Stoploss,Amount,money
+dbo,cmc_afsl_stoploss,afsl_lock_token,Alternate Funding Laser Specific Stoploss,Lock Token,smallint
+dbo,cmc_afsl_stoploss,atxr_source_id,Alternate Funding Laser Specific Stoploss,Attachment Source Id,datetime
+dbo,cmc_agaa_alt_agree,agaa_pfx,Alternate Agreement table,Alternate Agreement Prefix,char
+dbo,cmc_agaa_alt_agree,prpr_id,Alternate Agreement table,Provider ID,char
+dbo,cmc_agaa_alt_agree,agaa_eff_dt,Alternate Agreement table,Effective Date,datetime
+dbo,cmc_agaa_alt_agree,agaa_term_dt,Alternate Agreement table,Termination Date,datetime
+dbo,cmc_agaa_alt_agree,agag_id,Alternate Agreement table,Alternate Agreement ID,char
+dbo,cmc_agaa_alt_agree,agaa_lock_token,Alternate Agreement table,Lock Token,smallint
+dbo,cmc_agaa_alt_agree,atxr_source_id,Alternate Agreement table,Attachment Source Id,datetime
+dbo,cmc_agaa_alt_agree,sys_last_upd_dtm,Alternate Agreement table,Last Update Datetime,datetime
+dbo,cmc_agaa_alt_agree,sys_usus_id,Alternate Agreement table,Last Update User ID,varchar
+dbo,cmc_agaa_alt_agree,sys_dbuser_id,Alternate Agreement table,Last Update DBMS User ID,varchar
+dbo,cmc_agaf_admin_fee,agaf_pfx,Provider Administrative Fees,Prefix,char
+dbo,cmc_agaf_admin_fee,agaf_eff_dt,Provider Administrative Fees,Effective Date,datetime
+dbo,cmc_agaf_admin_fee,agaf_seq_no,Provider Administrative Fees,Sequence Number,smallint
+dbo,cmc_agaf_admin_fee,agaf_term_dt,Provider Administrative Fees,Termination Date,datetime
+dbo,cmc_agaf_admin_fee,agaf_mctr_type,Provider Administrative Fees,Fee Type,char
+dbo,cmc_agaf_admin_fee,agaf_apply_ind,Provider Administrative Fees,Apply To,char
+dbo,cmc_agaf_admin_fee,agaf_fee_level,Provider Administrative Fees,Fee Level,char
+dbo,cmc_agaf_admin_fee,svgr_id,Provider Administrative Fees,Service Grouping,char
+dbo,cmc_agaf_admin_fee,agaf_type_ind,Provider Administrative Fees,Calculation Type,char
+dbo,cmc_agaf_admin_fee,agaf_amt,Provider Administrative Fees,Administrative Fee Amount,money
+dbo,cmc_agaf_admin_fee,agaf_pct,Provider Administrative Fees,Administrative Fee Percent,money
+dbo,cmc_agaf_admin_fee,agaf_operand,Provider Administrative Fees,Administrative Fee Operand,char
+dbo,cmc_agaf_admin_fee,agaf_tcc_ind,Provider Administrative Fees,Total Cost of Care Indicator,char
+dbo,cmc_agaf_admin_fee,agaf_int_ind,Provider Administrative Fees,Interest Indicator,char
+dbo,cmc_agaf_admin_fee,agaf_lock_token,Provider Administrative Fees,Lock Token,smallint
+dbo,cmc_agaf_admin_fee,atxr_source_id,Provider Administrative Fees,Attachment Source Id,datetime
+dbo,cmc_agaf_admin_fee,sys_last_upd_dtm,Provider Administrative Fees,Last Update Datetime,datetime
+dbo,cmc_agaf_admin_fee,sys_usus_id,Provider Administrative Fees,Last Update User ID,varchar
+dbo,cmc_agaf_admin_fee,sys_dbuser_id,Provider Administrative Fees,Last Update DBMS User ID,varchar
+dbo,cmc_agag_agreement,agag_id,Provider Agreement Table,Provider Agreement Identifier,char
+dbo,cmc_agag_agreement,agag_eff_dt,Provider Agreement Table,Provider Agreement Effective Date,datetime
+dbo,cmc_agag_agreement,agag_term_dt,Provider Agreement Table,Provider Agreement Termination Date,datetime
+dbo,cmc_agag_agreement,agag_cat,Provider Agreement Table,Provider Agreement Category,char
+dbo,cmc_agag_agreement,agag_mctr_type,Provider Agreement Table,Provider Agreement Type,char
+dbo,cmc_agag_agreement,agag_rwh_pct,Provider Agreement Table,Provider Agreement Risk Withhold Percent,money
+dbo,cmc_agag_agreement,agag_rwh_ind,Provider Agreement Table,Provider Agreement Risk Withhold type,char
+dbo,cmc_agag_agreement,agag_cl_acpt_mnths,Provider Agreement Table,Provider Agreement Claim Accept Months,smallint
+dbo,cmc_agag_agreement,agag_cl_acpt_per,Provider Agreement Table,Provider Agreement Claim Accept Months,smallint
+dbo,cmc_agag_agreement,agag_ip_price_ind,Provider Agreement Table,Provider Agreement Inpatient Hospital Pricing Type,char
+dbo,cmc_agag_agreement,agag_op_price_ind,Provider Agreement Table,Provider Agreement Outpatient Hospital Pricing Indicator,char
+dbo,cmc_agag_agreement,agag_op_mult_pct,Provider Agreement Table,Multiple Surgery Percent,money
+dbo,cmc_agag_agreement,agag_ol_ind,Provider Agreement Table,Provider Agreement Outlier Indicator,char
+dbo,cmc_agag_agreement,agag_ol_disc_pct,Provider Agreement Table,Provider Agreement Outlier Discount Percent,money
+dbo,cmc_agag_agreement,agag_ol_lmt,Provider Agreement Table,Provider Agreement Outlier Limit,money
+dbo,cmc_agag_agreement,agag_ol_excd_id,Provider Agreement Table,Provider Agreement Outlier Explanation ID,char
+dbo,cmc_agag_agreement,agag_min_disc_pct,Provider Agreement Table,Provider Agreement Minimum Discount Percent,money
+dbo,cmc_agag_agreement,agag_max_disc_pct,Provider Agreement Table,Provider Agreement Maximum Discount Percent,money
+dbo,cmc_agag_agreement,agag_mxd_excd_id,Provider Agreement Table,Provider Agreement Minimum/Maximum Discount Explanation,char
+dbo,cmc_agag_agreement,agag_st_disc_pct,Provider Agreement Table,Provider Agreement Straight/Default Discount Pricing,money
+dbo,cmc_agag_agreement,agag_st_disc_ind,Provider Agreement Table,Provider Agreement Straight/Default Pricing Discount Indicator,char
+dbo,cmc_agag_agreement,agag_st_disc_prc,Provider Agreement Table,Provider Agreement Straight/Default Discount Method Indicator,char
+dbo,cmc_agag_agreement,agag_std_excd_id,Provider Agreement Table,Provider Agreement Straight/Default Pricing Discount Explanation,char
+dbo,cmc_agag_agreement,agag_sup_disc_pct,Provider Agreement Table,Provider Agreement Supplemental Discount Percent,money
+dbo,cmc_agag_agreement,agag_sup_disc_excd,Provider Agreement Table,Provider Agreement Supplemental Explanation Code ID,char
+dbo,cmc_agag_agreement,agag_drag_from_ind,Provider Agreement Table,Provider Agreement Payment Drag Date Indicator,char
+dbo,cmc_agag_agreement,agag_drag_per_ind,Provider Agreement Table,Provider Agreement Payment Drag Frequency Type,char
+dbo,cmc_agag_agreement,agag_drag_period,Provider Agreement Table,Provider Agreement Payment Drag Period,smallint
+dbo,cmc_agag_agreement,agag_drag_period2,Provider Agreement Table,Provider Agreement Second occurrence of payment frequency,smallint
+dbo,cmc_agag_agreement,agag_drag_period3,Provider Agreement Table,Provider Agreement Third occurence of payemnt frequency,smallint
+dbo,cmc_agag_agreement,agag_drag_eob_ind,Provider Agreement Table,Provider Agreement Payment Drag EOB Indicator,char
+dbo,cmc_agag_agreement,agse_pfx,Provider Agreement Table,Provider Agreement Service Definition Prefix,char
+dbo,cmc_agag_agreement,agdp_pfx,Provider Agreement Table,Provider Agreement Dental Procedure Definition Prefix,char
+dbo,cmc_agag_agreement,agcb_pfx,Provider Agreement Table,Provider Agreement COB Rules Prefix ID,char
+dbo,cmc_agag_agreement,agcg_pfx,Provider Agreement Table,Provider Agreement Dental Category Discounts Prefix,char
+dbo,cmc_agag_agreement,aghi_pfx,Provider Agreement Table,Provider Agreement Multiple Procedures Application,char
+dbo,cmc_agag_agreement,agip_pfx,Provider Agreement Table,Provider Agreement Procedure Definition Prefix,char
+dbo,cmc_agag_agreement,agsl_pfx,Provider Agreement Table,Provider Agreement Stoploss Prefix,char
+dbo,cmc_agag_agreement,agpp_pfx,Provider Agreement Table,Provider Agreement Prompt Payment Prefix,char
+dbo,cmc_agag_agreement,agpd_pfx,Provider Agreement Table,Provider Agreement Exclusion Prefix,char
+dbo,cmc_agag_agreement,agrg_pfx,Provider Agreement Table,Provider Agreement DRG Rules Prefix,char
+dbo,cmc_agag_agreement,agrt_pfx,Provider Agreement Table,Provider Agreement Auto Room Type Prefix ID,char
+dbo,cmc_agag_agreement,agil_pfx,Provider Agreement Table,Provider Agreement Inlier Prefix ID,char
+dbo,cmc_agag_agreement,agds_pfx_um,Provider Agreement Table,Provider Agreement UM Delegated Services Prefix ID,char
+dbo,cmc_agag_agreement,agds_pfx_clcl,Provider Agreement Table,Provider Agreement Claims Delegated Services Prefix ID,char
+dbo,cmc_agag_agreement,agmd_pfx,Provider Agreement Table,For Future Use,char
+dbo,cmc_agag_agreement,pfpf_id,Provider Agreement Table,Provider Agreement Override Profile Identifier,char
+dbo,cmc_agag_agreement,agag_pf_ind,Provider Agreement Table,Provider Agreement Pricing Profile Indicator,char
+dbo,cmc_agag_agreement,agag_tsfr_ind,Provider Agreement Table,Provider Agreement Inpatient Transfer Notification,char
+dbo,cmc_agag_agreement,agag_mult_rtyp_ind,Provider Agreement Table,Provider Agreement Multi Room Type Notification,char
+dbo,cmc_agag_agreement,agag_opts,Provider Agreement Table,Provider Agreement Options Field,char
+dbo,cmc_agag_agreement,agag_id_xlow,Provider Agreement Table,Provider Agreement Case Insenstitivity Field,char
+dbo,cmc_agag_agreement,agag_delg_claims,Provider Agreement Table,Provider Agreement Delegated Claims Indicator,char
+dbo,cmc_agag_agreement,agag_delg_um,Provider Agreement Table,Provider Agreement Delegated UM Indicator,char
+dbo,cmc_agag_agreement,agag_delg_case,Provider Agreement Table,Provider Agreement Delegated Case Management Indicator,char
+dbo,cmc_agag_agreement,agag_nwx_prof_ind,Provider Agreement Table,NetworXPricer Professional Pricing,char
+dbo,cmc_agag_agreement,agag_desc,Provider Agreement Table,Agreement Description,varchar
+dbo,cmc_agag_agreement,mcre_id,Provider Agreement Table,Provider Agreement Delegated Services Related Entity ID,char
+dbo,cmc_agag_agreement,excd_id,Provider Agreement Table,Explanation ID,char
+dbo,cmc_agag_agreement,agea_pfx,Provider Agreement Table,Provider Agreement Clinical Editing Admin Rules Prefix,char
+dbo,cmc_agag_agreement,agde_pfx,Provider Agreement Table,Provider Agreement Dental Clinical Editing Criteria Prefix,char
+dbo,cmc_agag_agreement,agda_pfx,Provider Agreement Table,Provider Agreement Dental Clinical Editing Admin Rules Prefix,char
+dbo,cmc_agag_agreement,agut_pfx,Provider Agreement Table,Agreement Dental Utilization Edits Prefix,char
+dbo,cmc_agag_agreement,dofr_id,Provider Agreement Table,Agreement DOFR ID,char
+dbo,cmc_agag_agreement,agaa_pfx,Provider Agreement Table,Agreement Alternate Agreement Prefix,char
+dbo,cmc_agag_agreement,agag_delg_cred_id,Provider Agreement Table,Agreement Delegated Credentialing ID,char
+dbo,cmc_agag_agreement,agag_delg_qm_id,Provider Agreement Table,Agreement Delegated QM ID,char
+dbo,cmc_agag_agreement,agag_acplus_ind,Provider Agreement Table,Agreement Access Plus Indicator,char
+dbo,cmc_agag_agreement,agag_inp_dofr_ind,Provider Agreement Table,Agreement Inpatient DOFR Processing Indicator,char
+dbo,cmc_agag_agreement,agag_surch_ind,Provider Agreement Table,Agreement Surcharge Applicability Indicator,char
+dbo,cmc_agag_agreement,agag_vis_type,Provider Agreement Table,Vision Model Type,char
+dbo,cmc_agag_agreement,agaf_pfx,Provider Agreement Table,Administrative Fees Prefix,char
+dbo,cmc_agag_agreement,agsv_pfx,Provider Agreement Table,Eligible Services Prefix,char
+dbo,cmc_agag_agreement,aglp_pfx,Provider Agreement Table,Lab Providers Prefix,char
+dbo,cmc_agag_agreement,agwf_pfx,Provider Agreement Table,Wholesale Factors Prefix,char
+dbo,cmc_agag_agreement,agag_lock_token,Provider Agreement Table,Lock Token,smallint
+dbo,cmc_agag_agreement,atxr_source_id,Provider Agreement Table,Attachment Source Id,datetime
+dbo,cmc_agag_agreement,sys_last_upd_dtm,Provider Agreement Table,Last Update Datetime,datetime
+dbo,cmc_agag_agreement,sys_usus_id,Provider Agreement Table,Last Update User ID,varchar
+dbo,cmc_agag_agreement,sys_dbuser_id,Provider Agreement Table,Last Update DBMS User ID,varchar
+dbo,cmc_agag_agreement,itag_pfx,Provider Agreement Table, ITS Provider Sanction Prefix,char
+dbo,cmc_agag_agreement,agag_cl_acpt_type,Provider Agreement Table,Claim Accept Type,char
+dbo,cmc_agag_agreement,agag_cl_acpt_ind,Provider Agreement Table,Accept Period Indicator,char
+dbo,cmc_agag_agreement,agag_adj_acpt_ind,Provider Agreement Table,Adjustment Accept Indicator,char
+dbo,cmc_agag_agreement,agag_adj_acpt_per,Provider Agreement Table,Adjustment Accept Period,smallint
+dbo,cmc_agag_agreement,agag_adj_acpt_type,Provider Agreement Table,Adjustment Accept Type,char
+dbo,cmc_agag_agreement,agag_cob_acpt_ind,Provider Agreement Table,COB Acceptance Period Indicator,char
+dbo,cmc_agag_agreement,agag_cob_acpt_per,Provider Agreement Table,COB Acceptance Period,smallint
+dbo,cmc_agag_agreement,agag_cob_acpt_type,Provider Agreement Table,COB Acceptance Type,char
+dbo,cmc_agag_agreement,agag_ms_acpt_ind,Provider Agreement Table,Medical Supplemental Acceptance Indicator,char
+dbo,cmc_agag_agreement,agag_ms_acpt_per,Provider Agreement Table,Medical Supplemental Acceptance Period,smallint
+dbo,cmc_agag_agreement,agag_ms_acpt_type,Provider Agreement Table,Medical Supplemental Acceptance Type,char
+dbo,cmc_agag_agreement,agag_sequest_pct_nvl,Provider Agreement Table,Sequestration Percentage,money
+dbo,cmc_agcg_defn,agcg_pfx,Dental Category Discount Table,Agreement Dental Category Discount Table,char
+dbo,cmc_agcg_defn,cgcg_id,Dental Category Discount Table,Agreement Dental Category Description ID,char
+dbo,cmc_agcg_defn,agcg_disc_ind,Dental Category Discount Table,Agreement Dental Category Discount Indicator,char
+dbo,cmc_agcg_defn,agcg_disc_pct,Dental Category Discount Table,Agreement Dental Category Discount Percent,int
+dbo,cmc_agcg_defn,excd_id,Dental Category Discount Table,Agreement Dental Category Discounts Explanation Code,char
+dbo,cmc_agcg_defn,agcg_opts,Dental Category Discount Table,Agreement Dental Category Discount Options,char
+dbo,cmc_agcg_defn,agcg_lock_token,Dental Category Discount Table,Lock Token,smallint
+dbo,cmc_agcg_defn,atxr_source_id,Dental Category Discount Table,Attachment Source Id,datetime
+dbo,cmc_agds_del_svcs,agds_pfx,Delegated Services Table,Provider Agreement Delegated Services Prefix,char
+dbo,cmc_agds_del_svcs,sese_id,Delegated Services Table,Provider Agreement Delegated Services ID,char
+dbo,cmc_agds_del_svcs,excd_id,Delegated Services Table,Provider Agreement Delegated Services Claim Explanation ID,char
+dbo,cmc_agds_del_svcs,agds_lock_token,Delegated Services Table,Lock Token,smallint
+dbo,cmc_agds_del_svcs,atxr_source_id,Delegated Services Table,Attachment Source Id,datetime
+dbo,cmc_aghi_tier,aghi_pfx,Medical Agreement ASC Multiple Procedures Prefix,Provider Agreement ASC Multiple Procedures Prefix,char
+dbo,cmc_aghi_tier,aghi_meth,Medical Agreement ASC Multiple Procedures Prefix,Provider Agreement ASC Multiple Procedures Primacy Method,char
+dbo,cmc_aghi_tier,aghi_desc,Medical Agreement ASC Multiple Procedures Prefix,Provider Agreement ASC Multiple Procedures Description,char
+dbo,cmc_aghi_tier,aghi_sec_pct,Medical Agreement ASC Multiple Procedures Prefix,Provider Agreement ASC Multiple Procedures Secondary Percentage,money
+dbo,cmc_aghi_tier,aghi_ter_pct,Medical Agreement ASC Multiple Procedures Prefix,Provider Agreement ASC Multiple Procedures Tertiary Percentage,money
+dbo,cmc_aghi_tier,aghi_oth_pct,Medical Agreement ASC Multiple Procedures Prefix,Provider Agreement ASC Multiple Procedures Subsequent Percentage,money
+dbo,cmc_aghi_tier,aghi_pct_excd_id,Medical Agreement ASC Multiple Procedures Prefix,Provider Agreement ASC Multiple Procedures Percentage Explanation ID,char
+dbo,cmc_aghi_tier,aghi_room_type,Medical Agreement ASC Multiple Procedures Prefix,Provider Agreement ASC Multiple Procedures Hospital Default Category,char
+dbo,cmc_aghi_tier,aghi_sese_id,Medical Agreement ASC Multiple Procedures Prefix,Provider Agreement ASC Multiple Procedures Medical Default Category,char
+dbo,cmc_aghi_tier,aghi_def_excd_id,Medical Agreement ASC Multiple Procedures Prefix,Provider Agreement ASC Multiple Procedures Default Explanation ID,char
+dbo,cmc_aghi_tier,aghi_lock_token,Medical Agreement ASC Multiple Procedures Prefix,Lock Token,smallint
+dbo,cmc_aghi_tier,atxr_source_id,Medical Agreement ASC Multiple Procedures Prefix,Attachment Source Id,datetime
+dbo,cmc_agil_inlier,agil_pfx,Agreement Inlier Table,Provider Agreement Inlier Prefix,char
+dbo,cmc_agil_inlier,agil_pos_ind,Agreement Inlier Table,Provider Agreement Inlier Place of Service Indicator,char
+dbo,cmc_agil_inlier,agil_type,Agreement Inlier Table,Provider Agreement Inlier Type,char
+dbo,cmc_agil_inlier,agil_rule_pct,Agreement Inlier Table,Provider Agreement Inlier Rule Percent,money
+dbo,cmc_agil_inlier,excd_id,Agreement Inlier Table,Provider Agreement Inlier Explanation ID,char
+dbo,cmc_agil_inlier,agil_lock_token,Agreement Inlier Table,Lock Token,smallint
+dbo,cmc_agil_inlier,atxr_source_id,Agreement Inlier Table,Attachment Source Id,datetime
+dbo,cmc_agip_defn,agip_pfx,Procedure Code Agreement Definitions,Provider Agreement Procedure Prefix,char
+dbo,cmc_agip_defn,ipcd_low,Procedure Code Agreement Definitions,Provider Agreement Procedure Code Low,char
+dbo,cmc_agip_defn,agip_eff_dt,Procedure Code Agreement Definitions,Provider Agreement Procedure Effective Date,datetime
+dbo,cmc_agip_defn,agip_term_dt,Procedure Code Agreement Definitions,Provider Agreement Procedure Termination Date,datetime
+dbo,cmc_agip_defn,ipcd_high,Procedure Code Agreement Definitions,Provider Agreement Procedure Code High,char
+dbo,cmc_agip_defn,agip_opts,Procedure Code Agreement Definitions,Provider Agreement Procedure Options,char
+dbo,cmc_agip_defn,wmds_seq_no,Procedure Code Agreement Definitions,Provider Agreement Procedure Definition User Defined Warning Message,smallint
+dbo,cmc_agip_defn,agip_rwh_ind,Procedure Code Agreement Definitions,Provider Agreement Procedure Risk Withhold Indicator,char
+dbo,cmc_agip_defn,agip_cap_ind,Procedure Code Agreement Definitions,Provider Agreement Procedure Capitation Indicator,char
+dbo,cmc_agip_defn,agip_um_ind,Procedure Code Agreement Definitions,Provider Agreement Procedure Utilization Management Indicator,char
+dbo,cmc_agip_defn,agip_um_auth_amt,Procedure Code Agreement Definitions,Pre-auth Minimum Charge,money
+dbo,cmc_agip_defn,agip_um_units_waive,Procedure Code Agreement Definitions,Pre-auth waiver for X Units,smallint
+dbo,cmc_agip_defn,agip_auth_wv_days,Procedure Code Agreement Definitions,Pre-auth Wiaver Time Period Days Indicator,smallint
+dbo,cmc_agip_defn,agip_lock_token,Procedure Code Agreement Definitions,Lock Token,smallint
+dbo,cmc_agip_defn,atxr_source_id,Procedure Code Agreement Definitions,Attachment Source Id,datetime
+dbo,cmc_agip_defn,sys_last_upd_dtm,Procedure Code Agreement Definitions,Last Update Datetime,datetime
+dbo,cmc_agip_defn,sys_usus_id,Procedure Code Agreement Definitions,Last Update User ID,varchar
+dbo,cmc_agip_defn,sys_dbuser_id,Procedure Code Agreement Definitions,Last Update DBMS User ID,varchar
+dbo,cmc_agip_defn,agip_sequest_ind_nvl,Procedure Code Agreement Definitions,Sequestration Indicator,char
+dbo,cmc_aglp_lab_prov,aglp_pfx,Agreement Eligible Lab Providers,Prefix,char
+dbo,cmc_aglp_lab_prov,prpr_id,Agreement Eligible Lab Providers,Lab Provider ID,char
+dbo,cmc_aglp_lab_prov,aglp_eff_dt,Agreement Eligible Lab Providers,Effective Date,datetime
+dbo,cmc_aglp_lab_prov,aglp_term_dt,Agreement Eligible Lab Providers,Termination Date,datetime
+dbo,cmc_aglp_lab_prov,aglp_fee_ind,Agreement Eligible Lab Providers,Admin Fee Indicator,char
+dbo,cmc_aglp_lab_prov,aglp_lock_token,Agreement Eligible Lab Providers,Lock Token,smallint
+dbo,cmc_aglp_lab_prov,atxr_source_id,Agreement Eligible Lab Providers,Attachment Source Id,datetime
+dbo,cmc_aglp_lab_prov,sys_last_upd_dtm,Agreement Eligible Lab Providers,Last Update Datetime,datetime
+dbo,cmc_aglp_lab_prov,sys_usus_id,Agreement Eligible Lab Providers,Last Update User ID,varchar
+dbo,cmc_aglp_lab_prov,sys_dbuser_id,Agreement Eligible Lab Providers,Last Update DBMS User ID,varchar
+dbo,cmc_agpd_defn,agpd_pfx,Provider Agreement Services Information,Provider Agreement Exclusion Prefix,char
+dbo,cmc_agpd_defn,sese_id,Provider Agreement Services Information,Provider Agreement Exclusion Service ID,char
+dbo,cmc_agpd_defn,agpd_eff_dt,Provider Agreement Services Information,Provider Agreement Exclusion Effective Date,datetime
+dbo,cmc_agpd_defn,agpd_term_dt,Provider Agreement Services Information,Provider Agreement Exclusion Termination Date,datetime
+dbo,cmc_agpd_defn,agpd_ind,Provider Agreement Services Information,Provider Agreement Exclusion Indicator,char
+dbo,cmc_agpd_defn,agpd_disc_ind,Provider Agreement Services Information,Provider Agreement Exclusion Pricing Method Indicator,char
+dbo,cmc_agpd_defn,agpd_disc_pct,Provider Agreement Services Information,Provider Agreement Exclusion Discount Percentage or Flat Amount,money
+dbo,cmc_agpd_defn,excd_id,Provider Agreement Services Information,Provider Agreement Exclusions Explanation Code ID,char
+dbo,cmc_agpd_defn,wmds_seq_no,Provider Agreement Services Information,Provider Agreement Exclusions User Defined Warning Message,smallint
+dbo,cmc_agpd_defn,agpd_mult_ind,Provider Agreement Services Information,Provider Agreement Exclusions Multiple Occurrence Indicator,char
+dbo,cmc_agpd_defn,agpd_inlier_ind,Provider Agreement Services Information,Provider Agreement Inlier Indicator,char
+dbo,cmc_agpd_defn,agpd_lock_token,Provider Agreement Services Information,Lock Token,smallint
+dbo,cmc_agpd_defn,atxr_source_id,Provider Agreement Services Information,Attachment Source Id,datetime
+dbo,cmc_agpd_defn,sys_last_upd_dtm,Provider Agreement Services Information,Last Update Datetime,datetime
+dbo,cmc_agpd_defn,sys_usus_id,Provider Agreement Services Information,Last Update User ID,varchar
+dbo,cmc_agpd_defn,sys_dbuser_id,Provider Agreement Services Information,Last Update DBMS User ID,varchar
+dbo,cmc_agpp_prompt,agpp_pfx,Agreement Prompt Payment Discount Data,Provider Agreement Prompt Payment Prefix,char
+dbo,cmc_agpp_prompt,agpp_low_day,Agreement Prompt Payment Discount Data,Provider Agreement Prompt Payment Low Day,smallint
+dbo,cmc_agpp_prompt,agpp_high_day,Agreement Prompt Payment Discount Data,Provider Agreement Prompt Payment High Day,smallint
+dbo,cmc_agpp_prompt,agpp_disc_pct,Agreement Prompt Payment Discount Data,Provider Agreement Prompt Payment Discount Percent,money
+dbo,cmc_agpp_prompt,excd_id,Agreement Prompt Payment Discount Data,Provider Agreement Prompt Payment Explanation Code ID,char
+dbo,cmc_agpp_prompt,agpp_lock_token,Agreement Prompt Payment Discount Data,Lock Token,smallint
+dbo,cmc_agpp_prompt,atxr_source_id,Agreement Prompt Payment Discount Data,Attachment Source Id,datetime
+dbo,cmc_agrg_drg,agrg_pfx,Agreement DRG Table,Provider Agreement Diagnostic Related Grouping Prefix,char
+dbo,cmc_agrg_drg,agrg_id,Agreement DRG Table,Provider Agreement DRG Code,char
+dbo,cmc_agrg_drg,agrg_opts,Agreement DRG Table,Provider Agreement DRG Options,char
+dbo,cmc_agrg_drg,agrg_desc,Agreement DRG Table,Provider Agreement DRG Description,char
+dbo,cmc_agrg_drg,agrg_weight,Agreement DRG Table,Provider Agreement DRG Weight Factor,int
+dbo,cmc_agrg_drg,agrg_low_trim_pt,Agreement DRG Table,Provider Agreement DRG Low Trim Point,smallint
+dbo,cmc_agrg_drg,agrg_high_trim_pt,Agreement DRG Table,Provider Agreement DRG High Trim Point,smallint
+dbo,cmc_agrg_drg,agrg_warn_ind,Agreement DRG Table,Provider Agreement DRG Code Excluded by Diagnosis Warning Message Ind,char
+dbo,cmc_agrg_drg,agrg_ol_agrg_id,Agreement DRG Table,Provider Agreement DRG Outlier DRG Identifier,char
+dbo,cmc_agrg_drg,agrg_ol_pd_amt,Agreement DRG Table,Provider Agreement DRG Outlier Per Diem Amount,money
+dbo,cmc_agrg_drg,agrg_price_ind,Agreement DRG Table,Provider Agreement DRG Pricing Indicator,char
+dbo,cmc_agrg_drg,agsl_pfx,Agreement DRG Table,Provider Agreement DRG Stoploss Arrangement Prefix,char
+dbo,cmc_agrg_drg,agrg_il_disc_pct,Agreement DRG Table,Provider Agreement DRG Inlier Discount Percent,money
+dbo,cmc_agrg_drg,agrg_il_case_amt,Agreement DRG Table,Provider Agreement DRG Inlier Case Amount,money
+dbo,cmc_agrg_drg,agrg_inlier_ind,Agreement DRG Table,Provider Agreement DRG Inlier Indicator,char
+dbo,cmc_agrg_drg,agrg_outlier_ind,Agreement DRG Table,Provider Agreement DRG Outlier Indicator,char
+dbo,cmc_agrg_drg,agrg_ol_disc_pct,Agreement DRG Table,Provider Agreement DRG Outlier Discount Percent,money
+dbo,cmc_agrg_drg,agrg_il_excd_id,Agreement DRG Table,Provider Agreement DRG Inlier Explanation ID,char
+dbo,cmc_agrg_drg,agrg_ol_excd_id,Agreement DRG Table,Provider Agreement DRG Outlier Explanation ID,char
+dbo,cmc_agrg_drg,wmds_seq_no,Agreement DRG Table,Provider Agreement DRG User-Defined Warning Message,smallint
+dbo,cmc_agrg_drg,agrg_lock_token,Agreement DRG Table,Lock Token,smallint
+dbo,cmc_agrg_drg,atxr_source_id,Agreement DRG Table,Attachment Source Id,datetime
+dbo,cmc_agrg_drg,sys_last_upd_dtm,Agreement DRG Table,Last Update Datetime,datetime
+dbo,cmc_agrg_drg,sys_usus_id,Agreement DRG Table,Last Update User ID,varchar
+dbo,cmc_agrg_drg,sys_dbuser_id,Agreement DRG Table,Last Update DBMS User ID,varchar
+dbo,cmc_agrt_auto_rt,agrt_pfx,Agreement Auto Room Type,Provider Agreement Auto Room Type Prefix ID,char
+dbo,cmc_agrt_auto_rt,sese_id,Agreement Auto Room Type,Provider Agreement Auto Room Type Sevice Identifier,char
+dbo,cmc_agrt_auto_rt,agrt_seq_no,Agreement Auto Room Type,Provider Agreement Auto Room Type Sequence Number,smallint
+dbo,cmc_agrt_auto_rt,agrt_id_rel_low,Agreement Auto Room Type,Provider Agreement Auto Room Type Beginning Diagnosis Code,varchar
+dbo,cmc_agrt_auto_rt,agrt_id_rel_high,Agreement Auto Room Type,Provider Agreement Auto Room Type Ending Related Diagnosis Code,varchar
+dbo,cmc_agrt_auto_rt,agrt_idcd_type,Agreement Auto Room Type,ICD Version,char
+dbo,cmc_agrt_auto_rt,agrt_rcrc_id_low,Agreement Auto Room Type,Provider Agreement Auto Room Type Beginning Revenue Code,char
+dbo,cmc_agrt_auto_rt,agrt_rcrc_id_high,Agreement Auto Room Type,Provider Agreement Auto Room Type Ending Revenue Code,char
+dbo,cmc_agrt_auto_rt,agrt_ipcd_meth,Agreement Auto Room Type,Provider Agreement Auto Room Type Procedure Coding Method,char
+dbo,cmc_agrt_auto_rt,agrt_ipcd_low,Agreement Auto Room Type,Provider Agreement Auto Room Type Beginning Procedure Code,char
+dbo,cmc_agrt_auto_rt,agrt_ipcd_high,Agreement Auto Room Type,Provider Agreement Auto Room Type Ending Procedure Code,char
+dbo,cmc_agrt_auto_rt,agrt_age_low,Agreement Auto Room Type,Provider Agreement Auto Room Type Age From,smallint
+dbo,cmc_agrt_auto_rt,agrt_age_high,Agreement Auto Room Type,Provider Agreement Auto Room Type Age To,smallint
+dbo,cmc_agrt_auto_rt,agrt_fac_type,Agreement Auto Room Type,Provider Agreement Auto Room Type Type of Facility,char
+dbo,cmc_agrt_auto_rt,agrt_bill_class,Agreement Auto Room Type,Provider Agreement Auto Room Type Hospital Billing Classification,char
+dbo,cmc_agrt_auto_rt,agrt_frequency,Agreement Auto Room Type,Provider Agreement Auto Room Type Hospital Billing Frequency,char
+dbo,cmc_agrt_auto_rt,pfrt_room_type,Agreement Auto Room Type,Provider Agreement Auto Room Type Identifier,char
+dbo,cmc_agrt_auto_rt,wmds_seq_no,Agreement Auto Room Type,Provider Agreement Auto Room Type User Defined Warning Message,smallint
+dbo,cmc_agrt_auto_rt,agrt_eff_dt,Agreement Auto Room Type,Provider Agreement Auto Room Type Effective Date,datetime
+dbo,cmc_agrt_auto_rt,agrt_term_dt,Agreement Auto Room Type,Provider Agreement Auto Room Type Termination Date,datetime
+dbo,cmc_agrt_auto_rt,agrt_lock_token,Agreement Auto Room Type,Lock Token,smallint
+dbo,cmc_agrt_auto_rt,atxr_source_id,Agreement Auto Room Type,Attachment Source Id,datetime
+dbo,cmc_agsl_stop_loss,agsl_pfx,Agreement Stop Loss Table,Provider Agreement Stoploss Prefix,char
+dbo,cmc_agsl_stop_loss,agsl_pos_ind,Agreement Stop Loss Table,Provider Agreement Stoploss Place of service indicator,char
+dbo,cmc_agsl_stop_loss,agsl_type,Agreement Stop Loss Table,Provider Agreement Stoploss Type,char
+dbo,cmc_agsl_stop_loss,agsl_threshold,Agreement Stop Loss Table,Provider Agreement Stoploss Threshold,money
+dbo,cmc_agsl_stop_loss,agsl_threshold_pct,Agreement Stop Loss Table,Provider Agreement Stoploss Threshold Percent,int
+dbo,cmc_agsl_stop_loss,agsl_disc_pct,Agreement Stop Loss Table,Provider Agreement Stoploss Discount Percent,money
+dbo,cmc_agsl_stop_loss,agsl_opts,Agreement Stop Loss Table,Provider Agreement Stoploss Options,char
+dbo,cmc_agsl_stop_loss,excd_id,Agreement Stop Loss Table,Provider Agreement Stoploss Explanation Code,char
+dbo,cmc_agsl_stop_loss,agsl_lock_token,Agreement Stop Loss Table,Lock Token,smallint
+dbo,cmc_agsl_stop_loss,atxr_source_id,Agreement Stop Loss Table,Attachment Source Id,datetime
+dbo,cmc_agsv_serv_elig,agsv_pfx,Agreement Eligible Service IDs and Service Groupings,Prefix,char
+dbo,cmc_agsv_serv_elig,agsv_type,Agreement Eligible Service IDs and Service Groupings,Service ID or Service Grouping,char
+dbo,cmc_agsv_serv_elig,agsv_seq_no,Agreement Eligible Service IDs and Service Groupings,Sequence Number,smallint
+dbo,cmc_agsv_serv_elig,agsv_id,Agreement Eligible Service IDs and Service Groupings,Service ID or Service Grouping,char
+dbo,cmc_agsv_serv_elig,sgla_id,Agreement Eligible Service IDs and Service Groupings,Service Grouping Classification,char
+dbo,cmc_agsv_serv_elig,agsv_lock_token,Agreement Eligible Service IDs and Service Groupings,Lock Token,smallint
+dbo,cmc_agsv_serv_elig,atxr_source_id,Agreement Eligible Service IDs and Service Groupings,Attachment Source Id,datetime
+dbo,cmc_agsv_serv_elig,sys_last_upd_dtm,Agreement Eligible Service IDs and Service Groupings,Last Update Datetime,datetime
+dbo,cmc_agsv_serv_elig,sys_usus_id,Agreement Eligible Service IDs and Service Groupings,Last Update User ID,varchar
+dbo,cmc_agsv_serv_elig,sys_dbuser_id,Agreement Eligible Service IDs and Service Groupings,Last Update DBMS User ID,varchar
+dbo,cmc_agwf_whls_fctr,agwf_pfx,Wholesale Factors Table,Prefix,char
+dbo,cmc_agwf_whls_fctr,agwf_type,Wholesale Factors Table,Type,char
+dbo,cmc_agwf_whls_fctr,agwf_eff_dt,Wholesale Factors Table,Effective Date,datetime
+dbo,cmc_agwf_whls_fctr,agwf_term_dt,Wholesale Factors Table,Termination Date,datetime
+dbo,cmc_agwf_whls_fctr,agwf_fctr,Wholesale Factors Table,Wholesale Factor,money
+dbo,cmc_agwf_whls_fctr,agwf_mctr_trsn,Wholesale Factors Table,Termination Reason,char
+dbo,cmc_agwf_whls_fctr,agwf_lock_token,Wholesale Factors Table,Lock Token,smallint
+dbo,cmc_agwf_whls_fctr,atxr_source_id,Wholesale Factors Table,Attachment Source Id,datetime
+dbo,cmc_agwf_whls_fctr,sys_last_upd_dtm,Wholesale Factors Table,Last Update Datetime,datetime
+dbo,cmc_agwf_whls_fctr,sys_usus_id,Wholesale Factors Table,Last Update User ID,varchar
+dbo,cmc_agwf_whls_fctr,sys_dbuser_id,Wholesale Factors Table,Last Update DBMS User ID,varchar
+dbo,cmc_apac_activity,apap_id,Appeal Activity Table,Appeal ID,char
+dbo,cmc_apac_activity,apac_seq_no,Appeal Activity Table,Activity Sequence Number,smallint
+dbo,cmc_apac_activity,aplv_seq_no,Appeal Activity Table,Level Sequence number,smallint
+dbo,cmc_apac_activity,apct_seq_no,Appeal Activity Table,Not Used in Current Release,smallint
+dbo,cmc_apac_activity,aprp_id,Appeal Activity Table,Activity Reviewer,char
+dbo,cmc_apac_activity,apac_dtm,Appeal Activity Table,Activity datetime,datetime
+dbo,cmc_apac_activity,apac_method,Appeal Activity Table,Contact Method,char
+dbo,cmc_apac_activity,apac_mctr_type,Appeal Activity Table,Activity Type,char
+dbo,cmc_apac_activity,apac_summary,Appeal Activity Table,Activity Summary,char
+dbo,cmc_apac_activity,apac_create_dtm,Appeal Activity Table,Create datetime,datetime
+dbo,cmc_apac_activity,apac_create_usid,Appeal Activity Table,Create user,char
+dbo,cmc_apac_activity,apac_last_upd_dtm,Appeal Activity Table,Last update datetime,datetime
+dbo,cmc_apac_activity,apac_last_upd_usid,Appeal Activity Table,Last update user,char
+dbo,cmc_apac_activity,apac_lock_token,Appeal Activity Table,Lock Token,smallint
+dbo,cmc_apac_activity,atxr_source_id,Appeal Activity Table,Attachment Source Id,datetime
+dbo,cmc_apac_activity,apac_mctr_filt_nvl,Appeal Activity Table,Activity Class,char
+dbo,cmc_apal_adm_log,apap_id,Appeal Administrative Log,Appeal ID,char
+dbo,cmc_apal_adm_log,apal_seq_no,Appeal Administrative Log,Administrative Log Sequence Number,smallint
+dbo,cmc_apal_adm_log,apal_dtm,Appeal Administrative Log,Log Date,datetime
+dbo,cmc_apal_adm_log,apal_mctr_cat,Appeal Administrative Log,Log Category,char
+dbo,cmc_apal_adm_log,apal_mctr_scat,Appeal Administrative Log,Log Subcategory,char
+dbo,cmc_apal_adm_log,apal_due_dt,Appeal Administrative Log, ,datetime
+dbo,cmc_apal_adm_log,apal_due_dtm,Appeal Administrative Log,Administrative log due date,datetime
+dbo,cmc_apal_adm_log,apal_comp_ind,Appeal Administrative Log,Log Completion Indicator,char
+dbo,cmc_apal_adm_log,apal_summary,Appeal Administrative Log,Log Summary,char
+dbo,cmc_apal_adm_log,apal_create_dtm,Appeal Administrative Log,Create date,datetime
+dbo,cmc_apal_adm_log,apal_create_usid,Appeal Administrative Log,Create user,char
+dbo,cmc_apal_adm_log,apal_last_upd_dtm,Appeal Administrative Log,Last update datetime,datetime
+dbo,cmc_apal_adm_log,apal_last_upd_usid,Appeal Administrative Log,Last update user,char
+dbo,cmc_apal_adm_log,apal_lock_token,Appeal Administrative Log,Lock Token,smallint
+dbo,cmc_apal_adm_log,atxr_source_id,Appeal Administrative Log,Attachment Source Id,datetime
+dbo,cmc_apap_appeals,apap_id,Appeal Indicative Table,Appeal ID,char
+dbo,cmc_apap_appeals,meme_ck,Appeal Indicative Table,Member Contrived Key,int
+dbo,cmc_apap_appeals,sbsb_ck,Appeal Indicative Table,Subscriber Contrived Key,int
+dbo,cmc_apap_appeals,grgr_ck,Appeal Indicative Table,Group Contrived Key,int
+dbo,cmc_apap_appeals,sgsg_ck,Appeal Indicative Table,Subgroup Contrived Key,int
+dbo,cmc_apap_appeals,meme_hicn,Appeal Indicative Table,Member HICN,char
+dbo,cmc_apap_appeals,cspd_cat,Appeal Indicative Table,Product Category,char
+dbo,cmc_apap_appeals,apap_st,Appeal Indicative Table,Member Home Address State Code,char
+dbo,cmc_apap_appeals,apap_prpr_id1,Appeal Indicative Table,Representative Provider 1,char
+dbo,cmc_apap_appeals,apap_mctr_prre_1,Appeal Indicative Table,Provider 1 Relationship Reason,char
+dbo,cmc_apap_appeals,apap_prpr_id2,Appeal Indicative Table,Representative Provider 2,char
+dbo,cmc_apap_appeals,apap_mctr_prre_2,Appeal Indicative Table,Provider 2 Relationship Reason,char
+dbo,cmc_apap_appeals,apap_prpr_id3,Appeal Indicative Table,Representative Provider 3,char
+dbo,cmc_apap_appeals,apap_mctr_prre_3,Appeal Indicative Table,Provider 3 Relationship Reason,char
+dbo,cmc_apap_appeals,apap_prpr_id4,Appeal Indicative Table,Representative Provider 4,char
+dbo,cmc_apap_appeals,apap_mctr_prre_4,Appeal Indicative Table,Provider 4 Relationship Reason,char
+dbo,cmc_apap_appeals,apap_init_dt,Appeal Indicative Table, ,datetime
+dbo,cmc_apap_appeals,apap_init_dtm,Appeal Indicative Table, initiation datetime,datetime
+dbo,cmc_apap_appeals,apap_end_dt,Appeal Indicative Table, ,datetime
+dbo,cmc_apap_appeals,apap_end_dtm,Appeal Indicative Table,Appeal End Date,datetime
+dbo,cmc_apap_appeals,apap_mctr_meth,Appeal Indicative Table,Initiation Method,char
+dbo,cmc_apap_appeals,apap_create_dtm,Appeal Indicative Table,Create datetime,datetime
+dbo,cmc_apap_appeals,apap_create_usid,Appeal Indicative Table,Create user,char
+dbo,cmc_apap_appeals,apap_last_upd_dtm,Appeal Indicative Table,Last Update datetime,datetime
+dbo,cmc_apap_appeals,apap_last_upd_usid,Appeal Indicative Table,Last Update user,char
+dbo,cmc_apap_appeals,apap_mctr_cat,Appeal Indicative Table,Appeal Category,char
+dbo,cmc_apap_appeals,apap_mctr_type,Appeal Indicative Table,Appeal Type,char
+dbo,cmc_apap_appeals,apap_mctr_styp,Appeal Indicative Table,Appeal Subtype,char
+dbo,cmc_apap_appeals,apct_seq_no,Appeal Indicative Table,Primary Contact,smallint
+dbo,cmc_apap_appeals,apap_usid_pri,Appeal Indicative Table,Current primary user,char
+dbo,cmc_apap_appeals,apap_usid_sec,Appeal Indicative Table,Current secondary user,char
+dbo,cmc_apap_appeals,apap_usid_ter,Appeal Indicative Table,Current tertiary user,char
+dbo,cmc_apap_appeals,apst_seq_no,Appeal Indicative Table,Current status row,smallint
+dbo,cmc_apap_appeals,apap_cur_sts,Appeal Indicative Table,Current status,char
+dbo,cmc_apap_appeals,apap_cur_sts_dtm,Appeal Indicative Table,Current status Date,datetime
+dbo,cmc_apap_appeals,aplv_seq_no,Appeal Indicative Table,Current Level Sequence No.,smallint
+dbo,cmc_apap_appeals,apap_cur_level,Appeal Indicative Table,Current level,char
+dbo,cmc_apap_appeals,apap_cur_exp_ind,Appeal Indicative Table,Expedited Indicator,char
+dbo,cmc_apap_appeals,apap_desc,Appeal Indicative Table,Description of appeal,char
+dbo,cmc_apap_appeals,apap_summary,Appeal Indicative Table,Summary of appeal,varchar
+dbo,cmc_apap_appeals,apap_next_rev_dt,Appeal Indicative Table, ,datetime
+dbo,cmc_apap_appeals,apap_next_rev_dtm,Appeal Indicative Table,Next Review Date,datetime
+dbo,cmc_apap_appeals,apap_next_rev_int,Appeal Indicative Table,Next review date interval,smallint
+dbo,cmc_apap_appeals,apap_cur_decision,Appeal Indicative Table,Current Decision,char
+dbo,cmc_apap_appeals,apap_lock_token,Appeal Indicative Table,Lock Token,smallint
+dbo,cmc_apap_appeals,atxr_source_id,Appeal Indicative Table,Attachment Source Id,datetime
+dbo,cmc_apap_appeals,apap_ctm_id_nvl,Appeal Indicative Table,Complaint Tracking Module ID,varchar
+dbo,cmc_apap_appeals,apap_rev_int_nvl,Appeal Indicative Table,Next Review Interval Type days/hours,smallint
+dbo,cmc_apcd_desc,apcd_id,Ambulatory Payment Classification Codes Table,Ambulatory Payment Classification ID,varchar
+dbo,cmc_apcd_desc,apcd_desc,Ambulatory Payment Classification Codes Table,Ambulatory Payment Classification Description,char
+dbo,cmc_apcd_desc,apsi_sts_ind,Ambulatory Payment Classification Codes Table,Ambulatory Payment Classification Grouper Status Indicator,char
+dbo,cmc_apcd_desc,apcd_lock_token,Ambulatory Payment Classification Codes Table,Lock Token,smallint
+dbo,cmc_apcd_desc,atxr_source_id,Ambulatory Payment Classification Codes Table,Attachment Source Id,datetime
+dbo,cmc_apct_contacts,apap_id,Appeal Contacts,Appeal ID,char
+dbo,cmc_apct_contacts,apct_seq_no,Appeal Contacts,Contact sequence number,smallint
+dbo,cmc_apct_contacts,mcre_id,Appeal Contacts,Contact ID,char
+dbo,cmc_apct_contacts,apct_mctr_cat,Appeal Contacts,Contact category,char
+dbo,cmc_apct_contacts,apct_lock_token,Appeal Contacts,Lock Token,smallint
+dbo,cmc_apct_contacts,atxr_source_id,Appeal Contacts,Attachment Source Id,datetime
+dbo,cmc_aplk_app_link,apap_id,Appeal Link Table,Appeal ID,char
+dbo,cmc_aplk_app_link,aplk_type,Appeal Link Table,Link Record Type,char
+dbo,cmc_aplk_app_link,aplk_id,Appeal Link Table,Link Record ID,char
+dbo,cmc_aplk_app_link,aplk_mctr_reas,Appeal Link Table,Link Reason,char
+dbo,cmc_aplk_app_link,aplk_desc,Appeal Link Table,Link Description,char
+dbo,cmc_aplk_app_link,aplk_last_upd_dtm,Appeal Link Table,Last update date,datetime
+dbo,cmc_aplk_app_link,aplk_last_upd_usid,Appeal Link Table,Last update user,char
+dbo,cmc_aplk_app_link,aplk_lock_token,Appeal Link Table,Lock Token,smallint
+dbo,cmc_aplk_app_link,atxr_source_id,Appeal Link Table,Attachment Source Id,datetime
+dbo,cmc_aplv_app_level,apap_id,Appeal Level Table,Appeal ID,char
+dbo,cmc_aplv_app_level,aplv_seq_no,Appeal Level Table,Level Sequence number,smallint
+dbo,cmc_aplv_app_level,aplv_level,Appeal Level Table,Appeal Level,char
+dbo,cmc_aplv_app_level,aplv_init_dt,Appeal Level Table, ,datetime
+dbo,cmc_aplv_app_level,aplv_init_dtm,Appeal Level Table, Appeal initiation date and time,datetime
+dbo,cmc_aplv_app_level,aplv_mctr_meth,Appeal Level Table,Initiation Method of Level,char
+dbo,cmc_aplv_app_level,aplv_create_dtm,Appeal Level Table,Level Create datetime,datetime
+dbo,cmc_aplv_app_level,aplv_create_usid,Appeal Level Table,Level Create user,char
+dbo,cmc_aplv_app_level,aplv_last_upd_dtm,Appeal Level Table,Level Last Update datetime,datetime
+dbo,cmc_aplv_app_level,aplv_last_upd_usid,Appeal Level Table,Level Last Update user,char
+dbo,cmc_aplv_app_level,aplv_decision,Appeal Level Table,Level Decision,char
+dbo,cmc_aplv_app_level,aplv_mctr_reas,Appeal Level Table,Decision Reason,char
+dbo,cmc_aplv_app_level,aplv_exp_ind,Appeal Level Table,Level Expedited Indicator,char
+dbo,cmc_aplv_app_level,aplv_decision_dt,Appeal Level Table, ,datetime
+dbo,cmc_aplv_app_level,aplv_decision_dtm,Appeal Level Table, Decision on date and time,datetime
+dbo,cmc_aplv_app_level,aplv_notf_meth,Appeal Level Table,Decision Notification Method,char
+dbo,cmc_aplv_app_level,aplv_notf_dt,Appeal Level Table, ,datetime
+dbo,cmc_aplv_app_level,aplv_notf_dtm,Appeal Level Table,Notified Date,datetime
+dbo,cmc_aplv_app_level,aplv_mctr_notf,Appeal Level Table,Notification Method Category,char
+dbo,cmc_aplv_app_level,aplv_hearing_ind,Appeal Level Table,Hearing Indicator,char
+dbo,cmc_aplv_app_level,aplv_hearing_dtm,Appeal Level Table,Hearing Date,datetime
+dbo,cmc_aplv_app_level,aplv_adr_ind,Appeal Level Table,Dispute Resolution Indicator,char
+dbo,cmc_aplv_app_level,aplv_mctr_adr,Appeal Level Table,Dispute Resolution Reason,char
+dbo,cmc_aplv_app_level,aplv_summary,Appeal Level Table,Level Summary,varchar
+dbo,cmc_aplv_app_level,apst_seq_no,Appeal Level Table,Level Status Sequence Number,smallint
+dbo,cmc_aplv_app_level,apst_sts,Appeal Level Table,Current Status,char
+dbo,cmc_aplv_app_level,apst_sts_dtm,Appeal Level Table,Status date,datetime
+dbo,cmc_aplv_app_level,aplv_usid_pri,Appeal Level Table,Primary user,char
+dbo,cmc_aplv_app_level,aplv_usid_sec,Appeal Level Table,Secondary user,char
+dbo,cmc_aplv_app_level,aplv_usid_ter,Appeal Level Table,Tertiary user,char
+dbo,cmc_aplv_app_level,aplv_mctr_late,Appeal Level Table,Lateness reason,char
+dbo,cmc_aplv_app_level,aplv_lock_token,Appeal Level Table,Lock Token,smallint
+dbo,cmc_aplv_app_level,atxr_source_id,Appeal Level Table,Attachment Source Id,datetime
+dbo,cmc_aplv_app_level,aplv_ire_id_nvl,Appeal Level Table,External Reviewer ID,varchar
+dbo,cmc_aplv_app_level,aplv_mctr_vrsn_nvl,Appeal Level Table,Appeal Decision Reason,char
+dbo,cmc_aplv_app_level,aplv_exp_dtm_nvl,Appeal Level Table,Expedited Date and Time,datetime
+dbo,cmc_aplv_app_level,aplv_due_dtm_nvl,Appeal Level Table, Decision Due datetime,datetime
+dbo,cmc_apra_rp_assign,apap_id,Appeal Reviewer Assignment,Appeal ID,char
+dbo,cmc_apra_rp_assign,aplv_seq_no,Appeal Reviewer Assignment,Appeal Level for Assignment,smallint
+dbo,cmc_apra_rp_assign,mcre_id,Appeal Reviewer Assignment,Reviewer ID,char
+dbo,cmc_apra_rp_assign,apra_eff_dt,Appeal Reviewer Assignment,Effective Date,datetime
+dbo,cmc_apra_rp_assign,apra_eff_dtm,Appeal Reviewer Assignment,Effective date and time an appeal reviewer was assigned to a case,datetime
+dbo,cmc_apra_rp_assign,apra_term_dt,Appeal Reviewer Assignment,Termination Date,datetime
+dbo,cmc_apra_rp_assign,apra_term_dtm,Appeal Reviewer Assignment,Termination date and time an appeal reviewer is no longer assigned,datetime
+dbo,cmc_apra_rp_assign,apra_mctr_trsn,Appeal Reviewer Assignment,Termination reason,char
+dbo,cmc_apra_rp_assign,apra_last_upd_dtm,Appeal Reviewer Assignment,Last update datetime,datetime
+dbo,cmc_apra_rp_assign,apra_last_upd_usid,Appeal Reviewer Assignment,Last update user,char
+dbo,cmc_apra_rp_assign,apra_lock_token,Appeal Reviewer Assignment,Lock Token,smallint
+dbo,cmc_apra_rp_assign,atxr_source_id,Appeal Reviewer Assignment,Attachment Source Id,datetime
+dbo,cmc_apre_app_redir,apre_src_pzap_id,Application Redirect Parameters,Application Redirect Parameters Source Application,char
+dbo,cmc_apre_app_redir,clcl_cl_sub_type,Application Redirect Parameters,Application Redirect Parameters Claim Subtype,char
+dbo,cmc_apre_app_redir,apre_dest_pzap_id,Application Redirect Parameters,Application Redirect Parameters Destination Application,char
+dbo,cmc_apre_app_redir,apre_lock_token,Application Redirect Parameters,Lock Token,smallint
+dbo,cmc_apre_app_redir,atxr_source_id,Application Redirect Parameters,Attachment Source Id,datetime
+dbo,cmc_aprp_reps,mcre_id,Appeal Reviewers,Reviewer ID,char
+dbo,cmc_aprp_reps,aprp_mctr_cat,Appeal Reviewers,Reviewer category,char
+dbo,cmc_aprp_reps,aprp_mctr_scat,Appeal Reviewers,Reviewer Subcategory,char
+dbo,cmc_aprp_reps,aprp_cred_sum,Appeal Reviewers,Credential Summary,varchar
+dbo,cmc_aprp_reps,aprp_eff_dt,Appeal Reviewers,Reviewer effective date,datetime
+dbo,cmc_aprp_reps,aprp_term_dt,Appeal Reviewers,Reviewer termination date,datetime
+dbo,cmc_aprp_reps,aprp_mctr_trsn,Appeal Reviewers,Termination Reason,char
+dbo,cmc_aprp_reps,aprp_last_upd_dtm,Appeal Reviewers,Last update date,datetime
+dbo,cmc_aprp_reps,aprp_last_upd_usid,Appeal Reviewers,Last update user,char
+dbo,cmc_aprp_reps,aprp_lock_token,Appeal Reviewers,Lock Token,smallint
+dbo,cmc_aprp_reps,atxr_source_id,Appeal Reviewers,Attachment Source Id,datetime
+dbo,cmc_aprp_reps,aprp_ire_id_nvl,Appeal Reviewers, External Reviewer ID,varchar
+dbo,cmc_aprs_app_redir_svc,aprs_src_pzap_id,Claim Web Application Redirect table, Source PZAP application,char
+dbo,cmc_aprs_app_redir_svc,clcl_cl_type,Claim Web Application Redirect table,Claim Type,char
+dbo,cmc_aprs_app_redir_svc,aprs_dest_pzap_id,Claim Web Application Redirect table,Destination PZAP ID,char
+dbo,cmc_aprs_app_redir_svc,aprs_lock_token,Claim Web Application Redirect table,Lock Token,smallint
+dbo,cmc_aprs_app_redir_svc,sys_last_upd_dtm,Claim Web Application Redirect table,Last Update Datetime,datetime
+dbo,cmc_aprs_app_redir_svc,sys_usus_id,Claim Web Application Redirect table,Last Update User ID,varchar
+dbo,cmc_aprs_app_redir_svc,sys_dbuser_id,Claim Web Application Redirect table,Last Update DBMS User ID,varchar
+dbo,cmc_apsi_sts_desc,apsi_sts_ind,Ambulatory Payment Classification Status Indicator Table,Ambulatory Payment Classification Status Indicator,char
+dbo,cmc_apsi_sts_desc,apsi_sts_desc,Ambulatory Payment Classification Status Indicator Table,Ambulatory Payment Classification Status Indicator Description,char
+dbo,cmc_apsi_sts_desc,apsi_lock_token,Ambulatory Payment Classification Status Indicator Table,Lock Token,smallint
+dbo,cmc_apsi_sts_desc,atxr_source_id,Ambulatory Payment Classification Status Indicator Table,Attachment Source Id,datetime
+dbo,cmc_apst_status,apap_id,Appeal Status Table,Appeal ID,char
+dbo,cmc_apst_status,aplv_seq_no,Appeal Status Table,Level Sequence number,smallint
+dbo,cmc_apst_status,apst_seq_no,Appeal Status Table,Status sequence number,smallint
+dbo,cmc_apst_status,apst_sts,Appeal Status Table,Status,char
+dbo,cmc_apst_status,apst_sts_dtm,Appeal Status Table,Status date,datetime
+dbo,cmc_apst_status,apst_mctr_reas,Appeal Status Table,Status Reason,char
+dbo,cmc_apst_status,apst_usid,Appeal Status Table,Status user,char
+dbo,cmc_apst_status,apst_usid_route,Appeal Status Table,Route to user,char
+dbo,cmc_apst_status,apst_lock_token,Appeal Status Table,Lock Token,smallint
+dbo,cmc_apst_status,atxr_source_id,Appeal Status Table,Attachment Source Id,datetime
+dbo,cmc_faac_accum,sbsb_ck, ,Subscriber Contrived Key,int
+dbo,cmc_faac_accum,pdpd_acc_sfx, ,Product Accumulator Suffix,char
+dbo,cmc_faac_accum,faac_acc_type, , ,char
+dbo,cmc_faac_accum,acac_acc_no, ,EOB Amount Accumulator Number,smallint
+dbo,cmc_faac_accum,grgr_ck, ,Group Address Line 1,int
+dbo,cmc_faac_accum,faac_cur_year, , ,datetime
+dbo,cmc_faac_accum,faac_yr1_amt1, , ,money
+dbo,cmc_faac_accum,faac_yr1_amt2, , ,money
+dbo,cmc_faac_accum,faac_yr2_amt1, , ,money
+dbo,cmc_faac_accum,faac_yr2_amt2, , ,money
+dbo,cmc_faac_accum,faac_yr3_amt1, , ,money
+dbo,cmc_faac_accum,faac_yr3_amt2, , ,money
+dbo,cmc_faac_accum,faac_yr1_ctr1, , ,int
+dbo,cmc_faac_accum,faac_yr1_ctr2, , ,int
+dbo,cmc_faac_accum,faac_yr2_ctr1, , ,int
+dbo,cmc_faac_accum,faac_yr2_ctr2, , ,int
+dbo,cmc_faac_accum,faac_yr3_ctr1, , ,int
+dbo,cmc_faac_accum,faac_yr3_ctr2, , ,int
+dbo,cmc_faac_accum,faac_lock_token, ,Lock Token,smallint
+dbo,cmc_faac_accum,faac_lst_clcl_id_nvl, , ,char
+dbo,cmc_faac_accum,faac_mctr_rsn_nvl, , ,char
+dbo,cmc_faac_accum,syin_inst, ,System Instance,int
+dbo,cmc_faac_accum_old,sbsb_ck,Former- Family Accumulators Data,Subscriber Contrived Key,int
+dbo,cmc_faac_accum_old,pdpd_acc_sfx,Former- Family Accumulators Data,Product Accumulator Suffix,char
+dbo,cmc_faac_accum_old,faac_acc_type,Former- Family Accumulators Data, ,char
+dbo,cmc_faac_accum_old,acac_acc_no,Former- Family Accumulators Data,EOB Amount Accumulator Number,smallint
+dbo,cmc_faac_accum_old,grgr_ck,Former- Family Accumulators Data,Group Address Line 1,int
+dbo,cmc_faac_accum_old,faac_cur_year,Former- Family Accumulators Data, ,datetime
+dbo,cmc_faac_accum_old,faac_yr1_amt1,Former- Family Accumulators Data, ,money
+dbo,cmc_faac_accum_old,faac_yr1_amt2,Former- Family Accumulators Data, ,money
+dbo,cmc_faac_accum_old,faac_yr2_amt1,Former- Family Accumulators Data, ,money
+dbo,cmc_faac_accum_old,faac_yr2_amt2,Former- Family Accumulators Data, ,money
+dbo,cmc_faac_accum_old,faac_yr3_amt1,Former- Family Accumulators Data, ,money
+dbo,cmc_faac_accum_old,faac_yr3_amt2,Former- Family Accumulators Data, ,money
+dbo,cmc_faac_accum_old,faac_yr1_ctr1,Former- Family Accumulators Data, ,int
+dbo,cmc_faac_accum_old,faac_yr1_ctr2,Former- Family Accumulators Data, ,int
+dbo,cmc_faac_accum_old,faac_yr2_ctr1,Former- Family Accumulators Data, ,int
+dbo,cmc_faac_accum_old,faac_yr2_ctr2,Former- Family Accumulators Data, ,int
+dbo,cmc_faac_accum_old,faac_yr3_ctr1,Former- Family Accumulators Data, ,int
+dbo,cmc_faac_accum_old,faac_yr3_ctr2,Former- Family Accumulators Data, ,int
+dbo,cmc_faac_accum_old,faac_lock_token,Former- Family Accumulators Data,Lock Token,smallint
+dbo,cmc_faac_accum_old,faac_lst_clcl_id_nvl,Former- Family Accumulators Data, ,char
+dbo,cmc_faac_accum_old,faac_mctr_rsn_nvl,Former- Family Accumulators Data, ,char
+dbo,cmc_faac_accum_old,syin_inst,Former- Family Accumulators Data,System Instance,int
+dbo,cmc_faar_fatx,sbsb_ck,Family accumulator archive status table,Subscriber Contrived Key,int
+dbo,cmc_faar_fatx,pdpd_acc_sfx,Family accumulator archive status table,Product Accumulator Suffix,char
+dbo,cmc_faar_fatx,fatx_acc_type,Family accumulator archive status table,Accumulator Type,char
+dbo,cmc_faar_fatx,acac_acc_no,Family accumulator archive status table, Accumulator number,smallint
+dbo,cmc_faar_fatx,fatx_ben_beg_dt,Family accumulator archive status table,Benefit Period Begin Date,datetime
+dbo,cmc_faar_fatx,fatx_seq_no_last,Family accumulator archive status table,Highest Sequence No,int
+dbo,cmc_faar_fatx,faar_status,Family accumulator archive status table, Archive Status,char
+dbo,cmc_faar_fatx,faar_create_dt,Family accumulator archive status table, Accumulator Archive Create Date,datetime
+dbo,cmc_faar_fatx,faar_last_act_dt,Family accumulator archive status table,Last Action Date,datetime
+dbo,cmc_faar_fatx,faar_archive_path,Family accumulator archive status table,Archive File Location,varchar
+dbo,cmc_faar_fatx,faar_lock_token,Family accumulator archive status table,Lock Token,smallint
+dbo,cmc_fatx_accum_txn,sbsb_ck,Family Accumulator Transaction Table,Subscriber Contrived Key,int
+dbo,cmc_fatx_accum_txn,pdpd_acc_sfx,Family Accumulator Transaction Table,Accumulator Suffix,char
+dbo,cmc_fatx_accum_txn,fatx_acc_type,Family Accumulator Transaction Table,Accumulator Type,char
+dbo,cmc_fatx_accum_txn,acac_acc_no,Family Accumulator Transaction Table,Accumulator Number,smallint
+dbo,cmc_fatx_accum_txn,fatx_ben_beg_dt,Family Accumulator Transaction Table,Benefit Period Begins Date,datetime
+dbo,cmc_fatx_accum_txn,fatx_seq_no,Family Accumulator Transaction Table,Transaction Sequence Number,int
+dbo,cmc_fatx_accum_txn,grgr_ck,Family Accumulator Transaction Table,Group Contrived Key,int
+dbo,cmc_fatx_accum_txn,fatx_txn_amt1,Family Accumulator Transaction Table,Family Accumulator Transaction Amount 1,money
+dbo,cmc_fatx_accum_txn,fatx_txn_amt2,Family Accumulator Transaction Table,Family Accumulator Transaction Amount 2,money
+dbo,cmc_fatx_accum_txn,fatx_txn_ctr1,Family Accumulator Transaction Table,Family Accumulator Transaction Counter 1,numeric
+dbo,cmc_fatx_accum_txn,fatx_txn_ctr2,Family Accumulator Transaction Table,Family Accumulator Transaction Counter 2,numeric
+dbo,cmc_fatx_accum_txn,fatx_amt1,Family Accumulator Transaction Table,Family Accumulator Cumulative Amount 1,money
+dbo,cmc_fatx_accum_txn,fatx_amt2,Family Accumulator Transaction Table,Family Accumulator Cumulative Amount 2,money
+dbo,cmc_fatx_accum_txn,fatx_ctr1,Family Accumulator Transaction Table,Family Accumulator Cumulative Counter 1,numeric
+dbo,cmc_fatx_accum_txn,fatx_ctr2,Family Accumulator Transaction Table,Family Accumulator Cumulative Counter 2,numeric
+dbo,cmc_fatx_accum_txn,fatx_person_ctr,Family Accumulator Transaction Table,Family Accumulator Number of Persons,smallint
+dbo,cmc_fatx_accum_txn,fatx_person_ctr_co,Family Accumulator Transaction Table,Family Accumulator Number of Persons Carryover,smallint
+dbo,cmc_fatx_accum_txn,meme_ck,Family Accumulator Transaction Table,Member Contrived Key,int
+dbo,cmc_fatx_accum_txn,fatx_create_dtm,Family Accumulator Transaction Table,Family Accumulator Transaction Create Datetime,datetime
+dbo,cmc_fatx_accum_txn,fatx_sts_ind,Family Accumulator Transaction Table,Family Accumulator Transaction Status Indicator,char
+dbo,cmc_fatx_accum_txn,clcl_id,Family Accumulator Transaction Table,Family Accumulator Transaction Claim ID,char
+dbo,cmc_fatx_accum_txn,fatx_mctr_rsn,Family Accumulator Transaction Table,Family Accumulator Transaction Update Reason,char
+dbo,cmc_fatx_accum_txn,fatx_external_id,Family Accumulator Transaction Table,Family Accumulator Transaction External ID,varchar
+dbo,cmc_fatx_accum_txn,usus_id,Family Accumulator Transaction Table,User Identifier,varchar
+dbo,cmc_fatx_accum_txn,fatx_period_type,Family Accumulator Transaction Table,Family Accumulator Transaction Period Type,char
+dbo,cmc_fatx_accum_txn,syin_inst,Family Accumulator Transaction Table,Family Accumulator Transaction Instance ID,bigint
+dbo,cmc_fatx_accum_txn,fatx_lock_token,Family Accumulator Transaction Table,Lock Token,smallint
+dbo,cmc_fatx_accum_txn,atxr_source_id,Family Accumulator Transaction Table,Attachment Source Id,datetime
+dbo,cmc_fatx_accum_txn,sys_last_upd_dtm,Family Accumulator Transaction Table,Last Update Datetime,datetime
+dbo,cmc_fatx_accum_txn,sys_usus_id,Family Accumulator Transaction Table,Last Update User ID,varchar
+dbo,cmc_fatx_accum_txn,sys_dbuser_id,Family Accumulator Transaction Table,Last Update DBMS User ID,varchar
+dbo,cmc_fipm_fica_parm,fipm_eff_dt,FICA Parameters table,Effective Date,datetime
+dbo,cmc_fipm_fica_parm,fipm_term_dt,FICA Parameters table,Termination Date,datetime
+dbo,cmc_fipm_fica_parm,fipm_ss_pct,FICA Parameters table,Social Security Percent,money
+dbo,cmc_fipm_fica_parm,fipm_mdcr_pct,FICA Parameters table,Medicare Percent,money
+dbo,cmc_fipm_fica_parm,fipm_lock_token,FICA Parameters table,Lock Token,smallint
+dbo,cmc_fipm_fica_parm,atxr_source_id,FICA Parameters table,Attachment Source Id,datetime
+dbo,cmc_fipm_fica_parm,sys_last_upd_dtm,FICA Parameters table,Last Update Datetime,datetime
+dbo,cmc_fipm_fica_parm,sys_usus_id,FICA Parameters table,Last Update User ID,varchar
+dbo,cmc_fipm_fica_parm,sys_dbuser_id,FICA Parameters table,Last Update DBMS User ID,varchar
+dbo,cmc_sbad_addr,sbsb_ck,Subscriber/Member Address/ Phone/Fax,Subscriber Contrived Key,int
+dbo,cmc_sbad_addr,sbad_type,Subscriber/Member Address/ Phone/Fax,Subscriber Address Type,char
+dbo,cmc_sbad_addr,grgr_ck,Subscriber/Member Address/ Phone/Fax,Group Contrived Key,int
+dbo,cmc_sbad_addr,sbad_addr1,Subscriber/Member Address/ Phone/Fax,Subscriber Address Line 1,char
+dbo,cmc_sbad_addr,sbad_addr2,Subscriber/Member Address/ Phone/Fax,Subscriber Address Line 2,char
+dbo,cmc_sbad_addr,sbad_addr3,Subscriber/Member Address/ Phone/Fax,Subscriber Address Line 3,char
+dbo,cmc_sbad_addr,sbad_city,Subscriber/Member Address/ Phone/Fax,City,char
+dbo,cmc_sbad_addr,sbad_state,Subscriber/Member Address/ Phone/Fax,State,char
+dbo,cmc_sbad_addr,sbad_zip,Subscriber/Member Address/ Phone/Fax,Zip Code,char
+dbo,cmc_sbad_addr,sbad_county,Subscriber/Member Address/ Phone/Fax,County,char
+dbo,cmc_sbad_addr,sbad_ctry_cd,Subscriber/Member Address/ Phone/Fax,Country,char
+dbo,cmc_sbad_addr,sbad_phone,Subscriber/Member Address/ Phone/Fax,Subscriber Phone Number,char
+dbo,cmc_sbad_addr,sbad_phone_ext,Subscriber/Member Address/ Phone/Fax,Phone Extension,char
+dbo,cmc_sbad_addr,sbad_fax,Subscriber/Member Address/ Phone/Fax,Subscriber Fax Number,char
+dbo,cmc_sbad_addr,sbad_fax_ext,Subscriber/Member Address/ Phone/Fax,Fax Extension,char
+dbo,cmc_sbad_addr,sbad_email,Subscriber/Member Address/ Phone/Fax,Email,char
+dbo,cmc_sbad_addr,sbad_city_xlow,Subscriber/Member Address/ Phone/Fax,City search case insensitive,char
+dbo,cmc_sbad_addr,sbad_lock_token,Subscriber/Member Address/ Phone/Fax,Lock Token,smallint
+dbo,cmc_sbad_addr,atxr_source_id,Subscriber/Member Address/ Phone/Fax,Attachment Source Id,datetime
+dbo,cmc_sbad_addr,sys_last_upd_dtm,Subscriber/Member Address/ Phone/Fax,Last Update Datetime,datetime
+dbo,cmc_sbad_addr,sys_usus_id,Subscriber/Member Address/ Phone/Fax,Last Update User ID,varchar
+dbo,cmc_sbad_addr,sys_dbuser_id,Subscriber/Member Address/ Phone/Fax,Last Update DBMS User ID,varchar
+dbo,cmc_sbal_hsa_alloc,sbsb_ck,Subscriber HRA Allocation,Subscriber Contrived Key,int
+dbo,cmc_sbal_hsa_alloc,hsai_acc_sfx,Subscriber HRA Allocation,HRA Administrative Information Accumulator Suffix,char
+dbo,cmc_sbal_hsa_alloc,sbhs_plan_yr_dt,Subscriber HRA Allocation,HRA Plan Year Date,datetime
+dbo,cmc_sbal_hsa_alloc,sbal_eff_dt,Subscriber HRA Allocation,Effective Date,datetime
+dbo,cmc_sbal_hsa_alloc,grgr_ck,Subscriber HRA Allocation,Group Contrived Key,int
+dbo,cmc_sbal_hsa_alloc,sbal_process_dtm,Subscriber HRA Allocation,Process Date Time,datetime
+dbo,cmc_sbal_hsa_alloc,sbal_ded_amt,Subscriber HRA Allocation,HRA Family Deductible Amount,money
+dbo,cmc_sbal_hsa_alloc,sbal_alloc_amt,Subscriber HRA Allocation,HRA Family Allocation Amount,money
+dbo,cmc_sbal_hsa_alloc,sbal_max_co_amt,Subscriber HRA Allocation,HRA Family Carryover Limit,money
+dbo,cmc_sbal_hsa_alloc,sbal_me_ded_amt,Subscriber HRA Allocation,HRA Member Deductible Amount,money
+dbo,cmc_sbal_hsa_alloc,sbal_me_alloc_amt,Subscriber HRA Allocation,HRA Member Allocation Amount,money
+dbo,cmc_sbal_hsa_alloc,sbal_me_max_co_amt,Subscriber HRA Allocation,HRA Member Carryover Limit,money
+dbo,cmc_sbal_hsa_alloc,sbal_mctr_crsn,Subscriber HRA Allocation,Manual Allocation Reason,char
+dbo,cmc_sbal_hsa_alloc,sbal_input_source,Subscriber HRA Allocation,Input Source,char
+dbo,cmc_sbal_hsa_alloc,sbal_ded_ind,Subscriber HRA Allocation,Deductible Indicator,char
+dbo,cmc_sbal_hsa_alloc,sbal_ded2_ind,Subscriber HRA Allocation,Deductible Two Indicator,char
+dbo,cmc_sbal_hsa_alloc,sbal_ded2_amt,Subscriber HRA Allocation,HRA Family Deductible Two Amount,money
+dbo,cmc_sbal_hsa_alloc,sbal_me_ded2_amt,Subscriber HRA Allocation,HRA Member Deductible Two Amount,money
+dbo,cmc_sbal_hsa_alloc,hsal_fam_stat_ind,Subscriber HRA Allocation,Family Status Indicator,char
+dbo,cmc_sbal_hsa_alloc,sbal_prorate_mos,Subscriber HRA Allocation,Prorate Months,smallint
+dbo,cmc_sbal_hsa_alloc,sbal_submit_ind,Subscriber HRA Allocation,HRA Submit Method,char
+dbo,cmc_sbal_hsa_alloc,hsal_non_ann_pro,Subscriber HRA Allocation, Non-Anniversary Prorate Indicator,char
+dbo,cmc_sbal_hsa_alloc,hsal_red_alloc_ind,Subscriber HRA Allocation,Reduction in Allocation Indicator,char
+dbo,cmc_sbal_hsa_alloc,sbal_lock_token,Subscriber HRA Allocation,Lock Token,smallint
+dbo,cmc_sbal_hsa_alloc,atxr_source_id,Subscriber HRA Allocation,Attachment Source Id,datetime
+dbo,cmc_sbap_accum_ptr,sbsb_ck,Subscriber Accumulator Pointer Table,Subscriber Contrived Key,int
+dbo,cmc_sbap_accum_ptr,sbap_eff_dt,Subscriber Accumulator Pointer Table,Subscriber Family Accumulator Pointer Effective Date,datetime
+dbo,cmc_sbap_accum_ptr,sbap_term_dt,Subscriber Accumulator Pointer Table,Subscriber Family Accumulator Pointer Termination Date,datetime
+dbo,cmc_sbap_accum_ptr,sbsb_ck_to,Subscriber Accumulator Pointer Table,Subscriber Family Accumulator Contrived Key Pointer,int
+dbo,cmc_sbap_accum_ptr,sbap_lock_token,Subscriber Accumulator Pointer Table,Lock Token,int
+dbo,cmc_sbap_accum_ptr,atxr_source_id,Subscriber Accumulator Pointer Table,Attachment Source Id,datetime
+dbo,cmc_sbbd_bat_def,sbbd_batch_id,Subscriber ID Conversion Batch Definition Table,Batch ID,char
+dbo,cmc_sbbd_bat_def,sbbd_desc,Subscriber ID Conversion Batch Definition Table,Batch Definition,varchar
+dbo,cmc_sbbd_bat_def,sbbd_source_cd,Subscriber ID Conversion Batch Definition Table,Repalcement Source ID,char
+dbo,cmc_sbbd_bat_def,sbbd_dest_cd,Subscriber ID Conversion Batch Definition Table,Legacy ID Destination,char
+dbo,cmc_sbbd_bat_def,sbbd_replace_cd,Subscriber ID Conversion Batch Definition Table,Replacement Rule,char
+dbo,cmc_sbbd_bat_def,sbbd_gr_select_cd,Subscriber ID Conversion Batch Definition Table,Group Selectivity,char
+dbo,cmc_sbbd_bat_def,sbbd_renew_mo,Subscriber ID Conversion Batch Definition Table,Renewal Month,smallint
+dbo,cmc_sbbd_bat_def,grgr_mctr_type,Subscriber ID Conversion Batch Definition Table,User Defined Group Type,char
+dbo,cmc_sbbd_bat_def,sbbd_sts,Subscriber ID Conversion Batch Definition Table,Status,char
+dbo,cmc_sbbd_bat_def,usus_id,Subscriber ID Conversion Batch Definition Table,User Identifier,char
+dbo,cmc_sbbd_bat_def,sbbd_prcs_dtm,Subscriber ID Conversion Batch Definition Table,Process Date,datetime
+dbo,cmc_sbbd_bat_def,sbbd_lock_token,Subscriber ID Conversion Batch Definition Table,Lock Token,smallint
+dbo,cmc_sbbd_bat_def,atxr_source_id,Subscriber ID Conversion Batch Definition Table,Attachment Source Id,datetime
+dbo,cmc_sbcs_class,sbsb_ck,Subscriber Class Information,Subscriber Contrived Key,int
+dbo,cmc_sbcs_class,sbcs_eff_dt,Subscriber Class Information,Subscriber Class Effective Date,datetime
+dbo,cmc_sbcs_class,sbcs_term_dt,Subscriber Class Information,Subscriber Class Termination Date,datetime
+dbo,cmc_sbcs_class,grgr_ck,Subscriber Class Information,Group Contrived Key,int
+dbo,cmc_sbcs_class,cscs_id,Subscriber Class Information,Class Identifier,char
+dbo,cmc_sbcs_class,sbcs_lock_token,Subscriber Class Information,Lock Token,smallint
+dbo,cmc_sbcs_class,atxr_source_id,Subscriber Class Information,Attachment Source Id,datetime
+dbo,cmc_sbcs_class,sys_last_upd_dtm,Subscriber Class Information,Last Update Datetime,datetime
+dbo,cmc_sbcs_class,sys_usus_id,Subscriber Class Information,Last Update User ID,varchar
+dbo,cmc_sbcs_class,sys_dbuser_id,Subscriber Class Information,Last Update DBMS User ID,varchar
+dbo,cmc_sbct_card_trsf,sbsb_ck,Subscriber debit card transition table,Subscriber Contrived key,int
+dbo,cmc_sbct_card_trsf,sbct_type,Subscriber debit card transition table,CDH account type,char
+dbo,cmc_sbct_card_trsf,sbct_plan_ch_dt,Subscriber debit card transition table,Plan change date,datetime
+dbo,cmc_sbct_card_trsf,sbct_plan_yr_dt,Subscriber debit card transition table, Plan year begin date,datetime
+dbo,cmc_sbct_card_trsf,cspi_id,Subscriber debit card transition table,Plan ID,char
+dbo,cmc_sbct_card_trsf,sbct_card_amt,Subscriber debit card transition table,Interm card amount,money
+dbo,cmc_sbct_card_trsf,sbct_lock_token,Subscriber debit card transition table,Lock Token,smallint
+dbo,cmc_sbct_card_trsf,atxr_source_id,Subscriber debit card transition table,Attachment Source Id,datetime
+dbo,cmc_sbct_card_trsf,sys_last_upd_dtm,Subscriber debit card transition table,Last Update Datetime,datetime
+dbo,cmc_sbct_card_trsf,sys_usus_id,Subscriber debit card transition table,Last Update User ID,varchar
+dbo,cmc_sbct_card_trsf,sys_dbuser_id,Subscriber debit card transition table,Last Update DBMS User ID,varchar
+dbo,cmc_sbdc_debt_card,sbsb_ck,Subscriber Debit Card,Subscriber Contrived Key,int
+dbo,cmc_sbdc_debt_card,sbdc_acct_type,Subscriber Debit Card,Type,char
+dbo,cmc_sbdc_debt_card,sbdc_eff_dt,Subscriber Debit Card, Effective,datetime
+dbo,cmc_sbdc_debt_card,sbdc_term_dt,Subscriber Debit Card, Termination,datetime
+dbo,cmc_sbdc_debt_card,sbdc_mctr_trsn,Subscriber Debit Card,Termination Reason,char
+dbo,cmc_sbdc_debt_card,grgr_ck,Subscriber Debit Card,Group Contrived Key,int
+dbo,cmc_sbdc_debt_card,sbdc_sts,Subscriber Debit Card,Status,char
+dbo,cmc_sbdc_debt_card,cspi_id,Subscriber Debit Card, Plan ID,char
+dbo,cmc_sbdc_debt_card,grdc_pfx,Subscriber Debit Card,Debit Card/Bank Prefix,char
+dbo,cmc_sbdc_debt_card,sbdc_card_no,Subscriber Debit Card,Card Number,varchar
+dbo,cmc_sbdc_debt_card,sbdc_card_alt_no,Subscriber Debit Card,Alternate Debit Card Number,varchar
+dbo,cmc_sbdc_debt_card,sbdc_addl_data,Subscriber Debit Card,Additional Data,varchar
+dbo,cmc_sbdc_debt_card,sbdc_last_upd_dtm,Subscriber Debit Card, Last Update Date and Time,datetime
+dbo,cmc_sbdc_debt_card,sbdc_lst_usus_id,Subscriber Debit Card, Last Update User ID,char
+dbo,cmc_sbdc_debt_card,sbdc_cdh_elig_dtm,Subscriber Debit Card,CDH Eligibility Date,datetime
+dbo,cmc_sbdc_debt_card,sbdc_term_srce_cd,Subscriber Debit Card,Debit Card Termination Source,char
+dbo,cmc_sbdc_debt_card,sbdc_lock_token,Subscriber Debit Card,Lock Token,smallint
+dbo,cmc_sbdc_debt_card,atxr_source_id,Subscriber Debit Card,Attachment Source Id,datetime
+dbo,cmc_sbdt_gr_detl,sbbd_batch_id,Group Conversion ID,Batch ID,char
+dbo,cmc_sbdt_gr_detl,grgr_ck,Group Conversion ID,Group Contrived Key,int
+dbo,cmc_sbdt_gr_detl,sbdt_lock_token,Group Conversion ID,Lock Token,smallint
+dbo,cmc_sbec_ee_cont,sbsb_ck,Subscriber Employee Contribution, Subscriber Contrived Key,int
+dbo,cmc_sbec_ee_cont,sbec_eff_dt,Subscriber Employee Contribution,Effective Date,datetime
+dbo,cmc_sbec_ee_cont,sbec_term_dt,Subscriber Employee Contribution,Termination Date,datetime
+dbo,cmc_sbec_ee_cont,grgr_ck,Subscriber Employee Contribution, Group Contrived Key,int
+dbo,cmc_sbec_ee_cont,sbec_cont_type,Subscriber Employee Contribution,Contribution Type,char
+dbo,cmc_sbec_ee_cont,sbec_ee_pct,Subscriber Employee Contribution,Employee Contribution Percent,int
+dbo,cmc_sbec_ee_cont,sbec_ee_amt,Subscriber Employee Contribution,Employee Contribution Amount,money
+dbo,cmc_sbec_ee_cont,sbec_er_amt,Subscriber Employee Contribution,Employer Contribution Amount,money
+dbo,cmc_sbec_ee_cont,sbec_lock_token,Subscriber Employee Contribution,Lock Token,smallint
+dbo,cmc_sbec_ee_cont,atxr_source_id,Subscriber Employee Contribution,Attachment Source Id,datetime
+dbo,cmc_sbec_ee_cont,sys_last_upd_dtm,Subscriber Employee Contribution,Last Update Datetime,datetime
+dbo,cmc_sbec_ee_cont,sys_usus_id,Subscriber Employee Contribution,Last Update User ID,varchar
+dbo,cmc_sbec_ee_cont,sys_dbuser_id,Subscriber Employee Contribution,Last Update DBMS User ID,varchar
+dbo,cmc_sbel_elig_ent,sbsb_ck,Subscriber Eligibility Event Data,Subscriber Contrived Key,int
+dbo,cmc_sbel_elig_ent,sbel_eff_dt,Subscriber Eligibility Event Data,Subscriber Eligibility Effective Date,datetime
+dbo,cmc_sbel_elig_ent,sbel_insq_dt,Subscriber Eligibility Event Data,Subscriber Eligibility In Sequence Date,datetime
+dbo,cmc_sbel_elig_ent,grgr_ck,Subscriber Eligibility Event Data,Group Contrived Key,int
+dbo,cmc_sbel_elig_ent,sbel_elig_type,Subscriber Eligibility Event Data,Subscriber Eligibility Type,char
+dbo,cmc_sbel_elig_ent,cspd_cat,Subscriber Eligibility Event Data,Class Product Category,char
+dbo,cmc_sbel_elig_ent,cspi_id,Subscriber Eligibility Event Data,Class Plan Identifier,char
+dbo,cmc_sbel_elig_ent,sbel_fi,Subscriber Eligibility Event Data,Family Indicator,char
+dbo,cmc_sbel_elig_ent,excd_id,Subscriber Eligibility Event Data,Explanation Code,char
+dbo,cmc_sbel_elig_ent,sbel_mctr_rsn,Subscriber Eligibility Event Data,Eligibility Reason,char
+dbo,cmc_sbel_elig_ent,sbel_void_ind,Subscriber Eligibility Event Data,Void Event,char
+dbo,cmc_sbel_elig_ent,sbel_mctr_orsn,Subscriber Eligibility Event Data,Reinstatement Override Reason,char
+dbo,cmc_sbel_elig_ent,usus_id,Subscriber Eligibility Event Data,User Identifier,char
+dbo,cmc_sbel_elig_ent,sbel_update_dtm,Subscriber Eligibility Event Data,Update date time,datetime
+dbo,cmc_sbel_elig_ent,sbel_lock_token,Subscriber Eligibility Event Data,Lock Token,smallint
+dbo,cmc_sbel_elig_ent,atxr_source_id,Subscriber Eligibility Event Data,Attachment Source Id,datetime
+dbo,cmc_sbel_elig_ent,sbel_rate_as_ind_nvl,Subscriber Eligibility Event Data, Rate Member as Indicator,char
+dbo,cmc_sbel_elig_ent,sbel_mctr_vrsn_nvl,Subscriber Eligibility Event Data,Void Reason Code,char
+dbo,cmc_sbem_employ,sbsb_ck,Subscriber Employment Information,Subscriber Contrived Key,int
+dbo,cmc_sbem_employ,sbem_eff_dt,Subscriber Employment Information,Subscriber Employment Effective Date,datetime
+dbo,cmc_sbem_employ,sbem_term_dt,Subscriber Employment Information,Subscriber Employment Termination Date,datetime
+dbo,cmc_sbem_employ,sbem_mctr_trsn,Subscriber Employment Information,Subscriber Employment Termination Reason,char
+dbo,cmc_sbem_employ,grgr_ck,Subscriber Employment Information,Group Contrived Key,int
+dbo,cmc_sbem_employ,sbem_occ_cd,Subscriber Employment Information,Subscriber Occupation Code,char
+dbo,cmc_sbem_employ,sbem_dept,Subscriber Employment Information,Subscriber Department Code,char
+dbo,cmc_sbem_employ,sbem_loc,Subscriber Employment Information,Subscriber Location,char
+dbo,cmc_sbem_employ,sbem_type,Subscriber Employment Information,Subscriber Employment Type,char
+dbo,cmc_sbem_employ,sbem_mctr_dtyp,Subscriber Employment Information,Non discrimination type,char
+dbo,cmc_sbem_employ,sbem_lock_token,Subscriber Employment Information,Lock Token,smallint
+dbo,cmc_sbem_employ,atxr_source_id,Subscriber Employment Information,Attachment Source Id,datetime
+dbo,cmc_sbfs_fsa_accum,sbsb_ck,Subscriber FSA Accumulator table,Subscriber Contrived Key,int
+dbo,cmc_sbfs_fsa_accum,sbfs_plan_year_dt,Subscriber FSA Accumulator table,Plan Year,datetime
+dbo,cmc_sbfs_fsa_accum,sbfs_fsa_type,Subscriber FSA Accumulator table,FSA Type,char
+dbo,cmc_sbfs_fsa_accum,sbfs_eff_dt,Subscriber FSA Accumulator table,Effective Date,datetime
+dbo,cmc_sbfs_fsa_accum,sbfs_term_dt,Subscriber FSA Accumulator table,Termination Date,datetime
+dbo,cmc_sbfs_fsa_accum,grgr_ck,Subscriber FSA Accumulator table,Group Contrived Key,int
+dbo,cmc_sbfs_fsa_accum,sbfs_submit_ind,Subscriber FSA Accumulator table,FSA Submit Method,char
+dbo,cmc_sbfs_fsa_accum,sbfs_ee_pldg_amt,Subscriber FSA Accumulator table,Employee Pledge Amount,money
+dbo,cmc_sbfs_fsa_accum,sbfs_er_pldg_amt,Subscriber FSA Accumulator table,ER Pledge Amount,money
+dbo,cmc_sbfs_fsa_accum,sbfs_ee_cntrb_ytd,Subscriber FSA Accumulator table,Employee YTD Contribution,money
+dbo,cmc_sbfs_fsa_accum,sbfs_er_cntrb_ytd,Subscriber FSA Accumulator table,Employer YTD Contribution Amount,money
+dbo,cmc_sbfs_fsa_accum,sbfs_paid_ytd_amt,Subscriber FSA Accumulator table,Total YTD Payment,money
+dbo,cmc_sbfs_fsa_accum,sbfs_balance_amt,Subscriber FSA Accumulator table,Balance Available,money
+dbo,cmc_sbfs_fsa_accum,sbfs_fsa_card_amt,Subscriber FSA Accumulator table,Card Amount,money
+dbo,cmc_sbfs_fsa_accum,sbfs_pay_hold_ind,Subscriber FSA Accumulator table,Pay Hold Indicator,char
+dbo,cmc_sbfs_fsa_accum,sbfs_paid_cur_amt,Subscriber FSA Accumulator table,Current Period Payment,money
+dbo,cmc_sbfs_fsa_accum,sbfs_card_cur_amt,Subscriber FSA Accumulator table,Current Period Debit Amount,money
+dbo,cmc_sbfs_fsa_accum,sbfs_mctr_crsn,Subscriber FSA Accumulator table,Reason,char
+dbo,cmc_sbfs_fsa_accum,sbfs_lock_token,Subscriber FSA Accumulator table,Lock Token,smallint
+dbo,cmc_sbfs_fsa_accum,atxr_source_id,Subscriber FSA Accumulator table,Attachment Source Id,datetime
+dbo,cmc_sbfs_fsa_accum,sbfs_pro_amt_nvl,Subscriber FSA Accumulator table, Partial Rollover Amount,money
+dbo,cmc_sbfs_fsa_accum,sbfs_pro_max_amt_nvl,Subscriber FSA Accumulator table, Partial Rollover Maximum,money
+dbo,cmc_sbfs_fsa_accum,sbfs_fy_pro_pd_nvl,Subscriber FSA Accumulator table, Reduction Due to Future Year Payment,money
+dbo,cmc_sbft_fsa_cntrb,sbsb_ck,FSA Contribution transaction table,Subscriber Contrived Key,int
+dbo,cmc_sbft_fsa_cntrb,sbfs_plan_year_dt,FSA Contribution transaction table,Plan Year,datetime
+dbo,cmc_sbft_fsa_cntrb,sbfs_fsa_type,FSA Contribution transaction table,FSA Type,char
+dbo,cmc_sbft_fsa_cntrb,sbft_txn_dt,FSA Contribution transaction table,Contribution Date,datetime
+dbo,cmc_sbft_fsa_cntrb,sbft_seq_no,FSA Contribution transaction table,Sequence Number,smallint
+dbo,cmc_sbft_fsa_cntrb,grgr_ck,FSA Contribution transaction table,Group Contrived Key,int
+dbo,cmc_sbft_fsa_cntrb,sbft_process_dtm,FSA Contribution transaction table,N/A,datetime
+dbo,cmc_sbft_fsa_cntrb,sbft_input_source,FSA Contribution transaction table,Input Source,char
+dbo,cmc_sbft_fsa_cntrb,sbft_ee_cntrb_amt,FSA Contribution transaction table,EE Contribution Amount,money
+dbo,cmc_sbft_fsa_cntrb,sbft_er_cntrb_amt,FSA Contribution transaction table,Employer Contribution Amount,money
+dbo,cmc_sbft_fsa_cntrb,sbft_mctr_crsn,FSA Contribution transaction table,Contribution Reason,char
+dbo,cmc_sbft_fsa_cntrb,sbft_lock_token,FSA Contribution transaction table,Lock Token,smallint
+dbo,cmc_sbft_fsa_cntrb,atxr_source_id,FSA Contribution transaction table,Attachment Source Id,datetime
+dbo,cmc_sbhr_hsa_rel,sbsb_ck,Subscriber H S A Relationship,Subscriber Contrived Key,int
+dbo,cmc_sbhr_hsa_rel,sbhr_eff_dt,Subscriber H S A Relationship,Effective Date,datetime
+dbo,cmc_sbhr_hsa_rel,sbhr_term_dt,Subscriber H S A Relationship,Termination Date,datetime
+dbo,cmc_sbhr_hsa_rel,sbhr_mctr_trsn,Subscriber H S A Relationship,Reason,char
+dbo,cmc_sbhr_hsa_rel,sbhr_sts,Subscriber H S A Relationship,Account Status,char
+dbo,cmc_sbhr_hsa_rel,sbhr_hsa_pay_meth,Subscriber H S A Relationship, Payment Method,char
+dbo,cmc_sbhr_hsa_rel,sbhr_dflt_pay_ind,Subscriber H S A Relationship,Default Payee,char
+dbo,cmc_sbhr_hsa_rel,sbhr_pay_order_cd,Subscriber H S A Relationship,Payment Order,char
+dbo,cmc_sbhr_hsa_rel,sbhr_sign_dtm,Subscriber H S A Relationship,Subscriber H S A Relationship,datetime
+dbo,cmc_sbhr_hsa_rel,mcbd_id,Subscriber H S A Relationship,Bank ID,char
+dbo,cmc_sbhr_hsa_rel,sbhr_acct_no,Subscriber H S A Relationship,Account Number,varchar
+dbo,cmc_sbhr_hsa_rel,sbhr_acct_name,Subscriber H S A Relationship,Account Name,varchar
+dbo,cmc_sbhr_hsa_rel,sbhr_mctr_atyp,Subscriber H S A Relationship,Account Type,char
+dbo,cmc_sbhr_hsa_rel,sbhr_last_upd_dtm,Subscriber H S A Relationship,Last Update Date,datetime
+dbo,cmc_sbhr_hsa_rel,sbhr_lst_usus_id,Subscriber H S A Relationship,Last Update User ID,char
+dbo,cmc_sbhr_hsa_rel,sbhr_addl_data,Subscriber H S A Relationship,Additional Data,varchar
+dbo,cmc_sbhr_hsa_rel,sbhr_esign_ind,Subscriber H S A Relationship,Electronic Signature Indicator,char
+dbo,cmc_sbhr_hsa_rel,sbhr_lock_token,Subscriber H S A Relationship,Lock Token,smallint
+dbo,cmc_sbhr_hsa_rel,atxr_source_id,Subscriber H S A Relationship,Attachment Source Id,datetime
+dbo,cmc_sbhs_hsa_accum,sbsb_ck,Subscriber HSA Accumulation,Subscriber Contrived Key,int
+dbo,cmc_sbhs_hsa_accum,hsai_acc_sfx,Subscriber HSA Accumulation,HRA Administrative Information Accumulator Suffix,char
+dbo,cmc_sbhs_hsa_accum,sbhs_plan_yr_dt,Subscriber HSA Accumulation,HRA Plan Year Date,datetime
+dbo,cmc_sbhs_hsa_accum,sbhs_eff_dt,Subscriber HSA Accumulation,Effective Date,datetime
+dbo,cmc_sbhs_hsa_accum,sbhs_term_dt,Subscriber HSA Accumulation,Termination Date,datetime
+dbo,cmc_sbhs_hsa_accum,grgr_ck,Subscriber HSA Accumulation,Group Contrived Key,int
+dbo,cmc_sbhs_hsa_accum,sbhs_ded_amt,Subscriber HSA Accumulation,HRA Family Deductible Amount,money
+dbo,cmc_sbhs_hsa_accum,sbhs_ded_accum_amt,Subscriber HSA Accumulation,HRA Family Deductible Accumulator,money
+dbo,cmc_sbhs_hsa_accum,sbhs_alloc_amt,Subscriber HSA Accumulation,HRA Family Allocation Amount,money
+dbo,cmc_sbhs_hsa_accum,sbhs_co_amt,Subscriber HSA Accumulation,HRA Family Carryover Amount,money
+dbo,cmc_sbhs_hsa_accum,sbhs_paid_amt,Subscriber HSA Accumulation,HRA Family Plan Year Credits,money
+dbo,cmc_sbhs_hsa_accum,sbhs_balance_amt,Subscriber HSA Accumulation,HRA Family Plan Year Balance Available,money
+dbo,cmc_sbhs_hsa_accum,hsal_co_calc_ind,Subscriber HSA Accumulation,HRA Allocation Table Carryover Calculation Method,char
+dbo,cmc_sbhs_hsa_accum,hsal_co_pct,Subscriber HSA Accumulation,Carryover Percent,money
+dbo,cmc_sbhs_hsa_accum,hsal_me_alloc_ind,Subscriber HSA Accumulation,Member Level Allocation,char
+dbo,cmc_sbhs_hsa_accum,sbhs_max_co_amt,Subscriber HSA Accumulation,HRA Family Carryover Limit,money
+dbo,cmc_sbhs_hsa_accum,sbhs_me_ded_amt,Subscriber HSA Accumulation,HRA Member Deductible Amount,money
+dbo,cmc_sbhs_hsa_accum,sbhs_me_alloc_amt,Subscriber HSA Accumulation,HRA Member Allocation Amount,money
+dbo,cmc_sbhs_hsa_accum,sbhs_me_max_co_amt,Subscriber HSA Accumulation,HRA Member Carryover Limit,money
+dbo,cmc_sbhs_hsa_accum,sbhs_hra_card_amt,Subscriber HSA Accumulation,HRA Card Amount,money
+dbo,cmc_sbhs_hsa_accum,sbhs_pay_hold_ind,Subscriber HSA Accumulation,Pay Hold Indicator,char
+dbo,cmc_sbhs_hsa_accum,sbhs_ded_ind,Subscriber HSA Accumulation,Deductible Indicator,char
+dbo,cmc_sbhs_hsa_accum,sbhs_ded2_ind,Subscriber HSA Accumulation,Deductible Two Indicator,char
+dbo,cmc_sbhs_hsa_accum,sbhs_ded2_amt,Subscriber HSA Accumulation,Deductible Two Amount,money
+dbo,cmc_sbhs_hsa_accum,sbhs_ded2_accm_amt,Subscriber HSA Accumulation,Deductible Two Accum Amount,money
+dbo,cmc_sbhs_hsa_accum,sbhs_me_ded2_amt,Subscriber HSA Accumulation,Member Deductible Two Amount,money
+dbo,cmc_sbhs_hsa_accum,sbhs_paid_cur,Subscriber HSA Accumulation,HRA Paid Current,money
+dbo,cmc_sbhs_hsa_accum,sbhs_card_cur,Subscriber HSA Accumulation,HRA Debit Current Period,money
+dbo,cmc_sbhs_hsa_accum,sbhs_pyc_ind,Subscriber HSA Accumulation,Prior Year Carryover Period,char
+dbo,cmc_sbhs_hsa_accum,sbhs_submit_ind,Subscriber HSA Accumulation,HRA Submit Method,char
+dbo,cmc_sbhs_hsa_accum,sbhs_vbb_credit,Subscriber HSA Accumulation, Value Based Benefit HRA credit,money
+dbo,cmc_sbhs_hsa_accum,sbhs_lock_token,Subscriber HSA Accumulation,Lock Token,smallint
+dbo,cmc_sbhs_hsa_accum,atxr_source_id,Subscriber HSA Accumulation,Attachment Source Id,datetime
+dbo,cmc_sbih_id_hist,sbsb_ck,ID Conversion History Table,Subscriber Contrived Key,int
+dbo,cmc_sbih_id_hist,grgr_ck,ID Conversion History Table,Group Contrived Key,int
+dbo,cmc_sbih_id_hist,sbih_sbsb_id_orig,ID Conversion History Table,Orig Sub ID,char
+dbo,cmc_sbih_id_hist,sbih_sbsb_id_new,ID Conversion History Table,Subscriber ID,char
+dbo,cmc_sbih_id_hist,sbbd_batch_id,ID Conversion History Table,Batch ID,char
+dbo,cmc_sbih_id_hist,sbih_prcs_dtm,ID Conversion History Table,Process Date,datetime
+dbo,cmc_sbih_id_hist,sbih_lock_token,ID Conversion History Table,Lock Token,smallint
+dbo,cmc_sbim_import,grgr_ck,Subscriber ID Import Table,Group Contrived Key,int
+dbo,cmc_sbim_import,sbsb_ck,Subscriber ID Import Table,Subscriber Contrived Key,int
+dbo,cmc_sbim_import,sbim_file_name,Subscriber ID Import Table,N/A,varchar
+dbo,cmc_sbim_import,sbim_rec_no,Subscriber ID Import Table,N/A,int
+dbo,cmc_sbim_import,sbim_input_grgr_id,Subscriber ID Import Table,N/A,char
+dbo,cmc_sbim_import,sbim_input_sbsb_id,Subscriber ID Import Table,N/A,char
+dbo,cmc_sbim_import,sbsb_id_new,Subscriber ID Import Table,N/A,char
+dbo,cmc_sbim_import,sbxi_extnl_sbsb_id,Subscriber ID Import Table,N/A,varchar
+dbo,cmc_sbim_import,sbim_err_cd,Subscriber ID Import Table,N/A,char
+dbo,cmc_sbim_import,sbim_lock_token,Subscriber ID Import Table,Lock Token,smallint
+dbo,cmc_sboa_out_area,sbsb_ck,Subscriber Out of Area,Subscriber Contrived Key,int
+dbo,cmc_sboa_out_area,sboa_eff_dt,Subscriber Out of Area,Effective Date,datetime
+dbo,cmc_sboa_out_area,sboa_term_dt,Subscriber Out of Area,Termination Date,datetime
+dbo,cmc_sboa_out_area,grgr_ck,Subscriber Out of Area,Group Contrived Key,int
+dbo,cmc_sboa_out_area,sboa_lock_token,Subscriber Out of Area,Lock Token,smallint
+dbo,cmc_sboa_out_area,atxr_source_id,Subscriber Out of Area,Attachment Source Id,datetime
+dbo,cmc_sboa_out_area,sys_last_upd_dtm,Subscriber Out of Area,Last Update Datetime,datetime
+dbo,cmc_sboa_out_area,sys_usus_id,Subscriber Out of Area,Last Update User ID,varchar
+dbo,cmc_sboa_out_area,sys_dbuser_id,Subscriber Out of Area,Last Update DBMS User ID,varchar
+dbo,cmc_sbpr_id_prepro,grgr_ck,Subscriber ID Preprocessing table,group contrived key,int
+dbo,cmc_sbpr_id_prepro,sbpr_weight,Subscriber ID Preprocessing table,Number of Subscribers in the Group,int
+dbo,cmc_sbpr_id_prepro,sbpr_row_id,Subscriber ID Preprocessing table,Row ID,numeric
+dbo,cmc_sbpr_id_prepro,sbpr_sts,Subscriber ID Preprocessing table,Status of job,int
+dbo,cmc_sbpr_id_prepro,sbpr_lock_token,Subscriber ID Preprocessing table,Lock Token,smallint
+dbo,cmc_sbpr_id_prepro,atxr_source_id,Subscriber ID Preprocessing table,Attachment Source Id,datetime
+dbo,cmc_sbra_rate_act,sbra_row_id,Subscriber Rate Action,Row ID,numeric
+dbo,cmc_sbra_rate_act,grgr_ck,Subscriber Rate Action,Group Contrived Key,int
+dbo,cmc_sbra_rate_act,sgsg_ck,Subscriber Rate Action,Subgroup Contrived Key,int
+dbo,cmc_sbra_rate_act,sbsb_ck,Subscriber Rate Action,Subscriber Contrived Key,int
+dbo,cmc_sbra_rate_act,cspi_id,Subscriber Rate Action,Plan ID,char
+dbo,cmc_sbra_rate_act,sbra_type,Subscriber Rate Action,Type,char
+dbo,cmc_sbra_rate_act,sbra_sts,Subscriber Rate Action,Status,char
+dbo,cmc_sbra_rate_act,sbra_dgr_ind,Subscriber Rate Action,DOB/Gender/Relationship Indicator,char
+dbo,cmc_sbra_rate_act,sbra_req_dtm,Subscriber Rate Action,Request Date Time,datetime
+dbo,cmc_sbra_rate_act,sbra_lock_token,Subscriber Rate Action,Lock Token,smallint
+dbo,cmc_sbra_rate_act,atxr_source_id,Subscriber Rate Action,Attachment Source Id,datetime
+dbo,cmc_sbrd_rate_data,sbsb_ck,Subscriber Rate Information,Subscriber Contrived Key,int
+dbo,cmc_sbrd_rate_data,sbrd_eff_dt,Subscriber Rate Information,Effective Date,datetime
+dbo,cmc_sbrd_rate_data,sbrd_insq_dt,Subscriber Rate Information,Insequence Date,datetime
+dbo,cmc_sbrd_rate_data,grgr_ck,Subscriber Rate Information,Group Contrived Key,int
+dbo,cmc_sbrd_rate_data,sbrd_type,Subscriber Rate Information,Rate Data Type,char
+dbo,cmc_sbrd_rate_data,cspi_id,Subscriber Rate Information,Class Plan Identifier,char
+dbo,cmc_sbrd_rate_data,sbrd_units,Subscriber Rate Information,Subscriber Elected Units,int
+dbo,cmc_sbrd_rate_data,sbrd_lock_token,Subscriber Rate Information,Lock Token,smallint
+dbo,cmc_sbrd_rate_data,atxr_source_id,Subscriber Rate Information,Attachment Source Id,datetime
+dbo,cmc_sbrt_rate_data,sbsb_ck,Subscriber Premium Rate Factoring Data,Subscriber Contrived Key,int
+dbo,cmc_sbrt_rate_data,sbrt_eff_dt,Subscriber Premium Rate Factoring Data,Data Row Effective Date,datetime
+dbo,cmc_sbrt_rate_data,sbrt_term_dt,Subscriber Premium Rate Factoring Data,Data Row Termination Date,datetime
+dbo,cmc_sbrt_rate_data,grgr_ck,Subscriber Premium Rate Factoring Data,Group Contrived Key,int
+dbo,cmc_sbrt_rate_data,sbrt_sb_bill_ind,Subscriber Premium Rate Factoring Data,Subscriber Billing Indicator,char
+dbo,cmc_sbrt_rate_data,sbrt_smoker_ind,Subscriber Premium Rate Factoring Data,Smoker Indicator for Rating,char
+dbo,cmc_sbrt_rate_data,sbrt_rt_st,Subscriber Premium Rate Factoring Data,Rating State,char
+dbo,cmc_sbrt_rate_data,sbrt_rt_cnty,Subscriber Premium Rate Factoring Data,Rating County,char
+dbo,cmc_sbrt_rate_data,sbrt_rt_area,Subscriber Premium Rate Factoring Data,Rating Area,char
+dbo,cmc_sbrt_rate_data,sbrt_rt_sic,Subscriber Premium Rate Factoring Data,Standard Industry Class./No. Amer. Indust. Class. Sys. (SIC/NAICS),char
+dbo,cmc_sbrt_rate_data,sbrt_lock_token,Subscriber Premium Rate Factoring Data,Lock Token,smallint
+dbo,cmc_sbrt_rate_data,atxr_source_id,Subscriber Premium Rate Factoring Data,Attachment Source Id,datetime
+dbo,cmc_sbsa_salary,sbsb_ck,Subscriber Salary Data,Subscriber Contrived Key,int
+dbo,cmc_sbsa_salary,sbsa_eff_dt,Subscriber Salary Data,Subscriber Salary Effective Date,datetime
+dbo,cmc_sbsa_salary,grgr_ck,Subscriber Salary Data,Group Contrived Key,int
+dbo,cmc_sbsa_salary,sbsa_sal_type,Subscriber Salary Data,Subscriber Salary Type,char
+dbo,cmc_sbsa_salary,sbsa_sal_amt,Subscriber Salary Data,Subscriber Salary Amount,money
+dbo,cmc_sbsa_salary,sbsa_oop_ind,Subscriber Salary Data,Salary OOP Indicator,char
+dbo,cmc_sbsa_salary,sbsa_lock_token,Subscriber Salary Data,Lock Token,smallint
+dbo,cmc_sbsa_salary,atxr_source_id,Subscriber Salary Data,Attachment Source Id,datetime
+dbo,cmc_sbsb_subsc,sbsb_ck,Subscriber Indicative Data,Subscriber Contrived Key,int
+dbo,cmc_sbsb_subsc,grgr_ck,Subscriber Indicative Data,Group Contrived Key,int
+dbo,cmc_sbsb_subsc,sbsb_id,Subscriber Indicative Data,Subscriber Identifier,char
+dbo,cmc_sbsb_subsc,sbsb_last_name,Subscriber Indicative Data,Subscriber Last Name,char
+dbo,cmc_sbsb_subsc,sbsb_first_name,Subscriber Indicative Data,Subscriber First Name,char
+dbo,cmc_sbsb_subsc,sbsb_mid_init,Subscriber Indicative Data,Subscriber Middle Initial,char
+dbo,cmc_sbsb_subsc,sbsb_title,Subscriber Indicative Data,Subscriber Title,char
+dbo,cmc_sbsb_subsc,sbsb_orig_eff_dt,Subscriber Indicative Data,Subscriber Original Effective Date,datetime
+dbo,cmc_sbsb_subsc,sbsb_mctr_sts,Subscriber Indicative Data,Subscriber Status,char
+dbo,cmc_sbsb_subsc,sbsb_mctr_vip,Subscriber Indicative Data,Subscriber VIP Type,char
+dbo,cmc_sbsb_subsc,sbsb_mctr_srsn,Subscriber Indicative Data,Reason,char
+dbo,cmc_sbsb_subsc,sbsb_prcs_sts,Subscriber Indicative Data,Processing Status,char
+dbo,cmc_sbsb_subsc,sbsb_employ_id,Subscriber Indicative Data,Employee Identifier,char
+dbo,cmc_sbsb_subsc,sbsb_hire_dt,Subscriber Indicative Data,Subscriber Hire Date,datetime
+dbo,cmc_sbsb_subsc,sbsb_retire_dt,Subscriber Indicative Data,Subscriber Retire Date,datetime
+dbo,cmc_sbsb_subsc,sbsb_conv_dt,Subscriber Indicative Data,Conversion Date,datetime
+dbo,cmc_sbsb_subsc,sbsb_fi,Subscriber Indicative Data,Subscriber Family Indicator,char
+dbo,cmc_sbsb_subsc,sbsb_pay_cl_meth,Subscriber Indicative Data,Subscriber Claim Payment Method,char
+dbo,cmc_sbsb_subsc,sbsb_eft_ind,Subscriber Indicative Data,Electronic Fund Transfer Indicator,char
+dbo,cmc_sbsb_subsc,sbad_type_home,Subscriber Indicative Data,Subscriber Home Address,char
+dbo,cmc_sbsb_subsc,sbad_type_mail,Subscriber Indicative Data,Subscriber Mailing Address,char
+dbo,cmc_sbsb_subsc,sbad_type_work,Subscriber Indicative Data,Subscriber's Work Address,char
+dbo,cmc_sbsb_subsc,sbsb_last_name_xlow,Subscriber Indicative Data,Name search case insensitive,char
+dbo,cmc_sbsb_subsc,mcbr_ck,Subscriber Indicative Data,Bank relationship contrived key,int
+dbo,cmc_sbsb_subsc,sbsb_sig_dt,Subscriber Indicative Data,Signature Date,datetime
+dbo,cmc_sbsb_subsc,sbsb_recd_dt,Subscriber Indicative Data,Received Date,datetime
+dbo,cmc_sbsb_subsc,sbsb_pay_fsac_meth,Subscriber Indicative Data,FSA Claim Payment Method,char
+dbo,cmc_sbsb_subsc,sbsb_lock_token,Subscriber Indicative Data,Lock Token,smallint
+dbo,cmc_sbsb_subsc,atxr_source_id,Subscriber Indicative Data,Attachment Source Id,datetime
+dbo,cmc_sbsb_subsc,sys_last_upd_dtm,Subscriber Indicative Data,Last Update Datetime,datetime
+dbo,cmc_sbsb_subsc,sys_usus_id,Subscriber Indicative Data,Last Update User ID,varchar
+dbo,cmc_sbsb_subsc,sys_dbuser_id,Subscriber Indicative Data,Last Update DBMS User ID,varchar
+dbo,cmc_sbsb_subsc,sbsb_mlr_eft_ind_nvl,Subscriber Indicative Data,MLR Electronic Fund Transfer Indicator,char
+dbo,cmc_sbsb_subsc,sys_bitmap_nvl,Subscriber Indicative Data, Bitmap Indicator,int
+dbo,cmc_sbsb_subsc,sys_last_offset_nvl,Subscriber Indicative Data,Last Offset Location,varchar
+dbo,cmc_sbsd_splt_dtl,sbsb_ck,Subscriber Expanded Split Detail,Subscriber Contrived Key,int
+dbo,cmc_sbsd_splt_dtl,sbsp_eff_dt,Subscriber Expanded Split Detail,Effective Date,datetime
+dbo,cmc_sbsd_splt_dtl,cspd_cat,Subscriber Expanded Split Detail,Product Category,char
+dbo,cmc_sbsd_splt_dtl,sbsd_splt_to_ind,Subscriber Expanded Split Detail,Split To,char
+dbo,cmc_sbsd_splt_dtl,sbsd_seq_no,Subscriber Expanded Split Detail,Sequence Number,smallint
+dbo,cmc_sbsd_splt_dtl,bgbg_ck,Subscriber Expanded Split Detail,Billing Group Contrived Key,int
+dbo,cmc_sbsd_splt_dtl,sbsd_splt_pct,Subscriber Expanded Split Detail,Split Percent,int
+dbo,cmc_sbsd_splt_dtl,sbsd_mctr_styp,Subscriber Expanded Split Detail,Split Type,char
+dbo,cmc_sbsd_splt_dtl,sbsd_splt_rmndr_cd,Subscriber Expanded Split Detail,Remainder Code,char
+dbo,cmc_sbsd_splt_dtl,sbsd_lock_token,Subscriber Expanded Split Detail,Lock Token,smallint
+dbo,cmc_sbsd_splt_dtl,atxr_source_id,Subscriber Expanded Split Detail,Attachment Source Id,datetime
+dbo,cmc_sbsg_relation,sbsb_ck,Subscriber's Subgroup Data Relationship,Subscriber Contrived Key,int
+dbo,cmc_sbsg_relation,sbsg_eff_dt,Subscriber's Subgroup Data Relationship,Subgroup Relationship Effective Date,datetime
+dbo,cmc_sbsg_relation,grgr_ck,Subscriber's Subgroup Data Relationship,Group Contrived Key,int
+dbo,cmc_sbsg_relation,sgsg_ck,Subscriber's Subgroup Data Relationship,Subgroup Contrived Key,int
+dbo,cmc_sbsg_relation,sbsg_term_dt,Subscriber's Subgroup Data Relationship,Subgroup Termination Date,datetime
+dbo,cmc_sbsg_relation,sbsg_mctr_trsn,Subscriber's Subgroup Data Relationship,Subgroup Termination Reason,char
+dbo,cmc_sbsg_relation,sbsg_lock_token,Subscriber's Subgroup Data Relationship,Lock Token,smallint
+dbo,cmc_sbsg_relation,atxr_source_id,Subscriber's Subgroup Data Relationship,Attachment Source Id,datetime
+dbo,cmc_sbsg_relation,sys_last_upd_dtm,Subscriber's Subgroup Data Relationship,Last Update Datetime,datetime
+dbo,cmc_sbsg_relation,sys_usus_id,Subscriber's Subgroup Data Relationship,Last Update User ID,varchar
+dbo,cmc_sbsg_relation,sys_dbuser_id,Subscriber's Subgroup Data Relationship,Last Update DBMS User ID,varchar
+dbo,cmc_sbsp_splt_prem,sbsb_ck,Subscriber Expanded Split Premium,Subscriber Contrived Key,int
+dbo,cmc_sbsp_splt_prem,sbsp_eff_dt,Subscriber Expanded Split Premium,Effective Date,datetime
+dbo,cmc_sbsp_splt_prem,cspd_cat,Subscriber Expanded Split Premium,Product Category,char
+dbo,cmc_sbsp_splt_prem,sbsp_term_dt,Subscriber Expanded Split Premium,Termination Date,datetime
+dbo,cmc_sbsp_splt_prem,grgr_ck,Subscriber Expanded Split Premium,Group Contrived Key,int
+dbo,cmc_sbsp_splt_prem,sbsp_lock_token,Subscriber Expanded Split Premium,Lock Token,smallint
+dbo,cmc_sbsp_splt_prem,atxr_source_id,Subscriber Expanded Split Premium,Attachment Source Id,datetime
+dbo,cmc_sbsr_sb_rate,sbsb_ck,Subscriber Rate,Subscriber Contrived Key,int
+dbo,cmc_sbsr_sb_rate,sbsr_type,Subscriber Rate,Subscriber Rating Type,char
+dbo,cmc_sbsr_sb_rate,pdpd_id,Subscriber Rate,Product ID,char
+dbo,cmc_sbsr_sb_rate,pdbl_id,Subscriber Rate,Billing Component ID,char
+dbo,cmc_sbsr_sb_rate,pdrt_type,Subscriber Rate,Premium Rate Table Type,char
+dbo,cmc_sbsr_sb_rate,sbsr_eff_dt,Subscriber Rate,Subscriber Rating Effective Date,datetime
+dbo,cmc_sbsr_sb_rate,sbsr_term_dt,Subscriber Rate,Subscriber Rating Termination Date,datetime
+dbo,cmc_sbsr_sb_rate,sbsr_source,Subscriber Rate,Source of Subscriber Rate Update,varchar
+dbo,cmc_sbsr_sb_rate,sbsr_basis,Subscriber Rate,Subscriber Rate Basis,smallint
+dbo,cmc_sbsr_sb_rate,sbsr_prem_sb,Subscriber Rate,Modal Subscriber Override Premium,money
+dbo,cmc_sbsr_sb_rate,sbsr_prem_dep,Subscriber Rate,Modal Dependent Override Premium,money
+dbo,cmc_sbsr_sb_rate,sbsr_vol,Subscriber Rate,Subscriber Override Volume,money
+dbo,cmc_sbsr_sb_rate,sbsr_sb_mod_amt,Subscriber Rate,Modal Subscriber Premium Modifier Amount,money
+dbo,cmc_sbsr_sb_rate,sbsr_dep_mod_amt,Subscriber Rate,Dependent Premium Modifier Factor,money
+dbo,cmc_sbsr_sb_rate,sbsr_sb_mod_fctr,Subscriber Rate,Subscriber Premium Modifier Factor,int
+dbo,cmc_sbsr_sb_rate,sbsr_dep_mod_fctr,Subscriber Rate,Dependent Premium Modifier Factor,int
+dbo,cmc_sbsr_sb_rate,sbsr_lock_token,Subscriber Rate,Lock Token,smallint
+dbo,cmc_sbsr_sb_rate,atxr_source_id,Subscriber Rate,Attachment Source Id,datetime
+dbo,cmc_sbst_sgsg_tfr,sbst_ref_id,Mass Subgroup Transfer Table,Reference ID,char
+dbo,cmc_sbst_sgsg_tfr,syin_inst,Mass Subgroup Transfer Table,System Instance ID,bigint
+dbo,cmc_sbst_sgsg_tfr,sbst_create_dtm,Mass Subgroup Transfer Table,Create Date and Time,datetime
+dbo,cmc_sbst_sgsg_tfr,sbst_type,Mass Subgroup Transfer Table,Subgroup Transfer Type,char
+dbo,cmc_sbst_sgsg_tfr,sbst_sts,Mass Subgroup Transfer Table,Status,char
+dbo,cmc_sbst_sgsg_tfr,usus_id,Mass Subgroup Transfer Table,User Identifier,char
+dbo,cmc_sbst_sgsg_tfr,sbst_chg_eff_dt,Mass Subgroup Transfer Table,Transfer Effective Date,datetime
+dbo,cmc_sbst_sgsg_tfr,grgr_ck,Mass Subgroup Transfer Table,Group Contrived Key,int
+dbo,cmc_sbst_sgsg_tfr,sbst_sgsg_ck_from,Mass Subgroup Transfer Table,Transfer From Subgroup ID,int
+dbo,cmc_sbst_sgsg_tfr,sbst_sgsg_ck_to,Mass Subgroup Transfer Table,Transfer To Subgroup ID,int
+dbo,cmc_sbst_sgsg_tfr,sbsg_mctr_trsn,Mass Subgroup Transfer Table,Transfer Reason,char
+dbo,cmc_sbst_sgsg_tfr,sbst_id_card_ind,Mass Subgroup Transfer Table,ID Card Request,char
+dbo,cmc_sbst_sgsg_tfr,sbst_sb_sel_cnt,Mass Subgroup Transfer Table,Selected Count,int
+dbo,cmc_sbst_sgsg_tfr,sbst_proc_cnt,Mass Subgroup Transfer Table,Processed Count,int
+dbo,cmc_sbst_sgsg_tfr,sbst_err_cnt,Mass Subgroup Transfer Table,Error Count,int
+dbo,cmc_sbst_sgsg_tfr,sbst_lock_token,Mass Subgroup Transfer Table,Lock Token,smallint
+dbo,cmc_sbst_sgsg_tfr,atxr_source_id,Mass Subgroup Transfer Table,Attachment Source Id,datetime
+dbo,cmc_sbtd_teg_data,sbsb_ck,Subscriber TEG Data,Subscriber Contrived Key,int
+dbo,cmc_sbtd_teg_data,sbtd_type,Subscriber TEG Data,TEG  Record Type Code,char
+dbo,cmc_sbtd_teg_data,sbtd_seq_no,Subscriber TEG Data,Sequence Number,smallint
+dbo,cmc_sbtd_teg_data,sbtd_eff_dt,Subscriber TEG Data,Effective Date,datetime
+dbo,cmc_sbtd_teg_data,sbtd_term_dt,Subscriber TEG Data,Termination Date,datetime
+dbo,cmc_sbtd_teg_data,sbtd_name,Subscriber TEG Data,Name,varchar
+dbo,cmc_sbtd_teg_data,sbtd_id_type,Subscriber TEG Data,Identification Code Qualifier,char
+dbo,cmc_sbtd_teg_data,sbtd_id,Subscriber TEG Data,Identification Code,varchar
+dbo,cmc_sbtd_teg_data,sbtd_ref_id_type,Subscriber TEG Data,License Number Type,char
+dbo,cmc_sbtd_teg_data,sbtd_ref_id,Subscriber TEG Data,License Number,varchar
+dbo,cmc_sbtd_teg_data,sbtd_desc,Subscriber TEG Data,Issuing State Code,varchar
+dbo,cmc_sbtd_teg_data,sbtd_reserved_1,Subscriber TEG Data,Reserved 1,varchar
+dbo,cmc_sbtd_teg_data,sbtd_reserved_2,Subscriber TEG Data, Reserved 2,varchar
+dbo,cmc_sbtd_teg_data,sbtd_reserved_3,Subscriber TEG Data,Reserved 3,varchar
+dbo,cmc_sbtd_teg_data,sbtd_lock_token,Subscriber TEG Data,Lock Token,smallint
+dbo,cmc_sbtd_teg_data,atxr_source_id,Subscriber TEG Data,Attachment Source Id,datetime
+dbo,cmc_sbtd_teg_data,sys_last_upd_dtm,Subscriber TEG Data,Last Update Datetime,datetime
+dbo,cmc_sbtd_teg_data,sys_usus_id,Subscriber TEG Data,Last Update User ID,varchar
+dbo,cmc_sbtd_teg_data,sys_dbuser_id,Subscriber TEG Data,Last Update DBMS User ID,varchar
+dbo,cmc_sbtf_acc_trans,sbsb_ck,Subscriber Accumulator Transfer Table,Subscriber Contrived Key,int
+dbo,cmc_sbtf_acc_trans,grgr_ck,Subscriber Accumulator Transfer Table,Group Contrived Key,int
+dbo,cmc_sbtf_acc_trans,sbtf_sbsb_ck_from,Subscriber Accumulator Transfer Table,Subscriber Contrived Key (From),int
+dbo,cmc_sbtf_acc_trans,sbtf_grgr_ck_from,Subscriber Accumulator Transfer Table,Group Contrived Key (From),int
+dbo,cmc_sbtf_acc_trans,usus_id,Subscriber Accumulator Transfer Table,User Identifier,char
+dbo,cmc_sbtf_acc_trans,sbtf_create_dtm,Subscriber Accumulator Transfer Table,Transaction Create Date/Time,datetime
+dbo,cmc_sbtf_acc_trans,sbtf_lock_token,Subscriber Accumulator Transfer Table,Lock Token,smallint
+dbo,cmc_sbtf_acc_trans,atxr_source_id,Subscriber Accumulator Transfer Table,Attachment Source Id,datetime
+dbo,cmc_sbun_unused_sbsb_ck,row_num,Unused Subscriber Contrived Keys,Row ID,numeric
+dbo,cmc_sbun_unused_sbsb_ck,sbsb_ck,Unused Subscriber Contrived Keys,Subscriber Contrived Key,int
+dbo,cmc_sbun_unused_sbsb_ck,sbun_create_dt,Unused Subscriber Contrived Keys,Create Date,datetime
+dbo,cmc_sbwm_sb_msg,sbsb_ck,Subscriber Level Warning Messages,Subscriber Contrived Key,int
+dbo,cmc_sbwm_sb_msg,sbwm_eff_dt,Subscriber Level Warning Messages,Effective Date,datetime
+dbo,cmc_sbwm_sb_msg,wmds_seq_no,Subscriber Level Warning Messages,Message ID,smallint
+dbo,cmc_sbwm_sb_msg,sbwm_term_dt,Subscriber Level Warning Messages,Termination Date,datetime
+dbo,cmc_sbwm_sb_msg,sbwm_mctr_trsn,Subscriber Level Warning Messages,Termination Reason,char
+dbo,cmc_sbwm_sb_msg,grgr_ck,Subscriber Level Warning Messages,Group Contrived Key,int
+dbo,cmc_sbwm_sb_msg,sbwm_lock_token,Subscriber Level Warning Messages,Lock Token,smallint
+dbo,cmc_sbwm_sb_msg,atxr_source_id,Subscriber Level Warning Messages,Attachment Source Id,datetime
+dbo,cmc_sbwm_sb_msg,sys_last_upd_dtm,Subscriber Level Warning Messages,Last Update Datetime,datetime
+dbo,cmc_sbwm_sb_msg,sys_usus_id,Subscriber Level Warning Messages,Last Update User ID,varchar
+dbo,cmc_sbwm_sb_msg,sys_dbuser_id,Subscriber Level Warning Messages,Last Update DBMS User ID,varchar
+dbo,cmc_sbxi_extnl_id,sbsb_ck,External Subscriber ID table,Subscriber Contrived Key,int
+dbo,cmc_sbxi_extnl_id,sbxi_extnl_sbsb_id,External Subscriber ID table,N/A,varchar
+dbo,cmc_sbxi_extnl_id,sbxi_lst_updt_dtm,External Subscriber ID table,N/A,datetime
+dbo,cmc_sbxi_extnl_id,sbxi_lock_token,External Subscriber ID table,Lock Token,smallint
+dbo,cmc_sbxi_extnl_id,atxr_source_id,External Subscriber ID table,Attachment Source Id,datetime

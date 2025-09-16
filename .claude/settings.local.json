@@ -9,7 +9,9 @@
       "Bash(npx http-server:*)",
       "WebFetch(domain:docs.anthropic.com)",
       "Bash(claude --version)",
-      "Bash(tree:*)"
+      "Bash(tree:*)",
+      "Bash(for file in \"C:\\Users\\danbr\\github-danbrickey\\edp-ai-expert-team\\code\\target\\gemstone\"/*.csv)",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []
