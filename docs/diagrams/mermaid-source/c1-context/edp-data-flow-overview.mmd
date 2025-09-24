@@ -80,13 +80,15 @@ flowchart TD
     APIs --> Reporting
 
     %% Styling
-    classDef onprem fill:#ffeb3b,stroke:#f57f17,stroke-width:2px
-    classDef aws fill:#ff9800,stroke:#e65100,stroke-width:2px
-    classDef snowflake fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    classDef layer fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef consumer fill:#e8f5e8,stroke:#388e3c,stroke-width:2px
-    
+    classDef onprem fill:#1E3A8A,stroke:#60A5FA,stroke-width:2px,color:#F8FAFC
+    classDef aws fill:#B45309,stroke:#F59E0B,stroke-width:2px,color:#FEF3C7
+    classDef snowflake fill:#0369A1,stroke:#22D3EE,stroke-width:2px,color:#E0F2FE
+    classDef layer fill:#312E81,stroke:#A855F7,stroke-width:2px,color:#F5F3FF
+    classDef consumer fill:#166534,stroke:#4ADE80,stroke-width:2px,color:#ECFDF5
+
     class FACETS_LGC,FACETS_GMS,VALENZ,WhereScape onprem
     class CDC,MSK,S3 aws
     class RawData,CurrentNF,DataVault,BusinessVault,Kimball,ML,Operational,DataMarts,Extracts,APIs snowflake
     class Tableau,Healthcare,Portal,Reporting consumer
+
+    linkStyle default stroke:#CBD5F5,stroke-width:2px,opacity:0.85
