@@ -116,7 +116,7 @@ Use full source_system value as suffix:
 ### Incremental Loading
 
 - **Load Unit**: `hh` (hourly)
-- **Load Offset**: `-24` hours (overlap for late-arriving data)
+- **Load Offset**: `-1` hours (overlap for late-arriving data)
 
 ### Documentation Requirements
 
