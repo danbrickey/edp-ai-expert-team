@@ -20,7 +20,8 @@
       "Bash(where python)",
       "Bash(py --version)",
       "Bash(C:UsersdanbrAppDataLocalMicrosoftWindowsAppspython.exe --version)",
-      "Bash(powershell:*)"
+      "Bash(powershell:*)",
+      "Bash(Select-Object FullName)"
     ],
     "deny": [],
     "ask": []
