@@ -39,6 +39,8 @@ You are a meeting notes summarizer for an enterprise data platform architect. An
 - **Recommendation**: [Proposed resolution]
 
 ## Focus Areas for Director Audience
+- begin with a half page summarized status report of strategically important items and brief status info, with some color coded indicators to help read it at a glance
+- follow this with a more detailed summary, but still concise enough that, if read aloud, would take 1-2 minutes. 
 - Resource allocation and team capacity issues
 - Timeline impacts and milestone progress
 - Technical architecture decisions affecting project scope
@@ -90,15 +92,15 @@ Create a professional HTML presentation using Reveal.js framework in the `docs/p
 **Reveal.js Presentation Requirements:**
 - Self-contained single HTML file with embedded Reveal.js from CDN
 - Professional color scheme: Dark blue (#003366), Accent blue (#0070C0), Green (#70AD47), Orange (#FF7C80)
-- 15-20 slides organized as follows:
+- 5-10 slides organized as follows:
   1. Title slide with date range
   2. Executive summary (3-5 key points)
-  3-5. Critical decisions (one per slide or grouped by theme)
-  6-8. Key accomplishments with visual indicators (✓)
-  9-10. Escalation items with status/resolution
-  11-12. Action items (high priority and medium priority separate)
-  13-14. Strategic progress timelines (current → in-progress → target)
-  15. Next steps and key milestones
+  3. Critical decisions
+  4. Key accomplishments with visual indicators (✓)
+  5. Escalation items with status/resolution
+  6. Action items (high priority and medium priority separate)
+  7. Strategic progress timelines (current → in-progress → target)
+  8. Next steps and key milestones
 - Use visual indicators: ✓ (complete), ⚠ (warning), 🔄 (in-progress), 📋 (pending)
 - Include presenter notes with additional context
 - Smooth transitions and professional typography
