@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fin_pmpf_prov_match_perf","mdin_id","Provider Match Model Performance","Model Instance ID","numeric"
+"dbo","fin_pmpf_prov_match_perf","pmpf_dt","Provider Match Model Performance","Provider Match Metrics Date","date"
+"dbo","fin_pmpf_prov_match_perf","pmpf_metrics","Provider Match Model Performance","Provider Match Performance Metrics","nvarchar"
+"dbo","fin_pmpf_prov_match_perf","pmpf_last_update_dtm","Provider Match Model Performance","Provider Match Metrics Last Updated Datetime","datetime"
+"dbo","fin_pmpf_prov_match_perf","pmpf_create_dtm","Provider Match Model Performance","Provider Match Metrics Create Datetime","datetime"

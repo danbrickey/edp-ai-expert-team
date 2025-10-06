@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_trcn_trans_claim_line","cacheid","Transparency Claim Line Item","CACHE ID","char"
+"dbo","nwx_trcn_trans_claim_line","linenum","Transparency Claim Line Item","Line Number","smallint"
+"dbo","nwx_trcn_trans_claim_line","revenuecode","Transparency Claim Line Item","Revenue Code","varchar"
+"dbo","nwx_trcn_trans_claim_line","procedurecode","Transparency Claim Line Item","Procedure Code","varchar"

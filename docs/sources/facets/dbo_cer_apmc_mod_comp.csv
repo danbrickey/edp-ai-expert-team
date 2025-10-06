@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_apmc_mod_comp","apmd_id","Module and components","Module ID","char"
+"dbo","cer_apmc_mod_comp","syco_id","Module and components","Component ID","char"
+"dbo","cer_apmc_mod_comp","apmc_lock_token","Module and components","Lock Token","smallint"
+"dbo","cer_apmc_mod_comp","atxr_source_id","Module and components","Attachment Source Id","datetime"

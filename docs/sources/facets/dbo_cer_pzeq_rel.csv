@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pzeq_rel","pzpz_id","Batch Equation Relationship","Product Id","char"
+"dbo","cer_pzeq_rel","pzap_app_id","Batch Equation Relationship","Product Application Id","char"
+"dbo","cer_pzeq_rel","rceq_id","Batch Equation Relationship","Unique Equation Id","char"
+"dbo","cer_pzeq_rel","pzeq_lock_token","Batch Equation Relationship","Lock Token","smallint"

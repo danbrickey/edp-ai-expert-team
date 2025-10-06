@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhg_gtiu_unit_x","gtgt_ckn","Inbound Unit Table","Gateway Transaction Contrived Key","numeric"
+"dbo","fhg_gtiu_unit_x","xgss_seq_nol","Inbound Unit Table","GS Segment Sequence Number","int"
+"dbo","fhg_gtiu_unit_x","xsts_seq_nol","Inbound Unit Table","ST Segment Sequence Number","int"
+"dbo","fhg_gtiu_unit_x","exbt_pzcd_mtyp","Inbound Unit Table","Method Type Processing","char"

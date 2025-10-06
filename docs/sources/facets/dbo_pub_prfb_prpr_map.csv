@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_prfb_prpr_map","pubh_guid","Data Pub Facility Bed types keys.","Globally Unique Identifier","char"
+"dbo","pub_prfb_prpr_map","prcr_id","Data Pub Facility Bed types keys.","Credentialing ID","char"
+"dbo","pub_prfb_prpr_map","prfb_mctr_type","Data Pub Facility Bed types keys.","Facility Bed Type","char"
+"dbo","pub_prfb_prpr_map","prpr_id","Data Pub Facility Bed types keys.","Servicing Provider","char"

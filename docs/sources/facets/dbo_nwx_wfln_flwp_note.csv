@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_wfln_flwp_note","wfol_followup_id","Workflow Follow-up Note Table","Follow-up Note Contrived Key","int"
+"dbo","nwx_wfln_flwp_note","wfln_seq_no","Workflow Follow-up Note Table","Follow-up Sequence Number","int"
+"dbo","nwx_wfln_flwp_note","wfln_note_type","Workflow Follow-up Note Table","Follow-up Note Type","int"
+"dbo","nwx_wfln_flwp_note","wfln_note","Workflow Follow-up Note Table","Follow-up Note","varchar"

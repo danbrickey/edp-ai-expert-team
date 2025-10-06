@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_aplb_library","aplb_name","Dynamic Link Libraries","Library Name","varchar"
+"dbo","cer_aplb_library","aplb_desc","Dynamic Link Libraries","Library Description","char"
+"dbo","cer_aplb_library","aplb_release","Dynamic Link Libraries","Library Release","char"
+"dbo","cer_aplb_library","aplb_file_location","Dynamic Link Libraries","Library File Location","char"
+"dbo","cer_aplb_library","aplb_lock_token","Dynamic Link Libraries","Lock Token","smallint"

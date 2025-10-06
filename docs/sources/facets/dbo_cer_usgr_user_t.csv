@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_usgr_user_t","usus_id","Group User Definition","User Identifier","char"
+"dbo","cer_usgr_user_t","usgr_login_ind","Group User Definition","Group Login Indicator","char"
+"dbo","cer_usgr_user_t","usgr_lock_token","Group User Definition","Lock Token","smallint"

@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_puqr_que_run","pubh_topic","Data Publishing CDC Statistics","Kafka Topic","varchar"
+"dbo","pub_puqr_que_run","puqu_thread_id","Data Publishing CDC Statistics","Thread Identifier","int"
+"dbo","pub_puqr_que_run","rows_count","Data Publishing CDC Statistics","Row count","int"
+"dbo","pub_puqr_que_run","run_date","Data Publishing CDC Statistics","Runtime Date","datetime"

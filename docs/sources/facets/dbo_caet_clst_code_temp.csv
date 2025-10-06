@@ -1,0 +1,2 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","caet_clst_code_temp","clst_sts","Data Publication Manager Table","Claim Status Code","char"

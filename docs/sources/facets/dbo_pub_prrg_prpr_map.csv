@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_prrg_prpr_map","pubh_guid","Data Pub Provider Registration keys","Globally Unique Identifier","char"
+"dbo","pub_prrg_prpr_map","prcr_id","Data Pub Provider Registration keys","Credentialing ID","char"
+"dbo","pub_prrg_prpr_map","prrg_mctr_type","Data Pub Provider Registration keys","Provider Registration Type","char"
+"dbo","pub_prrg_prpr_map","prrg_seq_no","Data Pub Provider Registration keys","Provider Registration Sequence Number","smallint"
+"dbo","pub_prrg_prpr_map","prpr_id","Data Pub Provider Registration keys","Servicing Provider","char"

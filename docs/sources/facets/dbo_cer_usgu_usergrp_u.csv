@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_usgu_usergrp_u","usgr_usus_id","Individual User/ Group User Relationships","Group User ID","char"
+"dbo","cer_usgu_usergrp_u","usus_id","Individual User/ Group User Relationships","User Identifier","char"
+"dbo","cer_usgu_usergrp_u","usgu_desc","Individual User/ Group User Relationships","User Assignment Description","char"
+"dbo","cer_usgu_usergrp_u","usgu_last_upd_dt","Individual User/ Group User Relationships","Last Update Date","datetime"
+"dbo","cer_usgu_usergrp_u","usgu_last_upd_usus","Individual User/ Group User Relationships","Last Update User","char"
+"dbo","cer_usgu_usergrp_u","usgu_lock_token","Individual User/ Group User Relationships","Lock Token","smallint"
+"dbo","cer_usgu_usergrp_u","atxr_source_id","Individual User/ Group User Relationships","Attachment Source Id","datetime"

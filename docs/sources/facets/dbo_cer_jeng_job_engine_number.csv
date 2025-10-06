@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_jeng_job_engine_number","syin_inst","","System Instance","bigint"
+"dbo","cer_jeng_job_engine_number","jeng_key","","","varchar"
+"dbo","cer_jeng_job_engine_number","jeng_seq","","","int"
+"dbo","cer_jeng_job_engine_number","sys_last_upd_dtm","","Last Update Datetime","datetime"
+"dbo","cer_jeng_job_engine_number","sys_usus_id","","Last Update User ID","varchar"
+"dbo","cer_jeng_job_engine_number","sys_dbuser_id","","Last Update DBMS User ID","varchar"

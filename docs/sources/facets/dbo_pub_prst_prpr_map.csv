@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_prst_prpr_map","pubh_guid","Data Pub Provider Facility Staff keys","Globally Unique Identifier","char"
+"dbo","pub_prst_prpr_map","prcr_id","Data Pub Provider Facility Staff keys","Credentialing ID","char"
+"dbo","pub_prst_prpr_map","prst_mctr_type","Data Pub Provider Facility Staff keys","Facility Staff Type","char"
+"dbo","pub_prst_prpr_map","prpr_id","Data Pub Provider Facility Staff keys","Servicing Provider","char"

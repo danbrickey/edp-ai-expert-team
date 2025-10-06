@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_coxt_xtiming","syco_id","System Extension Timings Table","Timing Component ID","char"
+"dbo","cer_coxt_xtiming","xtim_id","System Extension Timings Table","Extension Timing ID","varchar"
+"dbo","cer_coxt_xtiming","coxt_desc","System Extension Timings Table","Extension Timing Description","varchar"
+"dbo","cer_coxt_xtiming","coxt_lock_token","System Extension Timings Table","Lock Token","smallint"
+"dbo","cer_coxt_xtiming","atxr_source_id","System Extension Timings Table","Attachment Source Id","datetime"

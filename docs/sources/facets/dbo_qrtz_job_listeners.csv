@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","qrtz_job_listeners","job_name","","","varchar"
+"dbo","qrtz_job_listeners","job_group","","","varchar"
+"dbo","qrtz_job_listeners","job_listener","","","varchar"

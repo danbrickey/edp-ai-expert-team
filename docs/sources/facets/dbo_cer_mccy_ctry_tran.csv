@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_mccy_ctry_tran","mccy_ctry_cd","Country Code Translation Data","Country Code","char"
+"dbo","cer_mccy_ctry_tran","mccy_name","Country Code Translation Data","Country Name","char"
+"dbo","cer_mccy_ctry_tran","mccy_lock_token","Country Code Translation Data","Lock Token","smallint"
+"dbo","cer_mccy_ctry_tran","atxr_source_id","Country Code Translation Data","Attachment Source Id","datetime"

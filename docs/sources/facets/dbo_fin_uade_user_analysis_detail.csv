@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fin_uade_user_analysis_detail","uahd_row_id","User Analysis Detail","Row Identifier","numeric"
+"dbo","fin_uade_user_analysis_detail","uade_graph_type","User Analysis Detail","","char"
+"dbo","fin_uade_user_analysis_detail","uade_seq_no","User Analysis Detail","","int"
+"dbo","fin_uade_user_analysis_detail","uade_data","User Analysis Detail","","varchar"

@@ -1,0 +1,3 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhp_hpc0_work","hpc0_row_id","HIPAA Privacy Migration Work Table","Row ID","numeric"
+"dbo","fhp_hpc0_work","table_id","HIPAA Privacy Migration Work Table","Table Identifier","char"

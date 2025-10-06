@@ -1,0 +1,3 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_invt_invalid_ticket_tbl","process_id","Invalid Ticket Table","Process ID","int"
+"dbo","cer_invt_invalid_ticket_tbl","pitm_ticket_no","Invalid Ticket Table","Process Item Invalid Ticket Number","char"

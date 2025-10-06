@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_prfc_prpr_map","pubh_guid","Data Pub Facility Accreditation keys","Globally Unique Identifier","char"
+"dbo","pub_prfc_prpr_map","prcr_id","Data Pub Facility Accreditation keys","Credentialing ID","char"
+"dbo","pub_prfc_prpr_map","prfc_mctr_type","Data Pub Facility Accreditation keys","Provider (Facility) Accreditation Type","char"
+"dbo","pub_prfc_prpr_map","prfc_eff_dt","Data Pub Facility Accreditation keys","Provider (Facility) Accreditation Effective Date","datetime"
+"dbo","pub_prfc_prpr_map","prpr_id","Data Pub Facility Accreditation keys","Provider Identifier","char"

@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_audt_appl_mddt","audt_appl_name","Application Modification Name","Appliation Name","varchar"
+"dbo","nwx_audt_appl_mddt","audt_modify_dtm","Application Modification Name","Modification Date Time","datetime"
+"dbo","nwx_audt_appl_mddt","audt_lock_token","Application Modification Name","Lock Token","smallint"
+"dbo","nwx_audt_appl_mddt","atxr_source_id","Application Modification Name","Attachment Source Id","datetime"
+"dbo","nwx_audt_appl_mddt","audt_create_dtm","Application Modification Name","Created Date Time","datetime"
+"dbo","nwx_audt_appl_mddt","audt_create_by","Application Modification Name","Created By","char"
+"dbo","nwx_audt_appl_mddt","audt_modify_by","Application Modification Name","Last Modified By","char"

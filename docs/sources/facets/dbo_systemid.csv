@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","systemid","systemid","","","varchar"
+"dbo","systemid","description","","","varchar"
+"dbo","systemid","connectionstring","","","varchar"
+"dbo","systemid","facetsversion","","","varchar"
+"dbo","systemid","jndiname","","","varchar"
+"dbo","systemid","extuid","","","varchar"
+"dbo","systemid","region","","","varchar"

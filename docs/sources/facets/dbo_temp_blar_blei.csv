@@ -1,0 +1,2 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","temp_blar_blei","blei_ck","Temp Storage table","Billing Entity Contrived Key","int"

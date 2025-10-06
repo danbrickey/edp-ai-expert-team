@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","er_tb_syst_pdat_process_data","pitm_ticket_no","Process Data Table","Ticket Number","char"
+"dbo","er_tb_syst_pdat_process_data","pdat_io_type","Process Data Table","Input/Output Type","char"
+"dbo","er_tb_syst_pdat_process_data","pdat_seq","Process Data Table","Sequence Number","int"
+"dbo","er_tb_syst_pdat_process_data","pdat_value","Process Data Table","PDAT Value","varbinary"

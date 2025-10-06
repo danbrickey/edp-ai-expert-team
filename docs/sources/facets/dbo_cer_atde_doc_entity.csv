@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_atde_doc_entity","atld_id","Attachment Document Entity Relationships","Document ID","char"
+"dbo","cer_atde_doc_entity","xent_entity_id","Attachment Document Entity Relationships","Document Related Entity ID","char"
+"dbo","cer_atde_doc_entity","trdt_data_id","Attachment Document Entity Relationships","Transaction Data Collection ID","char"
+"dbo","cer_atde_doc_entity","atde_column_name","Attachment Document Entity Relationships","Entity ID Column Name","char"
+"dbo","cer_atde_doc_entity","atde_lock_token","Attachment Document Entity Relationships","Lock Token","smallint"

@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","temp_blpp","blei_ck","Temp Storage table","Billing Entity Contrived Key","int"
+"dbo","temp_blpp","blbl_due_dt","Temp Storage table","Billing Due Date","datetime"
+"dbo","temp_blpp","crpp_cr_earn_dt","Temp Storage table","Capitation Earn Date","datetime"
+"dbo","temp_blpp","crpp_sk","Temp Storage table","CRPP String Key","char"

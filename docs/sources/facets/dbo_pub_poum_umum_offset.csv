@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_poum_umum_offset","umum_ref_id","Prior Auth/UM Last Offset Location","Reference Identification Number","char"
+"dbo","pub_poum_umum_offset","sys_last_offset_nvl","Prior Auth/UM Last Offset Location","Last Published Entity","varchar"
+"dbo","pub_poum_umum_offset","poum_last_update_dtm","Prior Auth/UM Last Offset Location","Last modified Date/Time","datetime"
+"dbo","pub_poum_umum_offset","poum_last_report_dtm","Prior Auth/UM Last Offset Location","Last Report Date/Time","datetime"

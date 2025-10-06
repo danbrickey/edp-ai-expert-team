@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_eqde_equation_def","rceq_id","Batch Equation Definition Table","Batch Equation Id","char"
+"dbo","cer_eqde_equation_def","symd_id","Batch Equation Definition Table","System Message Id","char"
+"dbo","cer_eqde_equation_def","symd_msg_cd","Batch Equation Definition Table","System Message Code","int"
+"dbo","cer_eqde_equation_def","eqde_side","Batch Equation Definition Table","Side of the equation (left or right)","char"
+"dbo","cer_eqde_equation_def","eqde_operator","Batch Equation Definition Table","equation operator (plus or minus)","char"

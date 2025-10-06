@@ -1,0 +1,2 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_odsb_on_demand_sbsb","sbsb_ck","Pub On Demand Subscriber table.","Subscriber Contrived Key","int"

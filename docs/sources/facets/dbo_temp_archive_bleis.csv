@@ -1,0 +1,3 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","temp_archive_bleis","blei_ck","Temp Storage table","Billing Entity Contrived Key","int"
+"dbo","temp_archive_bleis","blei_weight","Temp Storage table","","int"

@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_xtlt_translate","xmsg_id","Text String Translation Text","Text string ID","varchar"
+"dbo","cer_xtlt_translate","xtlt_seq_no","Text String Translation Text","Text string translation sequence number","int"
+"dbo","cer_xtlt_translate","xtlt_text","Text String Translation Text","Text string translation text","varchar"

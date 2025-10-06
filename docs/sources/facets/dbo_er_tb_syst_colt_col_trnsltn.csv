@@ -1,0 +1,3 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","er_tb_syst_colt_col_trnsltn","colt_column_name","Column Translation Table","Column Name","varchar"
+"dbo","er_tb_syst_colt_col_trnsltn","colt_logical_name","Column Translation Table","Logical Name","varchar"

@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_rcml_run_ctrls","syin_inst","Run Controls","System instance","bigint"
+"dbo","cer_rcml_run_ctrls","rcml_seq_no","Run Controls","Sequence Number","int"
+"dbo","cer_rcml_run_ctrls","symd_id","Run Controls","SYMD Identifier","char"
+"dbo","cer_rcml_run_ctrls","symd_msg_cd","Run Controls","Message Code","int"
+"dbo","cer_rcml_run_ctrls","rcml_int_value","Run Controls","Int value","int"
+"dbo","cer_rcml_run_ctrls","rcml_grouping","Run Controls","Grouping","varchar"
+"dbo","cer_rcml_run_ctrls","rcml_lock_token","Run Controls","Lock Token","smallint"

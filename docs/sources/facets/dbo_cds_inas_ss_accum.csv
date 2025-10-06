@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_inas_ss_accum","bliv_id","AFA Invoice member specific stoploss batch print table","Invoice Number","varchar"
+"dbo","cds_inas_ss_accum","afcp_per_no","AFA Invoice member specific stoploss batch print table","Contact Period Number","int"
+"dbo","cds_inas_ss_accum","meme_ck","AFA Invoice member specific stoploss batch print table","Member Contrived Key","int"
+"dbo","cds_inas_ss_accum","afai_ck","AFA Invoice member specific stoploss batch print table","AFA ID","int"
+"dbo","cds_inas_ss_accum","meas_ssl_amt","AFA Invoice member specific stoploss batch print table","Stop Loss Amount","money"
+"dbo","cds_inas_ss_accum","meas_exc_amt","AFA Invoice member specific stoploss batch print table","Excess of Stop Loss Amount","money"
+"dbo","cds_inas_ss_accum","inas_lock_token","AFA Invoice member specific stoploss batch print table","Lock Token","smallint"

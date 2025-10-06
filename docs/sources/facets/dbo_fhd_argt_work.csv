@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhd_argt_work","argt_row_id","Work Table for the Transactional Documents Purge and Archive Batch","Row ID","numeric"
+"dbo","fhd_argt_work","gtgt_ckn","Work Table for the Transactional Documents Purge and Archive Batch","Business Transaction Contrived Key","numeric"
+"dbo","fhd_argt_work","dohd_ckn","Work Table for the Transactional Documents Purge and Archive Batch","Document Transaction Contrived Key","numeric"

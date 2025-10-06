@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_putt_target_tables","putt_type","Supplied configuration table","Application ID","char"
+"dbo","cer_putt_target_tables","putt_table_name","Supplied configuration table","Purge Table Name","varchar"
+"dbo","cer_putt_target_tables","putt_active_sw","Supplied configuration table","Switch ON/Off","char"
+"dbo","cer_putt_target_tables","sys_last_upd_dtm","Supplied configuration table","Last Update Datetime","datetime"
+"dbo","cer_putt_target_tables","sys_usus_id","Supplied configuration table","Last Update User ID","varchar"
+"dbo","cer_putt_target_tables","sys_dbuser_id","Supplied configuration table","Last Update DBMS User ID","varchar"

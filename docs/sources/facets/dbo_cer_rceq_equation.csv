@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_rceq_equation","rceq_id","Batch Equation Table","Batch Equation Id","char"
+"dbo","cer_rceq_equation","rceq_desc","Batch Equation Table","Description of Equation","varchar"
+"dbo","cer_rceq_equation","rceq_tolerance","Batch Equation Table","The tolerance type (number percent or both)","char"
+"dbo","cer_rceq_equation","rceq_tolerance_num","Batch Equation Table","the highest number for tolerance","int"
+"dbo","cer_rceq_equation","rceq_tolerance_pct","Batch Equation Table","the highest percentage for tolerance","int"

@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_temp_indi","indi_id","CDS_TEMP_INDI Temp Table.","","timestamp"
+"dbo","cds_temp_indi","bliv_id","CDS_TEMP_INDI Temp Table.","Invoice Number","char"
+"dbo","cds_temp_indi","blei_ck","CDS_TEMP_INDI Temp Table.","Billing Entity Contrived Key","int"
+"dbo","cds_temp_indi","blbl_due_dt","CDS_TEMP_INDI Temp Table.","Billing Due Date","datetime"
+"dbo","cds_temp_indi","bldi_seq_no","CDS_TEMP_INDI Temp Table.","Data Row Sequence Number","smallint"

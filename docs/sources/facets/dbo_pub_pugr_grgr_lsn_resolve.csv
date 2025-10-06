@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_pugr_grgr_lsn_resolve","pubh_lsn","Group Entity Log Sequence Number table.","Log Sequence Number","varbinary"
+"dbo","pub_pugr_grgr_lsn_resolve","pubh_key","Group Entity Log Sequence Number table.","Data Pub Key","varchar"
+"dbo","pub_pugr_grgr_lsn_resolve","pugr_tbl_mnemonic","Group Entity Log Sequence Number table.","Table mnemonic","char"

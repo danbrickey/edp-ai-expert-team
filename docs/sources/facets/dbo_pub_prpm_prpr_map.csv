@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_prpm_prpr_map","pubh_guid","Data Pub Provider Malpractice keys","Globally Unique Identifier","char"
+"dbo","pub_prpm_prpr_map","prcr_id","Data Pub Provider Malpractice keys","Credentialing ID","char"
+"dbo","pub_prpm_prpr_map","mcre_malp_id","Data Pub Provider Malpractice keys","Provider Malpractice Carrier ID","char"
+"dbo","pub_prpm_prpr_map","prpm_seq_no","Data Pub Provider Malpractice keys","Provider Malpractice Carrier Relationship Sequence Number","smallint"
+"dbo","pub_prpm_prpr_map","prpr_id","Data Pub Provider Malpractice keys","Servicing Provider","char"

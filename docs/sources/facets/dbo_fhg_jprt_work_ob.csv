@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhg_jprt_work_ob","gtgt_ckn_gtro","","","numeric"
+"dbo","fhg_jprt_work_ob","gtgt_ckn_gtrt","","","numeric"
+"dbo","fhg_jprt_work_ob","pzpz_id","","Product ID","char"
+"dbo","fhg_jprt_work_ob","pzap_app_id","","Application ID","char"
+"dbo","fhg_jprt_work_ob","gtrt_cntl_id_ib","","","varchar"
+"dbo","fhg_jprt_work_ob","gtrt_cntl_id_ob","","","varchar"
+"dbo","fhg_jprt_work_ob","jprt_sts","","","int"

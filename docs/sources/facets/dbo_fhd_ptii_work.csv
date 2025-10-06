@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhd_ptii_work","ptii_row_id","PTII Work Table","PTII Row ID","numeric"
+"dbo","fhd_ptii_work","pzpz_id","PTII Work Table","Application Product ID","char"
+"dbo","fhd_ptii_work","pzap_app_id","PTII Work Table","Product Application ID","char"
+"dbo","fhd_ptii_work","gtgt_ckn","PTII Work Table","Generic Transaction Contrived Key","numeric"
+"dbo","fhd_ptii_work","gtst_sts_curr","PTII Work Table","Current Status","int"

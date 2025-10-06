@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","temp_blac_due_dates","blei_ck","Temp Storage table","Billing Entity Contrived Key","int"
+"dbo","temp_blac_due_dates","blbl_due_dt","Temp Storage table","Billing Due Date","datetime"
+"dbo","temp_blac_due_dates","blac_je_no","Temp Storage table","Journal Entry Number","varchar"

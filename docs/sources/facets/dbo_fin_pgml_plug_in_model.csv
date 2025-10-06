@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fin_pgml_plug_in_model","pgpg_ck","Models associated to plug-ins","Row ID","numeric"
+"dbo","fin_pgml_plug_in_model","evev_id","Models associated to plug-ins","Event ID","int"
+"dbo","fin_pgml_plug_in_model","mlml_ck","Models associated to plug-ins","Row ID","numeric"
+"dbo","fin_pgml_plug_in_model","pgml_seq_no","Models associated to plug-ins","Sequence Number","int"
+"dbo","fin_pgml_plug_in_model","pgml_create_dtm","Models associated to plug-ins","Create Date","datetime"

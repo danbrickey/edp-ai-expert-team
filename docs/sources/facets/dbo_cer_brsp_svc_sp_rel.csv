@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_brsp_svc_sp_rel","brcf_id","Facets Broker Configuration for Invoke SP REST Service","Broker Configuration ID","varchar"
+"dbo","cer_brsp_svc_sp_rel","sdsp_name","Facets Broker Configuration for Invoke SP REST Service","Stored Procedure Name","varchar"
+"dbo","cer_brsp_svc_sp_rel","brsp_lock_token","Facets Broker Configuration for Invoke SP REST Service","Lock Token","smallint"
+"dbo","cer_brsp_svc_sp_rel","sys_last_upd_dtm","Facets Broker Configuration for Invoke SP REST Service","Last Update Datetime","datetime"
+"dbo","cer_brsp_svc_sp_rel","sys_usus_id","Facets Broker Configuration for Invoke SP REST Service","Last Update User ID","varchar"
+"dbo","cer_brsp_svc_sp_rel","sys_dbuser_id","Facets Broker Configuration for Invoke SP REST Service","Last Update DBMS User ID","varchar"

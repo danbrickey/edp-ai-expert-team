@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_apmd_module","apmd_id","Facets Application Modules","Module ID","char"
+"dbo","cer_apmd_module","aple_entity_entry","Facets Application Modules","Module Entry Point","char"
+"dbo","cer_apmd_module","aplb_name","Facets Application Modules","Module Library Name","varchar"
+"dbo","cer_apmd_module","apmd_module_desc","Facets Application Modules","Module Description","char"
+"dbo","cer_apmd_module","apmd_lock_token","Facets Application Modules","Lock Token","smallint"

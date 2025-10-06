@@ -1,0 +1,3 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_wfts_trans_id","wfts_trans_id","Last Transaction ID Table","Last Transaction ID","int"
+"dbo","nwx_wfts_trans_id","wfts_trans_type","Last Transaction ID Table","Transaction Type","int"

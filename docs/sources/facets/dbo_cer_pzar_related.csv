@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pzar_related","pzpz_id","Facets Related Application Definition","Application Production ID","char"
+"dbo","cer_pzar_related","pzap_app_id","Facets Related Application Definition","Product Application ID","char"
+"dbo","cer_pzar_related","pzar_entity","Facets Related Application Definition","Related Application Entity","char"
+"dbo","cer_pzar_related","pzar_app_id","Facets Related Application Definition","Related Application ID","char"
+"dbo","cer_pzar_related","sys_last_upd_dtm","Facets Related Application Definition","Last Update Datetime","datetime"
+"dbo","cer_pzar_related","sys_usus_id","Facets Related Application Definition","Last Update User ID","varchar"
+"dbo","cer_pzar_related","sys_dbuser_id","Facets Related Application Definition","Last Update DBMS User ID","varchar"

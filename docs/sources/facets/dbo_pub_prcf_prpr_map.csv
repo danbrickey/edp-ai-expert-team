@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_prcf_prpr_map","pubh_guid","Data Pub Provider Certification keys","Globally Unique Identifier","char"
+"dbo","pub_prcf_prpr_map","prcr_id","Data Pub Provider Certification keys","Credentialing ID","char"
+"dbo","pub_prcf_prpr_map","prcf_mctr_spec","Data Pub Provider Certification keys","Provider Specialty","char"
+"dbo","pub_prcf_prpr_map","prpr_id","Data Pub Provider Certification keys","Servicing Provider","char"

@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_ptfk_pub_fkey","pent_id","Publication Foreign Key table","Publication Entity ID","char"
+"dbo","cer_ptfk_pub_fkey","tbtb_id","Publication Foreign Key table","Table ID","char"
+"dbo","cer_ptfk_pub_fkey","fkey_type","Publication Foreign Key table","Foreign key type","varchar"

@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_temp_inmg","inmg_id","CDS_TEMP_INMG Temp Table.","","timestamp"
+"dbo","cds_temp_inmg","bliv_id","CDS_TEMP_INMG Temp Table.","Invoice Number","char"
+"dbo","cds_temp_inmg","pmmg_id","CDS_TEMP_INMG Temp Table.","","char"

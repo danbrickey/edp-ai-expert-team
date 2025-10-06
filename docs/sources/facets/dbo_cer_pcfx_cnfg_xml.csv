@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pcfx_cnfg_xml","pcfg_id","Configurable Panel Setup XML","Configurable Panel ID","varchar"
+"dbo","cer_pcfx_cnfg_xml","pcfx_seq_no","Configurable Panel Setup XML","Configurable Panel XML Sequence No.","smallint"
+"dbo","cer_pcfx_cnfg_xml","pcfx_data","Configurable Panel Setup XML","Configurable Panel XML Data","varchar"
+"dbo","cer_pcfx_cnfg_xml","pcfx_lock_token","Configurable Panel Setup XML","Lock Token","smallint"

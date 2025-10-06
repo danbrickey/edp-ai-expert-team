@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","er_tb_syst_msgm_message","msgq_id","System Message Table","Message Queue ID","char"
+"dbo","er_tb_syst_msgm_message","msgm_id","System Message Table","Message ID","char"
+"dbo","er_tb_syst_msgm_message","msgm_sts","System Message Table","Message Status","int"
+"dbo","er_tb_syst_msgm_message","msgm_priority","System Message Table","Priority","int"
+"dbo","er_tb_syst_msgm_message","msgm_create_dtm","System Message Table","Message Create Date/Time","datetime"
+"dbo","er_tb_syst_msgm_message","msgm_used_dtm","System Message Table","Message Usage Date/Time","datetime"
+"dbo","er_tb_syst_msgm_message","msgm_row_id","System Message Table","Message Row ID","numeric"

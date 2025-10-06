@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_wwms_warnmsg","wwms_message_id","Warning Message Table","Warning Message ID","varchar"
+"dbo","nwx_wwms_warnmsg","wmgt_msg_type","Warning Message Table","Workflow Message Type","int"
+"dbo","nwx_wwms_warnmsg","wrtr_reason_id","Warning Message Table","Routing Reason","int"
+"dbo","nwx_wwms_warnmsg","wrtr_reason_desc","Warning Message Table","Routing Reason Description","varchar"
+"dbo","nwx_wwms_warnmsg","usus_id","Warning Message Table","User Identifier","varchar"
+"dbo","nwx_wwms_warnmsg","wwms_resolved_dt","Warning Message Table","Warning Message Resolved Datetime","datetime"
+"dbo","nwx_wwms_warnmsg","wwms_resolved_ind","Warning Message Table","Warning Message Resolved Indicator","int"

@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_usin_user_t","usus_id","Individual User Definition","User Identifier","char"
+"dbo","cer_usin_user_t","usin_dept_id","Individual User Definition","Individual User Department ID","char"
+"dbo","cer_usin_user_t","usin_lock_token","Individual User Definition","Lock Token","smallint"

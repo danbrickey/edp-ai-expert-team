@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhg_gtir_refmt_x","gtgt_ckn","","Gateway Transaction Contrived Key","numeric"
+"dbo","fhg_gtir_refmt_x","gtir_trans_meth","","","char"
+"dbo","fhg_gtir_refmt_x","gtir_format_ver","","","char"
+"dbo","fhg_gtir_refmt_x","gtir_output_typ","","","char"
+"dbo","fhg_gtir_refmt_x","gtir_delimiter_pri","","","char"
+"dbo","fhg_gtir_refmt_x","gtir_delimiter_sec","","","char"
+"dbo","fhg_gtir_refmt_x","gtir_delimiter_ter","","","char"

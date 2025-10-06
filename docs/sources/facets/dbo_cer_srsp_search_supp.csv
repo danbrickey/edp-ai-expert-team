@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_srsp_search_supp","srch_id","Search Configuration Supporting Processes","Search Configuration ID","varchar"
+"dbo","cer_srsp_search_supp","srin_seq_no","Search Configuration Supporting Processes","Search Configuration Sequence No.","smallint"
+"dbo","cer_srsp_search_supp","srsp_type","Search Configuration Supporting Processes","Search Configuration Type","char"
+"dbo","cer_srsp_search_supp","srsp_seq_no","Search Configuration Supporting Processes","Search Configuration Sequence No.","smallint"
+"dbo","cer_srsp_search_supp","apmd_id","Search Configuration Supporting Processes","Search Configuration Module ID","char"
+"dbo","cer_srsp_search_supp","srsp_lock_token","Search Configuration Supporting Processes","Lock Token","smallint"

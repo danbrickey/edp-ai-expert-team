@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_prhi_prpr_map","pubh_guid","Data Pub Provider Professional History keys","Globally Unique Identifier","char"
+"dbo","pub_prhi_prpr_map","prcr_id","Data Pub Provider Professional History keys","Credentialing ID","char"
+"dbo","pub_prhi_prpr_map","prhi_from_dt","Data Pub Provider Professional History keys","Professional History From Date","datetime"
+"dbo","pub_prhi_prpr_map","prhi_seq_no","Data Pub Provider Professional History keys","Professional History Sequence Number","smallint"
+"dbo","pub_prhi_prpr_map","prpr_id","Data Pub Provider Professional History keys","Servicing Provider","char"

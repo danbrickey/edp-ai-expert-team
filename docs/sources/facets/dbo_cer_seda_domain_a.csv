@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_seda_domain_a","pzpz_id","Product Security Domains","Product ID","char"
+"dbo","cer_seda_domain_a","seda_id","Product Security Domains","Domain ID","char"
+"dbo","cer_seda_domain_a","seda_action","Product Security Domains","Security Action","char"
+"dbo","cer_seda_domain_a","seda_desc","Product Security Domains","Domain Action Description","char"
+"dbo","cer_seda_domain_a","seda_lock_token","Product Security Domains","Lock Token","smallint"

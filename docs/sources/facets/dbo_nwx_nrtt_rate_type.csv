@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_nrtt_rate_type","nrtt_rate_type_id","Provider ID Rate Type","Rate Type cross reference internal key","numeric"
+"dbo","nwx_nrtt_rate_type","nrtt_rate_type_category","Provider ID Rate Type","Rate Type Category","int"
+"dbo","nwx_nrtt_rate_type","nrtt_rate_type_name","Provider ID Rate Type","Rate Type Name","varchar"

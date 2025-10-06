@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhg_jpoe_work","jpoe_row_id","Work Table","Row ID","numeric"
+"dbo","fhg_jpoe_work","pzpz_id","Work Table","Product ID","char"
+"dbo","fhg_jpoe_work","pzap_app_id","Work Table","Application ID","char"
+"dbo","fhg_jpoe_work","gtgt_ckn","Work Table","Gateway Transaction Contrived Key","numeric"
+"dbo","fhg_jpoe_work","exsy_id_dest","Work Table","Destination External System Indicator","char"
+"dbo","fhg_jpoe_work","gtop_unit_count","Work Table","Unit Count","int"
+"dbo","fhg_jpoe_work","gtop_ec_custno","Work Table","Internal Trading Partner ID","varchar"

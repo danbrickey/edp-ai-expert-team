@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhp_ptmr_mem_reg_x","gtgt_ckn","Privacy Transaction Member Registration Table","Generic Transaction Contrived Key","numeric"
+"dbo","fhp_ptmr_mem_reg_x","ptmr_unique_id","Privacy Transaction Member Registration Table","Unique Identifier","varchar"
+"dbo","fhp_ptmr_mem_reg_x","pmed_id","Privacy Transaction Member Registration Table","Member ID","varchar"
+"dbo","fhp_ptmr_mem_reg_x","exen_rec","Privacy Transaction Member Registration Table","External Entity record ID","int"
+"dbo","fhp_ptmr_mem_reg_x","enen_cke","Privacy Transaction Member Registration Table","Entity Contrived Key","int"

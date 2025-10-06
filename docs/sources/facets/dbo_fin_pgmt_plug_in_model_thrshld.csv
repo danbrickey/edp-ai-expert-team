@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fin_pgmt_plug_in_model_thrshld","pgpg_ck","Thresholds used by the models","Row ID","numeric"
+"dbo","fin_pgmt_plug_in_model_thrshld","evev_id","Thresholds used by the models","Event ID","int"
+"dbo","fin_pgmt_plug_in_model_thrshld","mlml_ck","Thresholds used by the models","Row ID","numeric"
+"dbo","fin_pgmt_plug_in_model_thrshld","pgmt_range_low","Thresholds used by the models","High Low","decimal"
+"dbo","fin_pgmt_plug_in_model_thrshld","pgmt_range_high","Thresholds used by the models","High Range","decimal"
+"dbo","fin_pgmt_plug_in_model_thrshld","pgmt_create_dtm","Thresholds used by the models","Create Date","datetime"

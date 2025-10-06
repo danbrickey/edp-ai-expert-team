@@ -1,0 +1,3 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_pgum_purge_umum_keys","row_id","Prior Auth (UMUM) entity keys to purge.","Row Identifier","numeric"
+"dbo","pub_pgum_purge_umum_keys","pubh_guid","Prior Auth (UMUM) entity keys to purge.","PUBH_GUID","varchar"

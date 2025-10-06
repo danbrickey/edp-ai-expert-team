@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fin_biot_batch_message","syin_inst","Batch IoT Message table","System Instance","bigint"
+"dbo","fin_biot_batch_message","syin_inst_caller","Batch IoT Message table","The SYIN_INST value of the application that invokes the application producing the message.","bigint"
+"dbo","fin_biot_batch_message","biot_message_id","Batch IoT Message table","","char"
+"dbo","fin_biot_batch_message","biot_event","Batch IoT Message table","","varchar"
+"dbo","fin_biot_batch_message","biot_create_dtm","Batch IoT Message table","Create Date","datetime"

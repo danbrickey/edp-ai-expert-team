@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_ptbl_pub_table","pent_id","Publication Entity Table","Publication Entity ID","char"
+"dbo","cer_ptbl_pub_table","tbtb_id","Publication Entity Table","Publication Table ID","char"
+"dbo","cer_ptbl_pub_table","ptbl_enabled_ind","Publication Entity Table","Publication Enabled Indicator","char"
+"dbo","cer_ptbl_pub_table","ptbl_required_ind","Publication Entity Table","Publication Table Required Indicator","char"

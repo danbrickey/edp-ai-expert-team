@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_nstn_sch_table_names","nstn_table","Schedule Table Names","Base Table Name","varchar"
+"dbo","nwx_nstn_sch_table_names","nstn_type","Schedule Table Names","Type of Fee Schedule","char"
+"dbo","nwx_nstn_sch_table_names","nstn_modify_dtm","Schedule Table Names","DateTime","datetime"

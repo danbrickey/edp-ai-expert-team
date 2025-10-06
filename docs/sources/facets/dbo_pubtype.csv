@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pubtype","pubtype","","","int"
+"dbo","pubtype","description","","","varchar"
+"dbo","pubtype","updateacr","","","char"
+"dbo","pubtype","recurring","","","char"

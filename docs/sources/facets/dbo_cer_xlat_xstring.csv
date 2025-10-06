@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_xlat_xstring","xlat_source","Text String Source Table","Text String Source","varchar"
+"dbo","cer_xlat_xstring","xlat_idx","Text String Source Table","Text String Index","int"
+"dbo","cer_xlat_xstring","xmsg_id","Text String Source Table","Text String ID","varchar"
+"dbo","cer_xlat_xstring","xlat_type","Text String Source Table","Text String Type","char"
+"dbo","cer_xlat_xstring","sys_last_upd_dtm","Text String Source Table","Last Update Datetime","datetime"
+"dbo","cer_xlat_xstring","sys_usus_id","Text String Source Table","Last Update User ID","varchar"
+"dbo","cer_xlat_xstring","sys_dbuser_id","Text String Source Table","Last Update DBMS User ID","varchar"

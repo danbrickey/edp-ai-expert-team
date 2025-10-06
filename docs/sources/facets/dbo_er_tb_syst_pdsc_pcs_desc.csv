@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","er_tb_syst_pdsc_pcs_desc","pitm_ticket_no","Process Description Table","Ticket Number","char"
+"dbo","er_tb_syst_pdsc_pcs_desc","pdsc_seq_no","Process Description Table","Sequence Number","int"
+"dbo","er_tb_syst_pdsc_pcs_desc","pdsc_type","Process Description Table","Description Type","char"
+"dbo","er_tb_syst_pdsc_pcs_desc","pdsc_label","Process Description Table","Label","varchar"
+"dbo","er_tb_syst_pdsc_pcs_desc","pdsc_value","Process Description Table","Value","varchar"

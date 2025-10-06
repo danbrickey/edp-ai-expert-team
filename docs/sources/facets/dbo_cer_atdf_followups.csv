@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_atdf_followups","atld_id","Followup Letters Table","Document ID","char"
+"dbo","cer_atdf_followups","atlt_followup_ctr","Followup Letters Table","Followup Sequence Number","smallint"
+"dbo","cer_atdf_followups","atdf_phys_doc_name","Followup Letters Table","Followup Document ID","char"
+"dbo","cer_atdf_followups","atdf_followup_days","Followup Letters Table","Followup Interval","smallint"
+"dbo","cer_atdf_followups","atdf_desc","Followup Letters Table","Followup Document Description","char"
+"dbo","cer_atdf_followups","atdf_lock_token","Followup Letters Table","Lock Token","smallint"

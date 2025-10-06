@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_prsn_prpr_map","pubh_guid","Data Pub Provider Sanction keys","Globally Unique Identifier","char"
+"dbo","pub_prsn_prpr_map","prcr_id","Data Pub Provider Sanction keys","Credentialing ID","char"
+"dbo","pub_prsn_prpr_map","prsn_seq_no","Data Pub Provider Sanction keys","Provider Sanction Sequence Number","smallint"
+"dbo","pub_prsn_prpr_map","prpr_id","Data Pub Provider Sanction keys","Servicing Provider","char"

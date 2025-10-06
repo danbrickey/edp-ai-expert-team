@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pubstate","entityname","","","char"
+"dbo","pubstate","pubstate","","","int"
+"dbo","pubstate","pubcount","","","int"

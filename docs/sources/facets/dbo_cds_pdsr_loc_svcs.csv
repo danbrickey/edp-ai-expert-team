@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_pdsr_loc_svcs","syin_inst","Location Services Table for Provider Directories","Instance ID","bigint"
+"dbo","cds_pdsr_loc_svcs","prpr_id","Location Services Table for Provider Directories","Provider Identifier","char"
+"dbo","cds_pdsr_loc_svcs","prad_id","Location Services Table for Provider Directories","Provider Address Identifier","char"
+"dbo","cds_pdsr_loc_svcs","prad_type","Location Services Table for Provider Directories","Provider Address Type","char"
+"dbo","cds_pdsr_loc_svcs","prad_eff_dt","Location Services Table for Provider Directories","Provider Address Type Effective Date","datetime"
+"dbo","cds_pdsr_loc_svcs","prsr_mctr_svcs","Location Services Table for Provider Directories","Provider Location Services","char"
+"dbo","cds_pdsr_loc_svcs","prsr_svcs_desc","Location Services Table for Provider Directories","Provider Location Services Description","char"

@@ -1,0 +1,3 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","temp_grhq_groups","grgr_ck","Temp Storage table","Group Address Line 1","int"
+"dbo","temp_grhq_groups","gr_weight","Temp Storage table","","int"

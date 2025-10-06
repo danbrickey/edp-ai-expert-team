@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_wurc_role_cnt","usus_id","User Role count table","User Identifier","varchar"
+"dbo","nwx_wurc_role_cnt","wurc_timesheet_dtm","User Role count table","Datetime","datetime"
+"dbo","nwx_wurc_role_cnt","wrol_role_id","User Role count table","Workflow Role ID","int"
+"dbo","nwx_wurc_role_cnt","wurc_count","User Role count table","Count","int"
+"dbo","nwx_wurc_role_cnt","wurc_total_min","User Role count table","Minutes Worked","numeric"
+"dbo","nwx_wurc_role_cnt","wurc_seq_no","User Role count table","Sequence Number","int"
+"dbo","nwx_wurc_role_cnt","wurc_act_ind","User Role count table","Active Indicator","int"

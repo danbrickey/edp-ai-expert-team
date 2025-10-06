@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","qrtz_cron_triggers","trigger_name","","","varchar"
+"dbo","qrtz_cron_triggers","trigger_group","","","varchar"
+"dbo","qrtz_cron_triggers","cron_expression","","","varchar"
+"dbo","qrtz_cron_triggers","time_zone_id","","","varchar"

@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fin_mlml_model","mlml_ck","Insights Model Configuration","Row ID","numeric"
+"dbo","fin_mlml_model","mlml_desc","Insights Model Configuration","Description","varchar"
+"dbo","fin_mlml_model","mlml_end_point","Insights Model Configuration","End Point","varchar"
+"dbo","fin_mlml_model","mlml_is_ots","Insights Model Configuration","","bit"
+"dbo","fin_mlml_model","mlml_create_dtm","Insights Model Configuration","Create Date","datetime"

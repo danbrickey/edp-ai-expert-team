@@ -1,0 +1,3 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_pgac_purge_acum_keys","row_id","Accumulator entity keys to purge.","Row Identifier","numeric"
+"dbo","pub_pgac_purge_acum_keys","pubh_guid","Accumulator entity keys to purge.","Globally Unique Identifier","varchar"

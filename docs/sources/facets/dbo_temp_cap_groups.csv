@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","temp_cap_groups","grgr_ck","Temp Storage table","Group Address Line 1","int"
+"dbo","temp_cap_groups","gr_weight","Temp Storage table","","int"
+"dbo","temp_cap_groups","meme_ck_low","Temp Storage table","Birth Date","int"
+"dbo","temp_cap_groups","meme_ck_high","Temp Storage table","Birth Date","int"

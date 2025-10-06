@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fin_mlmd_ml_model","mlmd_id","Insights Models","Model ID","numeric"
+"dbo","fin_mlmd_ml_model","mlmd_name","Insights Models","Model Name","varchar"
+"dbo","fin_mlmd_ml_model","mlmd_type","Insights Models","Model Type","char"
+"dbo","fin_mlmd_ml_model","mlmd_create_dtm","Insights Models","Model Create Datetime","datetime"

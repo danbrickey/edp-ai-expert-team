@@ -1,0 +1,3 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pijs_job_set","pijs_job_name","Submission Services Job Requests","Job Name","varchar"
+"dbo","cer_pijs_job_set","pitm_selection_id","Submission Services Job Requests","Selection ID","varchar"

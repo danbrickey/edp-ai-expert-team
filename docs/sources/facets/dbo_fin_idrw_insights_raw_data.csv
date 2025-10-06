@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fin_idrw_insights_raw_data","inds_id","Insights Training Data","Dataset ID","numeric"
+"dbo","fin_idrw_insights_raw_data","idrw_no","Insights Training Data","Raw Data Row Number","int"
+"dbo","fin_idrw_insights_raw_data","idrw_data","Insights Training Data","Raw Data","nvarchar"
+"dbo","fin_idrw_insights_raw_data","idrw_data_bin","Insights Training Data","Binary Raw Data","varbinary"
+"dbo","fin_idrw_insights_raw_data","idrw_create_dtm","Insights Training Data","Raw Data Create Datetime","datetime"

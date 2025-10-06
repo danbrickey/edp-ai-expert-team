@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_wmgt_msg_type","wmgt_msg_type","Workflow Message Type table","Workflow Message Type","int"
+"dbo","nwx_wmgt_msg_type","wmgt_desc","Workflow Message Type table","Message Type Description","varchar"
+"dbo","nwx_wmgt_msg_type","wmgt_qual_cls_name","Workflow Message Type table","Bean Class Name","varchar"
+"dbo","nwx_wmgt_msg_type","wpzp_app_name","Workflow Message Type table","Not currently used","varchar"

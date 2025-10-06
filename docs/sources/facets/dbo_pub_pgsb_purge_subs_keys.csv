@@ -1,0 +1,3 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_pgsb_purge_subs_keys","row_id","Subscribers entity keys to purge","Row Identifier","numeric"
+"dbo","pub_pgsb_purge_subs_keys","pubh_guid","Subscribers entity keys to purge","Globally Unique Identifier","varchar"

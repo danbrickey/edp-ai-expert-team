@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pcfe_entry","pcfg_id","Panel Configuration Entries","Panel Configuration ID","varchar"
+"dbo","cer_pcfe_entry","pcfe_type","Panel Configuration Entries","Panel Type","char"
+"dbo","cer_pcfe_entry","pcfe_seq_no","Panel Configuration Entries","Panel Configuration Sequence No.","smallint"
+"dbo","cer_pcfe_entry","apmd_id","Panel Configuration Entries","Module ID","char"
+"dbo","cer_pcfe_entry","pcfe_lock_token","Panel Configuration Entries","Lock Token","smallint"

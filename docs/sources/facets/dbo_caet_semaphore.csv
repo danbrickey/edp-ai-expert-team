@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","caet_semaphore","name","Data Publication Manager Table","","varchar"
+"dbo","caet_semaphore","idlrun","Data Publication Manager Table","","int"
+"dbo","caet_semaphore","pubstartdate","Data Publication Manager Table","","datetime"

@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pent_pub_entity","pent_id","Publication Entity Table","Publication Entity ID","char"
+"dbo","cer_pent_pub_entity","pent_desc","Publication Entity Table","Publication Entity Description","varchar"
+"dbo","cer_pent_pub_entity","pent_enabled_ind","Publication Entity Table","Publication Entity Indicator","char"

@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_prcp_prpr_map","pubh_guid","Data Pub Common Practitioner keys.","Globally Unique Identifier","char"
+"dbo","pub_prcp_prpr_map","prcp_id","Data Pub Common Practitioner keys.","Common Practitioner ID","char"
+"dbo","pub_prcp_prpr_map","prpr_id","Data Pub Common Practitioner keys.","Servicing Provider","char"

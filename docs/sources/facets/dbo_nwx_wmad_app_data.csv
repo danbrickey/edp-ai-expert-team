@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_wmad_app_data","wqms_message_id","Claim XML Table","Workflow Message ID","varchar"
+"dbo","nwx_wmad_app_data","wmgt_msg_type","Claim XML Table","Workflow Message Type","int"
+"dbo","nwx_wmad_app_data","wmad_seq_no","Claim XML Table","Sequence Number","int"
+"dbo","nwx_wmad_app_data","wmad_app_data_segment","Claim XML Table","Claim XML","varchar"

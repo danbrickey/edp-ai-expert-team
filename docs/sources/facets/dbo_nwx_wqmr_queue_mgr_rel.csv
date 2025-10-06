@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_wqmr_queue_mgr_rel","wqdf_queue_id","Workflow Queue/Manager Relationship","Queue Contrived Key","int"
+"dbo","nwx_wqmr_queue_mgr_rel","wqmr_manager_id","Workflow Queue/Manager Relationship","Queue Manager","char"
+"dbo","nwx_wqmr_queue_mgr_rel","wqmr_lock_token","Workflow Queue/Manager Relationship","Lock Token","smallint"
+"dbo","nwx_wqmr_queue_mgr_rel","atxr_source_id","Workflow Queue/Manager Relationship","Attachment Source Id","datetime"

@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_trrt_trans_nego_type","ratesheetcode","Negotiated Type by Rate Sheet terms","Rate Sheet Code","varchar"
+"dbo","nwx_trrt_trans_nego_type","ratesheettermid","Negotiated Type by Rate Sheet terms","Rate Sheet Term ID","int"
+"dbo","nwx_trrt_trans_nego_type","todate","Negotiated Type by Rate Sheet terms","Rate Sheet Term Termination Date","datetime"
+"dbo","nwx_trrt_trans_nego_type","calcbean","Negotiated Type by Rate Sheet terms","Calculation Bean","varchar"
+"dbo","nwx_trrt_trans_nego_type","negotiatedtype","Negotiated Type by Rate Sheet terms","Negotiated Type","varchar"

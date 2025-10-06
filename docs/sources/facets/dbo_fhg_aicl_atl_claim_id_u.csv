@@ -1,0 +1,62 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhg_aicl_atl_claim_id_u","clcl_id","","Accident/Emergency Illness Amount","char"
+"dbo","fhg_aicl_atl_claim_id_u","intl_cntl_id","","","varchar"
+"dbo","fhg_aicl_atl_claim_id_u","aicl_sts","","Internal Claim Control Number Update Status	smallint
+dbo	fhg_aicl_atl_claim_id_u	syin_inst	 	System Instance	bigint
+dbo	fhg_aicl_atl_claim_id_u	aicl_last_usus_id	 	 	char
+dbo	fhg_aicl_atl_claim_id_u	aicl_last_upd_dtm	 	 	datetime
+dbo	fhg_aicl_atl_claim_id_u	aicl_lock_token	 	Lock Token	smallint
+dbo	fhg_aicl_atl_claim_id_u	atxr_source_id	 	Attachment Source Id	datetime
+dbo	fhg_bttr_btyp_tr_d	pzpz_id	Business Type Translation	Product ID	char
+dbo	fhg_bttr_btyp_tr_d	bttr_pzcd_vtyp	Business Type Translation	 	char
+dbo	fhg_bttr_btyp_tr_d	bttr_value	Business Type Translation	Value	char
+dbo	fhg_bttr_btyp_tr_d	gtgt_pzcd_btyp	Business Type Translation	Business Transaction Type	char
+dbo	fhg_bttr_btyp_tr_d	hdoc_type	Business Type Translation	Document Type	varchar
+dbo	fhg_bttr_btyp_tr_d	bttr_reserved	Business Type Translation	Reserved for Future Use	char
+dbo	fhg_bttr_btyp_tr_d	bttr_last_usus_id	Business Type Translation	Last Update User	char
+dbo	fhg_bttr_btyp_tr_d	bttr_last_upd_dtm	Business Type Translation	Last Update Date Time	datetime
+dbo	fhg_bttr_btyp_tr_d	bttr_lock_token	Business Type Translation	Lock Token	smallint
+dbo	fhg_bttr_btyp_tr_d	atxr_source_id	Business Type Translation	Attachment Source Id	datetime
+dbo	fhg_doar_work	dohd_ckn	Gateway Purge Batch Work Table	Document Contrived Key	numeric
+dbo	fhg_doar_work	category	Gateway Purge Batch Work Table	HIPAA Gateway Category	char
+dbo	fhg_doar_work	xgss_seq_nol	Gateway Purge Batch Work Table	GS/GE Sequence Number	int
+dbo	fhg_doar_work	syin_inst	Gateway Purge Batch Work Table	System Instance	bigint
+dbo	fhg_edtd_edi_detail_claim	edtx_ckn	 	 	numeric
+dbo	fhg_edtd_edi_detail_claim	edtd_seq_nol	 	 	int
+dbo	fhg_edtd_edi_detail_claim	edtd_st_seq_no	 	 	smallint
+dbo	fhg_edtd_edi_detail_claim	edtd_hl_seq_no	 	 	smallint
+dbo	fhg_edtd_edi_detail_claim	gtgt_ckn	 	Gateway Transaction Contrived Key	numeric
+dbo	fhg_edtd_edi_detail_claim	edtd_last_usus_id	 	 	char
+dbo	fhg_edtd_edi_detail_claim	edtd_last_upd_dtm	 	 	datetime
+dbo	fhg_edtd_edi_detail_claim	edtd_lock_token	 	Lock Token	smallint
+dbo	fhg_edtd_edi_detail_claim	atxr_source_id	 	Attachment Source Id	datetime
+dbo	fhg_edtx_edi_structure	edtx_ckn	 	 	numeric
+dbo	fhg_edtx_edi_structure	edtx_status	 	 	smallint
+dbo	fhg_edtx_edi_structure	edtx_last_usus_id	 	 	char
+dbo	fhg_edtx_edi_structure	edtx_last_upd_dtm	 	 	datetime
+dbo	fhg_edtx_edi_structure	edtx_lock_token	 	Lock Token	smallint
+dbo	fhg_edtx_edi_structure	atxr_source_id	 	Attachment Source Id	datetime
+dbo	fhg_exsm_med_con_a	exsy_id	External System Media Connections Table	External System ID	char
+dbo	fhg_exsm_med_con_a	exsm_pzcd_type	External System Media Connections Table	Type	char
+dbo	fhg_exsm_med_con_a	gtgt_pzcd_btyp	External System Media Connections Table	Transaction Type	char
+dbo	fhg_exsm_med_con_a	exsm_pzcd_mtyp	External System Media Connections Table	Media Type (Queue or Directory)	char
+dbo	fhg_exsm_med_con_a	exsm_media_info1	External System Media Connections Table	Location/connection information	varchar
+dbo	fhg_exsm_med_con_a	exsm_media_info2	External System Media Connections Table	Location/connection information	varchar
+dbo	fhg_exsm_med_con_a	exsm_media_info3	External System Media Connections Table	Location/connection information	varchar
+dbo	fhg_exsm_med_con_a	exsm_media_info4	External System Media Connections Table	Location/connection information	varchar
+dbo	fhg_exsm_med_con_a	exsm_reserved	External System Media Connections Table	Reserved for future use	char
+dbo	fhg_exsm_med_con_a	exsm_last_usus_id	External System Media Connections Table	Last update user identifier	char
+dbo	fhg_exsm_med_con_a	exsm_last_upd_dtm	External System Media Connections Table	Last update date and time	datetime
+dbo	fhg_exsm_med_con_a	exsm_lock_token	External System Media Connections Table	Lock Token	smallint
+dbo	fhg_exsm_med_con_a	atxr_source_id	External System Media Connections Table	Attachment Source Id	datetime
+dbo	fhg_exvt_trans_u	exsy_pzcd_type	External Valid Trasaction Table	Processing Type	char
+dbo	fhg_exvt_trans_u	exvt_pzcd_type	External Valid Trasaction Table	Processing Type	char
+dbo	fhg_exvt_trans_u	gtgt_pzcd_btyp	External Valid Trasaction Table	Business Transaction Type	char
+dbo	fhg_exvt_trans_u	exvt_reserved	External Valid Trasaction Table	Reserved for Future Use	char
+dbo	fhg_exvt_trans_u	exvt_last_usus_id	External Valid Trasaction Table	Last Update User	char
+dbo	fhg_exvt_trans_u	exvt_last_upd_dtm	External Valid Trasaction Table	Last Update Date Time	datetime
+dbo	fhg_exvt_trans_u	exvt_lock_token	External Valid Trasaction Table	Lock Token	smallint
+dbo	fhg_exvt_trans_u	atxr_source_id	External Valid Trasaction Table	Attachment Source Id	datetime
+dbo	fhg_gcak_277ca_work	gcak_bht03_trn	 	Claim transaction batch number submitted in the BHT03 of the 837	varchar
+dbo	fhg_gcak_277ca_work	gcak_clm01_trn	 	PatientControl Number submitted in the CLM01 of the 837	varchar
+dbo	fhg_gcak_277ca_work	gtgt_ckn	 	Gateway Transaction Contrived Key","numeric"

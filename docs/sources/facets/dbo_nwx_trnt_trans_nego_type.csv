@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_trnt_trans_nego_type","calcbean","Transparency Data-Negotiated Type","Calculation Bean","varchar"
+"dbo","nwx_trnt_trans_nego_type","negotiatedtype","Transparency Data-Negotiated Type","Negotiated Type","varchar"
+"dbo","nwx_trnt_trans_nego_type","active","Transparency Data-Negotiated Type","Active Flag","char"

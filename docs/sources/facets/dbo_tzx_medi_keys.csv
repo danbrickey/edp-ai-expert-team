@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","tzx_medi_keys","medi_row_id","Accumulator keys table.","Row Identifier","numeric"
+"dbo","tzx_medi_keys","meme_ck","Accumulator keys table.","Member Contrived Key","int"
+"dbo","tzx_medi_keys","pdpd_acc_sfx","Accumulator keys table.","Product Accumulator Suffix","char"
+"dbo","tzx_medi_keys","medi_ben_beg_dt","Accumulator keys table.","Benefit Period Begin Date","datetime"

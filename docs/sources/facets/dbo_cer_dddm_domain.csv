@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_dddm_domain","dddm_domain_cd","Data Dictionary Domain table. ","Domain Code","varchar"
+"dbo","cer_dddm_domain","dddm_description","Data Dictionary Domain table. ","Domain Description","varchar"
+"dbo","cer_dddm_domain","dddm_domain","Data Dictionary Domain table. ","Domain Name","char"
+"dbo","cer_dddm_domain","dddm_create_dtm","Data Dictionary Domain table. ","Create Date","datetime"
+"dbo","cer_dddm_domain","dddm_last_upd_dtm","Data Dictionary Domain table. ","Last Update Date","datetime"
+"dbo","cer_dddm_domain","dddm_lst_usus_id","Data Dictionary Domain table. ","User ID","varchar"

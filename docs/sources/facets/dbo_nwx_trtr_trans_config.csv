@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_trtr_trans_config","ratesheetcode","Configuration specific for the Transparency Run.","Rate Sheet Code","varchar"
+"dbo","nwx_trtr_trans_config","config_parameter","Configuration specific for the Transparency Run.","Config parameter","varchar"
+"dbo","nwx_trtr_trans_config","contractcode","Configuration specific for the Transparency Run.","Contract Code","varchar"
+"dbo","nwx_trtr_trans_config","configparam","Configuration specific for the Transparency Run.","Config parameter","varchar"
+"dbo","nwx_trtr_trans_config","config_parm_value","Configuration specific for the Transparency Run.","Config parameter value","varchar"
+"dbo","nwx_trtr_trans_config","configparmvalue","Configuration specific for the Transparency Run.","Config parameter value","varchar"
+"dbo","nwx_trtr_trans_config","creationdate","Configuration specific for the Transparency Run.","Creation Date","datetime"

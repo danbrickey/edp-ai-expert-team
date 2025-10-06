@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_sdbd_svc_binding","sdsd_name","Service Binding Protocol","Service Name","varchar"
+"dbo","cer_sdbd_svc_binding","sdbd_binding","Service Binding Protocol","Binding protocol","char"
+"dbo","cer_sdbd_svc_binding","sdbd_lock_token","Service Binding Protocol","Lock Token","smallint"
+"dbo","cer_sdbd_svc_binding","atxr_source_id","Service Binding Protocol","Attachment Source Id","datetime"

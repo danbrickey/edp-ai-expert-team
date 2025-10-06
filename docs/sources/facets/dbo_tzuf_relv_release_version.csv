@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","tzuf_relv_release_version","relv_row_num","Upgrade Framework Release Version table","Row ID","numeric"
+"dbo","tzuf_relv_release_version","relu_release_number","Upgrade Framework Release Version table","Release Number","varchar"
+"dbo","tzuf_relv_release_version","relv_create_dtm","Upgrade Framework Release Version table","Create Date","datetime"
+"dbo","tzuf_relv_release_version","sys_last_upd_dtm","Upgrade Framework Release Version table","Last Update Datetime","datetime"
+"dbo","tzuf_relv_release_version","sys_usus_id","Upgrade Framework Release Version table","Last Update User ID","varchar"
+"dbo","tzuf_relv_release_version","sys_dbuser_id","Upgrade Framework Release Version table","Last Update DBMS User ID","varchar"

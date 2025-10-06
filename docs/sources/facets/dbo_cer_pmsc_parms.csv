@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pmsc_parms","scsc_section_id","Product Parameters Definition","Section ID","char"
+"dbo","cer_pmsc_parms","pmsc_parm_id","Product Parameters Definition","Parameter ID","char"
+"dbo","cer_pmsc_parms","pmsc_parm_desc","Product Parameters Definition","Parameter Description","char"
+"dbo","cer_pmsc_parms","pmsc_disp_seq_no","Product Parameters Definition","Parameter Display Sequence No.","smallint"
+"dbo","cer_pmsc_parms","pmsc_data_type","Product Parameters Definition","Parameter Data Type","char"
+"dbo","cer_pmsc_parms","pmsc_lock_token","Product Parameters Definition","Lock Token","smallint"
+"dbo","cer_pmsc_parms","atxr_source_id","Product Parameters Definition","Attachment Source Id","datetime"

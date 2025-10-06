@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_pusr_sbsb_lsn_resolve","pubh_lsn","Subscriber Entity Log Sequence Number table.","Log Sequence Number","varbinary"
+"dbo","pub_pusr_sbsb_lsn_resolve","pubh_key","Subscriber Entity Log Sequence Number table.","Data Pub Key","varchar"
+"dbo","pub_pusr_sbsb_lsn_resolve","pusr_tbl_mnemonic","Subscriber Entity Log Sequence Number table.","Table mnemonic","char"

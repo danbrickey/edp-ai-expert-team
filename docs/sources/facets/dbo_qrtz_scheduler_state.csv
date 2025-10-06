@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","qrtz_scheduler_state","instance_name","","","varchar"
+"dbo","qrtz_scheduler_state","last_checkin_time","","","bigint"
+"dbo","qrtz_scheduler_state","checkin_interval","","","bigint"
+"dbo","qrtz_scheduler_state","recoverer","","","varchar"

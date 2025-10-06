@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_puhr_header_run","pubh_topic","Data Publishing State Statistics","Kafka Topic","varchar"
+"dbo","pub_puhr_header_run","pubh_status","Data Publishing State Statistics","PUBH_STATUS","varchar"
+"dbo","pub_puhr_header_run","rows_count","Data Publishing State Statistics","Row count","int"
+"dbo","pub_puhr_header_run","run_date","Data Publishing State Statistics","Runtime Date","datetime"

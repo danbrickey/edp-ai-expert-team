@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_coen_comp_ent","syco_id","System Component Entity Definition","Component Entity Component ID","char"
+"dbo","cer_coen_comp_ent","cetd_type","System Component Entity Definition","Component Entity Requested Data Type","varchar"
+"dbo","cer_coen_comp_ent","coen_type_occur","System Component Entity Definition","Component Entity Type Occurance","smallint"
+"dbo","cer_coen_comp_ent","coen_seq_no","System Component Entity Definition","Component Entity Sequence Number","smallint"
+"dbo","cer_coen_comp_ent","coen_value","System Component Entity Definition","Component Entity Value","varchar"
+"dbo","cer_coen_comp_ent","coen_lock_token","System Component Entity Definition","Lock Token","smallint"

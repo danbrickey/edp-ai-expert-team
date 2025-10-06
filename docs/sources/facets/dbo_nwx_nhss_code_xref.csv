@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_nhss_code_xref","nhss_ret_code","HSS Explanation/Message Cross Reference Table","Return Code","varchar"
+"dbo","nwx_nhss_code_xref","nhss_excd_id","HSS Explanation/Message Cross Reference Table","Explanation Code","char"
+"dbo","nwx_nhss_code_xref","nhss_wmds_nmbr","HSS Explanation/Message Cross Reference Table","Warning Message Number","smallint"

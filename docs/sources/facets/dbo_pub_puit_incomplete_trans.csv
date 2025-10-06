@@ -1,0 +1,3 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_puit_incomplete_trans","pubh_guid","Incomplete Transaction IDs","Globally Unique Identifier","char"
+"dbo","pub_puit_incomplete_trans","puit_create_dtm","Incomplete Transaction IDs","Create date","datetime"

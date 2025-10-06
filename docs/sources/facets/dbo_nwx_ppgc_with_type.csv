@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_ppgc_with_type","ppgc_wth_type_id","NetworX Withhold Types","Unique Identifier","numeric"
+"dbo","nwx_ppgc_with_type","ppgc_with_type_code","NetworX Withhold Types","Post Processing Withhold Type Code","varchar"
+"dbo","nwx_ppgc_with_type","ppgc_wth_type_desc","NetworX Withhold Types","Post Processing Withhold Type Description","varchar"

@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_cetd_type_def","cetd_type","System Component Entity Type Definition","Component Definition Type","varchar"
+"dbo","cer_cetd_type_def","cetd_desc","System Component Entity Type Definition","Component Entity Type Description","varchar"
+"dbo","cer_cetd_type_def","cetd_data_shape","System Component Entity Type Definition","Component Entity Data Shape","varchar"
+"dbo","cer_cetd_type_def","cetd_occurs_max","System Component Entity Type Definition","Component Type Data Occurance Counter","smallint"
+"dbo","cer_cetd_type_def","cetd_lock_token","System Component Entity Type Definition","Lock Token","smallint"

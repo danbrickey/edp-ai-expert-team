@@ -1,0 +1,2 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_odum_on_demand_umum","umum_ref_id","Pub On Demand table for Prior Auth.","Reference ID","char"

@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fin_eval_evaluator","eval_ck","Insights Evaluator Configuration","Row ID","numeric"
+"dbo","fin_eval_evaluator","eval_desc","Insights Evaluator Configuration","Description","varchar"
+"dbo","fin_eval_evaluator","eval_end_point","Insights Evaluator Configuration","End Point","varchar"
+"dbo","fin_eval_evaluator","eval_is_ots","Insights Evaluator Configuration","","bit"
+"dbo","fin_eval_evaluator","eval_create_dtm","Insights Evaluator Configuration","Create Date","datetime"

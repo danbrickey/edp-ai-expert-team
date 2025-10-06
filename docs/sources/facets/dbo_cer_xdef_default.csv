@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_xdef_default","xmsg_id","Text String Default Text","Text string ID","varchar"
+"dbo","cer_xdef_default","xdef_seq_no","Text String Default Text","Text string default sequence number","int"
+"dbo","cer_xdef_default","xdef_text","Text String Default Text","Text string default text","varchar"

@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pzmg_menu_grp","pzpz_id","Product Navigation Menu Group Definition","Menu App. Group Product ID","char"
+"dbo","cer_pzmg_menu_grp","pzmn_menu_id","Product Navigation Menu Group Definition","Menu App. Group Menu ID","char"
+"dbo","cer_pzmg_menu_grp","pzmg_menu_grp_id","Product Navigation Menu Group Definition","Menu App. Group ID","char"
+"dbo","cer_pzmg_menu_grp","pzmg_bitmap","Product Navigation Menu Group Definition","Menu App. Group Bitmap","char"
+"dbo","cer_pzmg_menu_grp","pzmg_disp_label","Product Navigation Menu Group Definition","Menu App. Group Text","char"
+"dbo","cer_pzmg_menu_grp","pzmg_desc","Product Navigation Menu Group Definition","Menu App. Group Description","char"
+"dbo","cer_pzmg_menu_grp","pzmg_lock_token","Product Navigation Menu Group Definition","Lock Token","smallint"

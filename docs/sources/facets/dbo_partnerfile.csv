@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","partnerfile","partnerid","","","varchar"
+"dbo","partnerfile","filename","","","varchar"
+"dbo","partnerfile","recordcount","","","int"
+"dbo","partnerfile","senddtm","","","datetime"
+"dbo","partnerfile","receivedtm","","","datetime"

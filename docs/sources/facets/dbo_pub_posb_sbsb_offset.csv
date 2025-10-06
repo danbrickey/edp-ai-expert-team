@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","pub_posb_sbsb_offset","sbsb_ck","Subscriber Last Offset Location","Subscriber Contrived Key","int"
+"dbo","pub_posb_sbsb_offset","sys_last_offset_nvl","Subscriber Last Offset Location","Last Offset Location","varchar"
+"dbo","pub_posb_sbsb_offset","posb_last_update_dtm","Subscriber Last Offset Location","Last modified Date/Time","datetime"
+"dbo","pub_posb_sbsb_offset","posb_last_report_dtm","Subscriber Last Offset Location","Last Report Date/Time","datetime"
