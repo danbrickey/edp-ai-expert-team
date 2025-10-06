@@ -1,7 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_prqa_prpr_map","pubh_guid","Data Pub Provider Quality Assurance keys.","Globally Unique Identifier","char"
-"dbo","pub_prqa_prpr_map","prcr_id","Data Pub Provider Quality Assurance keys.","Credentialing ID","char"
-"dbo","pub_prqa_prpr_map","prqa_mctr_type","Data Pub Provider Quality Assurance keys.","Provider Quality Assurance Type","char"
-"dbo","pub_prqa_prpr_map","prqa_mctr_item","Data Pub Provider Quality Assurance keys.","Provider Quality Assurance Item","char"
-"dbo","pub_prqa_prpr_map","prqa_last_ver_dt","Data Pub Provider Quality Assurance keys.","Provider Quality Assurance Last Date Verification Requested","datetime"
-"dbo","pub_prqa_prpr_map","prpr_id","Data Pub Provider Quality Assurance keys.","Servicing Provider","char"

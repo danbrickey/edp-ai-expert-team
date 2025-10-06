@@ -1,6 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","fin_hrpf_hosp_readm_perf","mdin_id","Hospital Readmission Model Performance","Model Instance ID","numeric"
-"dbo","fin_hrpf_hosp_readm_perf","hrpf_dt","Hospital Readmission Model Performance","Hospital Readmission Metrics Date","date"
-"dbo","fin_hrpf_hosp_readm_perf","hrpf_metrics","Hospital Readmission Model Performance","Hospital Readmission Performance Metrics","nvarchar"
-"dbo","fin_hrpf_hosp_readm_perf","hrpf_last_update_dtm","Hospital Readmission Model Performance","Hospital Readmission Metrics Last Updated Datetime","datetime"
-"dbo","fin_hrpf_hosp_readm_perf","hrpf_create_dtm","Hospital Readmission Model Performance","Hospital ReadmissionPerformance Metrics","datetime"

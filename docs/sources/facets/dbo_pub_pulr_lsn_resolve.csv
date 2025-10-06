@@ -1,4 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_pulr_lsn_resolve","pubh_lsn","Data Pub Log Sequence Number table","Log Sequence Number","varbinary"
-"dbo","pub_pulr_lsn_resolve","pubh_key","Data Pub Log Sequence Number table","Data Pub Key","varchar"
-"dbo","pub_pulr_lsn_resolve","tbl_mnemonic","Data Pub Log Sequence Number table","Table mnemonic","char"

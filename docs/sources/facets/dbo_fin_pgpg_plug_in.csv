@@ -1,6 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","fin_pgpg_plug_in","pgpg_ck","Insights Agent Plug-in Configuration","Row ID","numeric"
-"dbo","fin_pgpg_plug_in","pgpg_label","Insights Agent Plug-in Configuration","Label","varchar"
-"dbo","fin_pgpg_plug_in","pgpg_desc","Insights Agent Plug-in Configuration","Description","varchar"
-"dbo","fin_pgpg_plug_in","pgpg_end_point","Insights Agent Plug-in Configuration","End Point","varchar"
-"dbo","fin_pgpg_plug_in","pgpg_create_dtm","Insights Agent Plug-in Configuration","Create Date","datetime"

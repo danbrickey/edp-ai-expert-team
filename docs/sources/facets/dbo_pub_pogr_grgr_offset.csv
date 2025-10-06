@@ -1,5 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_pogr_grgr_offset","grgr_ck","Group Last Offset Location","Group Contrived Key","int"
-"dbo","pub_pogr_grgr_offset","sys_last_offset_nvl","Group Last Offset Location","Last Offset Location","varchar"
-"dbo","pub_pogr_grgr_offset","pogr_last_update_dtm","Group Last Offset Location","Last modified Date/Time","datetime"
-"dbo","pub_pogr_grgr_offset","pogr_last_report_dtm","Group Last Offset Location","Last Report Date/Time","datetime"

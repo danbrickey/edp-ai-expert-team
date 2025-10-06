@@ -1,5 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_puqu_pub_que","pubh_guid","Data Publishing Work Queue Table","Globally Unique Identifier","char"
-"dbo","pub_puqu_pub_que","pubh_row_id","Data Publishing Work Queue Table","Row Identifier","bigint"
-"dbo","pub_puqu_pub_que","pubh_key","Data Publishing Work Queue Table","Data Pub Key","varchar"
-"dbo","pub_puqu_pub_que","puqu_thread_id","Data Publishing Work Queue Table","Thread Identifier","int"

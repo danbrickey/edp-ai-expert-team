@@ -1,4 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","temp_bliv","bliv_id","Temp Storage table","Invoice Number","varchar"
-"dbo","temp_bliv","blei_ck","Temp Storage table","Billing Entity Contrived Key","int"
-"dbo","temp_bliv","blbl_due_dt","Temp Storage table","Billing Due Date","datetime"

@@ -1,7 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_prre_prpr_map","pubh_guid","Data Pub Provider Entity Relationship keys","Globally Unique Identifier","char"
-"dbo","pub_prre_prpr_map","prcr_id","Data Pub Provider Entity Relationship keys","Credentialing ID","char"
-"dbo","pub_prre_prpr_map","prre_mctr_type","Data Pub Provider Entity Relationship keys","Provider Relationship Type","char"
-"dbo","pub_prre_prpr_map","mcre_id","Data Pub Provider Entity Relationship keys","External Vendor ID","char"
-"dbo","pub_prre_prpr_map","prre_eff_dt","Data Pub Provider Entity Relationship keys","Provider Relationship Effective Date","datetime"
-"dbo","pub_prre_prpr_map","prpr_id","Data Pub Provider Entity Relationship keys","Servicing Provider","char"

@@ -1,7 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","employerplans","tpaid","","","varchar"
-"dbo","employerplans","employerid","","Employer ID","varchar"
-"dbo","employerplans","accounttype","","","varchar"
-"dbo","employerplans","planid","","Plan ID","varchar"
-"dbo","employerplans","planstartdt","","","datetime"
-"dbo","employerplans","planenddt","","","datetime"

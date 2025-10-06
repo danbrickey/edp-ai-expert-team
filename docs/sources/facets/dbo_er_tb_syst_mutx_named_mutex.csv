@@ -1,3 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","er_tb_syst_mutx_named_mutex","mutx_id","Supports enforcing single threaded processing","Identifier","varchar"
-"dbo","er_tb_syst_mutx_named_mutex","mutx_sts","Supports enforcing single threaded processing","Status","numeric"

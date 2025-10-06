@@ -1,4 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","temp_blpr_prepro","blei_ck","Temp Storage table","Billing Entity Contrived Key","int"
-"dbo","temp_blpr_prepro","next_bl_due_dt","Temp Storage table","","datetime"
-"dbo","temp_blpr_prepro","err_flag","Temp Storage table","","char"

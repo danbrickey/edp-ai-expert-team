@@ -1,3 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","qrtz_calendars","calendar_name","","","varchar"
-"dbo","qrtz_calendars","calendar","","","image"

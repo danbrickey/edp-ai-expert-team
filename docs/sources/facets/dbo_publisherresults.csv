@@ -1,6 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","publisherresults","entityname","","","varchar"
-"dbo","publisherresults","subentityname","","","varchar"
-"dbo","publisherresults","publishernumber","","","numeric"
-"dbo","publisherresults","outputname","","","varchar"
-"dbo","publisherresults","outputtype","","","int"

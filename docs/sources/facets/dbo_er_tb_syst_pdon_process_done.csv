@@ -1,3 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","er_tb_syst_pdon_process_done","pitm_ticket_no","Process Done Table","Ticket Number","char"
-"dbo","er_tb_syst_pdon_process_done","pitm_sts","Process Done Table","Status","int"

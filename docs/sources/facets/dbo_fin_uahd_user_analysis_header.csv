@@ -1,7 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","fin_uahd_user_analysis_header","uahd_row_id","User Analysis Header","Row Identifier","numeric"
-"dbo","fin_uahd_user_analysis_header","uahd_name","User Analysis Header","","varchar"
-"dbo","fin_uahd_user_analysis_header","uahd_desc","User Analysis Header","","varchar"
-"dbo","fin_uahd_user_analysis_header","uahd_parms","User Analysis Header","","varchar"
-"dbo","fin_uahd_user_analysis_header","uahd_create_dtm","User Analysis Header","Create Date","datetime"
-"dbo","fin_uahd_user_analysis_header","syin_inst","User Analysis Header","System Instance","bigint"

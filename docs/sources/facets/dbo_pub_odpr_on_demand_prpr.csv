@@ -1,2 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_odpr_on_demand_prpr","prpr_id","Pub On Demand Provider table.","Provider Identifier","char"

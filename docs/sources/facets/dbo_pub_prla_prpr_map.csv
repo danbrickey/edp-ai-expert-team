@@ -1,5 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_prla_prpr_map","pubh_guid","Data Pub Provider Language keys","Globally Unique Identifier","char"
-"dbo","pub_prla_prpr_map","prcr_id","Data Pub Provider Language keys","Credentialing ID","char"
-"dbo","pub_prla_prpr_map","prla_mctr_lang","Data Pub Provider Language keys","Provider Language","char"
-"dbo","pub_prla_prpr_map","prpr_id","Data Pub Provider Language keys","Provider Identifier","char"

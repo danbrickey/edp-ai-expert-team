@@ -1,8 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","datasource","entityname","","","varchar"
-"dbo","datasource","subentityname","","","varchar"
-"dbo","datasource","description","","","varchar"
-"dbo","datasource","readerclass","","","varchar"
-"dbo","datasource","datasourcejndi","","","varchar"
-"dbo","datasource","systemid","","","varchar"
-"dbo","datasource","srctimezone","","","varchar"

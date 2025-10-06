@@ -1,7 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","tpaaccounts","tpaid","","","varchar"
-"dbo","tpaaccounts","login","","","varchar"
-"dbo","tpaaccounts","password","","","varchar"
-"dbo","tpaaccounts","sequenceid","","","int"
-"dbo","tpaaccounts","manualflag","","","char"
-"dbo","tpaaccounts","settlementdate","","","varchar"

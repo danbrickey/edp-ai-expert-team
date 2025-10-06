@@ -1,7 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","fin_inds_insights_dataset","inds_id","Insights Datasets","Dataset ID","numeric"
-"dbo","fin_inds_insights_dataset","inds_name","Insights Datasets","Dataset Name","varchar"
-"dbo","fin_inds_insights_dataset","inds_structured","Insights Datasets","Dataset Structured Indicator","bit"
-"dbo","fin_inds_insights_dataset","inds_binary","Insights Datasets","Dataset Binary Indicator","bit"
-"dbo","fin_inds_insights_dataset","inds_columns","Insights Datasets","Dataset Columns","nvarchar"
-"dbo","fin_inds_insights_dataset","inds_create_dtm","Insights Datasets","Dataset Create Datetime","datetime"

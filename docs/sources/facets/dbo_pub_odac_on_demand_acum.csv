@@ -1,2 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_odac_on_demand_acum","sbsb_ck","Pub On Demand Accumulator table.","Subscriber Contrived Key","int"

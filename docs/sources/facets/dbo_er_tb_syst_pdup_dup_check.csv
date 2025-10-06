@@ -1,4 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","er_tb_syst_pdup_dup_check","pitm_ticket_no","Duplication Checking Table","Ticket Number","char"
-"dbo","er_tb_syst_pdup_dup_check","pdup_identifier","Duplication Checking Table","Identifier","varchar"
-"dbo","er_tb_syst_pdup_dup_check","pdup_value","Duplication Checking Table","Value","varchar"

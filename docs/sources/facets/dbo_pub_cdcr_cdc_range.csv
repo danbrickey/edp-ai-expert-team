@@ -1,5 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_cdcr_cdc_range","cdcr_table_name","Data Publication CDC Range table.","Table Name","varchar"
-"dbo","pub_cdcr_cdc_range","cdcr_from_lsn","Data Publication CDC Range table.","From Log Sequence Number","varbinary"
-"dbo","pub_cdcr_cdc_range","cdcr_to_lsn","Data Publication CDC Range table.","To Log Sequence Number","varbinary"
-"dbo","pub_cdcr_cdc_range","cdcr_create_dtm","Data Publication CDC Range table.","Create Date and Time","datetime"

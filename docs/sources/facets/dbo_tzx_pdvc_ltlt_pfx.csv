@@ -1,7 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","tzx_pdvc_ltlt_pfx","pdpd_id","Accumulator conversion Temp Table.","Product Identifier","char"
-"dbo","tzx_pdvc_ltlt_pfx","ltlt_pfx","Accumulator conversion Temp Table.","Limit Prefix","char"
-"dbo","tzx_pdvc_ltlt_pfx","pdvc_eff_dt","Accumulator conversion Temp Table.","Product Variable Component Effective Date","datetime"
-"dbo","tzx_pdvc_ltlt_pfx","pdvc_term_dt","Accumulator conversion Temp Table.","Product Variable Components Termination Date","datetime"
-"dbo","tzx_pdvc_ltlt_pfx","pdvc_type","Accumulator conversion Temp Table.","Product Variable Component Type","char"
-"dbo","tzx_pdvc_ltlt_pfx","pdvc_seq_no","Accumulator conversion Temp Table.","Product Variable Component Sequence Number","smallint"

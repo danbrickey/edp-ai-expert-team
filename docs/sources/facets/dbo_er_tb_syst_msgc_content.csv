@@ -1,5 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","er_tb_syst_msgc_content","msgq_id","System Message Content","Message Queue ID","char"
-"dbo","er_tb_syst_msgc_content","msgm_id","System Message Content","Message ID","char"
-"dbo","er_tb_syst_msgc_content","msgc_seq_no","System Message Content","Message Content Sequence Number","int"
-"dbo","er_tb_syst_msgc_content","msgc_data","System Message Content","Message Content Data","varchar"

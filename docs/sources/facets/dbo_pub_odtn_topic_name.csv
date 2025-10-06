@@ -1,6 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_odtn_topic_name","pent_id","","Publication Entity ID","char"
-"dbo","pub_odtn_topic_name","pubh_topic","","Kafka Topic","varchar"
-"dbo","pub_odtn_topic_name","sys_last_upd_dtm","","Last Update Datetime","datetime"
-"dbo","pub_odtn_topic_name","sys_usus_id","","Last Update User ID","varchar"
-"dbo","pub_odtn_topic_name","sys_dbuser_id","","Last Update DBMS User ID","varchar"

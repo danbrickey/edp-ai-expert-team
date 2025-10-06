@@ -1,6 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","fin_pgev_plug_in_event","pgpg_ck","Events associated to plug-ins","Row ID","numeric"
-"dbo","fin_pgev_plug_in_event","evev_id","Events associated to plug-ins","Event ID","int"
-"dbo","fin_pgev_plug_in_event","eval_ck","Events associated to plug-ins","Row ID","numeric"
-"dbo","fin_pgev_plug_in_event","pgev_create_dtm","Events associated to plug-ins","Create Date","datetime"
-"dbo","fin_pgev_plug_in_event","pgev_locked","Events associated to plug-ins","Configurations Locked Switch","bit"

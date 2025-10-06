@@ -1,4 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_puur_umum_lsn_resolve","pubh_lsn","Prior Auth/UM Entity Log Sequence Number table","Log Sequence Number","varbinary"
-"dbo","pub_puur_umum_lsn_resolve","pubh_key","Prior Auth/UM Entity Log Sequence Number table","Data Pub Key","varchar"
-"dbo","pub_puur_umum_lsn_resolve","puur_tbl_mnemonic","Prior Auth/UM Entity Log Sequence Number table","Table mnemonic","char"

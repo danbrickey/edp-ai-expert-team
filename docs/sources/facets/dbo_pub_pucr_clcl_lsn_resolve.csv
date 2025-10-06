@@ -1,4 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_pucr_clcl_lsn_resolve","pubh_lsn","Claim Entity Log Sequence Number table.","Log Sequence Number","varbinary"
-"dbo","pub_pucr_clcl_lsn_resolve","pubh_key","Claim Entity Log Sequence Number table.","Data Pub Key","varchar"
-"dbo","pub_pucr_clcl_lsn_resolve","pucr_tbl_mnemonic","Claim Entity Log Sequence Number table.","Table mnemonic","char"

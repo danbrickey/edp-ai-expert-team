@@ -1,5 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","er_tb_syst_msgq_queue_control","msgq_id","System Message Queue Control","Message Queue ID","char"
-"dbo","er_tb_syst_msgq_queue_control","msgq_id_resp","System Message Queue Control","Response Message Queue ID","char"
-"dbo","er_tb_syst_msgq_queue_control","msgq_create_dtm","System Message Queue Control","Create Date/Time","datetime"
-"dbo","er_tb_syst_msgq_queue_control","msgq_ref_ctr","System Message Queue Control","Message Reference Counter","int"

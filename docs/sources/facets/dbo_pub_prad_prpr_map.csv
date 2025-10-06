@@ -1,6 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_prad_prpr_map","pubh_guid","Data Pub Provider Address keys","Globally Unique Identifier","char"
-"dbo","pub_prad_prpr_map","prad_id","Data Pub Provider Address keys","Provider Address ID","char"
-"dbo","pub_prad_prpr_map","prad_type","Data Pub Provider Address keys","Address Type","char"
-"dbo","pub_prad_prpr_map","prad_eff_dt","Data Pub Provider Address keys","Provider Address (Type) Effective Date","datetime"
-"dbo","pub_prad_prpr_map","prpr_id","Data Pub Provider Address keys","Servicing Provider","char"

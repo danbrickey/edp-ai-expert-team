@@ -1,4 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_pubo_pub_options","pubo_mnemonic","Data Publication options table","PUBO_MNEMONIC","varchar"
-"dbo","pub_pubo_pub_options","pubo_domain","Data Publication options table","PUBO_DOMAIN","varchar"
-"dbo","pub_pubo_pub_options","pubo_active_sw","Data Publication options table","PUBO_ACTIVE_SW","char"

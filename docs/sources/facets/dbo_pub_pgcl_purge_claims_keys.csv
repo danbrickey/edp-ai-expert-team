@@ -1,3 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_pgcl_purge_claims_keys","row_id","Claim entity keys to purge","Row Identifier","numeric"
-"dbo","pub_pgcl_purge_claims_keys","pubh_guid","Claim entity keys to purge","Globally Unique Identifier","varchar"

@@ -1,5 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_puct_child_trans","pubh_guid","Data Publication Child Transaction table.","Globally Unique Identifier","char"
-"dbo","pub_puct_child_trans","pubh_guid_child","Data Publication Child Transaction table.","Child GUID","char"
-"dbo","pub_puct_child_trans","pubh_key","Data Publication Child Transaction table.","Entity Key","varchar"
-"dbo","pub_puct_child_trans","pubh_lsn","Data Publication Child Transaction table.","Log Sequence Number","varbinary"

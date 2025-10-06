@@ -1,5 +1,0 @@
-"source_schema","source_table","source_column","table_description","column_description","column_data_type"
-"dbo","pub_popr_prpr_offset","prpr_id","Provider Last Offset Location","Provider Identifier","char"
-"dbo","pub_popr_prpr_offset","sys_last_offset_nvl","Provider Last Offset Location","Last Offset Location","varchar"
-"dbo","pub_popr_prpr_offset","popr_last_update_dtm","Provider Last Offset Location","Last modified Date/Time","datetime"
-"dbo","pub_popr_prpr_offset","popr_last_report_dtm","Provider Last Offset Location","Last Report Date/Time","datetime"
