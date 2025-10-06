@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_ltq0_letters_que","ltq0_id","Letters Queue","Batch Letter Que ID","char"
+"dbo","cer_ltq0_letters_que","ltq0_seq_no","Letters Queue","Sequence Number","smallint"
+"dbo","cer_ltq0_letters_que","atsy_id","Letters Queue","Letter Attachment Style ID","char"
+"dbo","cer_ltq0_letters_que","atxr_dest_id","Letters Queue","Attachment Destination ID","datetime"
+"dbo","cer_ltq0_letters_que","atlt_seq_no","Letters Queue","Letter Sequence Number","smallint"

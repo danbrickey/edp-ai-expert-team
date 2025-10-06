@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_wfmn_msg_note","wfms_message_id","Action Notes' Note","Message ID","varchar"
+"dbo","nwx_wfmn_msg_note","wfmn_note_type","Action Notes' Note","Note Type","int"
+"dbo","nwx_wfmn_msg_note","wfmn_seq_no","Action Notes' Note","Sequence Number","int"
+"dbo","nwx_wfmn_msg_note","wfmn_note","Action Notes' Note","Note","varchar"
+"dbo","nwx_wfmn_msg_note","wmgt_msg_type","Action Notes' Note","Workflow Message Type","int"

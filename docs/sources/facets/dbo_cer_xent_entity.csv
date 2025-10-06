@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_xent_entity","xent_entity_id","System Entity Definition Table","Cross Reference Entity ID","char"
+"dbo","cer_xent_entity","xent_data_type","System Entity Definition Table","Entity Data Type","char"
+"dbo","cer_xent_entity","xent_desc","System Entity Definition Table","Entity Description","char"
+"dbo","cer_xent_entity","xent_lock_token","System Entity Definition Table","Lock Token","smallint"

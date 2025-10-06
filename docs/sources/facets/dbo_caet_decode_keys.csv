@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","caet_decode_keys","entityname","Data Publication Manager Table","","varchar"
+"dbo","caet_decode_keys","subentityname","Data Publication Manager Table","","varchar"
+"dbo","caet_decode_keys","stringkey","Data Publication Manager Table","","varchar"
+"dbo","caet_decode_keys","intkey","Data Publication Manager Table","","int"

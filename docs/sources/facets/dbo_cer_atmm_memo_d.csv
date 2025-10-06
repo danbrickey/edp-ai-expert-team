@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_atmm_memo_d","atsy_id","Attachment Memo Data","Memo Style","char"
+"dbo","cer_atmm_memo_d","atxr_dest_id","Attachment Memo Data","Memo Destination ID","datetime"
+"dbo","cer_atmm_memo_d","atmm_seq_no","Attachment Memo Data","Memo Sequence No.","smallint"
+"dbo","cer_atmm_memo_d","atmm_text","Attachment Memo Data","Memo Text","char"
+"dbo","cer_atmm_memo_d","atmm_lock_token","Attachment Memo Data","Lock Token","smallint"

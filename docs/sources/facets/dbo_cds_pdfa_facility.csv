@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_pdfa_facility","syin_inst","Facility Table for Provider Directories","Instance ID","bigint"
+"dbo","cds_pdfa_facility","prcr_id","Facility Table for Provider Directories","Credentialing ID","char"
+"dbo","cds_pdfa_facility","prpr_id","Facility Table for Provider Directories","Provider ID","char"
+"dbo","cds_pdfa_facility","prfa_name","Facility Table for Provider Directories","Facility Name","char"
+"dbo","cds_pdfa_facility","praf_prim_ind","Facility Table for Provider Directories","Provider Primary Hospital Affiliation Indicator","char"

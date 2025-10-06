@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pzco_valrlse","pzpz_id","Product Release Validation","Product","char"
+"dbo","cer_pzco_valrlse","syco_id","Product Release Validation","Release Component ID","char"
+"dbo","cer_pzco_valrlse","rel_id","Product Release Validation","Release or Version of Facets","char"
+"dbo","cer_pzco_valrlse","atxr_source_id","Product Release Validation","Attachment Source Id","datetime"
+"dbo","cer_pzco_valrlse","pzco_lock_token","Product Release Validation","Lock Token","smallint"

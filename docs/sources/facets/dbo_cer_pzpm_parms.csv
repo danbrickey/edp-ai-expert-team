@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pzpm_parms","pzpz_id","Parameters/ Product Relationships","Parameter Product ID","char"
+"dbo","cer_pzpm_parms","scsc_section_id","Parameters/ Product Relationships","Parameter Section ID","char"
+"dbo","cer_pzpm_parms","pmsc_parm_id","Parameters/ Product Relationships","Parameter ID","char"
+"dbo","cer_pzpm_parms","pzpm_required_ind","Parameters/ Product Relationships","Parameter Required Indicator","char"
+"dbo","cer_pzpm_parms","pzpm_lock_token","Parameters/ Product Relationships","Lock Token","smallint"
+"dbo","cer_pzpm_parms","atxr_source_id","Parameters/ Product Relationships","Attachment Source Id","datetime"

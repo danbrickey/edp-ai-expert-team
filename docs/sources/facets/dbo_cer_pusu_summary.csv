@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pusu_summary","pusu_id","","","numeric"
+"dbo","cer_pusu_summary","purg_id","","","char"
+"dbo","cer_pusu_summary","purg_table_name","","","varchar"
+"dbo","cer_pusu_summary","pusu_type","","","smallint"
+"dbo","cer_pusu_summary","pusu_status","","","char"
+"dbo","cer_pusu_summary","pusu_arch_path","","","varchar"
+"dbo","cer_pusu_summary","pusu_create_dtm","","Create Date","datetime"

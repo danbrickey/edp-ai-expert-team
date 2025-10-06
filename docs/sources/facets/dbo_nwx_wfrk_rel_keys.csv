@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_wfrk_rel_keys","wqms_message_id","Related Keys Table","Message ID","varchar"
+"dbo","nwx_wfrk_rel_keys","wfrk_key_type","Related Keys Table","Key Type","varchar"
+"dbo","nwx_wfrk_rel_keys","wfrk_key_seq","Related Keys Table","Sequence Number","int"
+"dbo","nwx_wfrk_rel_keys","wfrk_key_value1","Related Keys Table","Key Value 1","varchar"
+"dbo","nwx_wfrk_rel_keys","wfrk_key_value2","Related Keys Table","Key Value 2","varchar"
+"dbo","nwx_wfrk_rel_keys","wfrk_key_value3","Related Keys Table","Key Value 3","varchar"
+"dbo","nwx_wfrk_rel_keys","wfrk_status","Related Keys Table","Status","int"

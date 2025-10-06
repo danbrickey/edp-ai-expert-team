@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pzme_menu_ent","pzpz_id","Product Navigation Menu Entry Definition","Entry Product ID","char"
+"dbo","cer_pzme_menu_ent","pzmn_menu_id","Product Navigation Menu Entry Definition","Entry Menu ID","char"
+"dbo","cer_pzme_menu_ent","pzmg_menu_grp_id","Product Navigation Menu Entry Definition","Entry Application Group","char"
+"dbo","cer_pzme_menu_ent","pzap_app_id","Product Navigation Menu Entry Definition","Entry Application","char"
+"dbo","cer_pzme_menu_ent","pzme_lock_token","Product Navigation Menu Entry Definition","Lock Token","smallint"

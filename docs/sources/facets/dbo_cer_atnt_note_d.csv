@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_atnt_note_d","atsy_id","Attachment Note Indicative Data","Note Style","char"
+"dbo","cer_atnt_note_d","atxr_dest_id","Attachment Note Indicative Data","Note Destination ID","datetime"
+"dbo","cer_atnt_note_d","atnt_seq_no","Attachment Note Indicative Data","Note Sequence No.","smallint"
+"dbo","cer_atnt_note_d","atnt_type","Attachment Note Indicative Data","Note Type","char"
+"dbo","cer_atnt_note_d","atxr_attach_id","Attachment Note Indicative Data","Note Attachment ID","datetime"
+"dbo","cer_atnt_note_d","atnt_lock_token","Attachment Note Indicative Data","Lock Token","smallint"

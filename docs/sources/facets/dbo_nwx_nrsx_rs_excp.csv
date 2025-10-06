@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_nrsx_rs_excp","nrsx_rs_excp_desc","Agreement Exception Definition table","Exception Description","varchar"
+"dbo","nwx_nrsx_rs_excp","nrsx_create_by","Agreement Exception Definition table","Row Created By","char"
+"dbo","nwx_nrsx_rs_excp","nrsx_create_dtm","Agreement Exception Definition table","Row Creation Date","datetime"
+"dbo","nwx_nrsx_rs_excp","nrsx_modify_by","Agreement Exception Definition table","Last Modified By","char"
+"dbo","nwx_nrsx_rs_excp","nrsx_modify_dtm","Agreement Exception Definition table","Last Modification Date","datetime"
+"dbo","nwx_nrsx_rs_excp","atxr_source_id","Agreement Exception Definition table","Attachment Source Id","datetime"
+"dbo","nwx_nrsx_rs_excp","nrsx_lock_token","Agreement Exception Definition table","Lock Token","smallint"

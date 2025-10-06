@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_ckvx_check_ext","ckpy_ref_id","Vision Check Extract","Payment Reference ID","char"
+"dbo","cds_ckvx_check_ext","rec_order","Vision Check Extract","Record Order","smallint"
+"dbo","cds_ckvx_check_ext","rec_key","Vision Check Extract","Record Key","varchar"
+"dbo","cds_ckvx_check_ext","check_ext_data","Vision Check Extract","Extract Data","char"

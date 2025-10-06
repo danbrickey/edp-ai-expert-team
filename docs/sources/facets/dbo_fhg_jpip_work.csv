@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhg_jpip_work","jpip_row_id","","Row Identifier","numeric"
+"dbo","fhg_jpip_work","pzpz_id","","Product ID","char"
+"dbo","fhg_jpip_work","pzap_app_id","","Application ID","char"
+"dbo","fhg_jpip_work","gtgt_ckn","","Gateway Transaction Contrived Key","numeric"
+"dbo","fhg_jpip_work","exsy_id_dest","","Destination External System Indicator","char"
+"dbo","fhg_jpip_work","gtgt_pzcd_btyp","","Business Transaction Type","char"

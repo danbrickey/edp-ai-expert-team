@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_wbrr_brk_rsn","wbrr_reason_id","Workflow Break Reasons table","Break or Set Aside Reason Contrived Key","int"
+"dbo","nwx_wbrr_brk_rsn","wbrr_reason_desc","Workflow Break Reasons table","Break or Set Aside Reason Description","varchar"
+"dbo","nwx_wbrr_brk_rsn","wbrr_active_ind","Workflow Break Reasons table","Active Indicator","int"
+"dbo","nwx_wbrr_brk_rsn","wbrr_reason_type","Workflow Break Reasons table","Reason Type","char"

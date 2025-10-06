@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhd_ptmo_work","ptmo_row_id","PTMO Work Table","PTMO Row ID","numeric"
+"dbo","fhd_ptmo_work","pzpz_id","PTMO Work Table","Application Product ID","char"
+"dbo","fhd_ptmo_work","pzap_app_id","PTMO Work Table","Product Application ID","char"
+"dbo","fhd_ptmo_work","gtgt_ckn","PTMO Work Table","Generic Transaction Contrived Key","numeric"
+"dbo","fhd_ptmo_work","gtgt_pzcd_btyp","PTMO Work Table","Business Type","char"
+"dbo","fhd_ptmo_work","gtst_sts_curr","PTMO Work Table","Current Status","int"

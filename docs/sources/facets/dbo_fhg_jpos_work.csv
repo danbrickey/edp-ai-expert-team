@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhg_jpos_work","jpos_row_id","","Row ID","numeric"
+"dbo","fhg_jpos_work","pzpz_id","","Product ID","char"
+"dbo","fhg_jpos_work","pzap_app_id","","Application ID","char"
+"dbo","fhg_jpos_work","gtgt_ckn","","Gateway Transaction Contrived Key","numeric"
+"dbo","fhg_jpos_work","gtgt_size","","Transaction size","numeric"

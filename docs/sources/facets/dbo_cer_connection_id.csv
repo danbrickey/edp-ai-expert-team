@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_connection_id","spid","Reconnect Connection Table.","Server Process ID","int"
+"dbo","cer_connection_id","connection_id","Reconnect Connection Table.","Unique Connection ID","int"
+"dbo","cer_connection_id","connection_guid","Reconnect Connection Table.","Globally Unique Identifier","char"
+"dbo","cer_connection_id","last_modified_dtm","Reconnect Connection Table.","Last Update Datetime","datetime"
+"dbo","cer_connection_id","source","Reconnect Connection Table.","Connection Source","varchar"

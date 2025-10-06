@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_evct_category","evct_cat","Facets IoT Message Event Category","Event Category","varchar"
+"dbo","cer_evct_category","evct_desc","Facets IoT Message Event Category","Event Category Description","varchar"
+"dbo","cer_evct_category","evct_enabled_ind","Facets IoT Message Event Category","Event Category Enabled Indicator","char"
+"dbo","cer_evct_category","evct_hub_bypass_ind","Facets IoT Message Event Category","Event Category Hub Bypass Indicator","char"

@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_atsx_style_a","attb_id","Attachment Style and Table Relationships","Attachment Style Rel. Table","char"
+"dbo","cer_atsx_style_a","attb_type","Attachment Style and Table Relationships","Attachment Style Rel. Table Type","char"
+"dbo","cer_atsx_style_a","atsy_id","Attachment Style and Table Relationships","Attachment Style ID","char"
+"dbo","cer_atsx_style_a","atsx_desc","Attachment Style and Table Relationships","Attachment Style Rel. Table Desc.","char"
+"dbo","cer_atsx_style_a","atsx_lock_token","Attachment Style and Table Relationships","Lock Token","smallint"

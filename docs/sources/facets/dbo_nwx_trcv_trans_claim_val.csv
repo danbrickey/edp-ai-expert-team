@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_trcv_trans_claim_val","cacheid","Transparency Claim Value","CACHE ID","char"
+"dbo","nwx_trcv_trans_claim_val","linenum","Transparency Claim Value","Line Number","smallint"
+"dbo","nwx_trcv_trans_claim_val","seqno","Transparency Claim Value","Sequence Number","smallint"
+"dbo","nwx_trcv_trans_claim_val","type","Transparency Claim Value","Negotiated Type.","varchar"
+"dbo","nwx_trcv_trans_claim_val","claimvalues","Transparency Claim Value","Code","varchar"
+"dbo","nwx_trcv_trans_claim_val","code","Transparency Claim Value","","varchar"

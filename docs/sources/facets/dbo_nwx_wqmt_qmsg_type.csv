@@ -1,0 +1,3 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_wqmt_qmsg_type","wqdf_queue_id","Queue Message Types","Queue Contrived Key","int"
+"dbo","nwx_wqmt_qmsg_type","wmgt_mesg_type","Queue Message Types","Message Type","int"

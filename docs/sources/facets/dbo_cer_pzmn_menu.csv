@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pzmn_menu","pzpz_id","Product Navigation Menu Definition","Menu Product ID","char"
+"dbo","cer_pzmn_menu","pzmn_menu_id","Product Navigation Menu Definition","Menu ID","char"
+"dbo","cer_pzmn_menu","pzmn_desc","Product Navigation Menu Definition","Menu Description","char"
+"dbo","cer_pzmn_menu","pzmn_lock_token","Product Navigation Menu Definition","Lock Token","smallint"

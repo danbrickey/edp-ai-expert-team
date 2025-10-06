@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_nagr_agag_nsrs_relation","agag_id","Agreement and Rate Sheet relationship.","Provider Agreement Identifier","char"
+"dbo","nwx_nagr_agag_nsrs_relation","nsrs_rate_sht_id","Agreement and Rate Sheet relationship.","Agreement ID internal key","int"
+"dbo","nwx_nagr_agag_nsrs_relation","nagr_lock_token","Agreement and Rate Sheet relationship.","Lock Token","smallint"

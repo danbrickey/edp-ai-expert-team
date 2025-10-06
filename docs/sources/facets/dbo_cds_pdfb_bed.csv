@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_pdfb_bed","syin_inst","Facility Bed Type Table for Provider Directories","Instance ID","bigint"
+"dbo","cds_pdfb_bed","prcr_id","Facility Bed Type Table for Provider Directories","Credentialing ID","char"
+"dbo","cds_pdfb_bed","prfb_mctr_type","Facility Bed Type Table for Provider Directories","Facility Bed Type","char"
+"dbo","cds_pdfb_bed","prfb_bed_desc","Facility Bed Type Table for Provider Directories","Bed Type Description","char"
+"dbo","cds_pdfb_bed","prfb_no","Facility Bed Type Table for Provider Directories","Facility Bed Number","smallint"

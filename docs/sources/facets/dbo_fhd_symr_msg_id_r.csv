@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhd_symr_msg_id_r","symd_id","System Message Relationship","Message ID","char"
+"dbo","fhd_symr_msg_id_r","symd_id_rel","System Message Relationship","Related Message ID","char"
+"dbo","fhd_symr_msg_id_r","symr_reserved","System Message Relationship","Reserved for future use","char"
+"dbo","fhd_symr_msg_id_r","symr_last_usus_id","System Message Relationship","Last update user identifier","char"
+"dbo","fhd_symr_msg_id_r","symr_last_upd_dtm","System Message Relationship","Last update date and time","datetime"
+"dbo","fhd_symr_msg_id_r","symr_lock_token","System Message Relationship","Lock Token","smallint"
+"dbo","fhd_symr_msg_id_r","atxr_source_id","System Message Relationship","Attachment Source Id","datetime"

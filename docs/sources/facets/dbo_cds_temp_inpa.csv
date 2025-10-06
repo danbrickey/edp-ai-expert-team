@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_temp_inpa","bliv_id","CDS_TEMP_INPA Temp Table.","Invoice Number","char"
+"dbo","cds_temp_inpa","blei_ck","CDS_TEMP_INPA Temp Table.","Billing Entity Contrived Key","int"
+"dbo","cds_temp_inpa","blbl_due_dt","CDS_TEMP_INPA Temp Table.","Billing Due Date","datetime"
+"dbo","cds_temp_inpa","bliv_create_dtm","CDS_TEMP_INPA Temp Table.","Create Date","datetime"

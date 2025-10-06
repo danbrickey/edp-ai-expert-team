@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","bpa_dsas_data_state","dsas_data_id","Data State","Data Identification Number","varchar"
+"dbo","bpa_dsas_data_state","tbtb_id","Data State","Table Identification Number","char"
+"dbo","bpa_dsas_data_state","dsas_action_cd","Data State","Action Code","char"
+"dbo","bpa_dsas_data_state","dsas_last_upd_dtm","Data State","Last Update Time","datetime"
+"dbo","bpa_dsas_data_state","dsas_last_usus_id","Data State","User Identification","char"

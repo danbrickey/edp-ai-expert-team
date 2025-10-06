@@ -1,223 +1,284 @@
-# Data Vault Engineering Spec – Group Plan Eligibility
+# Engineering Specification: Group Plan Eligibility
 
-## 🧱 Artifact Summary
+## Overview
 
-**Entity Type**: Link + Effectivity Satellites
-**Link Name**: l_group_product_category_class_plan
-**Satellite(s)**:
-- s_group_plan_eligibility_legacy_facets
-- s_group_plan_eligibility_gemstone_facets
+This specification provides the unique elements needed to implement the Data Vault 2.0 model for the `group_plan_eligibility` entity. Engineers can use their preferred templates and copy/paste the specific configurations below.
 
-**Current View**: current_group_plan_eligibility
-**Staging Model(s)**:
-- stg_group_plan_eligibility_legacy_facets
-- stg_group_plan_eligibility_gemstone_facets
+## Source Information
 
-**Source System(s)**: legacy_facets, gemstone_facets
-**Source Table**: dbo.cmc_cspi_cs_plan
+**Source Table**: `dbo.cmc_cspi_cs_plan`
+**Source Systems**: `legacy_facets`, `gemstone_facets`
+**Entity Name**: `group_plan_eligibility`
 
----
+## Business Keys
 
-## 🎯 Business Context
+### Link Business Keys
+The link `l_group_product_category_class_plan` uses a composite business key from multiple hubs:
 
-The Group Plan Eligibility entity represents the linking relationship between Groups, Product Categories, Classes, and Plans in the healthcare system. This is a many-to-many relationship table that defines which plan/product combinations are available to which group/class combinations, along with effective dating and configuration details.
+```sql
+-- Link business key components
+group_hk        -- from h_group (business key: grgr_ck)
+product_category_hk  -- from h_product_category (business key: cspd_cat)
+class_hk        -- from h_class (business key: cscs_id)
+plan_hk         -- from h_plan (business key: cspi_id)
+```
 
-**Key Business Concepts**:
-- Tracks plan eligibility at the intersection of group, product category, class, and plan
-- Maintains temporal validity through effective and termination dates
-- Stores configuration details for plan administration and member services
-- Critical for enrollment, billing, and benefit determination processes
+## Column Mappings (Rename Views)
 
----
+### Source to Target Column Names
 
-## 🔄 Data Vault Architecture
+```sql
+-- Business Keys
+grgr_ck as group_bk,
+cscs_id as class_bk,
+cspd_cat as product_category_bk,
+cspi_id as plan_bk,
 
-### Link Structure
-**l_group_product_category_class_plan**
-- **Business Keys**:
-  - `group_hk` (from grgr_ck)
-  - `product_category_hk` (from cspd_cat)
-  - `class_hk` (from cscs_id)
-  - `plan_hk` (from cspi_id)
+-- Effectivity Dates
+cspi_eff_dt as plan_effective_dt,
+cspi_term_dt as plan_termination_dt,
 
-### Effectivity Satellite Configuration
-Both satellites use the same temporal logic:
-- **src_eff**: cspi_eff_dt (effective date from source)
-- **src_start_date**: cspi_eff_dt (plan effective date)
-- **src_end_date**: cspi_term_dt (plan termination date)
+-- Product Information
+pdpd_id as product_id,
 
----
+-- Plan Attributes
+cspi_sel_ind as plan_selectable_ind,
+cspi_fi as plan_family_ind,
 
-## 📊 Column Mapping
+-- Rate Guarantee
+cspi_guar_dt as rate_guarantee_dt,
+cspi_guar_per_mos as rate_guarantee_period_months,
+cspi_guar_ind as rate_guarantee_ind,
 
-### Business Key Columns (Link)
-| Source Column | Business Key | Hash Key | Description |
-|---------------|--------------|----------|-------------|
-| grgr_ck | group_bk | group_hk | Group identifier |
-| cspd_cat | product_category_bk | product_category_hk | Product category code |
-| cscs_id | class_bk | class_hk | Class identifier |
-| cspi_id | plan_bk | plan_hk | Plan identifier |
+-- Prefixes and References
+pmar_pfx as age_vol_reduction_tbl_pfx,
+wmds_seq_no as warning_message_seq_no,
 
-### Descriptive Attributes (Satellites)
-| Source Column | Renamed Column | Data Type | Description |
-|---------------|----------------|-----------|-------------|
-| cspi_eff_dt | plan_eff_dt | datetime | Plan effective date |
-| cspi_term_dt | plan_term_dt | datetime | Plan termination date |
-| pdpd_id | product_id | char | Product ID |
-| cspi_sel_ind | selectable_ind | char | Selectable indicator |
-| cspi_fi | family_ind | char | Family indicator |
-| cspi_guar_dt | rate_guarantee_dt | datetime | Rate guarantee date |
-| cspi_guar_per_mos | rate_guarantee_period_mos | smallint | Rate guarantee period (months) |
-| cspi_guar_ind | rate_guarantee_ind | char | Rate guarantee indicator |
-| pmar_pfx | age_volume_reduction_table_pfx | char | Age/volume reduction table prefix |
-| wmds_seq_no | warning_message_seq_no | smallint | Warning message sequence number |
-| cspi_open_beg_mmdd | open_enrollment_begin_mmdd | smallint | Open enrollment begin date (MMDD) |
-| cspi_open_end_mmdd | open_enrollment_end_mmdd | smallint | Open enrollment end date (MMDD) |
-| gpai_id | group_admin_rules_id | char | Group administration rules ID |
-| cspi_its_prefix | its_prefix | char | ITS prefix |
-| cspi_age_calc_meth | premium_age_calc_method | char | Premium age calculation method |
-| cspi_card_stock | member_id_card_stock | char | Member ID card stock |
-| cspi_mctr_ctyp | product_member_id_card_type | char | Product member ID card type |
-| cspi_hedis_cebreak | hedis_continuous_enrollment_break | char | HEDIS continuous enrollment break |
-| cspi_hedis_days | hedis_continuous_enrollment_days | smallint | HEDIS continuous enrollment days |
-| cspi_pdpd_beg_mmdd | plan_year_begin_mmdd | smallint | Plan year begin date (MMDD) |
-| nwst_pfx | network_set_pfx | char | Network set prefix |
-| cspi_pdpd_co_mnth | plan_product_co_month | smallint | Plan product co-pay month |
-| cvst_pfx | covering_provider_set_pfx | char | Covering provider set prefix |
-| hsai_id | hra_admin_info_id | char | HRA administrative information ID |
-| cspi_postpone_ind | postponement_ind | char | Postponement indicator |
-| grdc_pfx | debit_card_bank_rel_pfx | char | Debit card/bank relationship prefix |
-| uted_pfx | dental_util_edits_pfx | char | Dental utilization edits prefix |
-| vbbr_id | value_based_benefits_parms_id | char | Value-based benefits parameters ID |
-| svbl_id | billing_strategy_vision_id | char | Billing strategy (vision only) |
-| cspi_lock_token | lock_token | smallint | Lock token |
-| atxr_source_id | attachment_source_id | datetime | Attachment source ID |
-| sys_last_upd_dtm | last_update_dtm | datetime | Last update datetime |
-| sys_usus_id | last_update_user_id | varchar | Last update user ID |
-| sys_dbuser_id | last_update_db_user_id | varchar | Last update DBMS user ID |
-| cspi_sec_plan_cd_nvl | secondary_plan_processing_cd | char | Secondary plan processing code |
-| mcre_id_nvl | auth_cert_entity_id | char | Authorization/certification entity ID |
-| cspi_its_acct_excp_nvl | its_account_exception | char | ITS account exception |
-| cspi_ren_beg_mmdd_nvl | policy_renewal_begins_mmdd | smallint | Policy renewal begins date (MMDD) |
-| cspi_hios_id_nvl | hios_id | varchar | Health Insurance Oversight System ID |
-| cspi_itspfx_acctid_nvl | its_prefix_account_id | varchar | ITS prefix account ID |
-| pgps_pfx | patient_care_program_set_pfx | varchar | Patient care program set prefix |
+-- Open Enrollment
+cspi_open_beg_mmdd as open_enroll_begin_mmdd,
+cspi_open_end_mmdd as open_enroll_end_mmdd,
 
----
+-- Administration
+gpai_id as group_admin_rules_id,
+cspi_its_prefix as its_prefix,
+cspi_age_calc_meth as premium_age_calc_method,
 
-## ⏱️ Recommended Tests
+-- Card and ID Information
+cspi_card_stock as member_id_card_stock,
+cspi_mctr_ctyp as member_id_card_type,
 
-### Data Quality Tests
-- **Uniqueness**: Unique combination of business keys (group_bk, product_category_bk, class_bk, plan_bk, plan_eff_dt)
-- **Not Null Constraints**:
-  - group_bk must not be null
-  - product_category_bk must not be null
-  - class_bk must not be null
-  - plan_bk must not be null
-  - plan_eff_dt must not be null
+-- HEDIS
+cspi_hedis_cebreak as hedis_cont_enroll_break,
+cspi_hedis_days as hedis_cont_enroll_days,
 
-### Temporal Validity Tests
-- Effective dates are valid (plan_eff_dt ≤ plan_term_dt)
-- No gaps in effective dates for same business key combination
-- No overlapping effective date ranges for same business key combination
+-- Plan Year
+cspi_pdpd_beg_mmdd as plan_year_begin_mmdd,
+cspi_pdpd_co_mnth as plan_co_month,
 
-### Referential Integrity Tests
-- Valid references to h_group
-- Valid references to h_product_category
-- Valid references to h_class
-- Valid references to h_plan
-- Referential integrity between link and satellites
+-- Network and Coverage
+nwst_pfx as network_set_pfx,
+cvst_pfx as covering_provider_set_pfx,
 
-### Business Rule Tests
-- Rate guarantee period is positive when rate_guarantee_ind is active
-- Open enrollment dates are valid (begin_mmdd ≤ end_mmdd)
-- Plan year begin date is valid (MMDD format: 0101-1231)
+-- HRA and Postponement
+hsai_id as hra_admin_info_id,
+cspi_postpone_ind as postponement_ind,
 
----
+-- Additional Prefixes
+grdc_pfx as debit_card_bank_rel_pfx,
+uted_pfx as dental_util_edits_pfx,
 
-## 📝 Implementation Notes
+-- Value Based and Billing
+vbbr_id as value_based_benefits_id,
+svbl_id as billing_strategy_id,
 
-### Hub Dependencies
-This link requires the following hubs to exist:
-- **h_group**: Hub for group entities
-- **h_product_category**: Hub for product category entities
-- **h_class**: Hub for class entities
-- **h_plan**: Hub for plan entities
+-- System Fields
+cspi_lock_token as lock_token,
+atxr_source_id as attachment_source_id,
+sys_last_upd_dtm as last_update_dtm,
+sys_usus_id as last_update_user_id,
+sys_dbuser_id as last_update_dbuser_id,
 
-### Effectivity Satellite Pattern
-The satellites use the automate_dv `eff_sat` macro which handles:
-- Temporal tracking via effective dates
-- Hash diff for change detection
-- All descriptive attributes as payload columns
-- Support for multiple dependent foreign keys
+-- NVL Fields (nullable variants)
+cspi_sec_plan_cd_nvl as secondary_plan_cd,
+mcre_id_nvl as auth_cert_entity_id,
+cspi_its_acct_excp_nvl as its_account_exception,
+cspi_ren_beg_mmdd_nvl as renewal_begin_mmdd,
+cspi_hios_id_nvl as hios_id,
+cspi_itspfx_acctid_nvl as its_pfx_account_id,
 
-### Current View Logic
-The current view:
-- Unions data from both legacy_facets and gemstone_facets satellites
-- Joins to all four hubs to denormalize business keys
-- Uses max(load_datetime) to get the most recent satellite record
-- Provides a business-friendly interface matching original 3NF structure
+-- Patient Care
+pgps_pfx as patient_care_program_set_pfx
+```
 
----
+## Hash Key Definitions
 
-## 🔗 Related Artifacts
+### Staging View Hash Configurations
 
-**Dependencies**:
-- h_group (group hub)
-- h_product_category (product category hub)
-- h_class (class hub)
-- h_plan (plan hub)
-- stg_legacy_bcifacets_hist__dbo_cmc_cspi_cs_plan (source staging)
-- stg_gemstone_facets_hist__dbo_cmc_cspi_cs_plan (source staging)
+```yaml
+# Hub Hash Keys (derived from business keys)
+derived_columns:
+  group_hk:
+    value: "grgr_ck"
+  class_hk:
+    value: "cscs_id"
+  product_category_hk:
+    value: "cspd_cat"
+  plan_hk:
+    value: "cspi_id"
 
-**Downstream Consumers**:
-- Business Vault curated views
-- Member eligibility processing
-- Billing and premium calculation
-- Enrollment management
-- Benefit determination logic
+# Link Hash Key
+  group_product_category_class_plan_hk:
+    value: "group_hk || product_category_hk || class_hk || plan_hk"
 
----
+# Hashdiff for satellite
+  group_plan_eligibility_hashdiff:
+    is_hashdiff: true
+    columns:
+      - plan_effective_dt
+      - plan_termination_dt
+      - product_id
+      - plan_selectable_ind
+      - plan_family_ind
+      - rate_guarantee_dt
+      - rate_guarantee_period_months
+      - rate_guarantee_ind
+      - age_vol_reduction_tbl_pfx
+      - warning_message_seq_no
+      - open_enroll_begin_mmdd
+      - open_enroll_end_mmdd
+      - group_admin_rules_id
+      - its_prefix
+      - premium_age_calc_method
+      - member_id_card_stock
+      - member_id_card_type
+      - hedis_cont_enroll_break
+      - hedis_cont_enroll_days
+      - plan_year_begin_mmdd
+      - network_set_pfx
+      - plan_co_month
+      - covering_provider_set_pfx
+      - hra_admin_info_id
+      - postponement_ind
+      - debit_card_bank_rel_pfx
+      - dental_util_edits_pfx
+      - value_based_benefits_id
+      - billing_strategy_id
+      - lock_token
+      - attachment_source_id
+      - last_update_dtm
+      - last_update_user_id
+      - last_update_dbuser_id
+      - secondary_plan_cd
+      - auth_cert_entity_id
+      - its_account_exception
+      - renewal_begin_mmdd
+      - hios_id
+      - its_pfx_account_id
+      - patient_care_program_set_pfx
+```
 
-## 📅 Migration Strategy
+## Link Model Configuration
 
-### Phase 1: Implementation
-1. Ensure all four hub tables exist and are populated
-2. Deploy rename views for column standardization
-3. Deploy staging models with hash key generation
-4. Deploy link table to establish relationships
-5. Deploy effectivity satellites with temporal logic
-6. Deploy current view for business consumption
+```yaml
+# l_group_product_category_class_plan.sql
+source_model: "stg_group_plan_eligibility_{source}"
+src_pk: "group_product_category_class_plan_hk"
+src_fk:
+  - group_hk
+  - product_category_hk
+  - class_hk
+  - plan_hk
+src_ldts: "load_datetime"
+src_source: "source"
+```
 
-### Phase 2: Validation
-1. Row count reconciliation against source tables
-2. Business key uniqueness validation
-3. Temporal integrity checks (no gaps/overlaps)
-4. Referential integrity validation
-5. Hash key consistency verification
+## Effectivity Satellite Configuration
 
-### Phase 3: Cutover
-1. Run parallel testing against legacy 3NF structure
-2. Validate query performance meets SLA requirements
-3. Migrate downstream dependencies to current view
-4. Document mapping for troubleshooting
-5. Monitor data quality metrics post-cutover
+Both satellites use the same effectivity configuration:
 
----
+```yaml
+# Effectivity Satellite
+source_model: "stg_group_plan_eligibility_{source}"
+src_pk: "group_product_category_class_plan_hk"
+src_dfk: "group_product_category_class_plan_hk"  # Link foreign key
+src_sfk: "plan_hk"                               # Driving key
+src_start_date: "plan_effective_dt"
+src_end_date: "plan_termination_dt"
+src_eff: "plan_effective_dt"
+src_ldts: "load_datetime"
+src_source: "source"
+```
 
-## ✅ Acceptance Criteria
+### Payload Columns for Satellites
 
-- [ ] All source columns mapped to renamed columns
-- [ ] All four hash keys generated correctly
-- [ ] Link table populated with valid foreign key references
-- [ ] Effectivity satellites track temporal changes
-- [ ] Current view returns expected row counts
-- [ ] All recommended tests pass
-- [ ] Documentation complete and reviewed
-- [ ] Performance benchmarks meet requirements
+All non-key columns from the rename view should be included:
 
----
+```yaml
+src_payload:
+  - product_id
+  - plan_selectable_ind
+  - plan_family_ind
+  - rate_guarantee_dt
+  - rate_guarantee_period_months
+  - rate_guarantee_ind
+  - age_vol_reduction_tbl_pfx
+  - warning_message_seq_no
+  - open_enroll_begin_mmdd
+  - open_enroll_end_mmdd
+  - group_admin_rules_id
+  - its_prefix
+  - premium_age_calc_method
+  - member_id_card_stock
+  - member_id_card_type
+  - hedis_cont_enroll_break
+  - hedis_cont_enroll_days
+  - plan_year_begin_mmdd
+  - network_set_pfx
+  - plan_co_month
+  - covering_provider_set_pfx
+  - hra_admin_info_id
+  - postponement_ind
+  - debit_card_bank_rel_pfx
+  - dental_util_edits_pfx
+  - value_based_benefits_id
+  - billing_strategy_id
+  - lock_token
+  - attachment_source_id
+  - last_update_dtm
+  - last_update_user_id
+  - last_update_dbuser_id
+  - secondary_plan_cd
+  - auth_cert_entity_id
+  - its_account_exception
+  - renewal_begin_mmdd
+  - hios_id
+  - its_pfx_account_id
+  - patient_care_program_set_pfx
+```
 
-**Document Version**: 1.0
-**Last Updated**: 2025-10-02
-**Author**: EDP AI Expert Team
+## Current View Logic
+
+The current view should:
+1. Join the link `l_group_product_category_class_plan`
+2. LEFT JOIN both satellites (`s_group_plan_eligibility_legacy_facets` and `s_group_plan_eligibility_gemstone_facets`)
+3. Filter to current records only (where `load_end_datetime IS NULL`)
+4. Include all payload columns from both satellites with appropriate source prefixes
+
+## Files to Create
+
+1. `stg_group_plan_eligibility_legacy_facets_rename.sql`
+2. `stg_group_plan_eligibility_gemstone_facets_rename.sql`
+3. `stg_group_plan_eligibility_legacy_facets.sql`
+4. `stg_group_plan_eligibility_gemstone_facets.sql`
+5. `l_group_product_category_class_plan.sql`
+6. `s_group_plan_eligibility_legacy_facets.sql`
+7. `s_group_plan_eligibility_gemstone_facets.sql`
+8. `current_group_plan_eligibility.sql`
+
+## Notes
+
+- This is a relationship entity connecting Group, Product Category, Class, and Plan
+- Uses effectivity satellites to track time-based relationships
+- The link drives the relationship; satellites contain the descriptive attributes
+- Effectivity dates: `cspi_eff_dt` (start) and `cspi_term_dt` (end)
+- The driving foreign key for effectivity is `plan_hk`

@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_wpzp_pzap_apps","wpzp_app_name","Program Definition","Facets Application","varchar"
+"dbo","nwx_wpzp_pzap_apps","wpzp_app_desc","Program Definition","Program Description","varchar"
+"dbo","nwx_wpzp_pzap_apps","wpzp_prod_id","Program Definition","Facets Product","varchar"

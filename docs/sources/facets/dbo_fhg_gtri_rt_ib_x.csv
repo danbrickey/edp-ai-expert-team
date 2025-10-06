@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhg_gtri_rt_ib_x","gtgt_ckn","","Gateway Transaction Contrived Key","numeric"
+"dbo","fhg_gtri_rt_ib_x","gtrt_cntl_id_ib","","","varchar"
+"dbo","fhg_gtri_rt_ib_x","gtri_icic_ck_send","","","int"

@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_phih_msg_hdr","phih_msg_id","","","char"
+"dbo","cer_phih_msg_hdr","syin_inst","","System Instance","bigint"
+"dbo","cer_phih_msg_hdr","phih_client_create_dtm","","Create Date","datetime"

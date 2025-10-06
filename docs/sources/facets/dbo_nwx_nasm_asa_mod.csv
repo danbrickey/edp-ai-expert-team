@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_nasm_asa_mod","nasm_id","Modifier Data","Identity Column","numeric"
+"dbo","nwx_nasm_asa_mod","nasm_asa_mod1","Modifier Data","Modifier Value","varchar"
+"dbo","nwx_nasm_asa_mod","nasm_asa_mod2","Modifier Data","Modifier Value","varchar"
+"dbo","nwx_nasm_asa_mod","nasm_asa_mod3","Modifier Data","Modifier Value","varchar"
+"dbo","nwx_nasm_asa_mod","nasm_asa_icd10","Modifier Data","ICD 10 Diagnosis Code","varchar"
+"dbo","nwx_nasm_asa_mod","nasm_asa_addunits","Modifier Data","Additional Base Rate Units","int"
+"dbo","nwx_nasm_asa_mod","nasm_lock_token","Modifier Data","Lock Token","smallint"

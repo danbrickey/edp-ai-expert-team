@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_scsc_section","scsc_section_id","Parameters Section Definition","Section ID","char"
+"dbo","cer_scsc_section","scsc_section_desc","Parameters Section Definition","Section Description","char"
+"dbo","cer_scsc_section","scsc_lock_token","Parameters Section Definition","Lock Token","smallint"
+"dbo","cer_scsc_section","atxr_source_id","Parameters Section Definition","Attachment Source Id","datetime"

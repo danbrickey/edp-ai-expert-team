@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_pdla_lang","syin_inst","Language Table for Provider Directories","Instance ID","bigint"
+"dbo","cds_pdla_lang","prcr_id","Language Table for Provider Directories","Credentialing ID","char"
+"dbo","cds_pdla_lang","prla_mctr_lang","Language Table for Provider Directories","Provider Language","char"
+"dbo","cds_pdla_lang","prla_lang_desc","Language Table for Provider Directories","Provider Language Description","char"

@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_sdsp_svc_sp_def","sdsp_name","Facets Invoke SP REST Service Stored Procedure Definition","Stored Procedure Name","varchar"
+"dbo","cer_sdsp_svc_sp_def","sdsp_desc","Facets Invoke SP REST Service Stored Procedure Definition","Stored Procedure Description","varchar"
+"dbo","cer_sdsp_svc_sp_def","sys_last_upd_dtm","Facets Invoke SP REST Service Stored Procedure Definition","Last Update Datetime","datetime"
+"dbo","cer_sdsp_svc_sp_def","sys_usus_id","Facets Invoke SP REST Service Stored Procedure Definition","Last Update User ID","varchar"
+"dbo","cer_sdsp_svc_sp_def","sys_dbuser_id","Facets Invoke SP REST Service Stored Procedure Definition","Last Update DBMS User ID","varchar"

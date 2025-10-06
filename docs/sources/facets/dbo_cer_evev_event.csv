@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_evev_event","evev_id","Facets IoT Message Event Detail","Event ID","int"
+"dbo","cer_evev_event","evct_cat","Facets IoT Message Event Detail","Event Category","varchar"
+"dbo","cer_evev_event","evev_name","Facets IoT Message Event Detail","Event Name","varchar"
+"dbo","cer_evev_event","evev_desc","Facets IoT Message Event Detail","Event Description","varchar"
+"dbo","cer_evev_event","evdt_name","Facets IoT Message Event Detail","Event Data Name","varchar"
+"dbo","cer_evev_event","evev_enabled_ind","Facets IoT Message Event Detail","Event Enabled Indicator","char"
+"dbo","cer_evev_event","evev_hub_bypass_ind","Facets IoT Message Event Detail","Event Hub Bypass Indicator","char"

@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_attb_tbl_d","attb_id","Attachment Tables","Table ID","char"
+"dbo","cer_attb_tbl_d","attb_type","Attachment Tables","Attachment Table Type","char"
+"dbo","cer_attb_tbl_d","attb_desc","Attachment Tables","Attachment Table Description","char"
+"dbo","cer_attb_tbl_d","attb_lock_token","Attachment Tables","Lock Token","smallint"

@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_ckdx_check_ext","ckpy_ref_id","Disabiltiy Check Extract Format table","Payment Reference","char"
+"dbo","cds_ckdx_check_ext","rec_order","Disabiltiy Check Extract Format table","Record Order","smallint"
+"dbo","cds_ckdx_check_ext","rec_key","Disabiltiy Check Extract Format table","Record Key","varchar"
+"dbo","cds_ckdx_check_ext","check_ext_data","Disabiltiy Check Extract Format table","Extract Data","char"

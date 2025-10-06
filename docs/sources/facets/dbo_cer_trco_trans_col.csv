@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_trco_trans_col","trdt_data_id","","Transfer Record ID","char"
+"dbo","cer_trco_trans_col","trco_column_name","","","varchar"
+"dbo","cer_trco_trans_col","trco_lock_token","","Lock Token","smallint"
+"dbo","cer_trco_trans_col","sys_last_upd_dtm","","Last Update Datetime","datetime"
+"dbo","cer_trco_trans_col","sys_usus_id","","Last Update User ID","varchar"
+"dbo","cer_trco_trans_col","sys_dbuser_id","","Last Update DBMS User ID","varchar"

@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_auky_keys","auky_table","Audit Candidate Tables","Table Name","varchar"
+"dbo","cer_auky_keys","auky_seq_no","Audit Candidate Tables","Audit Row","int"
+"dbo","cer_auky_keys","hist_row_id","Audit Candidate Tables","History Row ID","numeric"

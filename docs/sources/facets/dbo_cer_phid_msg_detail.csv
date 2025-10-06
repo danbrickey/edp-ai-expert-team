@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_phid_msg_detail","phih_msg_id","","","char"
+"dbo","cer_phid_msg_detail","phid_key_column","","","varchar"
+"dbo","cer_phid_msg_detail","phid_key_value","","","varchar"
+"dbo","cer_phid_msg_detail","phid_lock_token","","Lock Token","smallint"

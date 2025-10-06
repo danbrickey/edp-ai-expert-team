@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhg_tpca_inbound_u","custno","","Gateway TP Customer Number","varchar"
+"dbo","fhg_tpca_inbound_u","gtgt_pzcd_btyp","","Business Transaction Type","char"
+"dbo","fhg_tpca_inbound_u","tpca_ack_indb","","","char"
+"dbo","fhg_tpca_inbound_u","tpca_last_usus_id","","","char"
+"dbo","fhg_tpca_inbound_u","tpca_last_upd_dtm","","","datetime"
+"dbo","fhg_tpca_inbound_u","tpca_lock_token","","Lock Token","smallint"
+"dbo","fhg_tpca_inbound_u","atxr_source_id","","Attachment Source Id","datetime"

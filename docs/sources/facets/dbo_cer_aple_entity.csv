@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_aple_entity","aple_entity_entry","Library Name and Entry Point","Application Entry Point","char"
+"dbo","cer_aple_entity","aplb_name","Library Name and Entry Point","Entry Library Name","varchar"
+"dbo","cer_aple_entity","aple_parm_desc","Library Name and Entry Point","Entry Parameter Description","char"
+"dbo","cer_aple_entity","aple_entry_type","Library Name and Entry Point","Entry Point Type","char"
+"dbo","cer_aple_entity","aple_lock_token","Library Name and Entry Point","Lock Token","smallint"

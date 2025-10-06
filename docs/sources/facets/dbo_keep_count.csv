@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","keep_count","entityname","","","varchar"
+"dbo","keep_count","publishcount","","","int"
+"dbo","keep_count","commitcount","","","int"

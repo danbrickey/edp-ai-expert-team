@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","caet_pub_group","grgr_ck","Data Publication Manager Table","Group Address Line 1","int"
+"dbo","caet_pub_group","entityname","Data Publication Manager Table","","varchar"
+"dbo","caet_pub_group","subentityname","Data Publication Manager Table","","varchar"
+"dbo","caet_pub_group","createddtm","Data Publication Manager Table","Create Date","datetime"
+"dbo","caet_pub_group","idlrun","Data Publication Manager Table","","int"
+"dbo","caet_pub_group","filter","Data Publication Manager Table","","varchar"

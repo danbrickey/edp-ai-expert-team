@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhd_ckyn_contrive","ckyn_id","Numeric Contrived Key","Contrived Key ID","char"
+"dbo","fhd_ckyn_contrive","ckyn_ckn","Numeric Contrived Key","Contrived Key","numeric"
+"dbo","fhd_ckyn_contrive","ckyn_inc_value","Numeric Contrived Key","Increment Value","smallint"
+"dbo","fhd_ckyn_contrive","ckyn_lock_token","Numeric Contrived Key","Lock Token","smallint"

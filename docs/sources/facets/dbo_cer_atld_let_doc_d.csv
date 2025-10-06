@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_atld_let_doc_d","atld_id","Attachment Letter Documents","Attachment Document ID","char"
+"dbo","cer_atld_let_doc_d","atld_desc","Attachment Letter Documents","Attachment Document Description","char"
+"dbo","cer_atld_let_doc_d","atsy_id","Attachment Letter Documents","Attachment Document Style ID","char"
+"dbo","cer_atld_let_doc_d","atxr_source_id","Attachment Letter Documents","Attachment Source Id","datetime"
+"dbo","cer_atld_let_doc_d","atld_lock_token","Attachment Letter Documents","Lock Token","smallint"

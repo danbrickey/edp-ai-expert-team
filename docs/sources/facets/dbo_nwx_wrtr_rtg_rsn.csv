@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_wrtr_rtg_rsn","wrtr_reason_id","Routing Reason Table","Routing Reason Contrived Key","int"
+"dbo","nwx_wrtr_rtg_rsn","wrtr_reason_desc","Routing Reason Table","Routing Reason Description","varchar"
+"dbo","nwx_wrtr_rtg_rsn","wmgt_msg_type","Routing Reason Table","Queue Enabled Indicator","int"
+"dbo","nwx_wrtr_rtg_rsn","wrtr_active_ind","Routing Reason Table","Active Indicator","int"

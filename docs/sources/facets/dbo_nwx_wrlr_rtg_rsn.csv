@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_wrlr_rtg_rsn","wrol_role_id","Available Routing Reasons by Role","Workflow Role ID","int"
+"dbo","nwx_wrlr_rtg_rsn","wrtr_reason_id","Available Routing Reasons by Role","Routing Reason Contrived Key","int"
+"dbo","nwx_wrlr_rtg_rsn","wrlr_reason_type","Available Routing Reasons by Role","Role/Routing Reason Type","int"

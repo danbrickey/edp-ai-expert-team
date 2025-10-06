@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","bpa_rlgr_grp_set_r","rlgd_gu_id","Rule Group Relationship","Group ID","char"
+"dbo","bpa_rlgr_grp_set_r","rlbp_gu_id","Rule Group Relationship","Rule ID","char"
+"dbo","bpa_rlgr_grp_set_r","rlgr_lock_token","Rule Group Relationship","Lock Token","smallint"
+"dbo","bpa_rlgr_grp_set_r","atxr_source_id","Rule Group Relationship","Attachment Source Id","datetime"
+"dbo","bpa_rlgr_grp_set_r","sys_last_upd_dtm","Rule Group Relationship","Last Update Datetime","datetime"
+"dbo","bpa_rlgr_grp_set_r","sys_usus_id","Rule Group Relationship","Last Update User ID","varchar"
+"dbo","bpa_rlgr_grp_set_r","sys_dbuser_id","Rule Group Relationship","Last Update DBMS User ID","varchar"

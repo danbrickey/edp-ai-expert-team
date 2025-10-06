@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhg_gtop_prep_x","gtgt_ckn","Outbound Envelope Preparation","Gateway Transaction Contrived Key","numeric"
+"dbo","fhg_gtop_prep_x","gtop_valid_ind","Outbound Envelope Preparation","Validation Indicator","char"
+"dbo","fhg_gtop_prep_x","gtop_ec_custno","Outbound Envelope Preparation","Internal Trading Partner ID","varchar"

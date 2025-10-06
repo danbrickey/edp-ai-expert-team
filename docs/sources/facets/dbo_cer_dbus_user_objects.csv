@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_dbus_user_objects","dbus_object_owner","Database User Objects","Customer Object Owner","char"
+"dbo","cer_dbus_user_objects","dbus_object_name","Database User Objects","Custome Object Name","char"
+"dbo","cer_dbus_user_objects","dbus_object_type","Database User Objects","Customer Object Type","char"
+"dbo","cer_dbus_user_objects","dbob_object_table","Database User Objects","Customer Object Index Table","char"
+"dbo","cer_dbus_user_objects","dbus_user_type","Database User Objects","Customer Object User Type","char"
+"dbo","cer_dbus_user_objects","dbus_lock_token","Database User Objects","Lock Token","smallint"

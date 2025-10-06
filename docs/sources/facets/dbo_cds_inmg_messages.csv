@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_inmg_messages","bliv_id","Message Table for Invoice Billing","Invoice ID","varchar"
+"dbo","cds_inmg_messages","blmd_id","Message Table for Invoice Billing","Message ID","char"
+"dbo","cds_inmg_messages","blmr_print_seq","Message Table for Invoice Billing","Message Relationshjp Print Sequence","smallint"
+"dbo","cds_inmg_messages","blmt_seq_no","Message Table for Invoice Billing","Message Print Sequence Number","smallint"
+"dbo","cds_inmg_messages","blmt_msg_text","Message Table for Invoice Billing","Message Text","varbinary"
+"dbo","cds_inmg_messages","inmg_lock_token","Message Table for Invoice Billing","Lock Token","smallint"

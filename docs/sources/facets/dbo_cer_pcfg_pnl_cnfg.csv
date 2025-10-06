@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pcfg_pnl_cnfg","pcfg_id","Configurable Panel Stetup Information","Configurable Panel ID","varchar"
+"dbo","cer_pcfg_pnl_cnfg","pcfg_desc","Configurable Panel Stetup Information","Configurable Panel Description","varchar"
+"dbo","cer_pcfg_pnl_cnfg","pcfg_lock_token","Configurable Panel Stetup Information","Lock Token","smallint"

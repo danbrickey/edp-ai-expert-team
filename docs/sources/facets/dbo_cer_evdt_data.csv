@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_evdt_data","evdt_name","Facets IoT Message Event Data","Event Data Name","varchar"
+"dbo","cer_evdt_data","evdt_desc","Facets IoT Message Event Data","Event Data Description","varchar"
+"dbo","cer_evdt_data","evdt_lib_name","Facets IoT Message Event Data","Event Data Formatter Library Name","varchar"

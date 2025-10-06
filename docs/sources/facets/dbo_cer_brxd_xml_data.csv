@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_brxd_xml_data","brks_row_id","Broker XML Capture Data","Broker Stats Row Identifier","numeric"
+"dbo","cer_brxd_xml_data","brxd_type","Broker XML Capture Data","Broker XML Type","char"
+"dbo","cer_brxd_xml_data","brxd_seq_no","Broker XML Capture Data","Broker XML Sequence No.","smallint"
+"dbo","cer_brxd_xml_data","brxd_data","Broker XML Capture Data","Broker XML Data","varchar"

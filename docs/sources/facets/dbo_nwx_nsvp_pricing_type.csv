@@ -1,0 +1,3 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_nsvp_pricing_type","nsvp_pricing_type","Vision Schedule Pricing Type","Pricing Type","char"
+"dbo","nwx_nsvp_pricing_type","nsvp_desc","Vision Schedule Pricing Type","Pricing Type","varchar"

@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_atdt_data_d","atsy_id","Attached File","Attached File Style ID","char"
+"dbo","cer_atdt_data_d","atxr_dest_id","Attached File","Attached File Destination ID","datetime"
+"dbo","cer_atdt_data_d","atdt_seq_no","Attached File","Attached File Sequence No.","smallint"
+"dbo","cer_atdt_data_d","atdt_data","Attached File","Attached File Data","varchar"
+"dbo","cer_atdt_data_d","atld_id","Attached File","External Document ID","char"
+"dbo","cer_atdt_data_d","atxr_attach_id","Attached File","Attached File Attach ID","datetime"
+"dbo","cer_atdt_data_d","atdt_lock_token","Attached File","Lock Token","smallint"

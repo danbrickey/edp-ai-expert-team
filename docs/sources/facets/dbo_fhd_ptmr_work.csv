@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhd_ptmr_work","ptmr_row_id","PTMR Work Table","PTMR Row ID","numeric"
+"dbo","fhd_ptmr_work","pzpz_id","PTMR Work Table","Application Product ID","char"
+"dbo","fhd_ptmr_work","pzap_app_id","PTMR Work Table","Product Application ID","char"
+"dbo","fhd_ptmr_work","gtgt_ckn","PTMR Work Table","Generic Transaction Contrived Key","numeric"
+"dbo","fhd_ptmr_work","gtst_sts_curr","PTMR Work Table","Current Status","int"
+"dbo","fhd_ptmr_work","dohd_ckn","PTMR Work Table","Document Contrived Key","numeric"

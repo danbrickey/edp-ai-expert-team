@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_temp_inid","inid_id","CDS_TEMP_INID Temp Table.","","timestamp"
+"dbo","cds_temp_inid","bliv_id","CDS_TEMP_INID Temp Table.","Invoice Number","char"
+"dbo","cds_temp_inid","blei_ck","CDS_TEMP_INID Temp Table.","Billing Entity Contrived Key","int"
+"dbo","cds_temp_inid","blbl_due_dt","CDS_TEMP_INID Temp Table.","Billing Due Date","datetime"

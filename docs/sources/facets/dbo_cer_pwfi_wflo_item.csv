@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_pwfi_wflo_item","pitm_ticket_no","Process Workflow Item","Process Item Ticket Number","char"
+"dbo","cer_pwfi_wflo_item","usus_id","Process Workflow Item","User Identifier","char"
+"dbo","cer_pwfi_wflo_item","pwfi_type","Process Workflow Item","Workflow Item Type","char"

@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_srch_group","srch_id","System Search Group","Search Group ID","varchar"
+"dbo","cer_srch_group","srch_desc","System Search Group","Search Group Description","varchar"
+"dbo","cer_srch_group","srch_dflt_ind","System Search Group","Search Default Indicator","char"
+"dbo","cer_srch_group","srch_lock_token","System Search Group","Lock Token","smallint"

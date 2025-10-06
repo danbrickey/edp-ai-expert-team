@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_cosy_style_u","syco_id","Component Attachment Style Table","Attachment Style Component ID","char"
+"dbo","cer_cosy_style_u","attb_id","Component Attachment Style Table","Attachment Style Table ID","char"
+"dbo","cer_cosy_style_u","attb_type","Component Attachment Style Table","Attachment Table Type","char"
+"dbo","cer_cosy_style_u","atsy_id","Component Attachment Style Table","Component Attachment Style ID","char"
+"dbo","cer_cosy_style_u","cosy_disp_label","Component Attachment Style Table","Component Attachment Style Display Label","char"
+"dbo","cer_cosy_style_u","cosy_lock_token","Component Attachment Style Table","Lock Token","smallint"
+"dbo","cer_cosy_style_u","atxr_source_id","Component Attachment Style Table","Attachment Source Id","datetime"

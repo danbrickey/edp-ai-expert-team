@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_wfdn_wrk_done","wfdn_trans_id","Workflow Process Completion Table","Transaction ID","char"
+"dbo","cer_wfdn_wrk_done","wfdn_create_dtm","Workflow Process Completion Table","Transaction Create Date-time","datetime"
+"dbo","cer_wfdn_wrk_done","usus_id","Workflow Process Completion Table","User Identifier","char"
+"dbo","cer_wfdn_wrk_done","pzpz_id","Workflow Process Completion Table","Transaction Product ID","char"
+"dbo","cer_wfdn_wrk_done","pzap_app_id","Workflow Process Completion Table","Transaction Application ID","char"

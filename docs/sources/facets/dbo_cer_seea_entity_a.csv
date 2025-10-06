@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_seea_entity_a","pzpz_id","Product Security Entities","Entity Product ID","char"
+"dbo","cer_seea_entity_a","seda_id","Product Security Entities","Entity Domain ID","char"
+"dbo","cer_seea_entity_a","seda_action","Product Security Entities","Entity Action","char"
+"dbo","cer_seea_entity_a","seea_id","Product Security Entities","Entity ID","char"
+"dbo","cer_seea_entity_a","seea_desc","Product Security Entities","Entity Description","char"
+"dbo","cer_seea_entity_a","seea_lock_token","Product Security Entities","Lock Token","smallint"

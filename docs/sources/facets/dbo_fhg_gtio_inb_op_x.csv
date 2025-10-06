@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhg_gtio_inb_op_x","gtgt_ckn","Inbound Output","Gateway Transaction Contrived Key","numeric"
+"dbo","fhg_gtio_inb_op_x","gtio_ver_req_indb","Inbound Output","Verification Request Indicator","char"
+"dbo","fhg_gtio_inb_op_x","gtio_ver_indb","Inbound Output","Verification Indicator","char"
+"dbo","fhg_gtio_inb_op_x","gtio_ret_cd","Inbound Output","Return Code","char"
+"dbo","fhg_gtio_inb_op_x","gtio_control_no","Inbound Output","Control Number","int"

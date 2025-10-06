@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_srds_display","srds_id","Configurable List Display Information","Configurable List ID","varchar"
+"dbo","cer_srds_display","srds_desc","Configurable List Display Information","Configurable List Description","varchar"
+"dbo","cer_srds_display","srds_source_type","Configurable List Display Information","Source Type","char"
+"dbo","cer_srds_display","srds_source_name","Configurable List Display Information","Configurable List Source","varchar"
+"dbo","cer_srds_display","srds_source_loc","Configurable List Display Information","Configurable List Source Location","varchar"
+"dbo","cer_srds_display","srds_lock_token","Configurable List Display Information","Lock Token","smallint"

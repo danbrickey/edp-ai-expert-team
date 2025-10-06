@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_autt_target_tables","autt_table","Audit Select Table","Audit Table Name","varchar"
+"dbo","cer_autt_target_tables","autt_type","Audit Select Table","Audit Type","char"
+"dbo","cer_autt_target_tables","sys_last_upd_dtm","Audit Select Table","Last Update Datetime","datetime"
+"dbo","cer_autt_target_tables","sys_usus_id","Audit Select Table","Last Update User ID","varchar"
+"dbo","cer_autt_target_tables","sys_dbuser_id","Audit Select Table","Last Update DBMS User ID","varchar"
+"dbo","cer_autt_target_tables","autt_retention_days_nvl","Audit Select Table","","int"
+"dbo","cer_autt_target_tables","autt_active_sw_nvl","Audit Select Table","","char"

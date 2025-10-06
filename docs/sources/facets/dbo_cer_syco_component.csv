@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_syco_component","syco_id","System Component","Component ID","char"
+"dbo","cer_syco_component","syco_type","System Component","Component Type","char"
+"dbo","cer_syco_component","syco_desc","System Component","Component Description","char"
+"dbo","cer_syco_component","syco_disp_label","System Component","Component Display Label","char"
+"dbo","cer_syco_component","apmd_id","System Component","System Component Module ID","char"
+"dbo","cer_syco_component","syco_lock_token","System Component","Lock Token","smallint"
+"dbo","cer_syco_component","atxr_source_id","System Component","Attachment Source Id","datetime"

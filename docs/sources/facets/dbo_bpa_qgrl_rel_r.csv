@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","bpa_qgrl_rel_r","qlcd_gu_id","Qualifier Group Condition Relationship","Condition ID","char"
+"dbo","bpa_qgrl_rel_r","qlgr_gu_id","Qualifier Group Condition Relationship","Qualifier Group ID","char"
+"dbo","bpa_qgrl_rel_r","qgrl_lock_token","Qualifier Group Condition Relationship","Lock Token","smallint"
+"dbo","bpa_qgrl_rel_r","atxr_source_id","Qualifier Group Condition Relationship","Attachment Source Id","datetime"
+"dbo","bpa_qgrl_rel_r","sys_last_upd_dtm","Qualifier Group Condition Relationship","Last Update Datetime","datetime"
+"dbo","bpa_qgrl_rel_r","sys_usus_id","Qualifier Group Condition Relationship","Last Update User ID","varchar"
+"dbo","bpa_qgrl_rel_r","sys_dbuser_id","Qualifier Group Condition Relationship","Last Update DBMS User ID","varchar"

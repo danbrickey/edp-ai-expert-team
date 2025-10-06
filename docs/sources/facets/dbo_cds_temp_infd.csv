@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_temp_infd","infd_id","Temporary Decision Support Table","","timestamp"
+"dbo","cds_temp_infd","bliv_id","Temporary Decision Support Table","Invoice Number","char"
+"dbo","cds_temp_infd","pmfa_id","Temporary Decision Support Table","Fee ID or Discount ID","char"
+"dbo","cds_temp_infd","blfd_source","Temporary Decision Support Table","Billing Source","char"
+"dbo","cds_temp_infd","blfd_disp_cd","Temporary Decision Support Table","Disposition Code","char"

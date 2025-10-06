@@ -1,0 +1,8 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_usls_user_list","usus_id","User list related to a user's ID","User Identifier","char"
+"dbo","cer_usls_user_list","usls_usus_id","User list related to a user's ID","User List User ID","char"
+"dbo","cer_usls_user_list","usls_history_dtm","User list related to a user's ID","User Date Time","datetime"
+"dbo","cer_usls_user_list","usls_lock_token","User list related to a user's ID","Lock Token","smallint"
+"dbo","cer_usls_user_list","sys_last_upd_dtm","User list related to a user's ID","Last Update Datetime","datetime"
+"dbo","cer_usls_user_list","sys_usus_id","User list related to a user's ID","Last Update User ID","varchar"
+"dbo","cer_usls_user_list","sys_dbuser_id","User list related to a user's ID","Last Update DBMS User ID","varchar"

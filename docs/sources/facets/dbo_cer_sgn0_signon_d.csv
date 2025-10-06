@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_sgn0_signon_d","spid","Signon Table","Server Process ID","smallint"
+"dbo","cer_sgn0_signon_d","pzpz_id","Signon Table","Signon Product ID","char"
+"dbo","cer_sgn0_signon_d","cici_id","Signon Table","Signon Client ID","char"
+"dbo","cer_sgn0_signon_d","usus_id","Signon Table","User Identifier","char"
+"dbo","cer_sgn0_signon_d","sgn0_create_dt","Signon Table","Signon Create Date","datetime"
+"dbo","cer_sgn0_signon_d","sgn0_lock_token","Signon Table","Lock Token","smallint"

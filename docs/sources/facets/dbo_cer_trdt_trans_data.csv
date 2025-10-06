@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_trdt_trans_data","trdt_data_id","Transfer Data Definition","Transfer Record ID","char"
+"dbo","cer_trdt_trans_data","trdt_desc","Transfer Data Definition","Transfer Description","char"
+"dbo","cer_trdt_trans_data","trdt_data_type","Transfer Data Definition","Transfer Data Type","char"
+"dbo","cer_trdt_trans_data","trdt_lock_token","Transfer Data Definition","Lock Token","smallint"
+"dbo","cer_trdt_trans_data","atxr_source_id","Transfer Data Definition","Attachment Source Id","datetime"

@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_pdst_staff","syin_inst","Staff Information Table for Provider Directories","Instance ID","bigint"
+"dbo","cds_pdst_staff","prcr_id","Staff Information Table for Provider Directories","Credentialing ID","char"
+"dbo","cds_pdst_staff","prst_mctr_type","Staff Information Table for Provider Directories","Facility Staff Type","char"
+"dbo","cds_pdst_staff","prst_type_desc","Staff Information Table for Provider Directories","Facility Staff Description","char"
+"dbo","cds_pdst_staff","prst_no","Staff Information Table for Provider Directories","Facility Staff Number","smallint"

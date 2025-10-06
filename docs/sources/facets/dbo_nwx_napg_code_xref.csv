@@ -1,0 +1,4 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_napg_code_xref","napg_ret_code","NetworX Code Cross Reference Table","APG Return Code","varchar"
+"dbo","nwx_napg_code_xref","napg_excd_id","NetworX Code Cross Reference Table","Explanation Code","char"
+"dbo","nwx_napg_code_xref","napg_wmds_nmbr","NetworX Code Cross Reference Table","Warning Message Number","smallint"

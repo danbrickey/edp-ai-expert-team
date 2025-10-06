@@ -1,0 +1,7 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_coat_attb_u","syco_id","Component Attachment Table","Attachment Component ID","char"
+"dbo","cer_coat_attb_u","attb_id","Component Attachment Table","Attachment Table ID","char"
+"dbo","cer_coat_attb_u","attb_type","Component Attachment Table","Attachment Table Type","char"
+"dbo","cer_coat_attb_u","coat_disp_label","Component Attachment Table","Attachment Component Display Label","char"
+"dbo","cer_coat_attb_u","coat_lock_token","Component Attachment Table","Lock Token","smallint"
+"dbo","cer_coat_attb_u","atxr_source_id","Component Attachment Table","Attachment Source Id","datetime"

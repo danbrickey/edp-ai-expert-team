@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhg_gtar_work","gtgt_ckn","Gateway Purge Batch Work table","Gateway Transaction Contrived Key","numeric"
+"dbo","fhg_gtar_work","dohd_ckn","Gateway Purge Batch Work table","Document Transaction Contrived Key","numeric"
+"dbo","fhg_gtar_work","purge_ind","Gateway Purge Batch Work table","Purge Indicator","char"
+"dbo","fhg_gtar_work","syin_inst","Gateway Purge Batch Work table","System Instance","bigint"

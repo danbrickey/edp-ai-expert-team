@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cer_autb_table","autb_table_name","Available Archive Tables","Table Name","varchar"
+"dbo","cer_autb_table","autb_rows","Available Archive Tables","Audit Rows","int"
+"dbo","cer_autb_table","autb_rows_archived","Available Archive Tables","Archived Rows","int"
+"dbo","cer_autb_table","autb_last_archive_date_nvl","Available Archive Tables","","datetime"

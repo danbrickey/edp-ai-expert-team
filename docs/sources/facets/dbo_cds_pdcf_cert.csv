@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","cds_pdcf_cert","syin_inst","Provider Board Certification Table for Provider Directories","Instance ID","bigint"
+"dbo","cds_pdcf_cert","prcr_id","Provider Board Certification Table for Provider Directories","Credentialing ID","char"
+"dbo","cds_pdcf_cert","prcf_mctr_spec","Provider Board Certification Table for Provider Directories","Practitioner Certification Specialty","char"
+"dbo","cds_pdcf_cert","prcf_spec_desc","Provider Board Certification Table for Provider Directories","Specialty Description","char"

@@ -1,0 +1,5 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","fhg_gtoi_input_x","gtgt_ckn","Outbound Input Table","Gateway Transaction Contrived Key","numeric"
+"dbo","fhg_gtoi_input_x","gtoi_ack_indb","Outbound Input Table","Acknowledgement Indicator","char"
+"dbo","fhg_gtoi_input_x","gtoi_ack_req_indb","Outbound Input Table","Acknowledgement Requested Indicator","char"
+"dbo","fhg_gtoi_input_x","gtoi_test_indb","Outbound Input Table","Test Indicator","char"

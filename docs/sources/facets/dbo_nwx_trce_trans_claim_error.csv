@@ -1,0 +1,6 @@
+"source_schema","source_table","source_column","table_description","column_description","column_data_type"
+"dbo","nwx_trce_trans_claim_error","cacheid","Transparency Claim Error","CACHE ID","char"
+"dbo","nwx_trce_trans_claim_error","errorcode","Transparency Claim Error","Error Code","int"
+"dbo","nwx_trce_trans_claim_error","inputxml","Transparency Claim Error","Input XML","varchar"
+"dbo","nwx_trce_trans_claim_error","response","Transparency Claim Error","JSON Response","varchar"
+"dbo","nwx_trce_trans_claim_error","trce_create_dtm","Transparency Claim Error","System Instance Create Date/Time","datetime"
