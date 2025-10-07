@@ -9,48 +9,63 @@ This is the EDP AI Expert Team repository - a specialized consulting practice fo
 - **ai-resources/context-documents/edp-work-plan-breakdown.md** - Project work breakdown
 - **docs/engineering-knowledge-base/data-vault-2.0-guide.md** - Technical implementation guide
 
-## Team Structure
-- **Data and Solution Architect**: Dan Brickey, (AKA me)
-- **Product Owner**: Sam Schrader
-- **Scrum Coach**: Emmanuel Obaze
-- **Hakkoda - Architect**: Emily Sowder
-- **Snowflake Admin**: Ian Truslow
-- **Snowflake/AWS Admin**: Mike Bills
 
-## Others I collaborate with regularly
+- **EDP Data and Solution Architect**: Dan Brickey, (AKA me)
+
+## Others I collaborate with that I take direction from or have oversight on what I am doing.
 - **CIO**: David Yoo
 - **Director of Data and Analytics**: Ram Garimella
 - **EDP Program Manager**: Linsey Smith
 - **Enterprise Architect**: Sani Messenger
 - **Enterprise Architect**: Dom Desimini
+- **Enterprise Architect**: Rich Tallon
+
+## BCI Teams I collaborate with that I have architectural oversight on:
+
+### **EDP Data Domains Team: data engineering for raw vault, business vault, and dimensional model**
+- Currently not staffed during Q4 2025
+
+### **EDP Admin Team: snowflake config, RBAC, **
+- **Product Owner**: Sam Schrader
+- **Scrum Coach**: Emmanuel Obaze
+- **Hakkoda - Architect**: Emily Sowder
+- **Snowflake Admin**: Ian Truslow
+- **Snowflake/AWS Admin**: Mike Bills
+- **Hakkoda - Architect**: Martin Rivera
+
+### **EDP Ingestion Team**
 - **Delivery Team Manager - Ingestion**: Kelly Good Clark 
+- **Data Engineer - Ingestion**: James Hicks
+- **Data Engineer - Ingestion**: Pei-Chi Liu
+
+### **EDP OneView Team**
+- **Product Owner - OneView**: Jesse Ahern
+- **Data Engineer - OneView**: Shreya Thacker
+- **Data Engineer - OneView**: Jason Seger
+
+### **EDP Extracts Team**
+- **Product Owner - Extracts**: Carl Morse
+- **Data Engineer - Extracts**: Amith Kishore
+- **Data Engineer - Extracts**: Brad Georgeson
+
+## BCI Teams I collaborate with or advise outside the EDP solution
+
+### **HDS Team (On-prem DW)**
 - **Manager - HDS**: Rob Hopper
 - **Data Engineer - HDS**: Cameron Gilbert
 - **Data Engineer - HDS**: Brian Dix
-- **Data Engineer - Ingestion**: James Hicks
-- **Data Engineer - Ingestion**: Pei-Chi Liu
-- **Data Engineer - OneView**: Shreya Thacker
-- **Data Engineer - OneView**: Jason Seger
-- **Enterprise Architect**: Rich Tallon
+- **Data Engineer - HDS**: Cathy Rexrode
+- **Data Engineer - HDS**: Alex Opoiyo
+- **Data Engineer - HDS**: Hawk Yi
 
 ## Business Partners I collaborate with
 - **Hakkoda**: Architecture and implementation guidance for the EDP
 - **Abacus**: Interop partner for cloud data, EDP and some CMS feeds for now
 
 ## Other Contractors I collaborate with regularly
-- **Hakkoda - Architect**: Martin Rivera
 - **Hakkoda - Architect**: Odell Ordonez
-- **Abacus - Architect**: Lorraine Maldonado
+- **Abacus - Program Manager**: Lorraine Maldonado
 - **Abacus - Architect**: Satish Dhanasekar
-
-
-Hawk Yi – Milliman data workflows and WhereScape job coordination. [HDS Core Team]
-
- – ServiceNow task coordination and data table issues. [ServiceNow...d to Group]
-
- – PDE data output table issues and ServiceNow comments. [ServiceNow...tput table]
-
-Alexander Opiyo – Historical ticket resolution and PDE table support. [ServiceNow...tput table
 
 ## Repository Structure
 - `ai-resources/` - AI Tools, Context & Prompts  

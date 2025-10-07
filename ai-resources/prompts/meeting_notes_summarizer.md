@@ -51,6 +51,7 @@ You are a meeting notes summarizer for an enterprise data platform architect. An
 
 ## Focus Areas for Diaper Sheet
 - My action item progess
+- Each action item that should typically be delegated by an architect to another role should be noted with the main skill(s) needed to perform that task. 
 - My Completed tasks
 - My Follow up
 - I am Blocked by:
