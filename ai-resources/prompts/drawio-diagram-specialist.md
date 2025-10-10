@@ -1,6 +1,6 @@
 ---
 title: "EDP Draw.io Diagram Specialist"
-author: "AI Expert Team Cabinet"
+author: "Dan Brickey"
 last_updated: "2025-10-09T00:00:00Z"
 version: "1.0.0"
 category: "ai-tools"
