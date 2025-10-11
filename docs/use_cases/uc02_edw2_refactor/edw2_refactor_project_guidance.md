@@ -21,10 +21,12 @@ Each old dimensional artifact works similarly:
   - A prompt document containing relative path information for all legacy T-SQL stored procedures and views for a given dimensional artifact. These will be in sequnetial order as run in the legacy EDW environment.
   - Supporting architecture information including naming conventions, architecture layers, and business rules from the EDW2 environment.
   - mapping of old raw vault tables and columns to new raw vault tables and columns provide by the engineer after initial analysis
+
 - Outputs:
   - An incomplete mapping document for the raw vault translation with all EDW2 raw vault referencese for the current refactoring problem that an engineer can fill out with the analogous tables from the new raw vault. 
   - A list of recommended business vault objects.
   - dbt model SQL files using Snowflake SQL and automate_dv macros to build the business vault object.
+  - dbt yml file for the dimensional object. Add descriptions for the table and columns that breifly describe the transformation of the columns and a consise description of the column purpose.
   - A mapping table of old-to-new source tables and columns.
 - Edge Cases:
   - If a business rule is embedded in multiple layers of legacy code, flag it for engineer review.
@@ -34,9 +36,10 @@ The workflow would go something like:
 
 - generate a list of source tables and columns by anlyzing the provided old code. use a csv format
 - have the engineer map the columns and tables to the new database objects.
-- analyze the old code for business rules, potential wastefull compute, or opportunities to create a materialized business vault object.
-- using the provided mapping, refactor the old code as CTEs and Snowflake SQL using dbt Cloud into a single dbt sql model for the business vault objects and EDW3 dimensional objects
+- using the provided mapping, analyze the old code for business rules, potential wastefull compute, or opportunities to create a materialized business vault object.
+- refactor the old code as CTEs and Snowflake SQL using dbt Cloud into dbt sql models for the business vault objects and EDW3 dimensional objects
 - recommend tests appropriate for the dimensional model artifact in question.
+- Create the folder if necessary and write the generated files to the following path: `docs\use_cases\uc02_edw2_refactor\output\<entity_name>`
 
 ## 🧱 Architecture Details
 
