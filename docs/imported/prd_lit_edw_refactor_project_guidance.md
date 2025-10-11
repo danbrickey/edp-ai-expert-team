@@ -4,7 +4,7 @@
 
 ### Purpose
 
-We aim to automate the refactoring of legacy SQL Server-based dimensional models (EDW2) into dbt models for Snowflake. The legacy models were generated using Wherescape RED and are tightly coupled to an on-prem SQL Server environment. The goal is to modernize these models to align with the Data Vault 2.0 methodology and Snowflake-native performance patterns, using the automate_dv dbt package where applicable. The refactored EDW2 artifacts would live in the Curation Layer and pull data from the raw vault in the Integration Layer.
+We aim to automate the refactoring of legacy SQL Server-based dimensional models (EDW2) into dbt models for Snowflake (EDW3). When I use the term EDW2 I am refering to the legacy code from Wherescape/SQL Server, when I use the term EDW3, that refers to the new Snowflake implementation of our dimensional model and business vault. The legacy models were generated using Wherescape RED and are tightly coupled to an on-prem SQL Server environment. The goal is to modernize these models to align with the Data Vault 2.0 methodology and Snowflake-native performance patterns, using the automate_dv dbt package where applicable. The refactored EDW3 artifacts would live in the Curation Layer and pull data from the raw vault in the Integration Layer.
 
 ### Old Development Pattern
 
@@ -12,19 +12,19 @@ Each old dimensional artifact works similarly:
 
 - uses a series of Wherescape transient stage tables and views to pull chunks of data from the raw vault, apply business rules and get the data ready to build the final artiofact
 - Create a 'controller' for the artifact that has all the business rule applied records that need to be applied to the dimension or fact. For some artifacts, this is a full picture of the data, but some use an incremental load window depending on the data volume. This step is typically the one right before the proc to build the dimension, and in most cases should be modeled as a business vault computed satellite.
-- the final step in the code is to create the master dimesional object.
+- Once the business vault objects have been created, the final step in the code is to create the master dimesional object.
 - The goal is to modernize these models to align with the Data Vault 2.0 methodology, star schema dimensional modelling, and Snowflake-native performance patterns, using the automate_dv dbt package where applicable.
 
 ### Input/Output Specifications
 
 - Inputs:
-  - A single document containing all legacy T-SQL stored procedures and views for a given dimensional artifact.
-  - Supporting metadata including naming conventions, architecture layers, and business rules from the EDW2 environment.
-  - mapping of old tables and columns to new tables and columns provide by the engineer after initial analysis
+  - A prompt document containing relative path information for all legacy T-SQL stored procedures and views for a given dimensional artifact. These will be in sequnetial order as run in the legacy EDW environment.
+  - Supporting architecture information including naming conventions, architecture layers, and business rules from the EDW2 environment.
+  - mapping of old raw vault tables and columns to new raw vault tables and columns provide by the engineer after initial analysis
 - Outputs:
-  - A dbt model SQL file using Snowflake SQL and automate_dv macros.
-  - A YAML file with model documentation and tests.
-  - A list of recommended business vault objects (if applicable).
+  - An incomplete mapping document for the raw vault translation with all EDW2 raw vault referencese for the current refactoring problem that an engineer can fill out with the analogous tables from the new raw vault. 
+  - A list of recommended business vault objects.
+  - dbt model SQL files using Snowflake SQL and automate_dv macros to build the business vault object.
   - A mapping table of old-to-new source tables and columns.
 - Edge Cases:
   - If a business rule is embedded in multiple layers of legacy code, flag it for engineer review.
@@ -35,7 +35,7 @@ The workflow would go something like:
 - generate a list of source tables and columns by anlyzing the provided old code. use a csv format
 - have the engineer map the columns and tables to the new database objects.
 - analyze the old code for business rules, potential wastefull compute, or opportunities to create a materialized business vault object.
-- using the provided mapping refactor old code as CTEs and Snowflake SQL using dbt Cloud into a single dbt sql model for the final artifact and any business vault object needed
+- using the provided mapping, refactor the old code as CTEs and Snowflake SQL using dbt Cloud into a single dbt sql model for the business vault objects and EDW3 dimensional objects
 - recommend tests appropriate for the dimensional model artifact in question.
 
 ## 🧱 Architecture Details
@@ -71,12 +71,12 @@ The workflow would go something like:
 - **Purpose**: Recommend missing business vault artifacts
 - **Logic**:
   - analyze the old source code and the resulting dimensional artifact
-  - recommend any business vault objects that should be created as part of the new code. Typically this would be a computed satellite, but perhaps a bridge, pit, etc. would be helpful.
+  - recommend any business vault objects that should be created as part of the new code. Typically this would be a computed effectivity or standard satellite with any new business vault hubs or links needed, but perhaps a bridge, pit, etc. would be helpful.
   - Pause here for the engineer to give feedback and adjust the recommendation
 
 ### 4. Generate New Code
 
-- **Purpose**: Generate the dbt code for the business vault object and the dimensional artifact
+- **Purpose**: Generate the dbt code for the business vault object(s) and the dimensional artifact(s)
 - **Logic**:
   - Use the column mapping and code analysis results to create dbt models. Typically this would be a computed satellite and a dimension/fact.
   - Use CTEs at the beginning of the dbt models as specified in the coding standards section
@@ -88,6 +88,13 @@ The workflow would go something like:
 - **Logic**:
   - Analyze the generated dbt models
   - Generate a dbt model yml file with appropriate tests and descriptions for each of the dbt models
+
+### 5. Business rule document
+
+- **Purpose**: Document business rules applied in the transformations in the business vault and dimensional model in natural language as a markdown file for review by business data stewards and domain experts.
+- **Logic**:
+  - Analyze the generated dbt models and old code
+  - Product a document describing the source columns and transformations used to create each of the dimensional object columns that can be reviewed by the business
 
 ---
 
