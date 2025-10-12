@@ -1,6 +1,8 @@
 # dim_class_type
+This is a set of combined examples of the input and output for the class type dimension. Each input file is listed separately as a section with the title of the input file first and then the code from the input. During an actual refactoring exercise, each of the output files would be created as a separate file as described in the project guidance. 
 
-## Step 1
+## ClassType_NonDV_01.sql
+- This step is an interim step between the raw vault and the dimensional model in the old environment. This and others should be combined to create business vault objects in one dbt model if possible. 
 
 ```sql
 -- =============================================================================
@@ -141,7 +143,8 @@ END
 RETURN 0
 ```
 
-# Step 2
+## ClassType_NonDV_02.sql
+- This step is an interim step between the raw vault and the dimensional model in the old environment. This and others should be combined to create business vault objects in one dbt model if possible. 
 
 ```sql
 -- =============================================================================
@@ -321,7 +324,8 @@ END
 RETURN 0
 ```
 
-# Step 3
+## dimClassType_NonDV.sql
+- This object is the controller from the legacy code. This is the final step prior to creating the dimension. This should typically translate into a business vault computed satellite, either standard or effectivity, depending on how it works, and possibly a business vault hub and/or link to express the relationships if the business keys for this new satellite are not modelled in the raw vault. 
 
 ```sql
 --==============================================================================
@@ -467,7 +471,8 @@ END
 RETURN 0
 ```
 
-# Step 4
+## dimClassType_base.sql
+- This object is the dimensional object. In this case, a dimension. This would be a separate DBT model in the new EDW3 schema to create the dimension itself. 
 
 ```sql
 --==============================================================================

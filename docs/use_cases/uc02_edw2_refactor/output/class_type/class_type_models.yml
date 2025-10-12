@@ -1,0 +1,234 @@
+version: 2
+
+models:
+  - name: bv_h_class_type
+    description: |
+      Business Vault Hub for Class Type entity. Represents the composite business
+      entity combining Group ID and Class ID. The business key is formed by
+      concatenating the group identifier with the class identifier to create a
+      unique ClassType identifier across source systems.
+
+    columns:
+      - name: class_type_hk
+        description: Hash key for the class type business entity (SHA1 of class_type_bk + source)
+        tests:
+          - not_null
+          - unique
+
+      - name: class_type_bk
+        description: |
+          Business key for class type, formed by concatenating group_id and class_bk.
+          This represents the natural identifier for the Group+Class combination.
+        tests:
+          - not_null
+
+      - name: record_source
+        description: Source system identifier where this class type originated
+        tests:
+          - not_null
+
+      - name: load_datetime
+        description: Timestamp when this record was loaded into the hub
+        tests:
+          - not_null
+
+  - name: bv_s_class_type_business
+    description: |
+      Business Vault Computed Satellite for Class Type. Applies enterprise business
+      rules including DualEligible flag calculation, OnExchange flag determination,
+      and description lookups from class type assignment reference data. This satellite
+      consolidates the transformation logic from the legacy ClassType_NonDV staging
+      tables and controller.
+
+    columns:
+      - name: class_type_hk
+        description: Hash key linking to bv_h_class_type parent hub
+        tests:
+          - not_null
+          - relationships:
+              to: ref('bv_h_class_type')
+              field: class_type_hk
+
+      - name: load_datetime
+        description: Timestamp when this satellite record was loaded
+        tests:
+          - not_null
+
+      - name: load_end_datetime
+        description: |
+          Timestamp when this satellite record was superseded by a new version.
+          NULL indicates the current/active record.
+
+      - name: hashdiff
+        description: |
+          Hash of all descriptive attributes for change detection. Used to identify
+          when business data has changed and a new satellite record should be created.
+        tests:
+          - not_null
+
+      - name: class_type_bk
+        description: Business key (group_id + class_bk concatenated)
+
+      - name: group_id
+        description: Group identifier from the source system
+
+      - name: class_bk
+        description: Class business key from the source system
+
+      - name: class_description
+        description: Descriptive name for the class from the source system
+
+      - name: class_type_description
+        description: |
+          Class type description looked up from the class type assignment reference.
+          Defaults to empty string if no matching description found.
+
+      - name: dual_eligible
+        description: |
+          Calculated flag indicating Medicare dual eligibility. Set to 'Yes' if
+          class_bk starts with 'M', otherwise 'No'. Business rule identifies members
+          eligible for both Medicare and Medicaid benefits.
+        tests:
+          - accepted_values:
+              values: ['Yes', 'No']
+
+      - name: on_exchange
+        description: |
+          Calculated flag indicating if the group+class is sold on the healthcare exchange.
+          Complex logic: 'Yes' if class_bk starts with 'X' or contains 'X' at position 4.
+          Always 'No' for specific group (10030052) or null/empty class_bk values.
+        tests:
+          - accepted_values:
+              values: ['Yes', 'No']
+
+      - name: effective_from_date
+        description: |
+          Effective start date for the class type assignment. Defaults to 2002-01-01
+          if no value provided by source system.
+        tests:
+          - not_null
+
+      - name: effective_to_date
+        description: |
+          Effective end date for the class type assignment. Defaults to 2199-12-31
+          if no value provided, indicating indefinite assignment.
+        tests:
+          - not_null
+
+      - name: source
+        description: Source system identifier
+
+      - name: source_description
+        description: Descriptive name of the source system
+
+  - name: dim_class_type
+    description: |
+      Type 2 Slowly Changing Dimension for Class Type. Tracks historical changes to
+      group and class combinations including business rules for dual eligibility and
+      exchange participation. Each change creates a new version with effective date
+      tracking. Consumes data from the business vault computed satellite.
+
+    tests:
+      - dbt_utils.equal_rowcount:
+          compare_model: ref('bv_s_class_type_business')
+          compare_condition: "load_end_datetime is null"
+
+    columns:
+      - name: class_type_key
+        description: |
+          Surrogate key for the dimension. Generated from class_type_bk, source,
+          and version number to ensure uniqueness across versions.
+        tests:
+          - not_null
+          - unique
+
+      - name: class_type_id
+        description: |
+          Business/natural key for class type (group_id + class_bk). Used for lookups
+          from fact tables. Not unique due to Type 2 SCD versioning.
+        tests:
+          - not_null
+
+      - name: class_type_description
+        description: |
+          Full description of the class type from assignment reference. Provides
+          human-readable context for reporting and analysis.
+
+      - name: class_id
+        description: |
+          Class business key component of the composite identifier. Represents the
+          specific class code within a group.
+
+      - name: class_description
+        description: |
+          Description of the class from the source system. Provides context for
+          the class component of the class type.
+
+      - name: dual_eligible
+        description: |
+          Indicates Medicare dual eligibility status. 'Yes' for members eligible
+          for both Medicare and Medicaid (class starts with 'M'), otherwise 'No'.
+        tests:
+          - accepted_values:
+              values: ['Yes', 'No', 'Unknown']
+
+      - name: on_exchange
+        description: |
+          Indicates if group+class is sold on healthcare exchange. Based on patterns
+          in class_bk and specific group exclusions.
+        tests:
+          - accepted_values:
+              values: ['Yes', 'No', 'Unknown']
+
+      - name: source_id
+        description: Source system identifier for data lineage tracking
+
+      - name: source_description
+        description: Descriptive name of source system
+
+      - name: type1_hash
+        description: |
+          Hash of Type 1 (overwrite) attributes for change detection. Corresponds
+          to hashdiff from the business vault satellite.
+
+      - name: create_date
+        description: Timestamp when this dimension record was originally created
+
+      - name: update_date
+        description: Timestamp when this dimension record was last updated
+
+      - name: dss_start_date
+        description: |
+          Effective start date for this version of the dimension record. Part of
+          Type 2 SCD implementation.
+        tests:
+          - not_null
+
+      - name: dss_end_date
+        description: |
+          Effective end date for this version of the dimension record. Set to
+          2999-12-31 for current/active records.
+        tests:
+          - not_null
+
+      - name: dss_current_flag
+        description: |
+          Flag indicating if this is the current/active version ('Y') or historical ('N').
+          Part of Type 2 SCD implementation.
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Y', 'N']
+
+      - name: dss_version
+        description: |
+          Version number for this dimension record. Increments with each change to
+          Type 2 attributes. Version 1 is the original record.
+        tests:
+          - not_null
+
+      - name: dss_create_time
+        description: Timestamp when this version was created in the data warehouse
+
+      - name: dss_update_time
+        description: Timestamp when this version was last modified

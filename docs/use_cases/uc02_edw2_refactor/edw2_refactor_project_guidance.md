@@ -6,6 +6,13 @@
 
 We aim to automate the refactoring of legacy SQL Server-based dimensional models (EDW2) into dbt models for Snowflake (EDW3). When I use the term EDW2 I am refering to the legacy code from Wherescape/SQL Server, when I use the term EDW3, that refers to the new Snowflake implementation of our dimensional model and business vault. The legacy models were generated using Wherescape RED and are tightly coupled to an on-prem SQL Server environment. The goal is to modernize these models to align with the Data Vault 2.0 methodology and Snowflake-native performance patterns, using the automate_dv dbt package where applicable. The refactored EDW3 artifacts would live in the Curation Layer and pull data from the raw vault in the Integration Layer.
 
+### Context Documents and example code
+- @docs\architecture\edp_platform_architecture.md
+- @docs\architecture\edp-layer-architecture-detailed.md
+- @docs\engineering-knowledge-base\data-vault-2.0-guide.md
+- @docs\use_cases\uc02_edw2_refactor\examples\input_example_edw2_refacor_dim_class_type_old_code.md
+- @docs\use_cases\uc02_edw2_refactor\examples\input_example_edw2_refacor_dim_class_type mappings.csv
+
 ### Old Development Pattern
 
 Each old dimensional artifact works similarly:
@@ -21,10 +28,12 @@ Each old dimensional artifact works similarly:
   - A prompt document containing relative path information for all legacy T-SQL stored procedures and views for a given dimensional artifact. These will be in sequnetial order as run in the legacy EDW environment.
   - Supporting architecture information including naming conventions, architecture layers, and business rules from the EDW2 environment.
   - mapping of old raw vault tables and columns to new raw vault tables and columns provide by the engineer after initial analysis
+
 - Outputs:
   - An incomplete mapping document for the raw vault translation with all EDW2 raw vault referencese for the current refactoring problem that an engineer can fill out with the analogous tables from the new raw vault. 
   - A list of recommended business vault objects.
   - dbt model SQL files using Snowflake SQL and automate_dv macros to build the business vault object.
+  - dbt yml file for the dimensional object. Add descriptions for the table and columns that breifly describe the transformation of the columns and a consise description of the column purpose.
   - A mapping table of old-to-new source tables and columns.
 - Edge Cases:
   - If a business rule is embedded in multiple layers of legacy code, flag it for engineer review.
@@ -34,9 +43,10 @@ The workflow would go something like:
 
 - generate a list of source tables and columns by anlyzing the provided old code. use a csv format
 - have the engineer map the columns and tables to the new database objects.
-- analyze the old code for business rules, potential wastefull compute, or opportunities to create a materialized business vault object.
-- using the provided mapping, refactor the old code as CTEs and Snowflake SQL using dbt Cloud into a single dbt sql model for the business vault objects and EDW3 dimensional objects
+- using the provided mapping, analyze the old code for business rules, potential wastefull compute, or opportunities to create a materialized business vault object.
+- refactor the old code as CTEs and Snowflake SQL using dbt Cloud into dbt sql models for the business vault objects and EDW3 dimensional objects
 - recommend tests appropriate for the dimensional model artifact in question.
+- Create the folder if necessary and write the generated files to the following path: `docs\use_cases\uc02_edw2_refactor\output\<entity_name>`
 
 ## 🧱 Architecture Details
 
@@ -94,7 +104,7 @@ The workflow would go something like:
 - **Purpose**: Document business rules applied in the transformations in the business vault and dimensional model in natural language as a markdown file for review by business data stewards and domain experts.
 - **Logic**:
   - Analyze the generated dbt models and old code
-  - Product a document describing the source columns and transformations used to create each of the dimensional object columns that can be reviewed by the business
+  - Produce a document describing in natural the source columns and transformations used to create each of the dimensional object columns that can be reviewed by the business
 
 ---
 
