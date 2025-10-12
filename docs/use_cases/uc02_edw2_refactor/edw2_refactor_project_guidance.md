@@ -6,6 +6,13 @@
 
 We aim to automate the refactoring of legacy SQL Server-based dimensional models (EDW2) into dbt models for Snowflake (EDW3). When I use the term EDW2 I am refering to the legacy code from Wherescape/SQL Server, when I use the term EDW3, that refers to the new Snowflake implementation of our dimensional model and business vault. The legacy models were generated using Wherescape RED and are tightly coupled to an on-prem SQL Server environment. The goal is to modernize these models to align with the Data Vault 2.0 methodology and Snowflake-native performance patterns, using the automate_dv dbt package where applicable. The refactored EDW3 artifacts would live in the Curation Layer and pull data from the raw vault in the Integration Layer.
 
+### Context Documents and example code
+- @docs\architecture\edp_platform_architecture.md
+- @docs\architecture\edp-layer-architecture-detailed.md
+- @docs\engineering-knowledge-base\data-vault-2.0-guide.md
+- @docs\use_cases\uc02_edw2_refactor\examples\input_example_edw2_refacor_dim_class_type_old_code.md
+- @docs\use_cases\uc02_edw2_refactor\examples\input_example_edw2_refacor_dim_class_type mappings.csv
+
 ### Old Development Pattern
 
 Each old dimensional artifact works similarly:
@@ -97,7 +104,7 @@ The workflow would go something like:
 - **Purpose**: Document business rules applied in the transformations in the business vault and dimensional model in natural language as a markdown file for review by business data stewards and domain experts.
 - **Logic**:
   - Analyze the generated dbt models and old code
-  - Product a document describing the source columns and transformations used to create each of the dimensional object columns that can be reviewed by the business
+  - Produce a document describing in natural the source columns and transformations used to create each of the dimensional object columns that can be reviewed by the business
 
 ---
 
