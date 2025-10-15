@@ -37,8 +37,8 @@ The Master of Science in Applied Artificial Intelligence (MSAAI) is designed for
 
 ### Application Timeline for Fall 2026
 - **Target Application Submission**: Winter/Spring 2026 (check UVU deadlines)
-- **Recommendation Letters**: Request by January 2026
-- **Personal Statement**: Draft by February 2026
+- **Recommendation Letters**: Request by November 2025
+- **Personal Statement**: Draft by by end of November 2025
 
 ---
 
