@@ -1,13 +1,20 @@
 ---
 title: "Enterprise Data Platform (EDP) Data Domain Architecture Context"
 document_type: "architecture"
-ai_workflow_tags: ["platform-overview", "data-vault", "medallion", "dbt", "snowflake"]
-code_evaluation_scope: "full-system"
-business_context: "Enterprise data platform architecture and conventions"
-technical_audience: "architects|developers|data-engineers"
+business_domain: []  # Cross-domain platform architecture
+edp_layer: "cross-layer"
+technical_topics: ["data-vault-2.0", "dimensional-modeling", "snowflake", "dbt", "aws", "medallion-architecture"]
+audience: ["executives", "architects", "engineers", "analysts"]
+status: "active"
 last_updated: "2025-10-01"
-related_components: ["snowflake", "dbt", "data-vault", "automate-dv"]
-related_docs: ["edp-data-ingestion-architecture.md", "edp-layer-architecture-detailed.md", "environment-database-configuration.md"]
+version: "1.1"
+author: "Dan Brickey"
+description: "High-level EDP platform architecture, AWS + Snowflake integration, medallion architecture with Data Vault 2.0"
+related_docs:
+  - "edp-data-ingestion-architecture.md"
+  - "edp-layer-architecture-detailed.md"
+  - "../engineering-knowledge-base/environment-database-configuration.md"
+  - "../engineering-knowledge-base/data-vault-2.0-guide.md"
 ---
 
 # Enterprise Data Platform (EDP) Data Domain Architecture Context

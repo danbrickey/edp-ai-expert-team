@@ -1,12 +1,19 @@
 ---
 title: "EDP Layer Architecture - Detailed Specifications"
 document_type: "architecture"
-ai_workflow_tags: ["medallion", "data-vault", "layers", "raw-vault", "business-vault", "dimensional"]
-code_evaluation_scope: "full-system"
-business_context: "Complete data transformation flow from source to consumption"
-technical_audience: "architects|developers|data-engineers"
+business_domain: []  # Cross-domain layer specifications
+edp_layer: "cross-layer"
+technical_topics: ["data-vault-2.0", "dimensional-modeling", "medallion-architecture", "data-pipelines", "master-data-management"]
+audience: ["architects", "engineers"]
+status: "active"
 last_updated: "2025-10-01"
-related_components: ["raw-layer", "integration-layer", "curation-layer", "consumption-layer", "common-db"]
+version: "1.0"
+author: "Dan Brickey"
+description: "Detailed specifications for Raw, Integration, Curation, Consumption, and Common layers with Data Vault 2.0 and dimensional modeling patterns"
+related_docs:
+  - "edp_platform_architecture.md"
+  - "edp-data-ingestion-architecture.md"
+  - "../engineering-knowledge-base/data-vault-2.0-guide.md"
 ---
 
 # EDP Layer Architecture - Detailed Specifications

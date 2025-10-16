@@ -1,12 +1,18 @@
 ---
 title: "Data Vault 2.0 & Architecture Modeling Guide"
-document_type: "methodology"
-last_updated: "2024-12-09T17:30:00Z"
+document_type: "guide"
+business_domain: []  # Cross-domain methodology guide
+edp_layer: "integration"  # Primarily integration layer, but applies to curation (Business Vault) as well
+technical_topics: ["data-vault-2.0", "historization", "data-pipelines", "dimensional-modeling", "master-data-management"]
+audience: ["architects", "engineers"]
+status: "active"
+last_updated: "2024-12-09"
 version: "1.0.0"
-category: "engineering-guide"
-tags: ["data-vault", "modeling", "architecture", "implementation"]
-status: "active-reference"
-audience: ["data-engineers", "architects", "developers"]
+author: "AI Expert Team Cabinet"
+description: "Comprehensive Data Vault 2.0 implementation guide covering hub/link/satellite patterns, business vault, and agile delivery methodology"
+related_docs:
+  - "../architecture/edp-layer-architecture-detailed.md"
+  - "../architecture/edp_platform_architecture.md"
 ---
 
 # Data Vault 2.0 & Architecture Modeling Guide
