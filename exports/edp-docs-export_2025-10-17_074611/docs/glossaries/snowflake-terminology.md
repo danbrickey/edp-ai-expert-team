@@ -5,7 +5,7 @@ Common Snowflake services, features, and terminology sorted by frequency of use 
 ## Core Architecture & Compute
 
 **Virtual Warehouse**
-Compute cluster that executes queries and DML operations, independently scalable with automatic suspend/resume to optimize costs.
+Compute cluster that executes queries and DML operations, independently scalable up/down/out even while in use by active sessions, with automatic suspend/resume to optimize costs.
 
 **Database**
 Logical container for schemas and objects, supporting cloning, time travel, and fail-safe recovery with metadata management.
