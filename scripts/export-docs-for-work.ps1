@@ -256,7 +256,7 @@ CONTENTS:
   ⏭ Personal folders excluded
 ✓ EXPORT_CHANGELOG.md         - Detailed export information
 ✓ IMPORT_INSTRUCTIONS.txt     - This file
-$(if ($IncludeAIResources) { "✓ ai-resources/              - AI tools and prompts" } else { "" })
+✓ ai-resources/              - AI tools and prompts (if included)
 
 RECOMMENDED APPROACH:
 --------------------
