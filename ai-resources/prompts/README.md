@@ -1,18 +1,36 @@
 ---
 title: "AI Prompts Library - Master Catalog"
 author: "Dan Brickey"
-last_updated: "2025-10-16"
-version: "2.0.0"
+last_updated: "2025-10-19"
+version: "2.1.0"
 category: "prompts-index"
 tags: ["prompts", "AI-templates", "code-generation", "documentation", "architecture", "career"]
 status: "current"
-contents: ["architecture", "documentation", "meta", "career", "workflows", "specialized"]
+contents: ["architecture", "documentation", "meta", "career", "workflows", "specialized", "development", "strategy", "utilities"]
 usage: "Centralized library of reusable prompt templates for consistent AI assistance across all domains"
 ---
 
 # AI Prompts Library - Master Catalog
 
 Welcome to the centralized AI prompts library for the EDP AI Expert Team project. All general-purpose and reusable prompts are organized here by category for easy discovery and maintenance.
+
+## 🔍 Mnemonic Quick Reference
+
+Type `@` + mnemonic for fast autocomplete in Claude Code:
+
+| Mnemonic | Prompt | Purpose |
+|----------|--------|---------|
+| **@librarian** | [Prompt Librarian](meta/librarian-prompt-management.md) | Manage prompt library organization & metadata |
+| **@meta** | [Meta-Prompt Engineer](meta/meta-prompt-engineer.md) | Create high-quality prompts with evaluation |
+| **@architect** | [Data Architect](architecture/architect-data-vault.md) | Data Vault 2.0 & dimensional modeling expert |
+| **@arcdoc** | [Architecture Docs](documentation/arcdoc-documentation-architect.md) | Architecture documentation with business rules |
+| **@bizrules** | [Business Rules](documentation/bizrules-documenter.md) | Document business rules from code |
+| **@projdoc** | [Project Docs](documentation/projdoc-expert.md) | Create project documentation |
+| **@meeting** | [Meeting Notes](documentation/meeting-notes-summarizer.md) | Summarize meetings to action items |
+| **@drawio** | [Drawio Specialist](architecture/drawio-specialist.md) | Create/edit Draw.io diagrams |
+| **@tutor** | [AI Tutor](specialized/tutor-learning-assistant.md) | Personalized learning & skill development |
+
+---
 
 ## 📂 Directory Structure
 
@@ -23,7 +41,10 @@ ai-resources/prompts/
 ├── meta/                  ← Prompt engineering & meta-prompts
 ├── career/                ← Career development & analysis prompts
 ├── workflows/             ← Multi-step workflow prompts
-└── specialized/           ← Domain-specific utility prompts
+├── specialized/           ← Domain-specific utility prompts
+├── development/           ← Software development & coding prompts
+├── strategy/              ← Strategic planning & evaluation prompts
+└── utilities/             ← Productivity & automation utilities
 ```
 
 ---
@@ -34,8 +55,9 @@ ai-resources/prompts/
 
 Expert prompts for data architecture, technical design, and diagramming:
 
-- **[data_architect.md](architecture/data_architect.md)** - Data architecture expert for Data Vault 2.0, dimensional modeling, and Snowflake platform design.
-- **[drawio-diagram-specialist.md](architecture/drawio-diagram-specialist.md)** - Specialist for creating and editing Draw.io diagrams for architecture documentation.
+- **[@architect](architecture/architect-data-vault.md)** - Data architecture expert for Data Vault 2.0, dimensional modeling, and Snowflake platform design.
+- **[@drawio](architecture/drawio-specialist.md)** - Specialist for creating and editing Draw.io diagrams for architecture documentation.
+- **[technical-requirements/](architecture/technical-requirements/)** - Systematic approach to defining, documenting, and validating technical requirements for software projects.
 
 ---
 
@@ -45,10 +67,10 @@ Expert prompts for data architecture, technical design, and diagramming:
 
 Prompts for generating and managing various types of documentation:
 
-- **[architecture_documentation_architect.md](architecture/architecture_documentation_architect.md)** - Architecture documentation assistant with business rules integration. Interviews for missing details, processes braindumps, organizes documentation with multi-audience layering.
-- **[project_documentation_expert.md](documentation/project_documentation_expert.md)** - Expert for creating comprehensive project documentation with proper structure and formatting.
-- **[business_rule_documenter.md](documentation/business_rule_documenter.md)** - Specialist for documenting business rules and domain logic in accessible formats.
-- **[meeting_notes_summarizer.md](documentation/meeting_notes_summarizer.md)** - Assistant for summarizing meeting notes into actionable items and key decisions.
+- **[@arcdoc](documentation/arcdoc-documentation-architect.md)** - Architecture documentation assistant with business rules integration. Interviews for missing details, processes braindumps, organizes documentation with multi-audience layering.
+- **[@projdoc](documentation/projdoc-expert.md)** - Expert for creating comprehensive project documentation with proper structure and formatting.
+- **[@bizrules](documentation/bizrules-documenter.md)** - Specialist for documenting business rules and domain logic in accessible formats.
+- **[@meeting](documentation/meeting-notes-summarizer.md)** - Assistant for summarizing meeting notes into actionable items and key decisions.
 
 ---
 
@@ -58,8 +80,11 @@ Prompts for generating and managing various types of documentation:
 
 Tools for creating and improving prompts themselves:
 
-- **[meta-prompt-engineer.md](meta/meta-prompt-engineer.md)** - Meta-prompt engineering expert using systematic evaluation methodology. Creates high-quality prompts with self-evaluation and iterative refinement.
+- **[@librarian](meta/librarian-prompt-management.md)** - Intelligent library management system for organizing, discovering, and enhancing prompts with adaptive expertise.
+- **[@meta](meta/meta-prompt-engineer.md)** - Meta-prompt engineering expert using systematic evaluation methodology. Creates high-quality prompts with self-evaluation and iterative refinement.
 - **[data_vault_refactor_prompt_generator.md](meta/data_vault_refactor_prompt_generator.md)** - Generator for creating Data Vault refactoring prompts for specific tables/entities.
+- **[prompting-pattern-library/](meta/prompting-pattern-library/)** - Comprehensive library of prompting patterns, techniques, and best practices.
+- **[agentic-development/](meta/agentic-development/)** - Expert guidance on building autonomous AI agents and agentic workflows.
 
 ---
 
@@ -128,7 +153,38 @@ Four-step workflow for creating enterprise slide decks:
 
 Domain-specific utility prompts:
 
-- **[ai_tutor.md](specialized/ai_tutor.md)** - AI tutor for personalized learning and skill development.
+- **[@tutor](specialized/tutor-learning-assistant.md)** - AI tutor for personalized learning and skill development.
+
+---
+
+## 💻 Development Prompts
+
+**Location**: [development/](development/)
+
+Software development and coding assistance prompts:
+
+- **[vibe-coding/](development/vibe-coding/)** - Modern coding assistant focused on developer experience, clean code, and iterative development.
+
+---
+
+## 🎯 Strategy Prompts
+
+**Location**: [strategy/](strategy/)
+
+Strategic planning, evaluation, and decision-making prompts:
+
+- **[ai-vendor-evaluation/](strategy/ai-vendor-evaluation/)** - Systematic framework for evaluating AI vendors, tools, and platforms with vendor-neutral analysis.
+
+---
+
+## 🛠️ Utilities
+
+**Location**: [utilities/](utilities/)
+
+Productivity tools and automation utilities:
+
+- **[excel-automation/](utilities/excel-automation/)** - Automate Excel spreadsheet creation, data manipulation, and formula generation.
+- **[excel-editing/](utilities/excel-editing/)** - Expert assistance for editing existing Excel files, creating pivot tables, and advanced Excel features.
 
 ---
 
@@ -172,13 +228,16 @@ Reference prompts using the @-mention syntax:
 
 | Category | Count | Use Case |
 |----------|-------|----------|
-| Architecture | 3 | Technical design, Data Vault, diagrams |
-| Documentation | 3 | Project docs, business rules, meeting notes |
-| Meta | 3 | Prompt engineering, refactor generators |
-| Career | 17 | Career planning, AI role exploration |
+| Architecture | 3 | Technical design, Data Vault, diagrams, requirements |
+| Documentation | 4 | Project docs, business rules, meeting notes |
+| Meta | 5 | Prompt engineering, library management, patterns, agentic development |
+| Career | 20 | Career planning, AI roles, job search, resume building |
 | Workflows | 4 | Multi-step processes (slide decks) |
 | Specialized | 1 | Domain utilities (tutoring) |
-| **Total** | **31** | Centralized general-purpose prompts |
+| Development | 1 | Coding assistance, clean code practices |
+| Strategy | 1 | Vendor evaluation, strategic planning |
+| Utilities | 2 | Excel automation, productivity tools |
+| **Total** | **41** | Centralized general-purpose prompts |
 
 ---
 
@@ -190,5 +249,5 @@ Reference prompts using the @-mention syntax:
 
 ---
 
-*Last Updated: 2025-10-16 by Dan Brickey*
-*Migration v2.0.0: Reorganized into categorized structure with context references*
+*Last Updated: 2025-10-19 by Dan Brickey*
+*Migration v2.1.0: Added development, strategy, and utilities categories with new skills*
