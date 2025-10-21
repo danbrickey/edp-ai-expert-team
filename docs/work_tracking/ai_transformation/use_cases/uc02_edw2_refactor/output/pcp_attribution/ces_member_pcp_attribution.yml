@@ -1,0 +1,172 @@
+version: 2
+
+models:
+  - name: ces_member_pcp_attribution
+    description: |
+      Computed Effectivity Satellite that assigns each member to their attributed Primary Care Provider (PCP)
+      based on claim utilization patterns during an 18-month evaluation window.
+
+      **Attribution Logic**:
+      - Groups visits by clinic (Tax ID)
+      - Ranks clinics by: PCP indicator > visit count > last visit date > RVU total
+      - Creates effectivity periods from one evaluation date to the next
+
+      **Use Cases**:
+      - Quality measure attribution
+      - Provider assignment for care management
+      - Network adequacy reporting
+      - Trend analysis of PCP switching patterns
+
+    meta:
+      data_vault_type: "computed_effectivity_satellite"
+      parent_hub: "h_member"
+      materialization: "incremental"
+      business_domain: "membership"
+
+    config:
+      tags: ['pcp_attribution', 'computed_effectivity_satellite', 'member']
+
+    columns:
+      # Hub Keys
+      - name: member_hk
+        description: "Surrogate key (hash) for h_member hub"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('h_member')
+              field: member_hk
+
+      - name: provider_hk
+        description: "Surrogate key (hash) for h_provider hub - attributed provider"
+        tests:
+          - relationships:
+              to: ref('h_provider')
+              field: provider_hk
+              where: "attributed_provider_bk is not null"
+
+      # Business Keys
+      - name: source
+        description: "Source system identifier (gemstone_facets, legacy_facets)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['gemstone_facets', 'legacy_facets']
+
+      - name: member_bk
+        description: "Member business key (MEME_CK)"
+        tests:
+          - not_null
+
+      # Effectivity Dates
+      - name: effective_date
+        description: "Start date of PCP attribution period (evaluation date)"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: date
+
+      - name: end_date
+        description: "End date of PCP attribution period (next eval date or 9999-12-31)"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: date
+
+      - name: is_current
+        description: "Flag indicating if this is the current attribution (end_date = 9999-12-31)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [true, false]
+
+      # Attribution Details
+      - name: attributed_provider_bk
+        description: "Business key of attributed PCP provider (null if no attribution)"
+
+      - name: attributed_provider_npi
+        description: "NPI of attributed PCP provider"
+
+      - name: attributed_tax_id
+        description: "Tax ID of attributed clinic (group-level if available, else individual)"
+
+      - name: attributed_pcp_indicator
+        description: "Type of attributed provider (PCP or Specialist)"
+        tests:
+          - accepted_values:
+              values: ['PCP', 'Specialist']
+              where: "attributed_provider_bk is not null"
+
+      # Supporting Metrics
+      - name: attribution_visit_count
+        description: "Number of unique E&M visits to attributed clinic during evaluation window"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+
+      - name: attribution_last_visit_date
+        description: "Date of most recent visit to attributed clinic"
+
+      - name: attribution_rvu_total
+        description: "Total RVU value for visits to attributed clinic"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+
+      # Demographics
+      - name: constituent_id
+        description: "Master constituent identifier (person_bk from member_person crosswalk)"
+
+      - name: group_id
+        description: "Group identifier for reporting"
+
+      - name: subscriber_id
+        description: "Subscriber identifier"
+
+      - name: member_suffix
+        description: "Member suffix"
+
+      # Metadata
+      - name: load_date
+        description: "Timestamp when record was loaded into this table"
+        tests:
+          - not_null
+
+      - name: record_source
+        description: "Source system/process that created this record"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['ces_member_pcp_attribution']
+
+      - name: hash_diff
+        description: "Hash of descriptive attributes for change detection"
+        tests:
+          - not_null
+
+    # Model-level tests
+    tests:
+      # No overlapping periods per member
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - source
+            - member_bk
+            - effective_date
+
+      # Effectivity date logic is valid
+      - dbt_expectations.expect_column_pair_values_A_to_be_greater_than_B:
+          column_A: end_date
+          column_B: effective_date
+          or_equal: true
+
+      # Each member should have at most one current record
+      - dbt_utils.expression_is_true:
+          expression: "count(*) <= 1"
+          group_by: "source, member_bk"
+          where: "is_current = true"
+
+      # is_current flag consistency
+      - dbt_utils.expression_is_true:
+          expression: "case when end_date = '9999-12-31' then is_current = true else is_current = false end"
+          name: is_current_flag_matches_end_date
