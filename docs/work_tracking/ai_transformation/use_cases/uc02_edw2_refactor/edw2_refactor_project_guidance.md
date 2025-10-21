@@ -100,12 +100,56 @@ The workflow would go something like:
   - Analyze the generated dbt models
   - Generate a dbt model yml file with appropriate tests and descriptions for each of the dbt models
 
-### 5. Business rule document
+### 5. Business Rule Document
 
 - **Purpose**: Document business rules applied in the transformations in the business vault and dimensional model in natural language as a markdown file for review by business data stewards and domain experts.
 - **Logic**:
   - Analyze the generated dbt models and old code
-  - Produce a document describing in natural the source columns and transformations used to create each of the dimensional object columns that can be reviewed by the business
+  - Produce a document describing in natural language the source columns and transformations used to create each of the dimensional object columns that can be reviewed by the business
+
+#### Business Rule Document Standards
+
+**Naming Convention**:
+- File should be named after the **entity** (not the technical model name)
+- Remove technical prefixes like `ces_`, `sat_`, `dim_`, `fact_` from the filename
+- Format: `<entity_name>_business_rules.md`
+- Examples:
+  - Model: `ces_member_cob_profile` → Document: `member_cob_profile_business_rules.md`
+  - Model: `dim_member` → Document: `member_business_rules.md`
+  - Model: `fact_claims` → Document: `claims_business_rules.md`
+
+**Frontmatter Requirements**:
+All business rule documents must include YAML frontmatter matching the architecture documentation format:
+
+```yaml
+---
+title: "<Entity Name> Business Rules"
+document_type: "business_rules"
+business_domain: ["<domain1>", "<domain2>"]  # e.g., membership, claims, provider
+edp_layer: "<layer>"  # e.g., business_vault, curation, dimensional
+technical_topics: ["<topic1>", "<topic2>"]  # e.g., coordination-of-benefits, effectivity-satellite, data-vault-2.0
+audience: ["<audience1>", "<audience2>"]  # e.g., claims-operations, business-analysts, data-stewards
+status: "draft"  # draft | active | deprecated
+last_updated: "YYYY-MM-DD"
+version: "1.0"
+author: "Dan Brickey"
+description: "<One sentence description of what business rules this document covers>"
+related_docs:
+  - "<relative path to related doc 1>"
+  - "<relative path to related doc 2>"
+model_name: "<technical dbt model name>"  # e.g., ces_member_cob_profile
+legacy_source: "<legacy source reference>"  # e.g., HDSVault.biz.spCOBProfileLookup
+---
+```
+
+**Filing Workflow**:
+1. **Generate**: Create business rule document in the use case output folder
+   - Location: `docs\work_tracking\ai_transformation\use_cases\uc02_edw2_refactor\output\<entity_name>\<entity_name>_business_rules.md`
+2. **Review**: Business stakeholders and data stewards review the draft
+3. **Approve**: Update `status` field from `"draft"` to `"active"`
+4. **File**: Move approved document to architecture rules folder
+   - Target: `docs\architecture\rules\<domain>\<entity_name>_business_rules.md`
+   - Domain folders: `membership`, `claims`, `provider`, `product`, `financial`, `broker`
 
 ---
 

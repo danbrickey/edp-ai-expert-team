@@ -1,32 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mkdir:*)",
-      "WebSearch",
-      "Bash(dir)",
-      "Bash(dir:*)",
-      "Bash(findstr:*)",
-      "Bash(npx http-server:*)",
-      "WebFetch(domain:docs.anthropic.com)",
-      "Bash(claude --version)",
-      "Bash(tree:*)",
-      "Bash(for file in \"C:\\Users\\danbr\\github-danbrickey\\edp-ai-expert-team\\code\\target\\gemstone\"/*.csv)",
-      "Bash(done)",
-      "Bash(grep:*)",
-      "Bash(claude update)",
-      "Bash(claude config get auto-update)",
-      "Bash(claude config set auto-update true)",
-      "Bash(python:*)",
-      "Bash(where python)",
-      "Bash(py --version)",
-      "Bash(C:UsersdanbrAppDataLocalMicrosoftWindowsAppspython.exe --version)",
-      "Bash(powershell:*)",
-      "Bash(Select-Object FullName)",
-      "Bash(head:*)",
-      "Bash(cat:*)",
-      "Bash(tr:*)",
-      "Bash(mv:*)",
-      "Bash(py -c \"import re; content = open(r''c:\\Users\\danbr\\github-danbrickey\\edp-ai-expert-team\\docs\\work_tracking\\ai_transformation\\use_cases\\uc02_edw2_refactor\\input\\pcp_attribution\\pcp_attribution_edw2.sql'', ''r'', encoding=''utf-8'', errors=''ignore'').read(); tables = set(re.findall(r''v_\\w+_combined_current'', content, re.IGNORECASE)); [print(t) for t in sorted(tables, key=str.lower)]\")"
+      "Bash(cp \"c:\\Users\\danbr\\github-danbrickey\\edp-ai-expert-team\\docs\\work_tracking\\ai_transformation\\use_cases\\uc02_edw2_refactor\\output\\cob_profile\\member_cob_profile_business_rules.md\" \"c:\\Users\\danbr\\github-danbrickey\\edp-ai-expert-team\\docs\\architecture\\rules\\membership\\member_cob_profile_business_rules.md\")"
     ],
     "deny": [],
     "ask": []

@@ -1,0 +1,13 @@
+mcre_id,description,cob_rule,notes
+0948,Blue Cross Blue Shield,BCI is Secondary for Drug,BCBS plan - BCI secondary for drug
+BCI2,Blue Cross of Idaho Secondary,BCI is Secondary for Drug,BCI is explicitly secondary
+0958,Blue Cross Blue Shield,BCI is Secondary for Drug,BCBS plan - BCI secondary for drug
+BCI3,Blue Cross of Idaho Tertiary,BCI is Secondary for Drug,BCI is tertiary but treated as secondary for drug
+COBLTRSNT,COB Letter Sent,BCI is Secondary for Drug,COB letter sent - other coverage exists
+COBLTRSND,COB Letter Sent Dental,BCI is Secondary for Drug,COB letter sent dental context
+FEP2,Federal Employee Program Secondary,BCI is Secondary for Drug,FEP secondary coverage
+Host2,BlueCard Host Secondary,BCI is Secondary for Drug,BlueCard host secondary
+MA2,Medicare Advantage Secondary,BCI is Secondary for Drug,Medicare Advantage secondary
+MEDPARTD,Medicare Part D,BCI is Secondary for Drug,Medicare Part D - BCI secondary
+NO COB,No COB,BCI is Secondary for Drug,No COB found - default to secondary
+COBINV,COB Investigation,BCI is Secondary for Drug,COB under investigation

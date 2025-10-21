@@ -1,0 +1,6 @@
+mcre_id,description,cob_rule,notes
+COBLTRSNT,COB Letter Sent,BCI is Primary for Drug,Member has no other drug coverage - COB letter sent
+COBLTRSND,COB Letter Sent Dental,BCI is Primary for Drug,Member has no other drug coverage - COB letter sent (dental context)
+MEDPARTD,Medicare Part D,BCI is Primary for Drug,Member has Medicare Part D - BCI is primary for pharmacy
+NO COB,No COB,BCI is Primary for Drug,Member has no coordination of benefits
+COBINV,COB Investigation,BCI is Primary for Drug,COB under investigation - default to BCI primary
