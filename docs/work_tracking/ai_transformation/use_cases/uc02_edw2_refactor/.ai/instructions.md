@@ -204,17 +204,18 @@ select * from member_dimension
 
 ### Legacy Context
 - **WhereScape Exports**: `../../legacy/wherescape_exports/` - Original stored procedures
-- **Legacy Dictionary**: `../legacy_data_dictionary.csv` - Business context for source data
+- **Legacy Dictionary**: `../../../../../code/repositories/legacy_data_dictionary.csv` - Business context for source data
 - **Migration Analysis**: `../../analysis/source_analysis/` - Transformation mapping
 
 ### Target Integration
-- **Data Vault Foundation**: `../edp-data-domains/models/integration/` - Source data structures
-- **Business Vault**: `../edp-data-domains/models/curation/biz_vault/` - Business logic layer
-- **Platform Standards**: `../edp_platform_architecture.md` - Technical conventions
+- **Data Vault Foundation**: `../../../../../code/repositories/edp-data-domains/models/integration/` - Source data structures
+- **Business Vault**: `../../../../../code/repositories/edp-data-domains/models/curation/biz_vault/` - Business logic layer
+- **Architecture Patterns**: `../../../../../docs/architecture/patterns/` - Raw Vault and Business Vault patterns
+- **Platform Standards**: `../../../../../docs/architecture/edp_platform_architecture.md` - Technical conventions
 
 ### Related Use Cases
 - **UC01 DV Refactor**: `../uc01_dv_refactor/` - Parallel 3NF to Data Vault migration
-- **Consumption Models**: `../edp-data-domains/models/consumption/` - Final reporting layer
+- **Consumption Models**: `../../../../../code/repositories/edp-data-domains/models/consumption/` - Final reporting layer
 
 ## Success Criteria
 - **Functional Equivalence**: All legacy reports and extracts function identically

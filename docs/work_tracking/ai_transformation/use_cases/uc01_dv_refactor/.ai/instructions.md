@@ -131,12 +131,13 @@ left join {{ ref('s_member_eligibility') }} s_elig
 
 ### Platform Integration
 - **Main Project**: `../edp-data-domains/` - Target Data Vault implementation
-- **Architecture Standards**: `../edp_platform_architecture.md` - Naming conventions and patterns
-- **Legacy Context**: `../legacy_data_dictionary.csv` - Original system documentation
+- **Architecture Standards**: `../../../../../docs/architecture/edp_platform_architecture.md` - Naming conventions and patterns
+- **Architecture Patterns**: `../../../../../docs/architecture/patterns/` - Raw Vault and Business Vault patterns
+- **Legacy Context**: `../../../../../code/repositories/legacy_data_dictionary.csv` - Original system documentation
 
 ### Related Use Cases
 - **UC02 EDW2 Refactor**: `../uc02_edw2_refactor/` - Parallel legacy system migration
-- **Business Vault**: `../edp-data-domains/models/curation/biz_vault/` - Downstream business logic
+- **Business Vault**: `../../../../../code/repositories/edp-data-domains/models/curation/biz_vault/` - Downstream business logic
 
 ## Success Metrics
 - **Data Consistency**: 100% match between 3NF and Data Vault current views
