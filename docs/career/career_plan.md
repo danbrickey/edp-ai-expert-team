@@ -1,18 +1,27 @@
-# AI Career Transition Plan - Dan Brickey (REVISED v2.0)
+# AI Career Transition Plan - Dan Brickey (REVISED v2.1)
 
-**Date**: October 15, 2025 (Revised)
+**Date**: October 26, 2025 (Revised)
 **Author**: Dan Brickey
 **Planning Horizon**: October 2025 - Spring 2028+ (2.5+ years)
 **Target Career Paths**: AI Solutions Architect | AI Strategist | AI Coach/Change Management
 **Educational Goal**: MS in Applied Artificial Intelligence (UVU), Fall 2026 - Spring 2028
 **Document Type**: Career Plan
-**Revision**: 2.0 - Adjusted for realistic time constraints and accelerated UVU application timeline
+**Revision**: 2.1 - Added family AI coaching opportunity to support AI Coach/Change Management career path development
 
 ---
 
 ## Executive Summary
 
 This career plan outlines the transition from Data & Solutions Architect to AI-native roles across three complementary career paths: AI Solutions Architect, AI Strategist, and AI Coach/Change Management Specialist. The plan leverages current Blue Cross role transformation, UVU master's program (Fall 2026 start), and strategic skill-building to position for AI leadership roles by Spring 2028.
+
+### Revision 2.1 Notes (October 26, 2025)
+
+**Key Addition in v2.1:**
+- **Family AI Coaching Initiative**: Added formal integration of 2-hour AI coaching course for family members as early portfolio development for AI Coach/Change Management career path
+- **Course Development**: Creating structured curriculum (overview, prerequisites, student manual) for teaching VS Code, GitHub, AI assistant workflows, and personal productivity systems
+- **Portfolio Entry**: Documenting coaching materials, student outcomes, and lessons learned as evidence of teaching/training capabilities
+- **Scaling Strategy**: Using family coaching as proof-of-concept for broader AI coaching and change management services
+- **Timeline Integration**: Incorporated coaching activities into Phase 0 (Oct-Nov 2025) as capacity-building work that supports both delegation goals and AI Coach skill development
 
 ### Revision 2.0 Notes (October 15, 2025)
 
@@ -61,6 +70,7 @@ This career plan outlines the transition from Data & Solutions Architect to AI-n
   - Snowflake Cortex certification complete
   - 5-10 hours/week freed up through delegation and workflow optimization
   - 3-5 recurring tasks successfully delegated to engineering teams
+  - **Family AI Coaching course delivered** with documented materials and outcomes
 
 - **By March 2026**:
   - UVU admission confirmed
@@ -147,6 +157,8 @@ This career plan outlines the transition from Data & Solutions Architect to AI-n
 - ✅ 2-3 AI workflows identified with implementation plans
 - ✅ Delegation meetings scheduled for early November
 - ✅ Time savings targets documented (goal: 5-10 hours/week)
+- ✅ **Family AI Coaching Course designed** (overview, prerequisites, student manual)
+- ✅ **AI coaching materials prepared** (repository template, exercise structure, support workflow)
 
 ---
 
@@ -180,6 +192,21 @@ This career plan outlines the transition from Data & Solutions Architect to AI-n
   - Test on recent PRs
   - Train team on how to use (if applicable)
 
+**3. Family AI Coaching Initiative (4-6 hours over 2 weeks)**
+- ✅ **Deliver 2-hour AI coaching course** to family members
+  - Overview presentation (AI assistant capabilities, workflow benefits)
+  - Hands-on setup: VS Code installation, GitHub account creation
+  - Repository cloning and personalization exercise
+  - Practical AI assistant exercises (prompts, workflows, productivity)
+- ✅ **Create support system** for ongoing learning
+  - Follow-up check-ins (weekly for first month)
+  - Shared documentation/FAQ resource
+  - Success metrics tracking (adoption, usage patterns)
+- ✅ **Document coaching experience** for portfolio
+  - Course materials (slides, manual, exercises)
+  - Student feedback and outcomes
+  - Lessons learned and improvement opportunities
+
 #### Week 3-4 (Nov 16-30): Refine & Measure
 
 **1. Monitor Delegations (2-3 hours/week)**
@@ -194,10 +221,15 @@ This career plan outlines the transition from Data & Solutions Architect to AI-n
 - ✅ Document all workflows in shared location
 - ✅ Create "AI Workflow Library" (lightweight, for team use)
 
-**3. Measure Time Savings (1 hour)**
+**3. Measure Time Savings & Document Coaching Outcomes (1-2 hours)**
 - ✅ Track actual time freed up in past 2 weeks
 - ✅ Compare to baseline
 - ✅ Adjust if not hitting 5-10 hour/week target
+- ✅ **Complete family AI coaching documentation**
+  - Finalize course materials for portfolio
+  - Collect and document student feedback
+  - Create case study of coaching methodology and outcomes
+  - Identify lessons learned for future coaching opportunities
 - ✅ Document lessons learned
 
 **Deliverables by November 30:**
@@ -206,6 +238,79 @@ This career plan outlines the transition from Data & Solutions Architect to AI-n
 - ✅ 5-10 hours/week measurably freed up
 - ✅ "Delegation & AI Workflow Playbook" documented (for sustainability)
 - ✅ **Capacity created for next phase!**
+
+---
+
+## AI Coaching Strategy & Portfolio Development
+
+### Family AI Coaching as Career Path Foundation
+
+The family AI coaching initiative serves as a strategic entry point for developing the **AI Coach/Change Management** career path by providing real-world experience in:
+
+#### **Core AI Coaching Competencies Being Developed:**
+
+**1. Curriculum Design & Adult Learning**
+- Structured 2-hour course with clear learning objectives
+- Progressive skill building: setup → basic usage → practical applications
+- Hands-on exercises that reinforce concepts immediately
+- Adult learning principles: relevant, practical, immediately applicable
+
+**2. Technology Adoption & Change Management**
+- Guiding non-technical users through AI tool adoption
+- Overcoming resistance and building confidence with new technology
+- Creating sustainable workflows that integrate into daily routines
+- Providing ongoing support and troubleshooting
+
+**3. AI Workflow Engineering**
+- Designing personal AI assistant systems (repository structure, prompt libraries)
+- Teaching prompt engineering and AI interaction best practices
+- Creating reusable templates and frameworks
+- Documenting and sharing effective AI workflows
+
+**4. Support System Design**
+- Creating follow-up support structures (check-ins, FAQs, documentation)
+- Building communities of practice (shared resources, peer learning)
+- Measuring adoption and usage success
+- Iterating based on user feedback and outcomes
+
+#### **Portfolio Value & Professional Applications:**
+
+**Immediate Portfolio Entry:**
+- **Course Materials**: Professional-quality training curriculum (overview, prerequisites, manual)
+- **Teaching Evidence**: Documented delivery experience with student outcomes
+- **Methodology**: Proven approach to AI adoption coaching
+- **Case Study**: Lessons learned and improvement recommendations
+
+**Scaling to Professional Context:**
+- **Enterprise AI Training**: Adapt materials for workplace AI adoption
+- **Change Management**: Apply methodology to organizational AI transformation
+- **Executive Education**: Scale course for leadership AI literacy
+- **Consulting Services**: Package as standalone AI coaching offering
+
+**Supporting Career Path Goals:**
+- **AI Solutions Architect**: Demonstrates ability to design AI workflows and train users
+- **AI Strategist**: Shows understanding of adoption challenges and change management
+- **AI Coach/Change Management**: Provides concrete evidence of coaching and training capabilities
+
+#### **Next Steps for AI Coaching Development:**
+
+**Short-term (Q1-Q2 2026):**
+- Document family coaching outcomes and lessons learned
+- Refine course materials based on student feedback
+- Create standardized coaching methodology and toolkit
+- Begin offering informal AI coaching within Blue Cross (AI Office Hours)
+
+**Medium-term (2026-2027):**
+- Develop enterprise-focused AI training curricula
+- Pilot formal AI training sessions for Blue Cross teams
+- Create AI coaching certification or credentialing approach
+- Build reputation as AI enablement specialist
+
+**Long-term (2027+):**
+- Position for professional AI Coach/Change Management roles
+- Develop thought leadership content on AI adoption
+- Create scalable AI coaching programs and methodologies
+- Potential consulting or training business development
 
 ---
 
@@ -268,6 +373,8 @@ This career plan outlines the transition from Data & Solutions Architect to AI-n
 - Personal statement outline drafted
 - Phase 0 delegation and workflow plans documented
 - CIO/Director meeting complete with buy-in
+- **Family AI Coaching Course designed** (overview, prerequisites, student manual)
+- **AI coaching materials prepared** (repository template, exercise structure)
 
 ---
 
@@ -283,7 +390,9 @@ This career plan outlines the transition from Data & Solutions Architect to AI-n
 - ✅ **Delegation handoffs**: 3-5 tasks delegated to teams (see Phase 0 section)
 - ✅ **AI workflow implementation**: 2-3 workflows operational
 - ✅ **Measure time savings**: Confirm 5-10 hours/week freed up
-- This is the **highest priority** for November - creates sustainable capacity
+- ✅ **Family AI Coaching delivery**: Complete 2-hour course and follow-up support
+- ✅ **Document coaching experience**: Create portfolio materials and case study
+- This is the **highest priority** for November - creates sustainable capacity AND builds AI Coach portfolio
 
 #### Learning (30-40% time):
 - ✅ **Andrew Ng ML Specialization**: Weeks 3-6
@@ -868,6 +977,11 @@ This career plan outlines the transition from Data & Solutions Architect to AI-n
   - AI Adoption Roadmap
   - AI Governance Framework
   - AI Transformation Story (pre-master's + capstone combined)
+- ✅ **AI Coaching portfolio**:
+  - Family AI Coaching course materials (overview, prerequisites, student manual)
+  - Coaching methodology documentation and case study
+  - Student outcomes and feedback analysis
+  - Lessons learned and scaling strategy for professional coaching opportunities
 - ✅ Conference talks and/or guest lectures (1-3 total over 2.5 years, if bandwidth allows)
 - ✅ GitHub portfolio with comprehensive documentation
 
@@ -879,7 +993,7 @@ This career plan outlines the transition from Data & Solutions Architect to AI-n
 **Career Readiness:**
 - ✅ AI Solutions Architect: 95% fit
 - ✅ AI Strategist: 90% fit
-- ✅ AI Coach/Change Management: 85% fit
+- ✅ AI Coach/Change Management: 90% fit (improved with family coaching experience and documented materials)
 
 ---
 
