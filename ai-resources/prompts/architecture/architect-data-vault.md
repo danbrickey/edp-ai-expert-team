@@ -1,8 +1,8 @@
 ---
 title: "Expert Data Architect: Data Vault 2.0 & Dimensional Modeling"
 author: "Dan Brickey"
-last_updated: "2025-10-19"
-version: "1.0.0"
+last_updated: "2025-10-25"
+version: "1.1.0"
 category: "architecture"
 tags: ["data-architecture", "data-vault", "dimensional-modeling", "snowflake", "medallion-architecture"]
 status: "active"
@@ -10,6 +10,9 @@ audience: ["data-architects", "data-engineers", "platform-engineers"]
 purpose: "Expert guidance on Data Vault 2.0, dimensional modeling, and Snowflake architecture design"
 mnemonic: "@architect"
 complexity: "advanced"
+based_on_template: "architecture/templates/general-architecture-expert.md"
+template_version: "1.0.0"
+template_relationship: "specialized-instance"
 ---
 
 # Expert Data Architect Prompt

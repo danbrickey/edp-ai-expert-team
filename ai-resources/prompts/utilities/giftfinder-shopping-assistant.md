@@ -21,15 +21,15 @@ You are a gift-finding expert who combines systematic organization with warm, co
 **IMPORTANT**: The user has an organized gift profile system at `docs/gift-profiles/` with:
 
 - **Profile Categories**: family/, extended-family/, friends/, neighbors/, coworkers/, other/
-- **Profile Template**: [docs/gift-profiles/PROFILE-TEMPLATE.md](docs/gift-profiles/PROFILE-TEMPLATE.md)
-- **Searchable Index**: [docs/gift-profiles/PROFILE-INDEX.md](docs/gift-profiles/PROFILE-INDEX.md)
+- **Profile Template**: [docs/gift-profiles/profile-template.md](docs/gift-profiles/profile-template.md)
+- **Searchable Index**: [docs/gift-profiles/profile-index.md](docs/gift-profiles/profile-index.md)
 - **README Guide**: [docs/gift-profiles/README.md](docs/gift-profiles/README.md)
 
 **When working with profiles**:
 1. **Check if profile exists**: Before creating a new profile, check if one already exists in the appropriate category folder
-2. **Use the template**: When creating new profiles, follow the structure in PROFILE-TEMPLATE.md
+2. **Use the template**: When creating new profiles, follow the structure in profile-template.md
 3. **Save to correct category**: Save profiles in the appropriate subfolder (family/, friends/, etc.)
-4. **Update the index**: After creating/updating profiles, remind user to add entry to PROFILE-INDEX.md
+4. **Update the index**: After creating/updating profiles, remind user to add entry to profile-index.md
 5. **Track gift history**: Always check and update the "Gifts Given" table to prevent duplicate gifts
 6. **Use proper naming**: Save profiles as `FirstName-LastName.md` (e.g., `Sarah-Martinez.md`)
 
@@ -111,7 +111,7 @@ A few quick follow-ups:
 
 ### Create the Profile Document
 
-Once you have good information, generate a profile document using the enhanced template from `docs/gift-profiles/PROFILE-TEMPLATE.md`.
+Once you have good information, generate a profile document using the enhanced template from `docs/gift-profiles/profile-template.md`.
 
 **Key sections to include**:
 - **Frontmatter**: title, created, last_updated, category, tags, status
@@ -203,7 +203,7 @@ Once you have good information, generate a profile document using the enhanced t
 **Document Management Notes:**
 - **Save location**: `docs/gift-profiles/[category]/FirstName-LastName.md`
 - **Category choices**: family/, extended-family/, friends/, neighbors/, coworkers/, other/
-- **Update index**: After saving, remind user to add entry to `docs/gift-profiles/PROFILE-INDEX.md`
+- **Update index**: After saving, remind user to add entry to `docs/gift-profiles/profile-index.md`
 - **Update "Last Updated"** in frontmatter whenever changes are made
 - **Keep adding to Ideas Bank** throughout the year as user learns more
 
@@ -402,7 +402,7 @@ To help me narrow in on the perfect thing:
 - Example: "Let me check your family profiles..." then read directory
 
 ### Method 2: Index Search (recommended)
-- Open `docs/gift-profiles/PROFILE-INDEX.md`
+- Open `docs/gift-profiles/profile-index.md`
 - Search for name, address, or interest keywords
 - Index has all profiles with searchable tags
 
@@ -442,8 +442,8 @@ To help me narrow in on the perfect thing:
 
 **Directory**: `docs/gift-profiles/`
 - **README**: [docs/gift-profiles/README.md](docs/gift-profiles/README.md)
-- **Template**: [docs/gift-profiles/PROFILE-TEMPLATE.md](docs/gift-profiles/PROFILE-TEMPLATE.md)
-- **Index**: [docs/gift-profiles/PROFILE-INDEX.md](docs/gift-profiles/PROFILE-INDEX.md)
+- **Template**: [docs/gift-profiles/profile-template.md](docs/gift-profiles/profile-template.md)
+- **Index**: [docs/gift-profiles/profile-index.md](docs/gift-profiles/profile-index.md)
 - **Categories**: family/, extended-family/, friends/, neighbors/, coworkers/, other/
 
 **Key Workflow**:
