@@ -8,7 +8,8 @@ This system tracks member demographics and personal information for healthcare p
 - Members must have both a subscriber and a group to appear in reports
 - System excludes test/placeholder records to ensure accurate member counts
 - Historical changes are tracked, allowing us to see what a member's information looked like at any point in time
-- Data comes from two main sources (GEM and FCT) and cannot be mixed for the same member
+- Data comes from standardized source systems and cannot be mixed for the same member
+- Modernized from legacy source code mapping to use standardized identifiers
 
 ---
 
@@ -18,7 +19,7 @@ This module keeps track of member demographic information and connects each memb
 
 ### Key Business Rules
 
-- **Rule 1 (Source Identification):** When the system sees a source ID of 1, it labels the data as "GEM". All other source IDs are labeled as "FCT". This helps us know which source system the member data came from.
+- **Rule 1 (Source Identification):** The system uses the standardized source code from the person record to identify which source system the member data came from (e.g., 'GEM', 'FCT'). This ensures consistency across all related records.
 
 - **Rule 2 (External ID Filtering):** Only member IDs marked as "EXRM" (External Reference Member) are included. This filters out internal test IDs and temporary placeholders. Some members may not have an external ID yet, which is acceptable.
 
@@ -79,26 +80,26 @@ This document describes the business rules implemented in the member_person refa
 
 ## Business Rules
 
-### BR-MP-001: Source Code Mapping
+### BR-MP-001: Source Identifier from Person Record
 
-**Rule**: Map source_id values to standardized source codes
+**Rule**: Use standardized source identifier from the person record
 
 **Logic**:
-- When `source_id = 1`, set `source_code = 'GEM'`
-- For all other source_id values, set `source_code = 'FCT'`
+- Source identifier is pulled directly from the `current_person.source` column
+- This uses the standardized source identifiers assigned in the raw vault layer
+- Replaces legacy source_id mapping logic with modern standardized codes
 
-**Implementation**: [prep_member_person.sql:74-77](prep_member_person.sql#L74-L77)
+**Implementation**: [prep_member_person.sql:96-97](prep_member_person.sql#L96-L97)
 
 ```sql
-case
-    when p.source_id = 1 then 'GEM'
-    else 'FCT'
-end as source_code
+-- Source from person record (uses standardized source codes)
+p.source
 ```
 
 **Data Quality**:
-- source_code must not be null
-- source_code must be one of: 'GEM', 'FCT'
+- source must not be null
+- source values are standardized in the raw vault layer
+- Common values include: 'GEM', 'FCT', or other configured source systems
 
 ---
 
@@ -149,19 +150,16 @@ where subscriber_id not like 'PROXY%'  -- Filter out proxy subscribers
 **Rule**: Ensure source codes match across member, person, subscriber, and group records
 
 **Logic**:
-- Member source must match the derived source code from person source_id
+- Member source must match the person source code
 - Member source must equal subscriber source
 - Member source must equal group source
 
-**Implementation**: [prep_member_person.sql:60-71](prep_member_person.sql#L60-L71)
+**Implementation**: [prep_member_person.sql:110-125](prep_member_person.sql#L110-L125)
 
 ```sql
 left join current_person p
     on m.person_bk = p.person_bk
-    and m.member_source = case
-        when p.source_id = 1 then 'GEM'
-        else 'FCT'
-    end
+    and m.member_source = p.source
 
 inner join current_subscriber s
     on m.subscriber_bk = s.subscriber_bk
@@ -303,7 +301,7 @@ WHERE member_bk = '<member_key>'
 | member_last_name | NOT NULL | dbt test |
 | member_birth_dt | NOT NULL | dbt test |
 | member_sex | IN ('M', 'F', 'U', 'O') | dbt test |
-| source_code | IN ('GEM', 'FCT') | dbt test |
+| source | NOT NULL | dbt test |
 | subscriber_id | NOT NULL, NOT LIKE 'PROXY%' | dbt test + filter |
 | group_id | NOT NULL | dbt test |
 | is_current | Only one TRUE per member | dbt test |

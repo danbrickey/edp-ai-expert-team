@@ -41,7 +41,7 @@ with member_person_history as (
         member_ssn,
 
         -- Source Information
-        source_code,
+        source,
         member_source,
 
         -- Related Entity Keys
@@ -113,8 +113,8 @@ select
     ) as member_full_name,
 
     -- Source Information
-    source_code,
-    member_source as source,
+    source,
+    member_source,
 
     -- Related Entity Keys
     group_bk,

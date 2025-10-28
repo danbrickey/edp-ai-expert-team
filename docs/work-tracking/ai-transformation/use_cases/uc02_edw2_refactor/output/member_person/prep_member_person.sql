@@ -12,7 +12,7 @@
 
     Business Rules:
     1. Join member demographics with external person ID
-    2. Map source codes: SourceID=1 -> 'GEM', else -> 'FCT'
+    2. Use standardized source codes from current_person table
     3. Include subscriber and group relationships
     4. Filter out proxy subscribers (SBSB_ID NOT LIKE 'PROXY%')
     5. Only include records where external ID type = 'EXRM'
@@ -40,16 +40,16 @@ with current_member as (
         edp_record_source,
         edp_start_dt,
         cdc_timestamp
-    from {{ ref('rv_sat_member_current') }}
+    from {{ ref('current_member') }}
 ),
 
 current_person as (
     select
         person_bk,
         person_id,
-        source_id,
+        source,
         person_id_type
-    from {{ ref('rv_sat_person_current') }}
+    from {{ ref('current_person') }}
     where person_id_type = 'EXRM'  -- Only external reference member IDs
 ),
 
@@ -58,7 +58,7 @@ current_subscriber as (
         subscriber_bk,
         subscriber_id,
         source as subscriber_source
-    from {{ ref('rv_sat_subscriber_current') }}
+    from {{ ref('current_subscriber') }}
     where subscriber_id not like 'PROXY%'  -- Filter out proxy subscribers
 ),
 
@@ -67,7 +67,7 @@ current_group as (
         group_bk,
         group_id,
         source as group_source
-    from {{ ref('rv_sat_group_current') }}
+    from {{ ref('current_group') }}
 ),
 
 member_person_prep as (
@@ -93,11 +93,8 @@ member_person_prep as (
         g.group_id,
         s.subscriber_id,
 
-        -- Source Mapping Logic
-        case
-            when p.source_id = 1 then 'GEM'
-            else 'FCT'
-        end as source_code,
+        -- Source from person record (uses standardized source codes)
+        p.source,
 
         -- Original source from member record
         m.member_source,
@@ -114,10 +111,7 @@ member_person_prep as (
     -- (some members may not have external IDs)
     left join current_person p
         on m.person_bk = p.person_bk
-        and m.member_source = case
-            when p.source_id = 1 then 'GEM'
-            else 'FCT'
-        end
+        and m.member_source = p.source
 
     -- INNER JOIN to subscriber (must have valid subscriber)
     inner join current_subscriber s

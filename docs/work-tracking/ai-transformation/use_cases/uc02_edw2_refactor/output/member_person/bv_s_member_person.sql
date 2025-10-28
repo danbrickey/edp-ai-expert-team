@@ -17,7 +17,7 @@
 
     Business Logic:
     - Combines member demographics with external person identifier
-    - Maps source codes based on source_id
+    - Uses standardized source codes from raw vault
     - Filters for valid subscribers and groups
     - Excludes proxy subscribers
 
@@ -41,7 +41,7 @@ src_payload:
     - member_ssn
     - group_id
     - subscriber_id
-    - source_code
+    - source
     - member_source
 src_eff: 'effective_from'
 src_ldts: 'load_datetime'

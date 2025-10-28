@@ -34,7 +34,7 @@ hashed_columns:
             - member_ssn
             - group_id
             - subscriber_id
-            - source_code
+            - source
             - member_source
 derived_columns:
     source: "!member_source"

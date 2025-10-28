@@ -160,6 +160,103 @@ legacy_source: "<legacy source reference>"  # e.g., HDSVault.biz.spCOBProfileLoo
 
 ---
 
+## ⚠️ Common Pitfalls and Corrections
+
+### Table and Column References
+
+**Issue**: Using incorrect table references in prep models instead of mapping document names.
+
+**Correction**:
+- ✅ ALWAYS use table names from the mapping document `new_table_name` column
+- ✅ Reference raw vault tables as `{{ ref('current_member') }}`, `{{ ref('current_person') }}`, etc.
+- ❌ NEVER use internal implementation names like `rv_sat_member_current`
+- ❌ NEVER invent table names not provided in the mapping document
+
+**Example**:
+```sql
+-- CORRECT
+with current_member as (
+    select * from {{ ref('current_member') }}
+)
+
+-- INCORRECT
+with current_member as (
+    select * from {{ ref('rv_sat_member_current') }}
+)
+```
+
+### Column Name Consistency
+
+**Issue**: Creating aliases or derived column names that don't match the mapping document.
+
+**Correction**:
+- ✅ ALWAYS preserve column names from the mapping document `new_column_name` column
+- ✅ If mapping shows `source`, keep it as `source` throughout all layers
+- ❌ NEVER add aliases like `source as source_code` unless explicitly required
+- ❌ NEVER transform column names across layers (prep → staging → business vault → dimensional)
+
+**Example**:
+```sql
+-- CORRECT - preserves column name from mapping
+select
+    p.source,  -- from mapping: current_person.source
+    m.member_source
+from current_member m
+
+-- INCORRECT - creates unnecessary alias
+select
+    p.source as source_code,  -- Don't rename!
+    m.member_source
+from current_member m
+```
+
+### Legacy Business Logic
+
+**Issue**: Porting legacy source code mapping logic instead of using raw vault standardization.
+
+**Correction**:
+- ✅ ALWAYS use standardized values from raw vault tables
+- ✅ Assume raw vault has already applied source standardization
+- ❌ NEVER recreate legacy CASE statements for source mapping
+- ❌ NEVER hardcode source values like `WHEN source_id = 1 THEN 'GEM'`
+
+**Example**:
+```sql
+-- CORRECT - uses standardized raw vault values
+select
+    p.source  -- Already standardized in raw vault
+from current_person p
+
+-- INCORRECT - recreates legacy logic
+select
+    case
+        when p.source_id = 1 then 'GEM'
+        else 'FCT'
+    end as source  -- Don't do this!
+from current_person p
+```
+
+### Documentation Consistency
+
+**Issue**: Documentation referring to column names that don't exist in the code.
+
+**Correction**:
+- ✅ ALWAYS update all documentation files when changing column names
+- ✅ Files to update: SQL models, YML tests, business rules MD, README
+- ✅ Search for all occurrences of old column names across all files
+- ❌ NEVER leave mismatched column names between code and documentation
+
+**Checklist when changing column names**:
+- [ ] prep_*.sql
+- [ ] stg_*.sql
+- [ ] bv_*.sql
+- [ ] dim_*.sql or fact_*.sql
+- [ ] *.yml (column descriptions and tests)
+- [ ] *_business_rules.md (all rule descriptions and examples)
+- [ ] README.md (usage examples and queries)
+
+---
+
 ## 🧪 Code & Documentation Standards
 
 - use lower case for code and snake case (e.g. `lower_snake_case`) for multiword variable and column names.

@@ -75,16 +75,13 @@ models:
         tests:
           - not_null
 
-      - name: source_code
+      - name: source
         description: >
-          Mapped source code derived from source_id:
-          - 'GEM' when source_id = 1
-          - 'FCT' for all other sources
+          Standardized source identifier from the person record.
+          Uses standardized source identifiers from the raw vault layer.
+          Common values include 'GEM', 'FCT', or other configured source systems.
         tests:
           - not_null
-          - accepted_values:
-              values: ['GEM', 'FCT']
-              quote: true
 
       - name: member_source
         description: Original source system for the member record
@@ -219,13 +216,10 @@ models:
         tests:
           - not_null
 
-      - name: source_code
-        description: Mapped source code (GEM or FCT)
+      - name: source
+        description: Standardized source identifier from raw vault
         tests:
           - not_null
-          - accepted_values:
-              values: ['GEM', 'FCT']
-              quote: true
 
       - name: member_source
         description: Original source system
@@ -340,13 +334,10 @@ models:
       - name: member_full_name
         description: Concatenated full name (first + last)
 
-      - name: source_code
-        description: Mapped source code (GEM or FCT)
+      - name: source
+        description: Standardized source identifier from raw vault
         tests:
           - not_null
-          - accepted_values:
-              values: ['GEM', 'FCT']
-              quote: true
 
       - name: source
         description: Original source system
