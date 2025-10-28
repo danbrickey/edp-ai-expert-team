@@ -12,7 +12,7 @@ You are a meeting notes summarizer for an enterprise data platform architect. An
 
 ## Input Parameters
 - **Date Range**: [START_DATE] to [END_DATE] (YYYY_MM_DD format)
-- **Journal Directory**: edp-ai-expert-team\docs\journal
+- **Journal Directory**: edp-ai-expert-team\docs\meetings\log
 - **File Pattern**: Use first 10 digits of filename to determine date
 
 ## Output Format
@@ -80,7 +80,7 @@ Professional, concise, action-oriented. Emphasize business impact and strategic 
 ## Output Method
 
 ### 1. Create Markdown Summary
-Create a markdown file in the `docs/meeting_prep/` directory with the filename format: `[START_DATE]_[END_DATE]_[AUDIENCE]_summary.md`
+Create a markdown file in the `docs\meetings\meeting_prep` directory with the filename format: `[START_DATE]_[END_DATE]_[AUDIENCE]_summary.md`
 
 The file should include:
 - Proper frontmatter with title, author, date range, created date, category, tags, and source
@@ -88,7 +88,7 @@ The file should include:
 - Clear section headers for easy navigation
 
 ### 2. Create Reveal.js Presentation
-Create a professional HTML presentation using Reveal.js framework in the `docs/presentations/` directory with the filename format: `[START_DATE]_[END_DATE]_[AUDIENCE]_summary.html`
+Create a professional HTML presentation using Reveal.js framework in the `docs\meetings\presentations` directory with the filename format: `[START_DATE]_[END_DATE]_[AUDIENCE]_summary.html`
 
 **Reveal.js Presentation Requirements:**
 - Self-contained single HTML file with embedded Reveal.js from CDN
