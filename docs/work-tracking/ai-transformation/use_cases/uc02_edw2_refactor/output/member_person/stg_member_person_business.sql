@@ -25,7 +25,7 @@ hashed_columns:
     member_person_hashdiff:
         is_hashdiff: true
         columns:
-            - constituent_id
+            - person_id
             - member_suffix
             - member_first_name
             - member_last_name
@@ -33,12 +33,12 @@ hashed_columns:
             - member_birth_dt
             - member_ssn
             - group_id
-            - subscriber_id
+            - subscriber_identifier
             - source
             - member_source
 derived_columns:
     source: "!member_source"
-    load_datetime: "cdc_timestamp"
+    load_datetime: "load_date"
     effective_from: "start_date"
 {% endset %}
 

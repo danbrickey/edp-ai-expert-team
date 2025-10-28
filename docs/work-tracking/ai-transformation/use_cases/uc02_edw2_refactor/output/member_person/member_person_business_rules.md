@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This system tracks member demographics and personal information for healthcare plan enrollees. It combines member details (name, birth date, gender) with their external constituent ID, subscriber relationship, and group affiliation. The system ensures data accuracy by filtering out test records, validating that member data comes from the correct source systems (GEM or FCT), and tracking changes over time.
+This system tracks member demographics and personal information for healthcare plan enrollees. It combines member details (name, birth date, gender) with their external person ID, subscriber relationship, and group affiliation. The system ensures data accuracy by filtering out test records, validating that member data comes from the correct source systems (GEM or FCT), and tracking changes over time.
 
 **Key Points for Leadership:**
 - Members must have both a subscriber and a group to appear in reports
@@ -23,7 +23,7 @@ This module keeps track of member demographic information and connects each memb
 
 - **Rule 2 (External ID Filtering):** Only member IDs marked as "EXRM" (External Reference Member) are included. This filters out internal test IDs and temporary placeholders. Some members may not have an external ID yet, which is acceptable.
 
-- **Rule 3 (Test Data Exclusion):** Any subscriber ID that starts with "PROXY" is automatically removed. These are fake test records used by the system and would give us wrong member counts if included in reports.
+- **Rule 3 (Test Data Exclusion):** Any subscriber identifier that starts with "PROXY" is automatically removed. These are fake test records used by the system and would give us wrong member counts if included in reports.
 
 - **Rule 4 (Source Matching):** A member's data from different tables (member info, person ID, subscriber, group) must all come from the same source system. You cannot mix GEM data with FCT data for the same member.
 
@@ -42,7 +42,7 @@ This module keeps track of member demographic information and connects each memb
 - **Member:** A person enrolled in a healthcare plan (may be the subscriber or a dependent).
 - **Subscriber:** The main account holder who has the insurance contract.
 - **Group:** The health plan or network the member belongs to.
-- **Constituent ID:** An external reference number used to identify the person in other systems.
+- **Person ID:** An external reference number used to identify the person in other systems.
 - **Source Code:** The label (GEM or FCT) that tells us which computer system the member data came from.
 - **Proxy Subscriber:** A fake test record used for system testing, not a real person.
 - **Type 2 SCD (Slowly Changing Dimension):** A method for tracking historical changes by keeping old and new versions of data with start and end dates.
@@ -57,7 +57,7 @@ This module keeps track of member demographic information and connects each memb
 
 ### What to Watch
 
-- **Members without external IDs:** Some members may not have a constituent ID if they are newly enrolled or if data migration is incomplete. This is expected and the system handles it by leaving that field blank.
+- **Members without external IDs:** Some members may not have a person ID if they are newly enrolled or if data migration is incomplete. This is expected and the system handles it by leaving that field blank.
 
 - **Source system consistency:** If a member's data appears in both GEM and FCT, only the records where all pieces (member, subscriber, group) come from the same source will show up. Mixed-source records are excluded to prevent data quality issues.
 
@@ -76,7 +76,7 @@ This document describes the business rules implemented in the member_person refa
 - **Database**: HDSVault
 - **Schema**: biz
 - **View**: v_FacetsMemberUMI_current
-- **Purpose**: Member person demographics with external constituent ID
+- **Purpose**: Member person demographics with external person ID
 
 ## Business Rules
 
@@ -120,7 +120,7 @@ where person_id_type = 'EXRM'  -- Only external reference member IDs
 
 **Data Quality**:
 - Excludes other ID types (internal, temporary, etc.)
-- May result in NULL constituent_id for members without external references
+- May result in NULL person_id for members without external references
 
 ---
 
@@ -129,14 +129,14 @@ where person_id_type = 'EXRM'  -- Only external reference member IDs
 **Rule**: Exclude all proxy subscriber records from the member person dataset
 
 **Logic**:
-- Filter out records where `subscriber_id` starts with 'PROXY'
+- Filter out records where `subscriber_identifier` starts with 'PROXY'
 - Proxy subscribers are system-generated placeholders, not real subscribers
 
 **Implementation**: [prep_member_person.sql:38-40](prep_member_person.sql#L38-L40)
 
 ```sql
 from {{ ref('rv_sat_subscriber_current') }}
-where subscriber_id not like 'PROXY%'  -- Filter out proxy subscribers
+where subscriber_identifier not like 'PROXY%'  -- Filter out proxy subscribers
 ```
 
 **Rationale**:
@@ -197,7 +197,7 @@ inner join current_group g
 **Data Quality Impact**:
 - Members without valid subscriber records are excluded
 - Members without valid group records are excluded
-- Members without external person IDs are included (constituent_id will be NULL)
+- Members without external person IDs are included (person_id will be NULL)
 
 ---
 
@@ -232,7 +232,7 @@ coalesce(member_last_name, 'Unknown') as member_last_name
 coalesce(member_sex, 'U') as member_sex
 ```
 
-**Implementation**: [dim_member_person.sql:59-62](dim_member_person.sql#L59-L62)
+**Implementation**: [xwalk_member_person.sql:59-62](xwalk_member_person.sql#L59-L62)
 
 **Rationale**:
 - Prevents null values in reporting layer
@@ -255,7 +255,7 @@ case
 end as member_age_years
 ```
 
-**Implementation**: [dim_member_person.sql:65-69](dim_member_person.sql#L65-L69)
+**Implementation**: [xwalk_member_person.sql:65-69](xwalk_member_person.sql#L65-L69)
 
 **Note**: This is a point-in-time calculation. Age will vary based on query execution date.
 
@@ -270,7 +270,7 @@ end as member_age_years
 - Set effective_to to '9999-12-31' for current records
 - Flag current records with `is_current = true`
 
-**Implementation**: [dim_member_person.sql:33-40](dim_member_person.sql#L33-L40)
+**Implementation**: [xwalk_member_person.sql:33-40](xwalk_member_person.sql#L33-L40)
 
 ```sql
 lead(effective_from) over (
@@ -281,7 +281,7 @@ lead(effective_from) over (
 
 **Query Pattern for Point-in-Time Analysis**:
 ```sql
-SELECT * FROM dim_member_person
+SELECT * FROM xwalk_member_person
 WHERE member_bk = '<member_key>'
   AND effective_from <= '2024-01-01'
   AND effective_to > '2024-01-01'
@@ -296,13 +296,13 @@ WHERE member_bk = '<member_key>'
 | Column | Rule | Enforcement |
 |--------|------|-------------|
 | member_bk | NOT NULL, UNIQUE | dbt test |
-| constituent_id | Optional (can be NULL) | No test |
+| person_id | Optional (can be NULL) | No test |
 | member_first_name | NOT NULL | dbt test |
 | member_last_name | NOT NULL | dbt test |
 | member_birth_dt | NOT NULL | dbt test |
 | member_sex | IN ('M', 'F', 'U', 'O') | dbt test |
 | source | NOT NULL | dbt test |
-| subscriber_id | NOT NULL, NOT LIKE 'PROXY%' | dbt test + filter |
+| subscriber_identifier | NOT NULL, NOT LIKE 'PROXY%' | dbt test + filter |
 | group_id | NOT NULL | dbt test |
 | is_current | Only one TRUE per member | dbt test |
 

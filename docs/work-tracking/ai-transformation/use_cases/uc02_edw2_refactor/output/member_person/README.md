@@ -9,7 +9,7 @@ This directory contains the refactored member_person entity models for the EDW3 
 - **Database**: HDSVault
 - **Schema**: biz
 - **View**: v_FacetsMemberUMI_current
-- **Purpose**: Member person demographics with external constituent ID and relationship data
+- **Purpose**: Member person demographics with external person ID and relationship data
 
 ## Refactored Architecture
 
@@ -94,14 +94,14 @@ This directory contains the refactored member_person entity models for the EDW3 
      - Type 2 SCD tracking
      - Stores all payload attributes
 
-4. **[dim_member_person.sql](dim_member_person.sql)**
+4. **[xwalk_member_person.sql](xwalk_member_person.sql)**
    - **Type**: Table
-   - **Layer**: Dimensional
-   - **Purpose**: Reporting dimension with member person demographics
+   - **Layer**: Lookup/Crosswalk
+   - **Purpose**: Member to person ID crosswalk lookup table
    - **Key Functions**:
-     - Type 2 SCD with effective_from/to dates
-     - Derived attributes (age, full name)
-     - Default values for NULLs
+     - Primary lookup: source + member_bk → person_id
+     - Alternate lookup: source + group_id + subscriber_identifier + member_suffix → person_id
+     - Current records only (no history)
      - Surrogate key generation
 
 ### Configuration Files
@@ -164,11 +164,11 @@ See [member_person_business_rules.md](member_person_business_rules.md) for compl
 - ✓ member_person_hashdiff is NOT NULL
 - ✓ No duplicate records (hk + load_datetime unique)
 
-### Dimensional Layer Tests
-- ✓ member_person_sk is UNIQUE
-- ✓ Only one current record per member
-- ✓ No overlapping effective date ranges
-- ✓ All required fields have valid defaults
+### Lookup Table Tests
+- ✓ member_person_lookup_key is UNIQUE
+- ✓ Primary lookup key (source + member_bk) is unique
+- ✓ All lookup key fields are NOT NULL
+- ✓ person_id can be NULL (some members don't have external IDs)
 
 ## Usage
 
@@ -187,40 +187,45 @@ dbt build --select tag:dimensional
 dbt test --select member_person
 ```
 
-### Querying Current Member Person Data
+### Lookup by Member Business Key
 
 ```sql
--- Get current member person records
-SELECT *
-FROM dim_member_person
-WHERE is_current = true;
-```
-
-### Point-in-Time Query
-
-```sql
--- Get member person data as of specific date
-SELECT *
-FROM dim_member_person
-WHERE member_bk = '<member_key>'
-  AND effective_from <= '2024-01-01'
-  AND effective_to > '2024-01-01';
-```
-
-### Historical Changes
-
-```sql
--- View all historical versions for a member
+-- Get person ID using source and member_bk
 SELECT
     member_bk,
-    member_first_name,
-    member_last_name,
-    effective_from,
-    effective_to,
-    is_current
-FROM dim_member_person
-WHERE member_bk = '<member_key>'
-ORDER BY effective_from;
+    person_id
+FROM xwalk_member_person
+WHERE source = 'GEM'
+  AND member_bk = '<member_key>';
+```
+
+### Lookup by Alternate Keys
+
+```sql
+-- Get person ID using group, subscriber, and member suffix
+SELECT
+    member_bk,
+    person_id
+FROM xwalk_member_person
+WHERE source = 'GEM'
+  AND group_id = '<group_id>'
+  AND subscriber_identifier = '<subscriber_id>'
+  AND member_suffix = '';
+```
+
+### Bulk Lookup for Reporting
+
+```sql
+-- Join to fact table to get person IDs
+SELECT
+    f.transaction_id,
+    f.member_bk,
+    l.person_id,
+    f.claim_amount
+FROM fact_claims f
+LEFT JOIN xwalk_member_person l
+    ON f.source = l.source
+    AND f.member_bk = l.member_bk;
 ```
 
 ## Migration Notes
@@ -229,11 +234,11 @@ ORDER BY effective_from;
 
 1. **Architecture**:
    - Legacy: Single view with joins
-   - New: Layered architecture (prep → staging → business vault → dimensional)
+   - New: Layered architecture (prep → staging → business vault → lookup)
 
 2. **History Tracking**:
    - Legacy: Current records only (snapshot)
-   - New: Full Type 2 SCD history in satellite and dimension
+   - New: History tracked in business vault satellite; lookup shows current only
 
 3. **Data Quality**:
    - Legacy: Limited validation
@@ -241,40 +246,52 @@ ORDER BY effective_from;
 
 4. **Performance**:
    - Legacy: View with joins executed at query time
-   - New: Materialized tables with incremental loading
+   - New: Materialized lookup table for fast key-based access
+
+5. **Purpose**:
+   - Legacy: Full dimensional model with demographics
+   - New: Focused crosswalk for person ID lookup only
 
 ### Breaking Changes
 
 - Column names updated to standardized naming convention (see mapping CSV)
 - dss_* columns renamed to edp_* prefix
-- dss_version column removed (version tracking now handled by satellite)
-- NULL handling improved with default values in dimensional layer
+- dss_version and dss_create_time columns removed
+- Lookup table returns only key fields and person_id (no demographics)
+- Only current records available in lookup (history in business vault)
 
 ### Backward Compatibility
 
-For backward compatibility, you can create a view that mimics the legacy structure:
+For backward compatibility, you can create a view that mimics the legacy structure by joining lookup to business vault:
 
 ```sql
 CREATE VIEW biz.v_FacetsMemberUMI_current AS
 SELECT
-    constituent_id AS ConstituentID,
-    member_bk AS meme_ck,
-    group_id AS grgr_id,
-    subscriber_id AS sbsb_id,
-    member_suffix AS meme_sfx,
-    member_first_name AS FirstName,
-    member_last_name AS LastName,
-    member_sex AS Gender,
-    member_birth_dt AS BirthDate,
-    member_ssn AS SSN,
-    source_code AS SourceCode,
-    record_source AS dss_record_source,
-    load_datetime AS dss_load_date,
-    effective_from AS dss_start_date,
+    l.person_id AS PersonID,
+    l.member_bk AS meme_ck,
+    l.group_id AS grgr_id,
+    l.subscriber_identifier AS sbsb_id,
+    sat.member_suffix AS meme_sfx,
+    sat.member_first_name AS FirstName,
+    sat.member_last_name AS LastName,
+    sat.member_sex AS Gender,
+    sat.member_birth_dt AS BirthDate,
+    sat.member_ssn AS SSN,
+    l.source AS SourceCode,
+    sat.record_source AS dss_record_source,
+    sat.load_datetime AS dss_load_date,
+    sat.effective_from AS dss_start_date
     -- dss_version not available in new architecture
-    load_datetime AS dss_create_time
-FROM dim_member_person
-WHERE is_current = true;
+    -- dss_create_time not available in new architecture
+FROM xwalk_member_person l
+INNER JOIN bv_s_member_person sat
+    ON l.source = sat.source
+    AND l.member_bk = sat.member_bk
+WHERE sat.effective_from = (
+    SELECT MAX(effective_from)
+    FROM bv_s_member_person sat2
+    WHERE sat2.member_person_hk = sat.member_person_hk
+);
 ```
 
 ## Dependencies

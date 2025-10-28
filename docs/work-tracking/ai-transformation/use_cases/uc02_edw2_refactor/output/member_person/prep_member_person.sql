@@ -28,7 +28,6 @@ with current_member as (
     select
         member_bk,
         person_bk,
-        group_bk,
         subscriber_bk,
         member_suffix,
         member_first_name,
@@ -38,8 +37,7 @@ with current_member as (
         member_ssn,
         source as member_source,
         edp_record_source,
-        edp_start_dt,
-        cdc_timestamp
+        edp_start_dt
     from {{ ref('current_member') }}
 ),
 
@@ -56,10 +54,11 @@ current_person as (
 current_subscriber as (
     select
         subscriber_bk,
-        subscriber_id,
+        group_bk,
+        subscriber_identifier,
         source as subscriber_source
     from {{ ref('current_subscriber') }}
-    where subscriber_id not like 'PROXY%'  -- Filter out proxy subscribers
+    where subscriber_identifier not like 'PROXY%'  -- Filter out proxy subscribers
 ),
 
 current_group as (
@@ -72,13 +71,13 @@ current_group as (
 
 member_person_prep as (
     select
-        -- External Person Identifier (Constituent ID)
-        p.person_id as constituent_id,
+        -- External Person Identifier
+        p.person_id,
 
         -- Member Keys
         m.member_bk,
         m.person_bk,
-        m.group_bk,
+        s.group_bk,
         m.subscriber_bk,
 
         -- Member Demographics
@@ -91,7 +90,7 @@ member_person_prep as (
 
         -- Related Entity IDs
         g.group_id,
-        s.subscriber_id,
+        s.subscriber_identifier,
 
         -- Source from person record (uses standardized source codes)
         p.source,
@@ -102,8 +101,7 @@ member_person_prep as (
         -- Data Vault Metadata
         m.edp_record_source,
         m.edp_start_dt as load_date,
-        m.edp_start_dt as start_date,
-        m.cdc_timestamp as create_time
+        m.edp_start_dt as start_date
 
     from current_member m
 
@@ -120,7 +118,7 @@ member_person_prep as (
 
     -- INNER JOIN to group (must have valid group)
     inner join current_group g
-        on m.group_bk = g.group_bk
+        on g.group_bk = s.group_bk
         and m.member_source = g.group_source
 )
 

@@ -28,7 +28,7 @@
 parent_hashkey: 'member_person_hk'
 src_hashdiff: 'member_person_hashdiff'
 src_payload:
-    - constituent_id
+    - person_id
     - member_bk
     - person_bk
     - group_bk
@@ -40,7 +40,7 @@ src_payload:
     - member_birth_dt
     - member_ssn
     - group_id
-    - subscriber_id
+    - subscriber_identifier
     - source
     - member_source
 src_eff: 'effective_from'

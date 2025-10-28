@@ -259,6 +259,41 @@ from current_person p
 
 ## 🧪 Code & Documentation Standards
 
+### Naming Conventions
+
+#### Model Prefixes
+
+Follow these prefixes for different model types:
+
+- **Prep Models**: `prep_<entity>` or `prep_<entity>_business`
+  - Example: `prep_member_person.sql`
+  - Purpose: Apply business rules and joins before business vault
+
+- **Staging Models**: `stg_<entity>` or `stg_<entity>_business`
+  - Example: `stg_member_person_business.sql`
+  - Purpose: Generate hash keys and hashdiff for vault loading
+
+- **Business Vault Models**:
+  - Hubs: `bv_h_<entity>`
+  - Links: `bv_l_<entity1>_<entity2>`
+  - Satellites: `bv_s_<entity>` or `bv_s_<entity>_business`
+  - Bridge: `bv_brg_<entity>`
+  - PIT: `bv_pit_<entity>`
+  - Example: `bv_s_member_person.sql`
+
+- **Dimensional Models**:
+  - Dimensions: `dim_<entity>`
+  - Facts: `fact_<entity>`
+  - Example: `dim_product.sql`, `fact_claims.sql`
+
+- **Crosswalk/Lookup Tables**: `xwalk_<from_entity>_to_<to_entity>`
+  - Example: `xwalk_member_person_to_constituent.sql`
+  - Purpose: Simple key-to-key mapping tables (not full dimensions)
+  - Use when the primary purpose is ID translation/lookup
+  - Contains minimal attributes (keys + target ID + metadata)
+
+### Code Style
+
 - use lower case for code and snake case (e.g. `lower_snake_case`) for multiword variable and column names.
 - Follow `automate_dv` macro conventions.
 - Use Snowflake-optimized configurations.

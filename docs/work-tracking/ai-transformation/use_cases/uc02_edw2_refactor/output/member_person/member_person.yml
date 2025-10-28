@@ -13,7 +13,7 @@ models:
       - Only includes records where external ID type = 'EXRM'
 
     columns:
-      - name: constituent_id
+      - name: person_id
         description: External constituent/person identifier (EXID_ID from CMC_EXID_EXT_ID)
         tests:
           - not_null
@@ -70,7 +70,7 @@ models:
         tests:
           - not_null
 
-      - name: subscriber_id
+      - name: subscriber_identifier
         description: Subscriber identifier
         tests:
           - not_null
@@ -100,9 +100,6 @@ models:
         description: Date and time the row started in the data vault (effective from)
         tests:
           - not_null
-
-      - name: create_time
-        description: CDC timestamp when the row was created in source system
 
   - name: stg_member_person_business
     description: >
@@ -157,7 +154,7 @@ models:
         tests:
           - not_null
 
-      - name: constituent_id
+      - name: person_id
         description: External constituent/person identifier
 
       - name: member_bk
@@ -211,7 +208,7 @@ models:
         tests:
           - not_null
 
-      - name: subscriber_id
+      - name: subscriber_identifier
         description: Subscriber identifier
         tests:
           - not_null
@@ -239,145 +236,83 @@ models:
       - name: record_source
         description: Source system identifier
 
-  - name: dim_member_person
+  - name: xwalk_member_person
     description: >
-      Dimensional Model: Member Person
+      Crosswalk Table: Member Person to Person ID
 
-      Denormalized member person dimension for reporting and analytics.
+      Provides mapping from member identifiers to external constituent ID.
 
-      Type: Type 2 Slowly Changing Dimension
-      - Tracks historical changes to member person attributes
-      - Uses effective_from/effective_to for temporal queries
+      Grain: One row per unique member (current records only)
 
-      Grain: One row per member per effective period
+      Lookup Keys:
+      - Primary: source + member_bk
+      - Alternate: source + group_id + subscriber_identifier + member_suffix
 
       Source: bv_s_member_person (business vault computed satellite)
 
       Legacy Equivalent: v_FacetsMemberUMI_current
 
     tests:
-      # Ensure surrogate keys are unique
+      # Ensure primary lookup key is unique
       - unique:
-          column_name: member_person_sk
+          column_name: member_person_lookup_key
 
-      # Ensure each member has only one current record
+      # Ensure natural key combination is unique
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
+            - source
             - member_bk
-            - is_current
-          where: "is_current = true"
-
-      # Test that effective date ranges don't overlap for the same member
-      - dbt_expectations.expect_row_values_to_have_data_for_every_n_datepart:
-          date_col: effective_from
-          group_by: member_bk
-          datepart: day
 
     columns:
-      - name: member_person_sk
-        description: Surrogate key for the dimension (hash of member_bk + effective_from)
+      - name: member_person_lookup_key
+        description: Surrogate key for lookup table (hash of source + member_bk)
         tests:
           - not_null
           - unique
 
-      - name: member_bk
-        description: Member business key (natural key)
+      - name: source
+        description: Source system identifier (part of primary lookup key)
         tests:
           - not_null
 
-      - name: person_bk
-        description: Person business key
-
-      - name: constituent_id
-        description: External constituent/person identifier
-
-      - name: subscriber_id
-        description: Subscriber identifier
+      - name: member_bk
+        description: Member business key (part of primary lookup key)
         tests:
           - not_null
 
       - name: group_id
-        description: Group identifier
+        description: Group identifier (part of alternate lookup key)
+        tests:
+          - not_null
+
+      - name: subscriber_identifier
+        description: Subscriber identifier (part of alternate lookup key)
         tests:
           - not_null
 
       - name: member_suffix
-        description: Member name suffix (defaulted to empty string if null)
-
-      - name: member_first_name
-        description: Member's first name (defaulted to 'Unknown' if null)
+        description: Member name suffix (part of alternate lookup key, defaulted to empty string if null)
         tests:
           - not_null
 
-      - name: member_last_name
-        description: Member's last name (defaulted to 'Unknown' if null)
-        tests:
-          - not_null
+      - name: person_id
+        description: External constituent/person identifier (target value for lookup)
 
-      - name: member_sex
-        description: Member's biological sex code (defaulted to 'U' if null)
-        tests:
-          - not_null
-          - accepted_values:
-              values: ['M', 'F', 'U', 'O']
-              quote: false
-
-      - name: member_birth_dt
-        description: Member's date of birth
-
-      - name: member_ssn
-        description: Member's Social Security Number
-
-      - name: member_age_years
-        description: Calculated age in years based on birth date and current date
-
-      - name: member_full_name
-        description: Concatenated full name (first + last)
-
-      - name: source
-        description: Standardized source identifier from raw vault
-        tests:
-          - not_null
-
-      - name: source
-        description: Original source system
-        tests:
-          - not_null
+      - name: person_bk
+        description: Person business key (additional context)
 
       - name: group_bk
-        description: Group business key (for joining to group dimension)
+        description: Group business key (additional context)
         tests:
           - not_null
 
       - name: subscriber_bk
-        description: Subscriber business key (for joining to subscriber dimension)
+        description: Subscriber business key (additional context)
         tests:
           - not_null
 
-      - name: effective_from
-        description: Effective start date/time for this version of the record
-        tests:
-          - not_null
-
-      - name: effective_to
-        description: >
-          Effective end date/time for this version of the record.
-          Set to '9999-12-31' for current records.
-        tests:
-          - not_null
-
-      - name: is_current
-        description: >
-          Boolean flag indicating if this is the current/active version.
-          True if effective_to is null (in source), false otherwise.
-        tests:
-          - not_null
-          - accepted_values:
-              values: [true, false]
-              quote: false
-
-      - name: load_datetime
-        description: Load date/time into the data vault
+      - name: last_updated_datetime
+        description: Date/time when this lookup record was last updated
         tests:
           - not_null
 
