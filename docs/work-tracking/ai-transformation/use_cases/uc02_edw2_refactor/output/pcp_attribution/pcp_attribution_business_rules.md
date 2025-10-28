@@ -1,11 +1,15 @@
 ---
+title: "PCP Attribution Business Rules"
+document_type: "business_rules"
+business_domain: ["membership", "provider", "quality-measures"]
+edp_layer: "curation"
 technical_topics: ["pcp-attribution", "primary-care-provider", "effectivity-satellite", "data-vault-2.0", "claims-analysis"]
-audience: ["claims-operations", "network-management", "quality-analytics", "care-management", "data-stewards"]
+audience: ["executive-leadership", "business-operations", "analytics-engineering"]
 status: "draft"
-last_updated: "2025-10-21"
+last_updated: "2025-10-28"
 version: "1.0"
 author: "Dan Brickey"
-description: "Business rules for Primary Care Provider (PCP) attribution logic using claims-based utilization patterns"
+description: "Business rules for assigning members to Primary Care Providers based on claims utilization patterns over 18-month evaluation windows"
 related_docs:
   - "../cob_profile/member_cob_profile_business_rules.md"
   - "../member_person/member_person_business_rules.md"
@@ -13,614 +17,110 @@ model_name: "ces_member_pcp_attribution"
 legacy_source: "HDSVault.biz.PCPAttribution_02_* (12 staging tables + views)"
 ---
 
-# PCP Attribution Business Rules
+# PCP Attribution – Business Rules
 
-## Executive Summary
+## Executive Snapshot
 
-**Purpose**: Assign each BCI member to a Primary Care Provider (PCP) based on their claim utilization patterns over an 18-month evaluation window. This attribution supports quality measure reporting, care management assignment, and network adequacy analysis.
+The PCP Attribution system automatically assigns every Blue Cross of Idaho member to their most appropriate Primary Care Provider based on where they actually receive care. Instead of relying on who members say their doctor is, the system looks at actual medical claims over the past 18 months to find which clinic they visit most often. This assignment drives quality reporting for programs like HEDIS and Star Ratings, helps care managers know which providers are responsible for members, and ensures we can demonstrate network adequacy to regulators. The system recalculates these assignments periodically to keep pace with members' changing healthcare relationships.
 
-**Attribution Approach**: Clinic-level attribution using visit frequency and recency to determine the provider most actively managing the member's care.
+## Operational Summary
 
-**Temporal Design**: Effectivity satellite that tracks PCP assignments over time, allowing point-in-time and historical analysis.
+- **Automated Assignment**: Members are automatically assigned to the clinic they visit most frequently based on actual visit claims, eliminating manual tracking and enrollment data discrepancies.
+- **Quality Program Support**: Attribution assignments drive accountability for HEDIS measures, Star Ratings, and value-based care contracts by clearly identifying which provider is responsible for each member's quality outcomes.
+- **Care Coordination**: Care managers, case managers, and utilization review teams use these assignments to direct outreach and coordinate care with the appropriate primary care practice.
+- **Network Adequacy**: State and federal regulators require proof that members have access to primary care, and this system tracks which members have established relationships with PCPs versus those who need outreach.
+- **Historical Tracking**: The system maintains a complete history of PCP assignments over time, allowing analysis of member movement between practices, provider turnover impact, and attribution stability trends.
 
----
+## Key Business Rules
 
-## Business Context
+### Rule 1: Evaluation Window
+**18-Month Lookback Period**: When calculating PCP attribution on any evaluation date, the system reviews all eligible claims from the previous 18 months to identify utilization patterns.
 
-### Why PCP Attribution Matters
-
-1. **Quality Measures**: CMS and state quality programs require attribution for HEDIS and Star ratings
-2. **Care Coordination**: Identify which provider is managing member's primary care
-3. **Network Adequacy**: Demonstrate members have access to and utilize PCPs
-4. **Value-Based Care**: Assign accountability for cost and quality outcomes
-5. **Member Communication**: Direct members to their most frequently visited provider
-
-### Attribution Philosophy
-
-- **Claims-Based**: Uses actual utilization patterns, not member enrollment designation
-- **Clinic-Level**: Attributes to the practice/clinic (Tax ID) not individual provider
-- **Retrospective**: Based on historical claims in lookback window
-- **Periodic Evaluation**: Re-evaluated at defined intervals (monthly or quarterly)
-
----
-
-## Core Business Rules
-
-### Rule 1: Evaluation Period and Lookback Window
-
-**Rule**: PCP attribution is calculated at defined evaluation dates using an 18-month rolling lookback window of claims.
-
-**Details**:
-- **Evaluation Date** (`current_eval_date`): The date on which attribution is calculated
-- **Lookback Window**: 18 months prior to evaluation date
-  - Example: Eval date = 2024-01-01, lookback = 2022-07-01 to 2024-01-01
-- **Evaluation Frequency**: Configurable (monthly, quarterly, or ad-hoc)
-
-**Rationale**:
-- 18 months provides sufficient claim history to identify utilization patterns
-- Balances recency (recent care matters more) with stability (avoid volatility from single visits)
-- Aligns with CMS attribution methodologies
-
-**Implementation**:
-- Defined in `seed_pcp_attribution_evaluation_dates.csv`
-- Each row specifies: `current_eval_date`, `low_date`, `high_date`
-
----
+**Details**: If evaluating attribution on January 1st 2024, the system examines claims from July 1st 2022 through January 1st 2024. Evaluation dates are configurable (monthly, quarterly, or as needed) and defined in a reference file maintained by the data engineering team.
 
 ### Rule 2: Member Eligibility
+**Primary Medical Coverage Required**: Only members with Blue Cross of Idaho as their **primary** medical insurance carrier during the evaluation window are eligible for attribution, except when they have no medical eligibility at all or when another insurance company is the primary payer.
 
-**Rule**: Only members meeting ALL of the following criteria are eligible for PCP attribution:
-
-#### 2.1 Active Medical Eligibility
-- Member must have medical eligibility (`eligibility_ind = 'Y'`) for at least one day during the evaluation window
-- Product category must be medical-related: 'M' (Medical) or 'MR' (Medical + Rx)
-
-#### 2.2 Primary Medical Coverage
-- BCI must be the member's **primary** medical insurance during the evaluation period
-- Determined via `ces_member_cob_profile.medical_is_bci_primary = true`
-- Excludes members with other primary insurance (COB)
-
-#### 2.3 Valid Member Demographics
-- Member must have valid subscriber and group relationships
-- No "PROXY" subscriber IDs
-
-**Rationale**:
-- Attribution only meaningful for members BCI is responsible for (primary coverage)
-- Medical eligibility required since PCP attribution is based on medical claims
-- Stable demographics required for accurate reporting
-
-**Edge Cases**:
-- **Intermittent Eligibility**: Member with gaps in eligibility still eligible if any overlap with lookback window
-- **No Visits**: Eligible members with zero E&M visits receive null attribution
-- **Product Changes**: Member counted if eligible in ANY medical product during window
-
----
+**Details**: The member must have active medical eligibility for at least one day in the lookback window, must be enrolled in a medical product category (not dental-only or vision-only), and BCI must be the primary payer (not secondary or tertiary). Members with gaps in eligibility still qualify if they meet these criteria for any portion of the window.
 
 ### Rule 3: Provider Eligibility
+**PCPs and Select Specialists**: Providers qualify for attribution in one of two ways—either they are formally designated as in-network Primary Care Providers with the PCP indicator flag, or they are eligible specialists from approved specialty categories like Family Practice, Internal Medicine, or Pediatrics, except when they represent institutional facility types like hospitals or government health entities.
 
-**Rule**: Providers must meet specific criteria to be eligible for PCP attribution.
+**Details**: Designated PCPs always take priority over specialists when a provider qualifies both ways. Specialist eligibility includes individual practitioners only (entity type 'P'), excluding organizational or institutional provider types such as hospitals ('HOSP'), government health facilities ('GOVH'), or tribal public health entities ('TPLH').
 
-#### 3.1 Primary Care Providers (PCPs)
+### Rule 4: Clinic-Level Attribution
+**Practice Groups, Not Individual Doctors**: Members are attributed to the **clinic or practice group** (identified by Tax ID) rather than to individual physicians, except in cases where a provider operates independently without group affiliation.
 
-A provider is classified as **PCP** if:
-- Has active network relationship with `pcp_indicator = 'Y'`
-- Network effective date ≤ evaluation date
-- Network term date ≥ start of lookback window (or null)
-- No additional restrictions on specialty or entity type
+**Details**: When a provider is part of a group practice, the system uses the group's Tax ID number. All providers within that Tax ID are treated as a single clinic, and visits to any provider in the group count toward that clinic's total. A single representative provider from the clinic is selected for reporting purposes based on who has the highest visit counts within that group.
 
-#### 3.2 Eligible Specialists
+### Rule 5: Qualifying Visits
+**Evaluation and Management Encounters Only**: Only face-to-face Evaluation and Management (E&M) visits count toward attribution, identified by procedures that either have CMS RVU values or are designated Behavioral Integrated Health Care codes, except when claims are denied or still pending payment.
 
-A provider is classified as **Specialist** if:
-- Has an approved specialty code (from `seed_pcp_attribution_provider_specialty`)
-- Entity type = 'P' (Person, not Organization)
-- Provider type NOT in institutional list: 'GOVH', 'HOSP', 'INDH', 'PUBH', 'TPLH'
+**Details**: The system only counts paid (status '02') or fully adjudicated (status '91') claims. Within those claims, it identifies E&M visits by checking if the procedure code appears in the CMS RVU reference file or the BIHC code list. Lab work, imaging, procedures, and administrative services don't count. Line items marked as denied (place of service '20') are excluded.
 
-**Ranking Priority**: When a provider qualifies as both PCP and Specialist, **PCP classification wins**.
+### Rule 6: Visit Counting
+**Unique Visits, Not Line Items**: Each unique combination of member, provider, and service date counts as one visit, regardless of how many procedure codes or claim lines are involved, except when the same date represents separate appointments with different providers.
 
-**Rationale**:
-- Specialists can be attributed if they act as de facto PCP for members (e.g., oncologist for cancer patient)
-- Institutional providers excluded as they represent facilities, not care managers
-- Network PCP designation prioritized over specialty-based classification
+**Details**: If a member sees Dr. Smith on March 15th and the claim shows three different E&M procedure codes, that counts as one visit. If two separate claims exist for the same member-provider-date combination, they are deduplicated to one visit. However, if the member also sees Dr. Jones on March 15th, that counts as a second visit (different provider).
 
----
+### Rule 7: Attribution Ranking
+**Frequency and Recency Win**: When a member visits multiple clinics, the system ranks them by PCP designation first, then visit count, then how recent the last visit was, then total RVU value, except when all factors tie (then Tax ID breaks the tie alphabetically).
 
-### Rule 4: Tax ID (Clinic) Logic
+**Details**: The ranking process first groups visits by clinic (Tax ID), selecting a representative provider for each clinic. Then clinics are ranked: PCPs beat specialists regardless of visit counts; among same designation (PCP or Specialist), the clinic with more visits wins; if visit counts tie, the most recent visit wins; if still tied, highest total RVU wins; finally, alphabetical Tax ID order resolves any remaining ties. Only the #1 ranked clinic receives the attribution.
 
-**Rule**: Attribution occurs at the **clinic level** using Tax ID, not individual provider level.
+### Rule 8: Effectivity Periods
+**Time-Based Attribution History**: Attribution assignments are stored with start and end dates representing the period when that assignment was active, allowing point-in-time lookups and historical analysis, except the most current period which has an open end date of 9999-12-31.
 
-#### 4.1 Tax ID Assignment
-- **Preference**: Use group-level Tax ID if provider is affiliated with a group entity
-- **Fallback**: Use individual provider's Tax ID if no group affiliation
-- **Source**: From `current_provider_affiliation` where `affiliation_entity_bk = 'G'`
+**Details**: When attribution is calculated on an evaluation date, that date becomes the effective date. The end date is set to one day before the next evaluation date, or to 9999-12-31 if there is no subsequent evaluation yet. A flag marks the current active attribution (end date = 9999-12-31). This design allows joining to claims using "service date BETWEEN effective_date AND end_date" to see which PCP was attributed at the time of service.
 
-#### 4.2 Clinic Aggregation
-- All providers with the same Tax ID are considered the same clinic
-- Visits to any provider in the clinic count toward that clinic's total
-- One representative provider per clinic is selected for reporting
+### Rule 9: Members Without Visits
+**Explicit Null Attribution**: Members who qualify for attribution eligibility but have zero E&M visits during the evaluation window receive an explicit record with null provider fields and zero visit counts, allowing complete population visibility and care gap identification.
 
-**Rationale**:
-- Members see multiple providers within same practice/clinic
-- Clinic-level attribution more stable and meaningful for care management
-- Aligns with how practices are organized and compensated
+**Details**: These records include all the same time periods and identifiers as members with attribution, but provider NPI, Tax ID, and PCP indicator are null, and visit counts and RVUs are zero. This design enables reporting on "members eligible but not utilizing primary care" for outreach campaigns and network adequacy calculations.
 
-**Example**:
-```
-Dr. Smith (NPI 1234, Tax ID 99-9999999)
-Dr. Jones (NPI 5678, Tax ID 99-9999999)
-↓
-Both count toward "Clinic 99-9999999"
-Representative provider selected based on ranking rules
-```
+## Engineering Notes
 
----
+- **Incremental Processing**: All models support incremental processing by evaluation date, only recalculating when new evaluation periods are added to the seed file, reducing compute costs for periodic refreshes.
+- **Multi-Step Pipeline**: The attribution logic is split into four computed satellites: provider eligibility (determines which providers can be attributed), member eligibility (determines which members need attribution), visit aggregation (counts E&M encounters by member-provider), and final attribution (applies ranking logic and calculates effectivity periods).
+- **COB Dependency**: Member eligibility requires the `ces_member_cob_profile` model to filter to primary medical coverage, creating a critical upstream dependency that must process before attribution runs.
+- **Seed Files Required**: Six seed files provide reference data (evaluation dates, specialty codes, RVU values, BIHC codes, Idaho service area counties, and zip code geocoding), all maintained outside the pipeline by business stakeholders.
+- **Tax ID Hierarchy**: Provider group affiliations are resolved through the `current_provider_affiliation` table, prioritizing group-level Tax IDs over individual provider Tax IDs using a coalesce pattern.
+- **Deduplication Strategy**: Visit counting uses distinct concatenation of provider_bk, service_from_date, and member_bk to ensure true unique visit counts across claim headers, lines, and procedures.
+- **Clustering and Performance**: All models are clustered on source and member_bk (or provider_bk) to optimize query performance when filtering by member or looking up current attribution.
 
-### Rule 5: Qualifying Visit Identification
+## Important Terms
 
-**Rule**: Only specific types of claims and procedures count toward PCP attribution.
+- **Evaluation Date**: A specific calendar date on which PCP attribution is calculated, typically occurring monthly or quarterly according to business needs.
+- **Lookback Window**: The 18-month period of historical claims examined when calculating attribution, starting from 18 months before the evaluation date.
+- **Effectivity Period**: The time span during which a particular PCP attribution is considered active, defined by an effective date (when it starts) and end date (when it ends or is replaced by a new attribution).
+- **Tax ID (Clinic)**: A federal Employer Identification Number (EIN) shared by all providers within a practice group, used to aggregate visits at the clinic level rather than individual provider level.
+- **E&M Visit (Evaluation and Management)**: A face-to-face encounter between a member and provider for assessment, treatment planning, or care management, identified by procedure codes with CMS RVU values or BIHC designation.
+- **RVU (Relative Value Unit)**: A CMS measure of the resources required to perform a medical service, combining physician work, practice expense, and malpractice components into a single number.
+- **BIHC Codes**: Behavioral Integrated Health Care procedure codes representing mental health and substance use services delivered in primary care settings, included in E&M visit definitions.
+- **COB (Coordination of Benefits)**: The insurance industry process that determines which insurance company is primary, secondary, or tertiary when a member has coverage from multiple carriers.
+- **PCP Indicator**: A flag in the provider network data that designates a provider as an in-network Primary Care Provider eligible to accept PCP assignments.
+- **Constituent ID**: A master data management identifier linking the same person across multiple member records and data systems (also called Person ID or MDM ID).
 
-#### 5.1 Claim Status
-- **Paid**: Claim status = '02'
-- **Adjudicated**: Claim status = '91'
-- **Excluded**: Denied, pended, or other statuses
+## Example Scenario
 
-#### 5.2 Procedure Type Filter
-- **Denied Procedures**: Exclude line items where `place_of_service_id = '20'`
+Consider Sarah Johnson, a Blue Cross member enrolled in a medical plan with BCI as her primary insurance. Over the past 18 months, Sarah visited three different practices:
 
-#### 5.3 Evaluation & Management (E&M) Identification
+- **Canyon Family Clinic** (Tax ID 99-1111111): Sarah saw Dr. Martinez 6 times for annual checkup, sick visits, and chronic condition management. Dr. Martinez is designated as an in-network PCP. Her most recent visit was April 15th, generating 15.2 total RVUs.
+- **Boise Cardiology Specialists** (Tax ID 99-2222222): Sarah saw Dr. Patel 4 times for heart condition monitoring. Dr. Patel is a cardiologist (specialist, not PCP-designated). Last visit March 10th, 12.8 total RVUs.
+- **Urgent Care Express** (Tax ID 99-3333333): Sarah visited twice for urgent issues. Providers are family practice specialists but not designated as in-network PCPs. Last visit January 5th, 6.0 total RVUs.
 
-A procedure qualifies as E&M if it meets **either** condition:
-- **CMS RVU**: Procedure code exists in `seed_pcp_attribution_cms_rvu` (has RVU value)
-- **BIHC Code**: Procedure code exists in `seed_pcp_attribution_bihc_codes` (behavioral integrated health)
+When the system calculates attribution on May 1st:
 
-**Rationale**:
-- E&M visits represent face-to-face encounters for care management
-- RVU presence indicates CMS recognizes as evaluation/management service
-- BIHC codes capture behavioral health integration visits
+1. **Provider Eligibility**: All three clinics qualify—Canyon Family Clinic as designated PCP, the other two as eligible specialists.
+2. **Member Eligibility**: Sarah qualifies because she has medical eligibility and BCI is her primary insurance.
+3. **Visit Aggregation**: System counts 6 visits to Canyon Family, 4 to Cardiology, 2 to Urgent Care.
+4. **Ranking**: Canyon Family Clinic ranks #1 because it has the PCP designation (beats specialists regardless of visits).
+5. **Result**: Sarah is attributed to Dr. Martinez at Canyon Family Clinic from May 1st through the next evaluation date.
 
----
+If Canyon Family Clinic were not PCP-designated, Cardiology would still lose to Canyon Family because Canyon Family has more visits (6 vs 4), even though Sarah saw specialists at both locations.
 
-### Rule 6: Visit Counting Logic
+## What to Watch
 
-**Rule**: Visits are counted as **unique** occurrences, not by line items or procedures.
-
-#### 6.1 Unique Visit Definition
-A unique visit is a distinct combination of:
-- Provider (`provider_bk`)
-- Service Date (`service_from_date`)
-- Member (`member_bk`)
-
-#### 6.2 Counting Approach
-- **Multiple procedures**: Same-day visit with multiple E&M procedures = 1 visit
-- **Multiple claims**: Same provider + date across multiple claims = 1 visit
-- **Line vs Header**: Procedures from line items and header-level combined, deduplicated
-
-**Example**:
-```
-Claim 123: Member A → Dr. Smith → 2024-03-15 → 3 E&M procedures → Counts as 1 visit
-Claim 456: Member A → Dr. Smith → 2024-03-15 → 1 E&M procedure → Same visit (not double-counted)
-Claim 789: Member A → Dr. Jones → 2024-03-15 → 1 E&M procedure → Different visit (different provider)
-```
-
----
-
-### Rule 7: Attribution Ranking Logic
-
-**Rule**: When a member has visits to multiple clinics, the attributed PCP is determined by ranking clinics using the following criteria in order:
-
-#### 7.1 Ranking Hierarchy (Most Important to Least)
-
-1. **PCP Indicator**
-   - Clinics with PCP designation ranked higher than Specialist-only clinics
-   - Sort: 'PCP' → 'Specialist'
-
-2. **Unique Visit Count**
-   - Clinic with more visits ranked higher
-   - Sort: Descending (most visits wins)
-
-3. **Last Visit Date**
-   - Clinic with most recent visit ranked higher
-   - Sort: Descending (most recent wins)
-
-4. **Total RVU**
-   - Clinic with higher RVU sum ranked higher
-   - Sort: Descending (highest RVU wins)
-
-5. **Tax ID (Tie-breaker)**
-   - Alphabetical or numeric ordering
-   - Sort: Ascending
-
-#### 7.2 Ranking Steps
-
-**Step 1**: Rank providers within each clinic
-- Among providers in same clinic, select representative using same ranking criteria
-
-**Step 2**: Aggregate visits to clinic level
-- Sum visit counts, RVUs across all providers in clinic
-- Take max last visit date
-
-**Step 3**: Rank clinics by member
-- Apply ranking hierarchy to select #1 clinic
-
-**Step 4**: Assign attribution
-- Member attributed to #1 ranked clinic's representative provider
-
-**Example Scenario**:
-```
-Member X visits:
-- Clinic A (PCP): 5 visits, last visit 2024-06-01, 12.5 RVU
-- Clinic B (Specialist): 8 visits, last visit 2024-08-01, 18.0 RVU
-
-Result: Attributed to Clinic A
-Reason: PCP indicator wins even with fewer visits
-```
-
----
-
-### Rule 8: Effectivity Period Calculation
-
-**Rule**: Attribution results are stored as effectivity periods, not point-in-time snapshots.
-
-#### 8.1 Effective Date
-- **Value**: Current evaluation date (`current_eval_date`)
-- **Meaning**: Attribution becomes effective on this date
-
-#### 8.2 End Date
-- **Value**: Next evaluation date minus 1 day
-- **Special Case**: If no next evaluation, use '9999-12-31' (open-ended)
-- **Meaning**: Attribution remains valid through this date
-
-#### 8.3 Current Flag
-- **is_current = true**: When `end_date = '9999-12-31'`
-- **is_current = false**: Historical attribution periods
-
-**Example**:
-```
-Evaluation Dates: 2024-01-01, 2024-04-01, 2024-07-01
-
-Attribution for Member A:
-- Row 1: effective_date = 2024-01-01, end_date = 2024-03-31, is_current = false
-- Row 2: effective_date = 2024-04-01, end_date = 2024-06-30, is_current = false
-- Row 3: effective_date = 2024-07-01, end_date = 9999-12-31, is_current = true
-```
-
-**Rationale**:
-- Supports point-in-time queries ("Who was attributed on 2024-05-15?")
-- Enables trending analysis ("How many members switched PCPs?")
-- Aligns with Data Vault 2.0 effectivity satellite pattern
-
----
-
-### Rule 9: Members Without Attribution
-
-**Rule**: Members eligible for attribution but with **zero E&M visits** receive explicit null attribution.
-
-#### 9.1 Null Attribution Record
-- Member included in `ces_member_pcp_attribution`
-- Attribution fields set to null:
-  - `attributed_provider_bk = null`
-  - `attributed_provider_npi = null`
-  - `attributed_tax_id = null`
-  - `attributed_pcp_indicator = null`
-- Metrics set to zero:
-  - `attribution_visit_count = 0`
-  - `attribution_rvu_total = 0.0`
-  - `attribution_last_visit_date = null`
-
-#### 9.2 Effectivity Periods
-- Null attribution follows same effectivity rules
-- Allows tracking when member becomes active (gets first visit)
-
-**Rationale**:
-- Complete population view (all eligible members, not just those with visits)
-- Supports reporting on unattributed/non-utilizing members
-- Enables care outreach for members without recent PCP contact
-
-**Use Cases**:
-- **Network Adequacy**: "How many members have no PCP relationship?"
-- **Care Gaps**: "Members eligible but not seeing a PCP"
-- **Outreach**: "Members to target for wellness visit campaigns"
-
----
-
-## Data Quality Rules
-
-### DQ1: No Overlapping Periods
-- Each member can have only ONE attribution record per source for any given date
-- Effectivity periods must not overlap
-- Enforced by unique key: `(source, member_bk, effective_date)`
-
-### DQ2: Valid Date Ranges
-- `effective_date` must be ≤ `end_date`
-- No gaps allowed in effectivity periods (if member remains eligible)
-
-### DQ3: Current Flag Consistency
-- If `end_date = '9999-12-31'`, then `is_current = true`
-- If `end_date != '9999-12-31'`, then `is_current = false`
-- Each member should have at most ONE current record
-
-### DQ4: Referential Integrity
-- All `member_hk` values must exist in `h_member`
-- All `provider_hk` values must exist in `h_provider` (when not null)
-- All evaluation dates must exist in seed file
-
----
-
-## Boundary Conditions
-
-### BC1: Member Eligibility Changes Mid-Window
-**Scenario**: Member loses BCI primary coverage halfway through lookback window
-
-**Rule**: Member is **included** in attribution if they meet eligibility criteria for ANY period during the lookback window. Attribution based on visits during eligible periods only.
-
-**Example**: Member has BCI primary Jan-Jun, secondary Jul-Dec. Visits in Jan-Jun count; Jul-Dec excluded.
-
----
-
-### BC2: Provider Network Status Changes
-**Scenario**: Provider's PCP indicator changes during lookback window
-
-**Rule**: Provider's eligibility determined at **evaluation date**, not service date. If provider is PCP on eval date, all their historical visits count toward PCP attribution.
-
-**Example**: Dr. Smith added as in-network PCP on 2024-01-01. Evaluation on 2024-01-01 includes visits back to 2022-07-01 (even though not in network then).
-
----
-
-### BC3: Multiple Specialties
-**Scenario**: Provider has multiple specialty codes in source system
-
-**Rule**: Use **primary** specialty code as recorded in `current_provider.provider_specialty`. If provider's primary specialty is in eligible list, they qualify.
-
----
-
-### BC4: Tied Rankings
-**Scenario**: Two clinics have identical visit counts, last visit dates, and RVUs
-
-**Rule**: Tie broken by Tax ID (alphabetical/numeric ordering). Deterministic but arbitrary.
-
-**Mitigation**: Document that tie-breaker is not clinically meaningful; recommend review if ties are common.
-
----
-
-### BC5: Same-Day Visits to Multiple Providers
-**Scenario**: Member sees Dr. Smith and Dr. Jones at different clinics on same day
-
-**Rule**: Each counts as a separate unique visit (different providers). Both clinics get credit for one visit each.
-
----
-
-### BC6: Claims Spanning Evaluation Date
-**Scenario**: Claim processed after evaluation date but service date before evaluation date
-
-**Rule**: Inclusion based on **service date**, not claim processing date. Claims processed late will be included in **next** evaluation run (incremental processing).
-
----
-
-## Seed Data Requirements
-
-### Seed 1: Evaluation Dates
-**File**: `seed_pcp_attribution_evaluation_dates.csv`
-
-**Columns**:
-- `current_eval_date`: Date attribution is calculated
-- `low_date`: Start of 18-month lookback
-- `high_date`: End of lookback (usually same as eval date)
-
-**Governance**:
-- Maintained by data engineering team
-- Updated monthly/quarterly per business cadence
-- Must be sequential (no gaps in eval dates for same member)
-
----
-
-### Seed 2: Provider Specialty Codes
-**File**: `seed_pcp_attribution_provider_specialty.csv`
-
-**Columns**:
-- `specialty_code`: Specialty code from provider data
-- `specialty_desc`: Human-readable description
-
-**Governance**:
-- Maintained by network management team
-- Reviewed annually or when specialty taxonomy changes
-- Includes primary care specialties: Family Practice, Internal Medicine, Pediatrics, Geriatrics, etc.
-
----
-
-### Seed 3: CMS RVU Reference
-**File**: `seed_pcp_attribution_cms_rvu.csv`
-
-**Columns**:
-- `hcpcs`: Procedure code
-- `work_rvu`: Work RVU component
-- `pe_rvu`: Practice expense RVU
-- `mp_rvu`: Malpractice RVU
-
-**Governance**:
-- Sourced from CMS annual RVU file
-- Updated annually when CMS publishes new fee schedule
-- Maintained by claims operations team
-
----
-
-### Seed 4: BIHC Codes
-**File**: `seed_pcp_attribution_bihc_codes.csv`
-
-**Columns**:
-- `cpt_code`: CPT procedure code
-- `cpt_desc`: Description
-
-**Governance**:
-- Maintained by behavioral health and quality teams
-- Reviewed annually or when HEDIS specifications change
-- Captures behavioral integrated health visit codes
-
----
-
-### Seed 5: Idaho Adjacent Counties
-**File**: `seed_pcp_attribution_idaho_county.csv`
-
-**Columns**:
-- `fips_county_code`: FIPS county code
-- `county_name`: County name
-
-**Governance**:
-- Maintained by network management
-- Defines service area for regional reporting
-- Updated if service area expansion occurs
-
----
-
-### Seed 6: Zip Code Reference
-**File**: `seed_zip_code_melissa.csv`
-
-**Columns**:
-- `zip_code`: 5-digit zip code
-- `state_id`: State abbreviation
-- `fips_county_code`: County FIPS code
-- `fips_code`: Full FIPS code
-
-**Governance**:
-- Sourced from Melissa Data (vendor)
-- Updated quarterly or annually
-- Used for member address geocoding
-
----
-
-## Use Cases and Examples
-
-### Use Case 1: Quality Measure Attribution
-**Scenario**: HEDIS comprehensive diabetes care measure requires attributing diabetic members to a PCP.
-
-**Query Approach**:
-```sql
--- Get current PCP attribution for diabetic members
-SELECT
-    dm.member_bk,
-    dm.diabetes_diagnosis,
-    pcp.attributed_provider_npi,
-    pcp.attributed_tax_id,
-    pcp.attribution_visit_count
-FROM diabetic_members dm
-LEFT JOIN ces_member_pcp_attribution pcp
-    ON pcp.source = dm.source
-    AND pcp.member_bk = dm.member_bk
-    AND pcp.is_current = true
-```
-
-**Business Rule Applied**: Current attribution (`is_current = true`) determines which provider/clinic is accountable for quality measures.
-
----
-
-### Use Case 2: Member Portal Display
-**Scenario**: Member logs into portal and wants to see "Your Primary Care Provider"
-
-**Query Approach**:
-```sql
--- Get member's current attributed PCP
-SELECT
-    pcp.attributed_provider_npi,
-    pcp.attribution_last_visit_date,
-    p.provider_name,
-    p.provider_phone
-FROM ces_member_pcp_attribution pcp
-JOIN dim_provider p
-    ON p.provider_npi = pcp.attributed_provider_npi
-WHERE pcp.source = 'gemstone_facets'
-  AND pcp.member_bk = :member_id
-  AND pcp.is_current = true
-```
-
-**Business Rule Applied**: Most recent evaluation determines displayed PCP. Last visit date helps member confirm accuracy.
-
----
-
-### Use Case 3: PCP Switching Analysis
-**Scenario**: Analyze how many members switched PCPs between Q1 and Q2 2024.
-
-**Query Approach**:
-```sql
--- Compare Q1 vs Q2 attribution
-WITH q1_attribution AS (
-    SELECT member_bk, attributed_provider_npi
-    FROM ces_member_pcp_attribution
-    WHERE '2024-03-31' BETWEEN effective_date AND end_date
-),
-q2_attribution AS (
-    SELECT member_bk, attributed_provider_npi
-    FROM ces_member_pcp_attribution
-    WHERE '2024-06-30' BETWEEN effective_date AND end_date
-)
-SELECT
-    COUNT(*) as members_switched
-FROM q1_attribution q1
-JOIN q2_attribution q2
-    ON q2.member_bk = q1.member_bk
-WHERE q1.attributed_provider_npi != q2.attributed_provider_npi
-```
-
-**Business Rule Applied**: Effectivity periods enable point-in-time queries for historical comparison.
-
----
-
-### Use Case 4: Network Adequacy Reporting
-**Scenario**: Regulatory report requires showing % of members with active PCP relationship.
-
-**Query Approach**:
-```sql
--- Calculate PCP attribution rate
-SELECT
-    COUNT(*) as total_eligible_members,
-    SUM(CASE WHEN attributed_provider_npi IS NOT NULL THEN 1 ELSE 0 END) as members_with_pcp,
-    ROUND(100.0 * SUM(CASE WHEN attributed_provider_npi IS NOT NULL THEN 1 ELSE 0 END) / COUNT(*), 2) as attribution_rate
-FROM ces_member_pcp_attribution
-WHERE is_current = true
-```
-
-**Business Rule Applied**: Null attribution explicitly tracked allows measuring attribution rate vs non-attribution rate.
-
----
-
-## Questions for Review
-
-### Policy Questions
-1. **Evaluation Frequency**: Should attribution be recalculated monthly, quarterly, or on a different cadence?
-2. **Lookback Window**: Is 18 months the right window, or should it be adjusted (12, 24 months)?
-3. **Specialist Attribution**: Should specialists be eligible for attribution, or only designated PCPs?
-4. **No Visit Members**: Should members without visits be included in reporting, or filtered out?
-
-### Technical Questions
-5. **Product Categories**: Confirm 'M' and 'MR' are the correct product categories for medical eligibility.
-6. **Specialty Codes**: Validate the list of eligible specialty codes for specialists.
-7. **BIHC Codes**: Confirm behavioral integrated health codes are current and complete.
-8. **Idaho Service Area**: Is Idaho county list current for service area definition?
-
-### Operational Questions
-9. **Provider Notification**: Should providers receive notification when members are attributed to them?
-10. **Member Communication**: Should members be informed of their attributed PCP?
-11. **Disputes**: What process handles provider disputes of attribution?
-12. **Manual Overrides**: Are there cases where manual attribution overrides are needed?
-
----
-
-## Change Log
-
-| Version | Date | Author | Changes |
-|---------|------|--------|---------|
-| 1.0 | 2025-10-21 | Dan Brickey | Initial draft for stakeholder review |
-
----
-
-## Approval
-
-**Status**: Draft - Pending Review
-
-**Reviewers**:
-- [ ] Network Management
-- [ ] Quality Analytics
-- [ ] Claims Operations
-- [ ] Care Management
-- [ ] Data Governance
-
-**Approval Date**: _________________
-
-**Approved By**: _________________
+- **Evaluation Frequency Changes**: If the business changes from quarterly to monthly evaluation, the number of effectivity periods will triple, increasing storage and potentially creating member confusion if PCPs switch frequently due to normal visit variation.
+- **Seed File Maintenance**: Six different reference files require regular updates from various business teams (network, claims operations, quality)—missed updates can cause provider exclusions or incorrect E&M identification, with no automated alerts for stale data.
+- **Attribution Volatility**: Members with low visit counts (2-3 visits split between clinics) may "bounce" between PCPs at each evaluation cycle based on single recent visits, potentially causing care coordination issues and conflicting outreach from multiple clinics.
