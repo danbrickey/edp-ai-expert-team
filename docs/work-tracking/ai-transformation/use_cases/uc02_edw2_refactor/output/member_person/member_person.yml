@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: prep_member_person
+    description: Applies legacy v_FacetsMemberUMI_current business rules using raw vault sources.
+  - name: stg_member_person
+    description: Generates hash keys and metadata for the member person computed satellite.
+  - name: bv_s_member_person
+    description: Business vault computed satellite that tracks member to person attribution and demographics.
+    columns:
+      - name: member_person_hk
+        description: Hash key for the member hub record.
+        tests:
+          - not_null
+          - unique
+      - name: person_id
+        description: External constituent identifier sourced from current_person.
+      - name: member_bk
+        description: Business key for the member record.
+      - name: effective_from
+        description: Timestamp when the record became effective in the business vault.
+      - name: load_datetime
+        description: Timestamp when the record was loaded into the business vault.
+  - name: xwalk_member_person
+    description: Lookup providing the latest mapping between member identifiers and external person ID.
+    columns:
+      - name: member_person_lookup_key
+        description: Surrogate key for the crosswalk row.
+        tests:
+          - not_null
+          - unique
+      - name: member_bk
+        description: Member business key used for lookups.
+      - name: person_id
+        description: External person identifier available for downstream dimensions.

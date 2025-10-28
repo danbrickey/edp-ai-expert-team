@@ -36,6 +36,7 @@ Each old dimensional artifact works similarly:
   - Create output files in a folder named after the entity being refactored. For example, if refactoring the dimNetworkSet object, create a folder named `network_set` in the output path.
   - An incomplete mapping document for the raw vault translation with all EDW2 raw vault referencese for the current refactoring problem that an engineer can fill out with the analogous tables from the new raw vault. 
   - A list of recommended business vault objects.
+  - A business rules markdown document named `<entity_name>_business_rules.md` with status set to `draft` stored alongside other generated outputs.
   - dbt model SQL files using Snowflake SQL and automate_dv macros to build the business vault object.
   - dbt yml file for the dimensional object. Add descriptions for the table and columns that breifly describe the transformation of the columns and a consise description of the column purpose.
   - A mapping table of old-to-new source tables and columns.
@@ -111,6 +112,7 @@ The workflow would go something like:
 
 - **Purpose**: Document business rules applied in the transformations in the business vault and dimensional model in natural language as a markdown file for review by business data stewards and domain experts.
 - **Logic**:
+  - When creating business rule documents refer to this prompt for guidance: @ai-resources\prompts\documentation\bizrules-documenter.md
   - Analyze the generated dbt models and old code
   - Produce a document describing in natural language the source columns and transformations used to create each of the dimensional object columns that can be reviewed by the business
 
@@ -149,13 +151,14 @@ legacy_source: "<legacy source reference>"  # e.g., HDSVault.biz.spCOBProfileLoo
 ---
 ```
 
-**Filing Workflow**:
-1. **Generate**: Create business rule document in the use case output folder
-   - Location: `docs\work_tracking\ai_transformation\use_cases\uc02_edw2_refactor\output\<entity_name>\<entity_name>_business_rules.md`
-2. **Review**: Business stakeholders and data stewards review the draft
-3. **Approve**: Update `status` field from `"draft"` to `"active"`
-4. **File**: Move approved document to architecture rules folder
-   - Target: `docs\architecture\rules\<domain>\<entity_name>_business_rules.md`
+**Filing Workflow (always perform these steps)**:
+1. **Generate**: Always create the business rules document as part of the refactor deliverables.
+   - Draft path: `docs\work_tracking\ai_transformation\use_cases\uc02_edw2_refactor\output\<entity_name>\<entity_name>_business_rules.md`
+   - Set the front matter `status` to `"draft"` until stakeholder approval.
+2. **Review**: Business stakeholders and data stewards review the draft.
+3. **Approve**: Update the document `status` from `"draft"` to `"active"` once approved.
+4. **File**: Copy the approved document into the architecture rules library so the authoritative version lives in the enterprise catalogue.
+   - Filing target: `docs\architecture\rules\<domain>\<entity_name>_business_rules.md`
    - Domain folders: `membership`, `claims`, `provider`, `product`, `financial`, `broker`
 
 ---
