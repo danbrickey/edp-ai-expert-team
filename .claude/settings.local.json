@@ -5,7 +5,8 @@
       "Bash(powershell -Command:*)",
       "Bash(mkdir:*)",
       "Bash(test:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []
