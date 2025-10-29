@@ -5,7 +5,6 @@ derived_columns:
   source: "'{{ var('gemstone_source_system') }}'"
   load_datetime: "edp_start_dt"
   edp_start_dt: "edp_start_dt"
-  member_rating_ik: "{{ dbt_utils.generate_surrogate_key(['tenant_id', 'source', 'member_bk', 'rating_eff_dt']) }}"
 
 hashed_columns:
   member_hk:

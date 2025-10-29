@@ -1,6 +1,6 @@
 with source as (
     select *
-    from {{ ref('enterprise_data_platform', 'stg_legacy_bcifacets_hist__dbo_cmc_mert_rate_data') }}
+    from {{ ref('enterprise_data_platform', 'stg_legacy_facets_hist__dbo_cmc_mert_rate_data') }}
 ),
 
 renamed as (

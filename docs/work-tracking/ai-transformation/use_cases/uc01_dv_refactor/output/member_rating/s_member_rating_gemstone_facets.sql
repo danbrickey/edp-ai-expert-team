@@ -35,7 +35,6 @@ src_extra_columns:
   - edp_record_status
   - edp_record_source
   - member_hk
-  - member_rating_ik
 
 src_ldts: "load_datetime"
 

@@ -5,22 +5,24 @@
 
 {% for source_system in source_systems %}
   {% if source_system == "legacy_facets" %}
-    {% set sat_model = "s_member_rating_legacy_facets" %}
+    {% set sat_model = "s_member_student_status_legacy_facets" %}
   {% else %}
-    {% set sat_model = "s_member_rating_gemstone_facets" %}
+    {% set sat_model = "s_member_student_status_gemstone_facets" %}
   {% endif %}
 
   select
     1 as tenant_id,
     hub_member.source,
     hub_member.member_bk,
-    sat.rating_eff_dt,
-    sat.rating_term_dt,
+    sat.student_eff_dt,
+    sat.student_term_dt,
+    sat.termination_reason_cd,
     sat.group_bk,
-    sat.smoker_ind,
-    sat.underwriting_class_1_cd,
-    sat.underwriting_class_2_cd,
-    sat.underwriting_class_3_cd,
+    sat.school_name,
+    sat.student_type,
+    sat.last_verification_dt,
+    sat.last_verification_name,
+    sat.verification_method_cd,
     sat.lock_token_nbr,
     sat.attachment_source_id,
     sat.edp_record_status,
@@ -31,12 +33,12 @@
   join {{ ref(sat_model) }} as sat
     on hub_member.member_hk = sat.member_hk
   join (
-    select member_hk, rating_eff_dt, max(load_datetime) as max_load_datetime
+    select member_hk, student_eff_dt, max(load_datetime) as max_load_datetime
     from {{ ref(sat_model) }}
-    group by member_hk, rating_eff_dt
+    group by member_hk, student_eff_dt
   ) as latest
     on sat.member_hk = latest.member_hk
-   and sat.rating_eff_dt = latest.rating_eff_dt
+   and sat.student_eff_dt = latest.student_eff_dt
    and sat.load_datetime = latest.max_load_datetime
 
   {% if not loop.last %}

@@ -1,8 +1,8 @@
 {% set yaml_metadata %}
-source_model: "stg_member_rating_legacy_facets_rename"
+source_model: "stg_member_student_status_gemstone_facets_rename"
 
 derived_columns:
-  source: "'{{ var('legacy_source_system') }}'"
+  source: "'{{ var('gemstone_source_system') }}'"
   load_datetime: "edp_start_dt"
   edp_start_dt: "edp_start_dt"
 
@@ -10,7 +10,7 @@ hashed_columns:
   member_hk:
     - source
     - member_bk
-  member_rating_hashdiff:
+  member_student_status_hashdiff:
     is_hashdiff: true
     columns:
       - source
@@ -18,13 +18,15 @@ hashed_columns:
       - load_datetime
       - edp_start_dt
       - member_bk
-      - rating_eff_dt
-      - rating_term_dt
+      - student_eff_dt
+      - student_term_dt
+      - termination_reason_cd
       - group_bk
-      - smoker_ind
-      - underwriting_class_1_cd
-      - underwriting_class_2_cd
-      - underwriting_class_3_cd
+      - school_name
+      - student_type
+      - last_verification_dt
+      - last_verification_name
+      - verification_method_cd
       - lock_token_nbr
       - attachment_source_id
       - edp_record_status

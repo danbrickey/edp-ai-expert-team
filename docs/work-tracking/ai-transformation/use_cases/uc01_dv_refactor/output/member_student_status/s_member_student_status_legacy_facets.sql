@@ -1,5 +1,5 @@
 {% set yaml_metadata %}
-source_model: "stg_member_rating_legacy_facets"
+source_model: "stg_member_student_status_legacy_facets"
 
 src_pk: "member_hk"
 
@@ -7,14 +7,14 @@ src_dfk: null
 
 src_sfk: null
 
-src_eff: "rating_eff_dt"
+src_eff: "student_eff_dt"
 
-src_start_date: "rating_eff_dt"
+src_start_date: "student_eff_dt"
 
-src_end_date: "rating_term_dt"
+src_end_date: "student_term_dt"
 
 src_hashdiff:
-  source_column: "member_rating_hashdiff"
+  source_column: "member_student_status_hashdiff"
   alias: "hashdiff"
 
 src_extra_columns:
@@ -23,13 +23,15 @@ src_extra_columns:
   - load_datetime
   - edp_start_dt
   - member_bk
-  - rating_eff_dt
-  - rating_term_dt
+  - student_eff_dt
+  - student_term_dt
+  - termination_reason_cd
   - group_bk
-  - smoker_ind
-  - underwriting_class_1_cd
-  - underwriting_class_2_cd
-  - underwriting_class_3_cd
+  - school_name
+  - student_type
+  - last_verification_dt
+  - last_verification_name
+  - verification_method_cd
   - lock_token_nbr
   - attachment_source_id
   - edp_record_status
