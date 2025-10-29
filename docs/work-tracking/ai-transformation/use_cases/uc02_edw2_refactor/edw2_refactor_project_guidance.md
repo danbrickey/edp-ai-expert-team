@@ -34,9 +34,10 @@ Each old dimensional artifact works similarly:
 
 - Outputs:
   - Create output files in a folder named after the entity being refactored. For example, if refactoring the dimNetworkSet object, create a folder named `network_set` in the output path.
-  - An incomplete mapping document for the raw vault translation with all EDW2 raw vault referencese for the current refactoring problem that an engineer can fill out with the analogous tables from the new raw vault. 
+  - An incomplete mapping document for the raw vault translation with all EDW2 raw vault referencese for the current refactoring problem that an engineer can fill out with the analogous tables from the new raw vault.
   - A list of recommended business vault objects.
   - A business rules markdown document named `<entity_name>_business_rules.md` with status set to `draft` stored alongside other generated outputs.
+  - A user story markdown document named `<entity_name>_user_story.md` tracking the implementation workflow for the refactored artifacts.
   - dbt model SQL files using Snowflake SQL and automate_dv macros to build the business vault object.
   - dbt yml file for the dimensional object. Add descriptions for the table and columns that breifly describe the transformation of the columns and a consise description of the column purpose.
   - A mapping table of old-to-new source tables and columns.
@@ -219,6 +220,76 @@ legacy_source: "<legacy source reference>"  # e.g., HDSVault.biz.spCOBProfileLoo
 4. **File**: Copy the approved document into the architecture rules library so the authoritative version lives in the enterprise catalogue.
    - Filing target: `docs\architecture\rules\<domain>\<entity_name>_business_rules.md`
    - Domain folders: `membership`, `claims`, `provider`, `product`, `financial`, `broker`
+
+### 6. User Story Generation
+
+- **Purpose**: Generate a user story to track implementation of the refactored artifacts in the development workflow.
+- **Logic**:
+  - Generate a user story markdown file named `<entity_name>_user_story.md` following the team's standard format
+  - The user story should cover:
+    - Creating a feature branch in the `edp_data_domains` repository
+    - Implementing the business vault and dimensional models in dbt
+    - Building and testing the dbt models
+    - Filing the business rules document in the `edp-architecture-docs` repository
+  - Save alongside other generated outputs in the entity folder
+
+#### User Story Template
+
+```markdown
+# Title: EDW3 Dimensional Model for <Entity Name>
+
+## Description
+As a data engineer,
+I want to refactor the legacy EDW2 dimensional model for the <entity_name> entity into an EDW3 dbt-based implementation,
+So that it follows Data Vault 2.0 methodology with a modern Snowflake-native architecture. This includes creating business vault objects (computed satellites, bridges, or PITs as needed) and dimensional artifacts (dimensions or facts) using dbt, based on data from the Integration Layer raw vault. The new models will support scalability, auditability, and historical tracking while maintaining the business logic from the legacy implementation.
+
+## Acceptance Criteria
+
+Given the refactoring design and mapping documents are provided,
+When I create a feature branch in the edp_data_domains repository,
+Then I name the branch `feature/<entity_name>-edw3-refactor` and base it on the main branch.
+
+Given the design documents and mapping are complete,
+When I implement the business vault and dimensional models,
+Then I create the appropriate prep, staging, business vault, and dimensional dbt models for the <entity_name> entity following the naming conventions and code standards.
+
+Given the business vault and dimensional models are implemented,
+When I write dbt documentation (yml files),
+Then each model includes:
+- A table-level description explaining the transformation and purpose
+- Column-level documentation describing source mappings and business logic
+- Data lineage using dbt refs
+
+Given the business vault and dimensional models are implemented,
+When I write dbt tests,
+Then I include:
+- Not null tests for required business keys and foreign keys
+- Unique key or unique combination tests for primary keys
+- Referential integrity tests between business vault and dimensional models
+- Accepted values tests for categorical columns
+- Data quality tests appropriate for the dimensional model type
+
+Given all dbt models, tests, and documentation are complete,
+When I run the dbt build command,
+Then all models build successfully and all tests pass without errors.
+
+Given the dbt implementation is complete and tested,
+When I file the business rules documentation,
+Then I:
+- Verify the business rules document status is set to "draft"
+- Create a feature branch in the edp-architecture-docs repository named `feature/<entity_name>-business-rules`
+- Copy the business rules markdown file to `docs/architecture/rules/<domain>/<entity_name>_business_rules.md`
+- Create a pull request for stakeholder review and approval
+- Link the architecture docs PR to the data domains PR
+
+Given all acceptance criteria are met,
+When I create a pull request in edp_data_domains,
+Then I:
+- Include a summary of the refactored models
+- Reference the legacy EDW2 source objects
+- Link to the business rules documentation PR
+- Tag appropriate reviewers for code review
+```
 
 ---
 
