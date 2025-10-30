@@ -220,6 +220,22 @@ Evaluate internal and client-facing operational content for clarity and effectiv
 
 ---
 
+### [Business Rules Documentation Evaluator](operations/business-rules-documentation-evaluator.md)
+**For**: 4-level progressive business rules documentation (Executive → Management → Analyst → Engineering)
+
+**Evaluates**:
+- Audience-Appropriate Depth (each level matches target audience)
+- Specificity & Verifiability (concrete examples vs. generic claims)
+- Progressive Complexity (logical learning flow across levels)
+- Code Translation Quality (business logic → natural language)
+- Practical Completeness (includes examples, troubleshooting, testing)
+
+**Use when**: Evaluating bizrules-documenter output, onboarding documentation, teaching warehouse logic
+
+**Note**: Returns **Markdown** feedback document (not JSON) saved as `{original_filename}_feedback.md`
+
+---
+
 ### [Executive Memo Evaluator](operations/executive-memo-evaluator.md)
 **For**: Strategy docs, decision proposals, executive briefs
 
@@ -284,7 +300,7 @@ See [Business Document Evaluator](../business-doc-evaluator/SKILL.md) for evalua
 
 ## Evaluation Output Format
 
-All evaluators return structured JSON:
+Most evaluators return structured JSON (exception: Business Rules Documentation Evaluator returns Markdown):
 
 ```json
 {
