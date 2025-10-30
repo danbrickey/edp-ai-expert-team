@@ -9,7 +9,11 @@
       "Bash(python:*)",
       "Bash(if not exist \"docs\\use_cases\\uc01_dv_refactor\\output\\member_rating\" mkdir \"docs\\use_cases\\uc01_dv_refactor\\output\\member_rating\")",
       "Bash(if not exist \"docs\\work-tracking\\ai-transformation\\use_cases\\uc01_dv_refactor\\output\\member_disability\" mkdir \"docs\\work-tracking\\ai-transformation\\use_cases\\uc01_dv_refactor\\output\\member_disability\")",
-      "Bash(if not exist \"docs\\work-tracking\\ai-transformation\\use_cases\\uc01_dv_refactor\\output\\member_student_status\" mkdir \"docs\\work-tracking\\ai-transformation\\use_cases\\uc01_dv_refactor\\output\\member_student_status\")"
+      "Bash(if not exist \"docs\\work-tracking\\ai-transformation\\use_cases\\uc01_dv_refactor\\output\\member_student_status\" mkdir \"docs\\work-tracking\\ai-transformation\\use_cases\\uc01_dv_refactor\\output\\member_student_status\")",
+      "Bash(dir:*)",
+      "Bash(if not exist \"docs\\work-tracking\\ai-transformation\\use_cases\\uc01_dv_refactor\\output\\subscriber_rating\" mkdir \"docs\\work-tracking\\ai-transformation\\use_cases\\uc01_dv_refactor\\output\\subscriber_rating\")",
+      "Bash(if not exist \"docs\\work-tracking\\ai-transformation\\use_cases\\uc01_dv_refactor\\output\\subscriber_employment\" mkdir \"docs\\work-tracking\\ai-transformation\\use_cases\\uc01_dv_refactor\\output\\subscriber_employment\")",
+      "Bash(if not exist \"docs\\work-tracking\\ai-transformation\\use_cases\\uc01_dv_refactor\\output\\subscriber_warning_msg\" mkdir \"docs\\work-tracking\\ai-transformation\\use_cases\\uc01_dv_refactor\\output\\subscriber_warning_msg\")"
     ],
     "deny": [],
     "ask": []
