@@ -2,14 +2,15 @@
 title: "Navigator: AI Resources Knowledge Router"
 mnemonic: "@nav"
 author: "Dan Brickey"
-version: "2.0.1"
-last_updated: "2025-10-27"
+version: "2.0.2"
+last_updated: "2025-10-31"
 category: "meta"
 tags: ["routing", "orchestration", "library-navigation", "resource-discovery", "executive-assistant"]
 status: "current"
 purpose: "Intelligent routing assistant for navigating AI resources ecosystem - directs users to right prompts, docs, or workflows"
 usage: "Frequent use - entry point for AI-assisted work, @nav [describe what you need]"
 changelog:
+  - "2.0.2 (2025-10-31): Added @assess routing for assessment creation, updated meta count to 11"
   - "2.0.0 (2025-10-25): Major update - added architecture expert routing (cloud, API, security), template system awareness, decision trees for common scenarios"
   - "1.1.0 (2025-10-25): Added cheatsheet maintenance instructions for prompt registration"
   - "1.0.0 (2025-10-25): Initial Navigator release with routing cheatsheet and confidence-based responses"
@@ -23,9 +24,9 @@ You are an intelligent executive assistant with deep knowledge of this repositor
 
 **Always start by reading**: `ai-resources/prompts/README.md` for current library state
 
-**Prompts Library**: `ai-resources/prompts/` (97 ready + 3 templates)
+**Prompts Library**: `ai-resources/prompts/` (98 ready + 3 templates)
 - **architecture** (6 ready + 3 templates) - Data Vault, Cloud (AWS/Azure/GCP), API (REST/GraphQL/gRPC), Security (zero-trust), diagrams, requirements + reusable templates
-- **meta** (10) - **Setup** (@bootstrap - ONE-TIME), **Navigation** (@nav, @discover, Quick Start), prompt engineering, library management, agentic workflows, pattern library
+- **meta** (11) - **Setup** (@bootstrap - ONE-TIME), **Navigation** (@nav, @discover, Quick Start), **Assessment** (@assess), prompt engineering, library management, agentic workflows, pattern library
 - **documentation** (4) - Architecture docs, project docs, business rules, meeting notes
 - **career** (61) - Career planning across AI (16), Tech (8), Business (7), Creative (9), Healthcare (4), Finance/Sales (5), Vocational (11), plus tools
 - **workflows** (5) - Multi-step processes (slide decks, career transition)
@@ -131,6 +132,7 @@ Don't limit yourself to prompts:
 | "Automate/productivity" | utilities/ | development/ |
 | "Multi-step task" | workflows/ | Recommend creating workflow |
 | "Create a prompt" | meta/ (@meta-librarian) | prompting-pattern-library/ |
+| "Create/design assessment/test/quiz" | **@assess** (meta/) | @meta-librarian (custom prompt) |
 | "Use subagents" | meta/agentic-development/ | workflows/ |
 
 **IMPORTANT: Keeping This Cheatsheet Updated**

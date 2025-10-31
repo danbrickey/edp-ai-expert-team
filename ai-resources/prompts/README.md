@@ -1,8 +1,8 @@
 ---
 title: "AI Prompts Library - Master Catalog"
 author: "Dan Brickey"
-last_updated: "2025-10-27"
-version: "2.3.0"
+last_updated: "2025-10-31"
+version: "2.4.0"
 category: "prompts-index"
 tags: ["prompts", "AI-templates", "code-generation", "documentation", "architecture", "career"]
 status: "current"
@@ -25,6 +25,7 @@ Type `@` + mnemonic for fast autocomplete in Claude Code:
 | **@architect** | [Data Architect](architecture/architect-data-vault.md) | Data Vault 2.0 & dimensional modeling expert |
 | **@jobscope** | [Corporate IT Job Architecture Advisor](career/corporate-it-job-architecture-advisor.md) | Decode & compare U.S. corporate IT roles |
 | **@arcdoc** | [Architecture Docs](documentation/arcdoc-documentation-architect.md) | Architecture documentation with business rules |
+| **@assess** | [Assessment Builder](meta/assess-assessment-builder.md) | Generate AI understanding assessments with rubrics |
 | **@bizrules** | [Business Rules](documentation/bizrules-documenter.md) | Document business rules from code |
 | **@projdoc** | [Project Docs](documentation/projdoc-expert.md) | Create project documentation |
 | **@meeting** | [Meeting Notes](documentation/meeting-notes-summarizer.md) | Summarize meetings to action items |
@@ -84,6 +85,7 @@ Tools for creating and improving prompts themselves:
 
 - **[@librarian](meta/librarian-prompt-management.md)** - Intelligent library management system for organizing, discovering, and enhancing prompts with adaptive expertise.
 - **[@meta](meta/meta-prompt-engineer.md)** - Meta-prompt engineering expert using systematic evaluation methodology. Creates high-quality prompts with self-evaluation and iterative refinement.
+- **[@assess](meta/assess-assessment-builder.md)** - Generate comprehensive AI understanding assessments with interview prompts, behavioral scoring rubrics, and strategic recommendations. Offers guided and rapid modes.
 - **[data_vault_refactor_prompt_generator.md](meta/data_vault_refactor_prompt_generator.md)** - Generator for creating Data Vault refactoring prompts for specific tables/entities.
 - **[prompting-pattern-library/](meta/prompting-pattern-library/)** - Comprehensive library of prompting patterns, techniques, and best practices.
 - **[agentic-development/](meta/agentic-development/)** - Expert guidance on building autonomous AI agents and agentic workflows.
@@ -234,14 +236,14 @@ Reference prompts using the @-mention syntax:
 |----------|-------|----------|
 | Architecture | 3 | Technical design, Data Vault, diagrams, requirements |
 | Documentation | 4 | Project docs, business rules, meeting notes |
-| Meta | 5 | Prompt engineering, library management, patterns, agentic development |
+| Meta | 6 | Prompt engineering, assessment design, library management, patterns, agentic development |
 | Career | 20 | Career planning, AI roles, job search, resume building |
 | Workflows | 4 | Multi-step processes (slide decks) |
 | Specialized | 1 | Domain utilities (tutoring) |
 | Development | 1 | Coding assistance, clean code practices |
 | Strategy | 1 | Vendor evaluation, strategic planning |
 | Utilities | 3 | Excel automation, gift shopping, productivity tools |
-| **Total** | **42** | Centralized general-purpose prompts |
+| **Total** | **43** | Centralized general-purpose prompts |
 
 ---
 
@@ -253,5 +255,5 @@ Reference prompts using the @-mention syntax:
 
 ---
 
-*Last Updated: 2025-10-19 by Dan Brickey*
-*Version v2.2.0: Added @giftfinder utility prompt for intelligent gift shopping*
+*Last Updated: 2025-10-31 by Dan Brickey*
+*Version v2.4.0: Added @assess assessment builder for generating AI understanding assessments*
