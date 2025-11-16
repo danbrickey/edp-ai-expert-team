@@ -265,7 +265,7 @@ docs/
 - Both create structured outputs from unstructured input
 
 **Meta-Prompting**:
-- If these prompts need customization, use [Meta-Librarian Architect](../meta/meta-librarian-architect.md) to evolve them
+- If these prompts need customization, use [Meta-Librarian Architect](../meta/meta-librarian-architect_v1_2.md) to evolve them
 - Reference therapy patterns when customizing your [.ai/instructions.md](../../../.ai/instructions.md)
 
 ---
@@ -279,7 +279,7 @@ These prompts should evolve with your needs:
 - **New patterns?** Create dedicated tracking documents
 - **Therapeutic approach not fitting?** Customize tone or techniques
 
-Use the [Meta-Librarian Architect](../meta/meta-librarian-architect.md) to systematically improve these prompts based on your experience.
+Use the [Meta-Librarian Architect](../meta/meta-librarian-architect_v1_2.md) to systematically improve these prompts based on your experience.
 
 ---
 

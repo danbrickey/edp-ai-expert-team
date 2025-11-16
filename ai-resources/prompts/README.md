@@ -1,8 +1,8 @@
 ---
 title: "AI Prompts Library - Master Catalog"
 author: "Dan Brickey"
-last_updated: "2025-10-31"
-version: "2.4.0"
+last_updated: "2025-11-15"
+version: "2.5.0"
 category: "prompts-index"
 tags: ["prompts", "AI-templates", "code-generation", "documentation", "architecture", "career"]
 status: "current"
@@ -22,6 +22,7 @@ Type `@` + mnemonic for fast autocomplete in Claude Code:
 |----------|--------|---------|
 | **@librarian** | [Prompt Librarian](meta/librarian-prompt-management.md) | Manage prompt library organization & metadata |
 | **@meta** | [Meta-Prompt Engineer](meta/meta-prompt-engineer.md) | Create high-quality prompts with evaluation |
+| **@meta-librarian** | [Meta-Librarian Architect (v1.2)](meta/meta-librarian-architect_v1_2.md) | Unified system for prompt creation, agentic assessment, and library registration |
 | **@architect** | [Data Architect](architecture/architect-data-vault.md) | Data Vault 2.0 & dimensional modeling expert |
 | **@jobscope** | [Corporate IT Job Architecture Advisor](career/corporate-it-job-architecture-advisor.md) | Decode & compare U.S. corporate IT roles |
 | **@arcdoc** | [Architecture Docs](documentation/arcdoc-documentation-architect.md) | Architecture documentation with business rules |
@@ -85,6 +86,7 @@ Tools for creating and improving prompts themselves:
 
 - **[@librarian](meta/librarian-prompt-management.md)** - Intelligent library management system for organizing, discovering, and enhancing prompts with adaptive expertise.
 - **[@meta](meta/meta-prompt-engineer.md)** - Meta-prompt engineering expert using systematic evaluation methodology. Creates high-quality prompts with self-evaluation and iterative refinement.
+- **[@meta-librarian](meta/meta-librarian-architect_v1_2.md)** - Unified meta-prompt + agentic workflow + library management system with five-phase evaluation, agentic routing, and mandatory registration checklist.
 - **[@assess](meta/assess-assessment-builder.md)** - Generate comprehensive AI understanding assessments with interview prompts, behavioral scoring rubrics, and strategic recommendations. Offers guided and rapid modes.
 - **[data_vault_refactor_prompt_generator.md](meta/data_vault_refactor_prompt_generator.md)** - Generator for creating Data Vault refactoring prompts for specific tables/entities.
 - **[prompting-pattern-library/](meta/prompting-pattern-library/)** - Comprehensive library of prompting patterns, techniques, and best practices.

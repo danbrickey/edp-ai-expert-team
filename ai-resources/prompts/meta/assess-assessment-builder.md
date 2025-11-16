@@ -10,7 +10,7 @@ audience: ["learning-development-professionals", "ai-trainers", "consultants", "
 purpose: "Generate comprehensive AI understanding assessments with interview prompts, scoring rubrics, and strategic recommendations"
 mnemonic: "@assess"
 complexity: "intermediate"
-related_prompts: ["meta/meta-librarian-architect.md", "meta/meta-prompt-engineer.md"]
+related_prompts: ["meta/meta-librarian-architect_v1_2.md", "meta/meta-prompt-engineer.md"]
 assessment_framework: "Multi-section interview-based with behavioral rubrics and synthesis"
 modes: ["guided", "rapid"]
 ---
