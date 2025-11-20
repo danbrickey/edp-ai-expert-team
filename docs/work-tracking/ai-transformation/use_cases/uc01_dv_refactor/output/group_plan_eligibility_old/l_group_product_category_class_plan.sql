@@ -1,8 +1,16 @@
+-- l_group_product_category_class_plan.sql
+-- Link table connecting group, product category, class, and plan
+
+{%- set source_models = [
+    "stg_group_plan_eligibility_legacy_facets",
+    "stg_group_plan_eligibility_gemstone_facets"
+] -%}
+
 {%- set yaml_metadata -%}
 source_model:
-  - stg_group_plan_eligibility_legacy_facets
-  - stg_group_plan_eligibility_gemstone_facets
-src_pk: "link_hk"
+  - "stg_group_plan_eligibility_legacy_facets"
+  - "stg_group_plan_eligibility_gemstone_facets"
+src_pk: "group_product_category_class_plan_hk"
 src_fk:
   - "group_hk"
   - "product_category_hk"
